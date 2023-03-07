@@ -62,7 +62,7 @@
 									</div>
 									<div class="dropdown-box">
 										<ul class="dropdown-list">
-											<li><a href="diary.html">diary</a></li>
+											<li><a href="diary.html">gfbgf</a></li>
 											<li><a href="ilustrasi.html">ilustrasi</a></li>
 											<li><a href="pantun.html">pantun</a></li>
 											<li><a href="essai.html">esai</a></li>
