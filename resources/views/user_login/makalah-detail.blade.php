@@ -77,6 +77,7 @@
 					</div>
 				</nav>
 			</header>
+		<!-- End Header -->
 
 		<!-- listing-detail
 			================================================== -->
@@ -88,10 +89,14 @@
 							<div class="col-sm-9">
 								
 								<h1 class="listing-detail__title listing-detail__title-black">
-									<span>Ibu Monica</span>
+									<span>Administrasi Bisnis Falkutas Ilmu Sosial Dan Ilmu Politik </span>
 									<!-- <span cla	ss="listing-detail__rate">9.3 <span>/ 10</span></span> -->
 								</h1>
-								<p>penulis: ibu pertiwi</p>
+								<div style="display: flex; justify-content: space-between;">
+									<p>Di upload oleh: Monica</p>
+									
+								</div>
+								
 								<!-- <p class="listing-detail__address">
 									<i class="fa fa-map-marker"></i>1149 3rd St (Wilshire), Santa Monica
 									<span class="listing-detail__dollar-rate">
@@ -105,16 +110,21 @@
 									</span>
 								</p> -->
 							</div>
-							<div class="col-sm-3">
+							<div class="col-sm-3" >
+								
 								<div class="listing-detail__buttons listing-detail__buttons-icons">
+									
 									<a class="btn-default" href="#">
 										<i class="la la-heart-o" aria-hidden="true"></i>
 									</a>
-									<a class="btn-default" href="#">
+									<a class="btn-default" href="#leave-review">
 										<i class="la la-pencil" aria-hidden="true"></i>
 									</a>
+									
 								</div>
+								
 							</div>
+							
 						</div>
 					</div>
 				</div>
@@ -126,60 +136,40 @@
 						<div class="col-lg-8">
 							<div class="listing-detail__content-box listing-detail__content-box-nopadding">
 
-								<!-- <div class="listing-detail__scroll-menu-box">
-									<ul class="listing-detail__scroll-menu listing-detail__menu-top-border navigate-section">
-										<li>
-											<a class="active" href="#overview-box">Overview</a>
-										</li>
-										<li>
-											<a href="#photos-box">Gallery</a>
-										</li>
-										<li>
-											<a href="#tips-reviews-box">Tips and Reviews</a>
-										</li>
-									</ul>
-								</div> -->
-
-								<!-- overview box -->
-								<div class="listing-detail__galleria">
-									<div  style=" display:flex; justify-content: center; align-items: center;">
-										<img style="width: 400px;" src="asset/ibup.jpg" alt="" >
+							<div class="user-detail__review-box owl-wrapper">
+									<div class="owl-carousel" data-num="3" >
+										<img style="width:103%;" src="asset/sampul-makalah.webp" alt="" srcset="">
+										<img style="width:103%;" src="asset/sampul-makalah.webp" alt="" srcset="">
+										<img style="width:103%;" src="asset/sampul-makalah.webp" alt="" srcset="">
+										<img style="width:103%;" src="asset/sampul-makalah.webp" alt="" srcset="">
+										<img style="width:103%;" src="asset/sampul-makalah.webp" alt="" srcset="">
+										<img style="width:103%;" src="asset/sampul-makalah.webp" alt="" srcset="">
 									</div>
-
 								</div>
-
+								
 								<!-- overview box -->
 								<div class="listing-detail__overview" id="overview-box">
 									<!-- <h2 class="listing-detail__content-title">Overview</h2> -->
-									<div style="text-align: center;">
-										<!-- <h2>Ibu Pertiwi</h2> -->
-										
-										<b></b><br>Pertiwi yang kami sebut ibu bangsa
+									<div >
+										<h2>Ringkasan  </h2>
+									
+										<p class="listing-detail__content-description" style="color: black;">
+											Makalah adalah salah satu jenis karya tulis ilmiah yang membahas satu 
+											permasalahan tertentu sebagai haril kajian pustaka ataupun kajian lapangan.
+											Makalah disusun dengan tujuan untuk memenuhi tugas tertentu (tugas akademik 
+											maupun tugas non akademik). Sistematika pembuatan makalah yaitu bagian awal, 
+											bagian isi dan bagian penutup. Sementara rangkuman dapat diartikan sebagai 
+											suatu hasil merangkum atau meringkas suatu tulisan atau pembicaraan menjadi 
+											suatu uraian yang lebih singkat dengan perbandingan secara proposional antara 
+											bagian yang dirangkum dengan rangkumannya. Dan buku adalah kumpulan kertas 
+											atau bahan lain yang dijilid menjadi satu pada salah satu ujungnya dan berisi 
+											tulisan atau gambar. Hubungan antara membaca dan menulis antara dengan 
+											menulis pada dasarnya adalah hubungan pembaca dan penulis yang saling 
+											keterkaitan dan saling membutuhkan. Tugas penulis adalah 
+											mengatur/menggerakan suatu proses yang mengakibatkan suatu perubahan 
+											tertentu dalam bayangan/kesan membaca.
+									</p>
 
-										<p></p>Sedari kami dalam kandungnya
-										
-										<p></p>Tak sedikit lara disangga
-										
-										<p></p>Pertiwi, ibu kami yang malang
-										
-										<p></p>Bersamanya halang rintang
-										
-										<p></p>Baginya bukanlah pengadang
-										
-										<p></p>Tetap kami tumbuh berkembang
-										
-										<p></p>Di tanah Ibu Pertiwi yang rindang
-										
-										<p></p>Pertiwi, ibu kami yang lelah
-										
-										<p></p>Meski tanpa ucap keluh kesah
-										
-										<p></p>Masih kami rasa kasihnya berkisah
-										
-										<p></p>Walau acap kali kisahnya susah
-										
-										
-										
 									</div>
 									
 								</div>
@@ -189,9 +179,9 @@
 									<div class="inner-review__form">
 										<img src="upload/avatar1.jpg" alt="">
 										<div class="inner-review__form-box">
-											<textarea class="contact-form__textarea" name="comment" id="comment" placeholder="Komentar"></textarea>
+											<textarea class="contact-form__textarea" name="comment" id="comment" placeholder="Comment"></textarea>
 											
-											<input class="contact-form__submit" type="submit" name="submit-contact" id="submit_contact" value="Kirim" />
+											<input class="contact-form__submit" type="submit" name="submit-contact" id="submit_contact" value="Submit Review" />
 										</div>
 									</div>
 								</form>
@@ -200,7 +190,7 @@
 								<!-- tips & reviews-box -->
 								<div class="listing-detail__reviews" id="tips-reviews-box">
 									<h2 class="listing-detail__content-title">
-										komentar 
+										komentar
 									</h2>
 									<div class="listing-detail__reviews-box">
 
@@ -393,8 +383,21 @@
 									</h2>
 									<ul class="sidebar__listing-list">
 										<li>
-											<i class="la la-map-marker"></i>
-											21 january 2022
+											<i class="la la-calendar"></i>
+											21 january 2013
+										</li>
+										<li>
+											<i class="la la-pencil"></i>
+											<b> Pembuat </b>
+										</li>
+										<li>
+											<span style="margin-left: 20px;">1. monica</span><br>
+											<span style="margin-left: 20px;">2. sumanto</span><br>
+											<span style="margin-left: 20px;">3. sumanto</span>
+										</li>
+										<li>
+											<i class="la la-university"></i>
+											Universitas Riau
 										</li>
 										<li>
 											<i class="la la-mobile-phone"></i>
@@ -404,6 +407,13 @@
 											<i class="la la-link"></i>
 											momonica@gmail.com
 										</li>
+										<div style="width:70%; display: flex; justify-content: end; margin-left: 45%; margin-top: 20px;" >
+											<a class="contact-form__submit" href="makalah-pkn.html" style="margin-right: 20px; margin-bottom: 10px;">
+												<i class="fa fa-caret-right" aria-hidden="true"></i>
+												
+											lihat
+												</a>
+										</div>
 										<!-- <li>
 											<i class="la la-clock-o"></i>
 											<span class="color-close">Closed until Noon</span>
@@ -421,7 +431,7 @@
 
 								<div class="sidebar__widget sidebar__widget-author">
 									<h2 class="sidebar__widget-title">
-										Pembuat
+										Author
 									</h2>
 									
 									<!-- Author-wrapper module -->
@@ -450,7 +460,7 @@
 										<ul class="author-wrapper__list">
 											<li>
 												<span>42</span>
-												Postingan
+												List
 											</li>
 											<!-- <li>
 												<span>12</span>
@@ -462,7 +472,7 @@
 											</li> -->
 											<li>
 												<span>56</span>
-												Komentar2
+												Reviews
 											</li>
 										</ul>
 									</div>
@@ -500,78 +510,73 @@
 
 		<!-- footer block module
 			================================================== -->
-		<footer class="footer footer-black">
-			<div class="container">
-
-				<div class="footer__up-part">
-					<div class="row">
-						<div class="col-md-4">
-
-							<div class="footer__widget text-widget">
-								<img src="images/logo.png" alt="triptip-logo">
-								<p class="footer__widget-description">
-									Lorem ipsum dolor sit amet, conse ctetuer adipiscing elit, sed diam nonu mmy nibh euismod tincidunt ut laoreet dolore magna aliquam erat. 
-								</p>
+			<footer class="footer footer-black">
+				<div class="container">
+	
+					<div class="footer__up-part">
+						<div class="row">
+							<div class="col-md-4">
+	
+								<div class="footer__widget text-widget">
+									<img src="images/logo.png" alt="triptip-logo">
+									<p class="footer__widget-description">
+										Menggembangkan dunia baca tulis menggunakan website menuju dunia digital. Temukan berbagai artikel, postingan, cerita, jurnal dan buat postinganmu sendiri disini	
+									</p>
+								</div>
+	
 							</div>
-
-						</div>
-						<div class="col-md-4">
-
-							<div class="footer__widget subscribe-widget">
-								<h2 class="footer__widget-title footer__widget-title-white">
-									Subscribe
-								</h2>
-								<p class="footer__widget-description">
-									Be notified about new locations
-								</p>
-								<form class="footer__subscribe-form">
-									<input class="footer__subscribe-input" type="text" name="email-sub" id="email-sub" placeholder="Enter your Email" />
-									<button class="footer__subscribe-button footer__subscribe-button-primary" type="submit">
-										<i class="la la-arrow-circle-o-right" aria-hidden="true"></i>
-									</button>
-								</form>
+							<div class="col-md-4">
+	
+								<div class="footer__widget subscribe-widget">
+									<h2 class="footer__widget-title footer__widget-title-white">
+										Alamat
+									</h2>
+									<p class="footer__widget-description">
+										Jl. Pandawa No. 66, Dusun Mawar RT 001 RW 001 Desa Pandan
+									</p>
+									
+								</div>
+	
 							</div>
-
-						</div>
-						<div class="col-md-4">
-
-							<div class="footer__widget text-widget">
-								<h2 class="footer__widget-title footer__widget-title-white">
-									Contact Info 
-								</h2>
-								<p class="footer__widget-description">
-									1000 5th Ave to Central Park, New York <br>
-									+1 246-345-0695 <br>
-									info@example.com
-								</p>
+							<div class="col-md-4">
+	
+								<div class="footer__widget text-widget">
+									<h2 class="footer__widget-title footer__widget-title-white">
+										Kontak 
+									</h2>
+									<p class="footer__widget-description">
+										+62 898-1342-6657<br>
+										info@example.com <br>
+										YouTube: ngu_never122
+									</p>
+								</div>
+	
 							</div>
-
 						</div>
 					</div>
-				</div>
-
-				<div class="footer__down-part footer__down-part-black">
-					<div class="row">
-						<div class="col-md-7">
-							<p class="footer__copyright">
-								© Copyright 2018 - All Rights Reserved
-							</p>
-						</div>
-						<div class="col-md-5">
-							<ul class="footer__social-list">
-								<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-								<li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
-								<li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
-							</ul>
+	
+					<div class="footer__down-part footer__down-part-black">
+						<div class="row">
+							<div class="col-md-7">
+								<p class="footer__copyright">
+									© Copyright 2018 - All Rights Reserved
+								</p>
+							</div>
+							<div class="col-md-5">
+								<ul class="footer__social-list">
+									<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
+									<li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
+	
 				</div>
-
-			</div>
-
-		</footer>
+	
+			</footer>
 		<!-- End footer -->
 
 	</div>

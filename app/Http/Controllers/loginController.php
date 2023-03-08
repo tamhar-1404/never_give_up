@@ -54,6 +54,11 @@ class loginController extends Controller
 
     }
 
+<<<<<<< Updated upstream
+=======
+   
+
+>>>>>>> Stashed changes
     public function register(Request $request)
     {
     // $this->validate($request, [

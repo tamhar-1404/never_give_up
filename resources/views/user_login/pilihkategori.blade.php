@@ -42,41 +42,71 @@
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav mr-auto">
 								<li>
+<<<<<<< Updated upstream
 									<a class="active" href="index04b9.html">Beranda <i class="" aria-hidden="true"></i></a>
+=======
+									<a class="active" href="/user-login">Beranda <i class="" aria-hidden="true"></i></a>
+>>>>>>> Stashed changes
 								</li>
 								<li ><a  href="#">Kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
 									<div class="megadropdown">
 										<div class="dropdown-box">
 											
 											<ul class="dropdown-list">
+<<<<<<< Updated upstream
 												<li><a href="artikel.html">artikel</a></li>
 												<li><a href="cerpen.html">cerpen</a></li>
 												<li><a href="puisi.html">puisi</a></li>
 												<li><a href="photography.html">fotografi</a></li>
+=======
+												<li><a href="/artikel">artikel</a></li>
+												<li><a href="/cerpen">cerpen</a></li>
+												<li><a href="/puisi">puisi</a></li>
+												<li><a href="/photography">fotografi</a></li>
+>>>>>>> Stashed changes
 												</ul>
 										</div>
 										<div class="dropdown-box">
 											<ul class="dropdown-list">
 											
+<<<<<<< Updated upstream
 												<li><a href="makalah.html">makalah</a></li>
 												<li><a href="skripsi.html">skripsi</a></li>
 												<li><a href="ilmiah.html">karya ilmiah</a></li>
+=======
+												<li><a href="/makalah">makalah</a></li>
+												<li><a href="/skripsi">skripsi</a></li>
+												<li><a href="/ilmiah">karya ilmiah</a></li>
+>>>>>>> Stashed changes
 											</ul>
 										</div>
 										<div class="dropdown-box">
 											<ul class="dropdown-list">
+<<<<<<< Updated upstream
 												<li><a href="diary.html">diary</a></li>
 												<li><a href="ilustrasi.html">ilustrasi</a></li>
 												<li><a href="pantun.html">pantun</a></li>
 												<li><a href="essai.html">esai</a></li>
+=======
+												<li><a href="/diary">diary</a></li>
+												<li><a href="/ilustrasi">ilustrasi</a></li>
+												<li><a href="/pantun">pantun</a></li>
+												<li><a href="/essai">esai</a></li>
+>>>>>>> Stashed changes
 											
 												</ul>
 										</div>
 									</div>
 								</li>
+<<<<<<< Updated upstream
 								<li><a href="contact.html">Hubungi Kami</a></li>	
 							</ul>
 							<a href="index04b9.html" class="add-list-btn btn-default">Kembali</a>
+=======
+								<li><a href="/contact">Hubungi Kami</a></li>	
+							</ul>
+							<a href="/user-login" class="add-list-btn btn-default">Kembali</a>
+>>>>>>> Stashed changes
 	
 					</div>
 				</nav>
@@ -113,9 +143,13 @@
 										<h2 class="services-post__title">
 											artikel
 										</h2>
+<<<<<<< Updated upstream
 										<p class="services-post__location">
 											12 postingan
 										</p>
+=======
+										
+>>>>>>> Stashed changes
 									</div>
 								</a>
 								<!-- end services-post module -->
@@ -139,9 +173,13 @@
 										<h2 class="services-post__title">
 											Cerpen
 										</h2>
+<<<<<<< Updated upstream
 										<p class="services-post__location">
 											12 postingan
 										</p>
+=======
+										
+>>>>>>> Stashed changes
 									</div>
 								</a>
 								<!-- end services-post module -->
@@ -163,9 +201,13 @@
 										<h2 class="services-post__title">
 											puisi
 										</h2>
+<<<<<<< Updated upstream
 										<p class="services-post__location">
 											12 postingan
 										</p>
+=======
+										
+>>>>>>> Stashed changes
 									</div>
 								</a>
 								<!-- end services-post module -->
@@ -188,9 +230,13 @@
 										<h2 class="services-post__title">
 											diary
 										</h2>
+<<<<<<< Updated upstream
 										<p class="services-post__location">
 											12 postingan
 										</p>
+=======
+										
+>>>>>>> Stashed changes
 									</div>
 								</a>
 								<!-- end services-post module -->
@@ -212,9 +258,13 @@
 										<h2 class="services-post__title">
 											fotografi
 										</h2>
+<<<<<<< Updated upstream
 										<p class="services-post__location">
 											12 Locations
 										</p>
+=======
+										
+>>>>>>> Stashed changes
 									</div>
 								</a>
 								<!-- end services-post module -->
@@ -235,15 +285,23 @@
 										<h2 class="services-post__title">
 											ilustrasi
 										</h2>
+<<<<<<< Updated upstream
 										<p class="services-post__location">
 											16 Locations
 										</p>
+=======
+										
+>>>>>>> Stashed changes
 									</div>
 								</a>
 								<!-- end services-post module -->
 	
 							</div>
+<<<<<<< Updated upstream
 							<div style=" display: flex; gap: 55px;">
+=======
+							<!-- <div style=" display: flex; gap: 55px;"> -->
+>>>>>>> Stashed changes
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
@@ -259,9 +317,14 @@
 										<h2 class="services-post__title">
 											makalah
 										</h2>
+<<<<<<< Updated upstream
 										<p class="services-post__location">
 											22 Locations
 										</p>
+=======
+										
+										
+>>>>>>> Stashed changes
 									</div>
 								</a>
 								<!-- end services-post module -->
@@ -273,7 +336,11 @@
 								<!-- services-post module -->
 								<a href="add-listing.html" class="services-post" data-bs-toggle="" data-bs-target="#staticBackdrop7">
 									<div class="services-post__content">
+<<<<<<< Updated upstream
 										<i class="" aria-hidden="true">
+=======
+										<i class="la la-" aria-hidden="true">
+>>>>>>> Stashed changes
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-journal-bookmark" viewBox="0 0 16 16">
 												<path fill-rule="evenodd" d="M6 8V1h1v6.117L8.743 6.07a.5.5 0 0 1 .514 0L11 7.117V1h1v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8z"/>
 												<path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
@@ -283,9 +350,13 @@
 										<h2 class="services-post__title">
 											skripsi
 										</h2>
+<<<<<<< Updated upstream
 										<p class="services-post__location">
 											30 Locations
 										</p>
+=======
+										
+>>>>>>> Stashed changes
 									</div>
 								</a>
 								<!-- end services-post module -->
@@ -306,9 +377,13 @@
 										<h2 class="services-post__title">
 											pantun
 										</h2>
+<<<<<<< Updated upstream
 										<p class="services-post__location">
 											8 Locations
 										</p>
+=======
+										
+>>>>>>> Stashed changes
 									</div>
 								</a>
 								<!-- end services-post module -->
@@ -330,9 +405,13 @@
 										<h2 class="services-post__title">
 											esai
 										</h2>
+<<<<<<< Updated upstream
 										<p class="services-post__location">
 											19 Locations
 										</p>
+=======
+										
+>>>>>>> Stashed changes
 									</div>
 								</a>
 								<!-- end services-post module -->
@@ -353,9 +432,13 @@
 										<h2 class="services-post__title">
 											karya ilmiah
 										</h2>
+<<<<<<< Updated upstream
 										<p class="services-post__location">
 											19 Locations
 										</p>
+=======
+										
+>>>>>>> Stashed changes
 									</div>
 								</a>
 								<!-- end services-post module -->
@@ -371,6 +454,7 @@
 			<!-- End services-block -->
 
 			
+<<<<<<< Updated upstream
 			<div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="margin-top: 5%;">
 				<div class="modal-dialog">
 					<div class="modal-content">
@@ -646,6 +730,9 @@
 		</div>
 
 		
+=======
+
+>>>>>>> Stashed changes
 
 	</div>
 	<!-- footer block module

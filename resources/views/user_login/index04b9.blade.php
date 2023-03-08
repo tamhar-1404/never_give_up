@@ -41,33 +41,37 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav mr-auto">
 							<li>
+<<<<<<< Updated upstream
 								<a class="active" href="/">Beranda <i class="" aria-hidden="true"></i></a>
+=======
+								<a class="active" href="/index04b9">Beranda <i class="" aria-hidden="true"></i></a>
+>>>>>>> Stashed changes
 							</li>
 							<li ><a  href="#">Kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
 								<div class="megadropdown">
 									<div class="dropdown-box">
 										
 										<ul class="dropdown-list">
-											<li><a href="artikel.html">artikel</a></li>
-											<li><a href="cerpen.html">cerpen</a></li>
-											<li><a href="puisi.html">puisi</a></li>
-											<li><a href="photography.html">fotografi</a></li>
+											<li><a href="/artikel">artikel</a></li>
+											<li><a href="/cerpen">cerpen</a></li>
+											<li><a href="/puisi">puisi</a></li>
+											<li><a href="/photography">fotografi</a></li>
 											</ul>
 									</div>
 									<div class="dropdown-box">
 										<ul class="dropdown-list">
 										
-											<li><a href="makalah.html">makalah</a></li>
-											<li><a href="skripsi.html">skripsi</a></li>
-											<li><a href="ilmiah.html">karya ilmiah</a></li>
+											<li><a href="/makalah">makalah</a></li>
+											<li><a href="/skripsi">skripsi</a></li>
+											<li><a href="/ilmiah">karya ilmiah</a></li>
 										</ul>
 									</div>
 									<div class="dropdown-box">
 										<ul class="dropdown-list">
-											<li><a href="diary.html">diary</a></li>
-											<li><a href="ilustrasi.html">ilustrasi</a></li>
-											<li><a href="pantun.html">pantun</a></li>
-											<li><a href="essai.html">esai</a></li>
+											<li><a href="/diary">diary</a></li>
+											<li><a href="/ilustrasi">ilustrasi</a></li>
+											<li><a href="/pantun">pantun</a></li>
+											<li><a href="/essai">esai</a></li>
 										
 											</ul>
 									</div>
@@ -76,17 +80,23 @@
 									
 								</div>
 							</li>
+<<<<<<< Updated upstream
 							<li><a href="/kontak">Hubungi Kami</a></li>
+=======
+							<li><a href="/contact">Hubungi Kami</a></li>
+>>>>>>> Stashed changes
 
 											
 						</ul>
 						
-						<a href="pilihkategori.html" class="add-list-btn btn-default"><i class="fa fa-plus" aria-hidden="true"></i> posting</a>
+						<a href="/pilihkategori" class="add-list-btn btn-default"><i class="fa fa-plus" aria-hidden="true"></i> posting</a>
 							
-						<a href="user-page.html" class="add-list-btn btn-default"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
-							<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-							<path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-						  </svg></a>
+						      
+                        <a href="/user-page" class="add-list-btn btn-default"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+              </svg></a>
+
 			
 					
 					</div>
@@ -100,33 +110,54 @@
 			<section class="discover discover-best">
 				<div class="container">
 	
-					<p class="discover__description">
-						Temukan karya pribadi yang kau cari
-					</p>
+					
 	
 					<h1 class="discover__title places-tab">
 						karya pribadi
 					</h1>
 	
 					
-					<div style="display: flex; justify-content: center;">
+					<!-- <div style="display: flex; justify-content: center;">
 						<p style="font-size: 20px; color: white;">REKOMENDASI</p>
-					</div>
+					</div> -->
+				<p class="discover__description">
+						Temukan karya pribadi yang kau cari
+					</p>
+
+					<form class="discover__form discover__form-favourite">
+						<input class="discover__form-input discover__form-input-favourite" type="text" name="place-event" id="place-event" placeholder="Apa yang Ingin Anda Cari?" />
+						
+						<select class="discover__form-input discover__form-input-favourite js-example-basic-multiple">
+							<option>Kategori: </option>
+							<option>Artikel</option>
+							<option>Cerpen</option>
+							<option>Puisi</option>
+							<option>Diary</option>
+							<option>Fotografi</option>
+							<option>Ilustrasi</option>
+							<option>Makalah</option>
+							<option>Skripsi</option>
+							<option>Pantun</option>
+							<option>Essai</option>
+							<option>Karya Ilmiah</option>
+						</select>
+						<button class="btn-default btn-default-red" type="submit" href="artikel"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
+					</form>
 	
 					<div class="discover__box-place owl-wrapper">
 						<div class="owl-carousel" data-num="4">
 						
 							<div class="item">
-	
+							<!-- style="max-width: 210px; max-height:300px;" -->
 								<!-- place-gal module -->
 								<div class="place-gal">
 									<img class="place-gal__image" src="upload/top1.jpg" alt="place-image">
 									<div class="place-gal__content">
 										<h2 class="place-gal__title permanent-font">
-											<a href="artikel">Artikel</a>
+											<a href="/artikel">Artikel</a>
 										</h2>
 										
-										<a class="btn-default" href="artikel.html">
+										<a class="btn-default" href="artikel">
 											<i class="fa fa-caret-right" aria-hidden="true"></i>
 											<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
 												<path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
@@ -148,10 +179,10 @@
 									<img class="place-gal__image" src="upload/top2.jpg" alt="place-image">
 									<div class="place-gal__content">
 										<h2 class="place-gal__title">
-											<a href="#">fotografi</a>
+											<a href="/photography">fotografi</a>
 										</h2>
 									
-										<a class="btn-default" href="photography.html">
+										<a class="btn-default" href="photography">
 											<i class="fa fa-caret-right" aria-hidden="true"></i>
 											<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
 												<path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
@@ -172,10 +203,10 @@
 									<img class="place-gal__image" src="upload/top3.jpg" alt="place-image">
 									<div class="place-gal__content">
 										<h2 class="place-gal__title permanent-font">
-											<a href="#">makalah</a>
+											<a href="/makalah">makalah</a>
 										</h2>
 										
-										<a class="btn-default" href="makalah.html">
+										<a class="btn-default" href="/makalah">
 											<i class="fa fa-caret-right" aria-hidden="true"></i>
 											<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
 												<path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
@@ -196,10 +227,10 @@
 									<img class="place-gal__image" src="upload/top4.jpg" alt="place-image">
 									<div class="place-gal__content">
 										<h2 class="place-gal__title">
-											<a href="#">esai</a>
+											<a href="/essai">esai</a>
 										</h2>
 										
-										<a class="btn-default" href="essai.html">
+										<a class="btn-default" href="essai">
 											<i class="fa fa-caret-right" aria-hidden="true"></i>
 											<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
 												<path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
@@ -220,10 +251,10 @@
 									<img class="place-gal__image" src="upload/top1.jpg" alt="place-image">
 									<div class="place-gal__content">
 										<h2 class="place-gal__title permanent-font">
-											<a href="#">ilustrasi</a>
+											<a href="/ilustrasi">ilustrasi</a>
 										</h2>
 										
-										<a class="btn-default" href="ilustrasi.html">
+										<a class="btn-default" href="ilustrasi">
 											<i class="fa fa-caret-right" aria-hidden="true"></i>
 											<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
 												<path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
@@ -270,7 +301,7 @@
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="artikel" class="services-post">
+								<a href="/artikel" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-activit" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-file-earmark-post-fill" viewBox="0 0 16 16">
@@ -292,7 +323,7 @@
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="cerpen" class="services-post">
+								<a href="/cerpen" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-activit" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
@@ -315,7 +346,7 @@
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="puisi" class="services-post">
+								<a href="/puisi" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-activit" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-file-earmark-richtext" viewBox="0 0 16 16">
@@ -339,7 +370,7 @@
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="diary" class="services-post">
+								<a href="/diary" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-activit" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16">
@@ -364,7 +395,7 @@
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="photography" class="services-post">
+								<a href="/photography" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-activit" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-camera2" viewBox="0 0 16 16">
@@ -388,7 +419,7 @@
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="ilustrasi" class="services-post">
+								<a href="/ilustrasi" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-easel2" viewBox="0 0 16 16">
@@ -407,11 +438,12 @@
 	
 							</div>
 							
-							<div style=" display: flex; gap: 75px;">
+							<!-- <div style=" display: flex; gap: 75px;"> -->
+
 								<div class="col-xl-2 col-md-4 col-sm-6">
-		
+	
 									<!-- services-post module -->
-									<a href="makalah" class="services-post">
+									<a href="/makalah" class="services-post">
 										<div class="services-post__content">
 											<i class="la la-" aria-hidden="true">
 												<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
@@ -424,18 +456,17 @@
 												makalah
 											</h2>
 											<p class="services-post__location">
-												
+											
 											</p>
 										</div>
 									</a>
 									<!-- end services-post module -->
-									
 								</div>
 								
 								<div class="col-xl-2 col-md-4 col-sm-6">
 		
 									<!-- services-post module -->
-									<a href="skripsi" class="services-post">
+									<a href="/skripsi" class="services-post">
 										<div class="services-post__content">
 											<i class="la la-" aria-hidden="true">
 												<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-journal-bookmark" viewBox="0 0 16 16">
@@ -460,7 +491,7 @@
 								<div class="col-xl-2 col-md-4 col-sm-6">
 		
 									<!-- services-post module -->
-									<a href="pantun" class="services-post">
+									<a href="/pantun" class="services-post">
 										<div class="services-post__content">
 											<i class="la la-" aria-hidden="true">
 												<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
@@ -483,7 +514,7 @@
 								<div class="col-xl-2 col-md-4 col-sm-6">
 		
 									<!-- services-post module -->
-									<a href="essai" class="services-post">
+									<a href="/essai" class="services-post">
 										<div class="services-post__content">
 											<i class="la la-" aria-hidden="true">
 												<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list-task" viewBox="0 0 16 16">
@@ -507,7 +538,7 @@
 								<div class="col-xl-2 col-md-4 col-sm-6">
 		
 									<!-- services-post module -->
-									<a href="ilmiah" class="services-post">
+									<a href="/ilmiah" class="services-post">
 										<div class="services-post__content">
 											<i class="la la-" aria-hidden="true">
 												<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-journals" viewBox="0 0 16 16">
@@ -515,8 +546,30 @@
 													<path d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z"/>
 												  </svg>
 											</i>
-											<h2 class="services-post__title" style="display: flex; font-size: 15px;">
+											<h2 class="services-post__title" >
 												karya ilmiah
+											</h2>
+											<p class="services-post__location">
+												
+											</p>
+										</div>
+									</a>
+									<!-- end services-post module -->
+		
+								</div>
+
+								<div class="col-xl-2 col-md-4 col-sm-6">
+		
+									<!-- services-post module -->
+									<a href="/semua" class="services-post">
+										<div class="services-post__content">
+											<i class="la la-" aria-hidden="true">
+											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-bar-chart-steps" viewBox="0 0 16 16">
+												<path d="M.5 0a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-1 0V.5A.5.5 0 0 1 .5 0zM2 1.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1z"/>
+											  </svg>
+										</i>
+											<h2 class="services-post__title" >
+												semua...
 											</h2>
 											<p class="services-post__location">
 												
@@ -549,7 +602,7 @@
 						<p class="section-header__description">
 							Berbagai Kategori postingan dengan gambar.
 						</p>
-						<div class="semua" style="display: flex; justify-content: end;"><a href="semua.html"><p class="semuat" style="text-decoration: underline;">lihat semua</p></a></div>
+						<!-- <div class="semua" style="display: flex; justify-content: end;"><a href="semua"><p class="semuat" style="text-decoration: underline;"></p></a></div> -->
 						
 						
 					</div>
@@ -575,6 +628,7 @@
 										<a class="place-post__like" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
 									   </div>
 									</div>
+									
 									<div class="place-post__gal-box">
 										<img style="border-radius: 10px;" src="asset/sukses.jpg" class="place-post__image" src="upload/g2.jpg" alt="place-image">
 										<!-- <span class="place-post__rating">9.3</span> -->
@@ -591,7 +645,7 @@
 												54 Reviews
 											</span>
 										</p>
-										<a class="contact-form__submit" href="bacafotografi.html" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
+										<a class="contact-form__submit" href="/bacaartikel" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
 													<i class="fa fa-caret-right" aria-hidden="true"></i>
 													Baca
 												</a>
@@ -635,7 +689,7 @@
 												54 Reviews
 											</span>
 										</p>
-										<a class="contact-form__submit" href="bacafotografi.html" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
+										<a class="contact-form__submit" href="/bacaartikel" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
 													<i class="fa fa-caret-right" aria-hidden="true"></i>
 													Baca
 												</a>
@@ -679,7 +733,7 @@
 												54 Reviews
 											</span>
 										</p>
-										<a class="contact-form__submit" href="bacafotografi.html" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
+										<a class="contact-form__submit" href="/bacaartikel" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
 													<i class="fa fa-caret-right" aria-hidden="true"></i>
 													Baca
 												</a>
@@ -723,7 +777,7 @@
 												54 Reviews
 											</span>
 										</p>
-										<a class="contact-form__submit" href="bacafotografi.html" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
+										<a class="contact-form__submit" href="/bacaartikel" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
 													<i class="fa fa-caret-right" aria-hidden="true"></i>
 													Baca
 												</a>
@@ -767,7 +821,7 @@
 												54 Reviews
 											</span>
 										</p>
-										<a class="contact-form__submit" href="bacafotografi.html" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
+										<a class="contact-form__submit" href="/bacaartikel" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
 													<i class="fa fa-caret-right" aria-hidden="true"></i>
 													Baca
 												</a>
@@ -811,7 +865,7 @@
 												54 Reviews
 											</span>
 										</p>
-										<a class="contact-form__submit" href="bacafotografi.html" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
+										<a class="contact-form__submit" href="/bacaartikel" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
 													<i class="fa fa-caret-right" aria-hidden="true"></i>
 													Baca
 												</a>
@@ -965,78 +1019,78 @@
 
 		<!-- footer block module
 			================================================== -->
-		<footer class="footer">
-			<div class="container">
-
-				<div class="footer__up-part">
-					<div class="row">
-						<div class="col-md-4">
-
-							<div class="footer__widget text-widget">
-								<img src="images/logo-black.png" alt="triptip-logo">
-								<p class="footer__widget-description">
-									Lorem ipsum dolor sit amet, conse ctetuer adipiscing elit, sed diam nonu mmy nibh euismod tincidunt ut laoreet dolore magna aliquam erat. 
-								</p>
+			<footer class="footer">
+				<div class="container">
+	
+					<div class="footer__up-part">
+						<div class="row">
+							<div class="col-md-4">
+	
+								<div class="footer__widget text-widget">
+									<img src="images/logo-black.png" alt="triptip-logo">
+									<p class="footer__widget-description">
+										Menggembangkan dunia baca tulis menggunakan website menuju dunia digital. Temukan berbagai artikel, postingan, cerita, jurnal dan buat postinganmu sendiri disini	
+									</p>
+								</div>
+	
 							</div>
-
-						</div>
-						<div class="col-md-4">
-
-							<div class="footer__widget subscribe-widget">
-								<h2 class="footer__widget-title">
-									Subscribe
-								</h2>
-								<p class="footer__widget-description">
-									Be notified about new locations
-								</p>
-								<form class="footer__subscribe-form">
-									<input class="footer__subscribe-input" type="text" name="email-sub" id="email-sub" placeholder="Enter your Email" />
-									<button class="footer__subscribe-button" type="submit">
-										<i class="la la-arrow-circle-o-right" aria-hidden="true"></i>
-									</button>
-								</form>
+							<div class="col-md-4">
+	
+								<div class="footer__widget subscribe-widget">
+									<h2 class="footer__widget-title">
+										Alamat
+									</h2>
+									<p class="footer__widget-description">
+										Jl. Pandawa No. 66, Dusun Mawar RT 001 RW 001 Desa Pandan
+									</p>
+									<form class="footer__subscribe-form">
+										<input class="footer__subscribe-input" type="text" name="email-sub" id="email-sub" placeholder="Enter your Email" />
+										<button class="footer__subscribe-button" type="submit">
+											<i class="la la-arrow-circle-o-right" aria-hidden="true"></i>
+										</button>
+									</form>
+								</div>
+	
 							</div>
-
-						</div>
-						<div class="col-md-4">
-
-							<div class="footer__widget text-widget">
-								<h2 class="footer__widget-title">
-									Contact Info 
-								</h2>
-								<p class="footer__widget-description">
-									1000 5th Ave to Central Park, New York <br>
-									+1 246-345-0695 <br>
-									info@example.com
-								</p>
+							<div class="col-md-4">
+	
+								<div class="footer__widget text-widget">
+									<h2 class="footer__widget-title">
+										Kontak
+									</h2>
+									<p class="footer__widget-description">
+										+62 898-1342-6657<br>
+									info@example.com <br>
+									YouTube: ngu_never122
+									</p>
+								</div>
+	
 							</div>
-
 						</div>
 					</div>
-				</div>
-
-				<div class="footer__down-part">
-					<div class="row">
-						<div class="col-md-7">
-							<p class="footer__copyright">
-								
-							</p>
-						</div>
-						<div class="col-md-5">
-							<ul class="footer__social-list">
-								<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-								<li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
-								<li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
-							</ul>
+	
+					<div class="footer__down-part">
+						<div class="row">
+							<div class="col-md-7">
+								<p class="footer__copyright">
+									
+								</p>
+							</div>
+							<div class="col-md-5">
+								<ul class="footer__social-list">
+									<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
+									<li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
+	
 				</div>
-
-			</div>
-
-		</footer>
+	
+			</footer>
 		<!-- End footer -->
 
 	</div>

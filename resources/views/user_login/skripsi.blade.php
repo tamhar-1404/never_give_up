@@ -15,109 +15,101 @@
 	<link rel="stylesheet" href="css/triptip-assets.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
     <style>
-        /* body{
-            padding-top: 5%;
-			background-image: url();
-        } */
-		.card-text{
-			text-align: center;
-		}
-		.card-text-judul{
-			text-align: center;
-			color: black;
-		}
-    </style>
+        .card-text{
+             text-align: center;
+         }
+         .card-text-judul{
+             text-align: center;
+             color: black;
+         }
+     </style>
+ 
+ </head>
+ <body><section class="services" style="padding: 80px;">
+     <div class="container">
+ 
+     <!-- Container -->
+     <div id="container">
+     <header class="clearfix dark-header-style fullwidth-with-search">
 
-</head>
-<body><section class="services" style="padding: 80px;">
-	<div class="container">
-	<!-- Container -->
-	<div id="container">
-		<!-- Header
-		    ================================================== -->
-			<header class="clearfix dark-header-style fullwidth-with-search">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
 
-				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-					<div class="container">
-	
-						<a class="navbar-brand" href="index.html">
-							<img src="images/logo.png" alt="">
-						</a>
-	
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						</button>
-	
-						<div class="collapse navbar-collapse" id="navbarSupportedContent">
-							<ul class="navbar-nav mr-auto">
-								<li>
-									<a class="active" href="/user-login">Beranda <i class="" aria-hidden="true"></i></a>
-								</li>
-								<li ><a  href="#">Kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-									<div class="megadropdown">
-										<div class="dropdown-box">
-											
-											<ul class="dropdown-list">
-												<li><a href="/artikel">artikel</a></li>
-												<li><a href="/cerpen">cerpen</a></li>
-												<li><a href="/puisi">puisi</a></li>
-												<li><a href="/photography">fotografi</a></li>
-												</ul>
-										</div>
-										<div class="dropdown-box">
-											<ul class="dropdown-list">
-											
-												<li><a href="/makalah">makalah</a></li>
-												<li><a href="/skripsi">skripsi</a></li>
-												<li><a href="/ilmiah">karya ilmiah</a></li>
-											</ul>
-										</div>
-										<div class="dropdown-box">
-											<ul class="dropdown-list">
-												<li><a href="/diary">diary</a></li>
-												<li><a href="/ilustrasi">ilustrasi</a></li>
-												<li><a href="/pantun">pantun</a></li>
-												<li><a href="/essai">esai</a></li>
-											
-												</ul>
-										</div>
-									</div>
-								</li>
-								<li><a href="/contact">Hubungi Kami</a></li>	
-							</ul>
-							<a href="/user-login" class="add-list-btn btn-default">Kembali</a>
-	
-					</div>
-				</nav>
-			</header>
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="">
+        </a>
 
-			<div class="listing-detail__buttons listing-detail__buttons-icons ">
-				<div style="margin-bottom: 2%; display: flex; justify-content: space-between " >
-				<h1 >													
-					Cerpen	</h1>
-					<form class="search-form"  >
-						<div class="search-form__input-holders" style="width: 100% ;">
-							<input class="search-form__input" type="text" name="search-event" placeholder="Cari Judul Postingan" >
-								<a class="btn-default" href="#">
-									<i class="fa fa-search" aria-hidden="true"></i>
-								</a>
-								</div>
-							</form >
-						</div>
-					</div>
-		<!-- End Header -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-		<!-- add-listing
-			================================================== -->
-		<!-- <section class="add-listing">
-			<div class="add-listing__title-box">
-				<div class="container">
-					<h1 class="add-listing__title">
-						Add New Listing
-					</h1>
-				</div>
-			</div> -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li>
+                    <a class="active" href="/user-login">Beranda <i class="" aria-hidden="true"></i></a>
+                </li>
+                <li ><a  href="#">Kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                    <div class="megadropdown">
+                        <div class="dropdown-box">
+                            
+                            <ul class="dropdown-list">
+                                <li><a href="/artikel">artikel</a></li>
+                                <li><a href="/cerpen">cerpen</a></li>
+                                <li><a href="/puisi">puisi</a></li>
+                                <li><a href="/photography">fotografi</a></li>
+                                </ul>
+                        </div>
+                        <div class="dropdown-box">
+                            <ul class="dropdown-list">
+                            
+                                <li><a href="/makalah">makalah</a></li>
+                                <li><a href="/skripsi">skripsi</a></li>
+                                <li><a href="/ilmiah">karya ilmiah</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-box">
+                            <ul class="dropdown-list">
+                                <li><a href="/diary">diary</a></li>
+                                <li><a href="/ilustrasi">ilustrasi</a></li>
+                                <li><a href="/pantun">pantun</a></li>
+                                <li><a href="/essai">esai</a></li>
+                            
+                                </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="/contact">Hubungi Kami</a></li>	
+            </ul>
+            <a href="/user-login" class="add-list-btn btn-default">Kembali</a>
 
+    </div>
+</nav>
+</header>
+ 
+         <!-- add-listing
+             ================================================== -->
+         <!-- <section class="add-listing">
+             <div class="add-listing__title-box">
+                 <div class="container">
+                     <h1 class="add-listing__title">
+                         Add New Listing
+                     </h1>
+                 </div>
+             </div> -->
+             <div class="listing-detail__buttons listing-detail__buttons-icons ">
+             <div style="margin-bottom: 2%; display: flex; justify-content: space-between " >
+             <h1 >													
+                 Skripsi	</h1>
+                 <form class="search-form"  >
+                     <div class="search-form__input-holders" style="width: 100% ;">
+                         <input class="search-form__input" type="text" name="search-event" placeholder="What are you looking for?" >
+                             <a class="btn-default" href="#">
+                                 <i class="fa fa-search" aria-hidden="true"></i>
+                             </a>
+                             </div>
+                         </form >
+                     </div>
+                 </div>
 			
 			<!-- form listing -->
 			<div class="user-detail__favorites-box iso-call" data-item-showen="3">
@@ -149,17 +141,19 @@
 								<ion-icon style="font-size: 30px;" name="ellipsis-vertical-outline"></ion-icon>
 							   </div>
 							</div>
-							<img style="border-radius: 10px;" src="asset/baik.jpg" class="card-img-top" alt="" srcset="">
-							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon>
-							<p class="card-text-judul">Beberapa Hal Yang Perlu Diterapkan Agar baik</p>
-							
-							<p class="card-text">Jika diberi pertanyaan siapa sih yang ingin baik? Mungkin semua orang yang diberi pertanyaan tersebut akan mengangkat tangan mereka tinggi-tinggi. Namun, masih banyak orang yang belum mengerti apa itu kebaikan ...</p>
-							<div style="width: 100%; display: flex; justify-content: center;  " >
-								<a class="contact-form__submit" href="cerpen-baik.html" style="margin-right: 20px; margin-bottom: 10px; ">
-									<i class="fa fa-caret-right" aria-hidden="true"></i>
-									Baca
-								</a>
+							<div style="display: flex; justify-content: center;">
+								<img style="border-radius: 10px; width: 50%;" src="asset/skripsi1.jpeg" class="card-img-top" alt="" srcset="">
 							</div>
+							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon>
+							<p class="card-text-judul">Beberapa Hal Yang Perlu Diterapkan Agar Sukses</p>
+							
+							<p class="card-text">Jika diberi pertanyaan siapa sih yang ingin sukses? Mungkin semua orang yang diberi pertanyaan tersebut akan mengangkat tangan mereka tinggi-tinggi. Namun, masih banyak orang yang belum mengerti apa itu kesuksesan ...</p>
+							<div style="width: 100%; display: flex; justify-content: center;  " >
+												<a class="contact-form__submit" href="/skripsi-detail" style="margin-right: 20px; margin-bottom: 10px; ">
+													<i class="fa fa-caret-right" aria-hidden="true"></i>
+													Baca
+												</a>
+											</div>
 						</div>
 						</div>
 					</div>
@@ -194,17 +188,19 @@
 								<ion-icon style="font-size: 30px;" name="ellipsis-vertical-outline"></ion-icon>
 							   </div>
 							</div>
-							<img style="border-radius: 10px;" src="asset/baik.jpg" class="card-img-top" alt="" srcset="">
+							<div style="display: flex; justify-content: center;">
+								<img style="border-radius: 10px; width: 50%;" src="asset/skripsi1.jpeg" class="card-img-top" alt="" srcset="">
+							</div>							
 							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon>
-							<p class="card-text-judul">Beberapa Hal Yang Perlu Diterapkan Agar baik</p>
+							<p class="card-text-judul">Beberapa Hal Yang Perlu Diterapkan Agar Sukses</p>
 							
-							<p class="card-text">Jika diberi pertanyaan siapa sih yang ingin baik? Mungkin semua orang yang diberi pertanyaan tersebut akan mengangkat tangan mereka tinggi-tinggi. Namun, masih banyak orang yang belum mengerti apa itu kebaikan ...</p>
-							<div style="width: 100%; display: flex; justify-content: center;  " >
-								<a class="contact-form__submit" href="" style="margin-right: 20px; margin-bottom: 10px; ">
-									<i class="fa fa-caret-right" aria-hidden="true"></i>
-									Baca
-								</a>
-							</div>
+							<p class="card-text">Jika diberi pertanyaan siapa sih yang ingin sukses? Mungkin semua orang yang diberi pertanyaan tersebut akan mengangkat tangan mereka tinggi-tinggi. Namun, masih banyak orang yang belum mengerti apa itu kesuksesan ...</p>
+                            <div style="width: 100%; display: flex; justify-content: center;  " >
+												<a class="contact-form__submit" href="/makalah-pkn" style="margin-right: 20px; margin-bottom: 10px; ">
+													<i class="fa fa-caret-right" aria-hidden="true"></i>
+													Baca
+												</a>
+											</div>
 						</div>
 						</div>
 					</div>
@@ -240,17 +236,19 @@
 								<ion-icon style="font-size: 30px;" name="ellipsis-vertical-outline"></ion-icon>
 							   </div>
 							</div>
-							<img style="border-radius: 10px;" src="asset/baik.jpg" class="card-img-top" alt="" srcset="">
-							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon>
-							<p class="card-text-judul">Beberapa Hal Yang Perlu Diterapkan Agar baik</p>
-							
-							<p class="card-text">Jika diberi pertanyaan siapa sih yang ingin baik? Mungkin semua orang yang diberi pertanyaan tersebut akan mengangkat tangan mereka tinggi-tinggi. Namun, masih banyak orang yang belum mengerti apa itu kebaikan ...</p>
-							<div style="width: 100%; display: flex; justify-content: center;  " >
-								<a class="contact-form__submit" href="" style="margin-right: 20px; margin-bottom: 10px; ">
-									<i class="fa fa-caret-right" aria-hidden="true"></i>
-									Baca
-								</a>
+							<div style="display: flex; justify-content: center;">
+								<img style="border-radius: 10px; width: 50%;" src="asset/skripsi1.jpeg" class="card-img-top" alt="" srcset="">
 							</div>
+							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon>
+							<p class="card-text-judul">Beberapa Hal Yang Perlu Diterapkan Agar Sukses</p>
+							
+							<p class="card-text">Jika diberi pertanyaan siapa sih yang ingin sukses? Mungkin semua orang yang diberi pertanyaan tersebut akan mengangkat tangan mereka tinggi-tinggi. Namun, masih banyak orang yang belum mengerti apa itu kesuksesan ...</p>
+							<div style="width: 100%; display: flex; justify-content: center;  " >
+												<a class="contact-form__submit" href="/makalah-pkn" style="margin-right: 20px; margin-bottom: 10px; ">
+													<i class="fa fa-caret-right" aria-hidden="true"></i>
+													Baca
+												</a>
+											</div>
 						</div>
 						</div>
 					</div>
@@ -269,7 +267,7 @@
 						<div class="card" style="border-radius: 15px;">
 						<div class="card-body">
 							<div style=" display: flex; justify-content:space-between;">
-								<img class="" style="border-radius: 100%; width: 30px; height: 30px; " src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFRgVFhUYGBgaGBwYGhgYGhgYGRg
+								<img class="card-text" style="border-radius: 100%; width: 30px; height: 30px; " src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFRgVFhUYGBgaGBwYGhgYGhgYGRg
 								YGBgZGhgaGBgcIS4lHB4rIRgYJjgmKy8xNTU1GiQ7QDs0Py42NTEBDAwMEA8QHBISGjQrISs0NDQ0NDQ0NDQ0NDQ0MTQ0NDQ0NDQ0
 								NDQ1NDQxNDE0MTQxND8xMTQ0NDQ0MTQxMTQ9Ov/AABEIAKgBLAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAADAAECBAYFBwj
 								/xABAEAACAQEFBQUGBQMCBQUAAAABAgARAxIhMUEEBVFhcQYiUoGREzJCobHBYnLR4fAjgpIHohQzQ7LxJFNjg8L/xAAaAQADAQEBAQAA
@@ -290,17 +288,19 @@
 								<ion-icon style="font-size: 30px;" name="ellipsis-vertical-outline"></ion-icon>
 							   </div>
 							</div>
-							<img style="border-radius: 10px;" src="asset/baik.jpg" class="card-img-top" alt="" srcset="">
-							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon>
-							<p class="card-text-judul">Beberapa Hal Yang Perlu Diterapkan Agar baik</p>
-							
-							<p class="card-text">Jika diberi pertanyaan siapa sih yang ingin baik? Mungkin semua orang yang diberi pertanyaan tersebut akan mengangkat tangan mereka tinggi-tinggi. Namun, masih banyak orang yang belum mengerti apa itu kebaikan ...</p>
-							<div style="width: 100%; display: flex; justify-content: center;  " >
-								<a class="contact-form__submit" href="" style="margin-right: 20px; margin-bottom: 10px; ">
-									<i class="fa fa-caret-right" aria-hidden="true"></i>
-									Baca
-								</a>
+							<div style="display: flex; justify-content: center;">
+								<img style="border-radius: 10px; width: 50%;" src="asset/skripsi1.jpeg" class="card-img-top" alt="" srcset="">
 							</div>
+							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon>
+							<p class="card-text-judul">Beberapa Hal Yang Perlu Diterapkan Agar Sukses</p>
+							
+							<p class="card-text">Jika diberi pertanyaan siapa sih yang ingin sukses? Mungkin semua orang yang diberi pertanyaan tersebut akan mengangkat tangan mereka tinggi-tinggi. Namun, masih banyak orang yang belum mengerti apa itu kesuksesan ...</p>
+							<div style="width: 100%; display: flex; justify-content: center;  " >
+												<a class="contact-form__submit" href="/makalah-pkn" style="margin-right: 20px; margin-bottom: 10px; ">
+													<i class="fa fa-caret-right" aria-hidden="true"></i>
+													Baca
+												</a>
+											</div>
 						</div>
 						</div>
 					</div>
@@ -314,7 +314,7 @@
 						<div class="card" style="border-radius: 15px;">
 						<div class="card-body">
 							<div style=" display: flex; justify-content:space-between;">
-								<img class="" style="border-radius: 100%; width: 30px; height: 30px; " src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFRgVFhUYGBgaGBwYGhgYGhgYGRg
+								<img class="card-text" style="border-radius: 100%; width: 30px; height: 30px; " src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBUVFRgVFhUYGBgaGBwYGhgYGhgYGRg
 								YGBgZGhgaGBgcIS4lHB4rIRgYJjgmKy8xNTU1GiQ7QDs0Py42NTEBDAwMEA8QHBISGjQrISs0NDQ0NDQ0NDQ0NDQ0MTQ0NDQ0NDQ0
 								NDQ1NDQxNDE0MTQxND8xMTQ0NDQ0MTQxMTQ9Ov/AABEIAKgBLAMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAADAAECBAYFBwj
 								/xABAEAACAQEFBQUGBQMCBQUAAAABAgARAxIhMUEEBVFhcQYiUoGREzJCobHBYnLR4fAjgpIHohQzQ7LxJFNjg8L/xAAaAQADAQEBAQAA
@@ -335,17 +335,19 @@
 								<ion-icon style="font-size: 30px;" name="ellipsis-vertical-outline"></ion-icon>
 							   </div>
 							</div>
-							<img style="border-radius: 10px;" src="asset/baik.jpg" class="card-img-top" alt="" srcset="">
-							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon>
-							<p class="card-text-judul">Beberapa Hal Yang Perlu Diterapkan Agar baik</p>
-							
-							<p class="card-text">Jika diberi pertanyaan siapa sih yang ingin baik? Mungkin semua orang yang diberi pertanyaan tersebut akan mengangkat tangan mereka tinggi-tinggi. Namun, masih banyak orang yang belum mengerti apa itu kebaikan ...</p>
-							<div style="width: 100%; display: flex; justify-content: center;  " >
-								<a class="contact-form__submit" href="" style="margin-right: 20px; margin-bottom: 10px; ">
-									<i class="fa fa-caret-right" aria-hidden="true"></i>
-									Baca
-								</a>
+							<div style="display: flex; justify-content: center;">
+								<img style="border-radius: 10px; width: 50%;" src="asset/skripsi1.jpeg" class="card-img-top" alt="" srcset="">
 							</div>
+							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon>
+							<p class="card-text-judul">Beberapa Hal Yang Perlu Diterapkan Agar Sukses</p>
+							
+							<p class="card-text">Jika diberi pertanyaan siapa sih yang ingin sukses? Mungkin semua orang yang diberi pertanyaan tersebut akan mengangkat tangan mereka tinggi-tinggi. Namun, masih banyak orang yang belum mengerti apa itu kesuksesan ...</p>
+							<div style="width: 100%; display: flex; justify-content: center;  " >
+												<a class="contact-form__submit" href="/makalah-pkn" style="margin-right: 20px; margin-bottom: 10px; ">
+													<i class="fa fa-caret-right" aria-hidden="true"></i>
+													Baca
+												</a>
+											</div>
 						</div>
 						</div>
 					</div>
@@ -381,17 +383,19 @@
 								<ion-icon style="font-size: 30px;" name="ellipsis-vertical-outline"></ion-icon>
 							   </div>
 							</div>
-							<img style="border-radius: 10px;" src="asset/baik.jpg" class="card-img-top" alt="" srcset="">
-							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon>
-							<p class="card-text-judul">Beberapa Hal Yang Perlu Diterapkan Agar baik</p>
-							
-							<p class="card-text">Jika diberi pertanyaan siapa sih yang ingin baik? Mungkin semua orang yang diberi pertanyaan tersebut akan mengangkat tangan mereka tinggi-tinggi. Namun, masih banyak orang yang belum mengerti apa itu kebaikan ...</p>
-							<div style="width: 100%; display: flex; justify-content: center;  " >
-								<a class="contact-form__submit" href="" style="margin-right: 20px; margin-bottom: 10px; ">
-									<i class="fa fa-caret-right" aria-hidden="true"></i>
-									Baca
-								</a>
+							<div style="display: flex; justify-content: center;">
+								<img style="border-radius: 10px; width: 50%;" src="asset/skripsi1.jpeg" class="card-img-top" alt="" srcset="">
 							</div>
+							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon>
+							<p class="card-text-judul">Beberapa Hal Yang Perlu Diterapkan Agar Sukses</p>
+							
+							<p class="card-text">Jika diberi pertanyaan siapa sih yang ingin sukses? Mungkin semua orang yang diberi pertanyaan tersebut akan mengangkat tangan mereka tinggi-tinggi. Namun, masih banyak orang yang belum mengerti apa itu kesuksesan ...</p>
+							<div style="width: 100%; display: flex; justify-content: center;  " >
+												<a class="contact-form__submit" href="/makalah-pkn" style="margin-right: 20px; margin-bottom: 10px; ">
+													<i class="fa fa-caret-right" aria-hidden="true"></i>
+													Baca
+												</a>
+											</div>
 						</div>
 						</div>
 					</div>
@@ -399,29 +403,57 @@
 
 				</div>
 
-			</div>
-			<br>
-			<div style="display: flex; justify-content: center;">
-				<nav aria-label="Page navigation example" >
-					<ul class="pagination">
-						<li class="page-item">
-							<a class="page-link" style="color:rgb(236, 107, 128);" href="#" aria-label="Previous">
-								<span aria-hidden="true">&laquo;</span>
-							</a>
-					  </li>
-					  
-					  <li  class="page-item"><a class="page-link" style="color:rgb(236, 107, 128);" href="#">1</a></li>
-					  <li class="page-item"><a class="page-link" style="color:rgb(236, 107, 128);" href="#">2</a></li>
-					  <li class="page-item"><a class="page-link" style="color:rgb(236, 107, 128);" href="#">3</a></li>
-					  <li class="page-item">
-						<a class="page-link" style="color:rgb(236, 107, 128);" href="#" aria-label="Next">
-						  <span aria-hidden="true">&raquo;</span>
-						</a>
-					  </li>
-					</ul>
-				  </nav>
+				<div class="item">
+					
+					<!-- place-post module  fotografi -->
+					<div class="place-post">
+						<div class="place-post__gal-box">
+							<img class="place-post__image" src="upload/g2.jpg" alt="place-image">
+							<!-- <span class="place-post__rating">9.3</span> -->
+							<a class="place-post__like active" href="#"><i class="fa fa-heart" aria-hidden="true"></i></a>
+						</div>
+						<div class="place-post__content">
+						<h2 class="place-post__title">
+								<a href="#">Fotografi Bukan Sekedar Cekrek!</a>
+							</h2>
+							<p class="place-post__description">
+								Fotografi<span class="place-post__description-review">
+									<i class="fa fa-comment-o" aria-hidden="true"></i>
+									54 Reviews
+								</span>
+							</p>
+							<a href="#" class="btn btn-primary">Lihat</a>
+
+							</div>
+					</div>
+					<!-- end place-post module fotografi-->
+
 				</div>
-		</section>
+			
+			</div>	
+
+			<br>
+					<div style="display: flex; justify-content: center;">
+						<nav aria-label="Page navigation example" >
+							<ul class="pagination">
+								<li class="page-item">
+									<a class="page-link" style="color:rgb(236, 107, 128);" href="#" aria-label="Previous">
+										<span aria-hidden="true">&laquo;</span>
+									</a>
+							  </li>
+							  
+							  <li  class="page-item"><a class="page-link" style="color:rgb(236, 107, 128);" href="#">1</a></li>
+							  <li class="page-item"><a class="page-link" style="color:rgb(236, 107, 128);" href="#">2</a></li>
+							  <li class="page-item"><a class="page-link" style="color:rgb(236, 107, 128);" href="#">3</a></li>
+							  <li class="page-item">
+								<a class="page-link" style="color:rgb(236, 107, 128);" href="#" aria-label="Next">
+								  <span aria-hidden="true">&raquo;</span>
+								</a>
+							  </li>
+							</ul>
+						  </nav>
+						</div>
+								</section>
 					
 					<!-- form box -->
 					<!-- <div class="add-listing__form-box" id="opening-box">
@@ -561,7 +593,7 @@
 								<input class="add-listing__input-file" type="file" name="file" id="file"/>
 								<div class="add-listing__input-file-wrap">
 									<i class="la la-cloud-upload"></i>
-									<p>Click here to upload your asset</p>
+									<p>Click here to upload your images</p>
 								</div>
 							</div>							
 						</div>
@@ -705,3 +737,4 @@
 </body>
 
 <!-- Mirrored from nunforest.com/triptip-demo/add-listing.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 10:04:22 GMT -->
+</html>
