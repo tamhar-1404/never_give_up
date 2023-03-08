@@ -71,11 +71,14 @@ Route::get('/kontak', function () {
 
 //admin
 Route::group(['middleware'=> ['auth','hakakses:Admin']], function() {
-    Route::get('/admin', [adminController::class, 'indexadmin'])->name('admin');
+    Route::get('/admin', [AdminController::class, 'indexadmin'])->name('admin');
     Route::get('/pesan-dari-user', [AdminController::class, 'pesan'])->name('pesan-user');
     Route::get('/data-user', [AdminController::class, 'data_user'])->name('data-user');
     Route::get('/cerpen_admin', [AdminController::class, 'cerpen_admin'])->name('cerpen_admin');
+    Route::post('/uprove/{id}', [CerpenController::class, 'uprove'])->name('uprove');
 });
+
+//user_login
 Route::group(['middleware'=> ['auth', 'hakakses:user']], function(){
     Route::get('/cerpen', [CerpenController::class, 'cerpen'])->name('cerpen');
     Route::get('/makalah', [MakalahController::class, 'makalah'])->name('makalah');

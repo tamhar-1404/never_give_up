@@ -10,3 +10,4 @@ class PuisiPertiwiController extends Controller
         return view('user_login.puisi-pertiwi');
     }
 }
+?>
