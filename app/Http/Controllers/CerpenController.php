@@ -37,8 +37,8 @@ class CerpenController extends Controller
     }
    
     public function create_cerpen(){
-        $cerpen = cerpen::all();
-        return view ('user_login/create/create_cerpen', ['cerpen'=>$cerpen]);
+        $user = user::all();
+        return view ('user_login/create/create_cerpen', ['user'=>$user]);
     }
 
     public function simpan_cerpen(Request $request){

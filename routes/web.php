@@ -85,10 +85,10 @@ Route::group(['middleware'=> ['auth','hakakses:Admin']], function() {
 Route::group(['middleware'=> ['auth', 'hakakses:user']], function(){
     Route::get('/cerpen', [CerpenController::class, 'cerpen'])->name('cerpen');
     Route::get('/makalah', [MakalahController::class, 'makalah'])->name('makalah');
-Route::get('/puisi-pertiwi', [PuisiPertiwiController::class, 'puisipertiwi'])->name('puisi-pertiwi');
-Route::get('/user-login', function () {
+    Route::get('/puisi-pertiwi', [PuisiPertiwiController::class, 'puisipertiwi'])->name('puisi-pertiwi');
+    Route::get('/user-login', function () {
     return view('user_login.index04b9');
-    Route::get('/create_cerpen', [CerpenController::class, 'create_cerpen']);
+    Route::get('/create_cerpen', [CerpenController::class, 'create_cerpen'])->name('create-cerpen');
     Route::post('/simpan_cerpen', [CerpenController::class, 'simpan_cerpen']);
     
 });

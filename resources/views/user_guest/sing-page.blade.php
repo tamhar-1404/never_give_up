@@ -102,7 +102,10 @@
 							<label class="sign-form__label" for="username">
                                 Email
 							</label>
-							<input class="sign-form__input-text" type="text" name="email" :value="old('email')" required autofocus id="email" placeholder="Email " />
+							<input class="sign-form__input-text @error('email') is-invalid @enderror" type="text" name="email" :value="old('email')" required autofocus id="email" placeholder="Email "  />
+							@error ('email')
+							<p class="text-white">{{$message}}</p>
+							@enderror
 							<label class="sign-form__label" for="password">
 								password
 							</label>

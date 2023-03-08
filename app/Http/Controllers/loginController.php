@@ -32,13 +32,13 @@ class loginController extends Controller
     }
     public function login(Request $request){
         // $this->validate($request, [
-        //     'email' => 'required|exists:users,email',
-        //     'password' => 'required|min:6',
+        //     'email' => 'required|exists:email',
+        //     'password' => 'required|min:8',
         // ],[
         //     'email.required' => 'Masukkan Email Anda !!',
         //     'email.exists' => 'Email Yang Anda Masukkan Belum Terdaftar !!',
         //     'password.required' => 'Masukkan Kata Sandi Anda !!',
-        //     'password.min' => 'Password Minimal 6 Huruf !!',
+        //     'password.min' => 'Password Minimal 8 Huruf !!',
         // ]);
         // toastr()->success('Berhasil Login!');
 
@@ -50,7 +50,7 @@ class loginController extends Controller
         }
         
 
-            return redirect('/sing-page')->with('password','Password Salah');
+            return redirect('/sing-page');
 
     }
 

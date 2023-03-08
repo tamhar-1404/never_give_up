@@ -155,19 +155,12 @@
 					<div class="add-listing__form-box" id="tentang-penulis">
 
 						<h2 class="add-listing__form-title">
-						Tentang Penulis:
+						Posting:
 						</h2>
 
-						<div class="add-listing__form-content">
-							<div class="row">
-								<div class="col-md-11">
-									<label class="add-listing__label" for="list-title">
-										Nama Penulis:
-									</label>
-									<input class="add-listing__input" type="text" name="nama" id="list-title" placeholder="Nama" />
-								</div>
-							</div>
-								</div>
+						@foreach ($user as $item)
+						<input type="hidden" name="default" value="{{$item->id}}"> 
+						@endforeach
 
 					</div>
 					
@@ -390,18 +383,6 @@
 					<!-- form box -->
 					<div class="add-listing__form-box" id="gallery-box">
 
-						<h2 class="add-listing__form-title">
-							Gambar profil:
-						</h2>
-
-						<div class="add-listing__form-content">
-							<div class="add-listing__input-file-box">
-								<input class="add-listing__input-file" type="file" name="foto_profil" id="file" multiple />
-								<div class="add-listing__input-file-wrap">
-									<i class="la la-cloud-upload"></i>  
-								</div>
-							</div>							
-						</div>
                         <h2 class="add-listing__form-title">
 							Gambar cerpen:
 						</h2>
@@ -417,12 +398,10 @@
 					</div>
 					
 					<!-- form box -->
-					
-
 					<div class="center-button" >
 						<button class="add-listing__submit" type="submit" >
 							<a></a><i class="fa fa-paper-plane" aria-hidden="true"></i>
-							Preview and Submit Listing
+							Posting
 						</button></a>
 					</div>
 

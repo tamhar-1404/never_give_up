@@ -52,10 +52,10 @@
 									<div class="dropdown-box">
 										
 										<ul class="dropdown-list">
-											<li><a href="/artikel">artikel</a></li>
-											<li><a href="/cerpen">cerpen</a></li>
-											<li><a href="/puisi">puisi</a></li>
-											<li><a href="/photography">fotografi</a></li>
+											<li><a href="artikel.html">artikel</a></li>
+											<li><a href="cerpen.html">cerpen</a></li>
+											<li><a href="puisi.html">puisi</a></li>
+											<li><a href="photography.html">fotografi</a></li>
 											</ul>
 									</div>
 									<div class="dropdown-box">
