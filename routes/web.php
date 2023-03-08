@@ -59,13 +59,15 @@ Route::get('/user_register', [loginController::class, 'lihat_register'])->name('
 Route::post('/create', [loginController::class,'register'])->name('create');
 //end login
 
+//kategori_user_login
+Route::get('/pilihkategori', [MakalahController::class, 'pilihkategori'])->name('pilihkategori');
 
 
 
 Route::post('/kirim_kontak', [KontakController::class, 'pesan_user'])->name('kontak');
 Route::get('/hapus_kontak/{id}', [Pesan_dari_userController::class, 'hapus_kontak'])->name('hapus_kontak');
 Route::get('/kontak', function () {
-    return view('user_guest.kontak');
+    return view('user_login.kontak');
 });
 
 
@@ -82,9 +84,10 @@ Route::group(['middleware'=> ['auth', 'hakakses:user']], function(){
 Route::get('/puisi-pertiwi', [PuisiPertiwiController::class, 'puisipertiwi'])->name('puisi-pertiwi');
 Route::get('/user-login', function () {
     return view('user_login.index04b9');
+    Route::get('/create_cerpen', [CerpenController::class, 'create_cerpen']);
+    Route::post('/simpan_cerpen', [CerpenController::class, 'simpan_cerpen']);
+    
 });
-Route::get('/create_cerpen', [CerpenController::class, 'create_cerpen']);
-Route::post('/simpan_cerpen', [CerpenController::class, 'simpan_cerpen']);
 
 })
 ?>

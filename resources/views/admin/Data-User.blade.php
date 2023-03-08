@@ -5,7 +5,7 @@
 <!-- Mirrored from themesdesign.in/hexzy/vertical/blue/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 22:31:51 GMT -->
 <head>
     <meta charset="utf-8" />
-    <title>Hexzy - Responsive Admin Dashboard Template</title>
+    <title>Karya Pribadi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta content="Admin Dashboard" name="description" />
     <meta content="ThemeDesign" name="author" />
@@ -228,7 +228,7 @@
                                                         <tbody>
                                                             @foreach ($user as $item)
                                                             <tr>
-                                                                <th > {{$loop->iteration}}</th>
+                                                                <th>{{$loop->iteration}}</th>
                                                                 <td>{{$item->id}}</td>
                                                                 <td>{{$item->username}}</td>
                                                                 <td>{{$item->email}}</td>
@@ -261,8 +261,8 @@
                 </div> <!-- content -->
 
                 <footer class="footer">
-                      © 2019 - 2020 Hexzy <span class="d-none d-md-inline-block"> - Crafted with <i class="mdi mdi-heart text-danger"></i> by <a href="https://1.envato.market/themesdesign" target="_blank">Themesdesign</a>.</span>
-                </footer>
+                    NEVER GIVE UP <span class="d-none d-md-inline-block"> LEADER <i class="mdi mdi-heart text-danger"></i> BY <a href="https://1.envato.market/themesdesign" target="_blank">RAHMAT</a>.</span>
+                </footer> 
 
             </div>
             <!-- End Right content here -->

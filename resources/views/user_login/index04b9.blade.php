@@ -5,7 +5,7 @@
 
 <!-- Mirrored from nunforest.com/triptip-demo/?storefront=envato-elements by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 09:53:49 GMT -->
 <head>
-	<title>Triptip</title>
+	<title>Home</title>
 
 	<meta charset="utf-8">
 
@@ -41,7 +41,7 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav mr-auto">
 							<li>
-								<a class="active" href="index04b9.html">Beranda <i class="" aria-hidden="true"></i></a>
+								<a class="active" href="/">Beranda <i class="" aria-hidden="true"></i></a>
 							</li>
 							<li ><a  href="#">Kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
 								<div class="megadropdown">
@@ -76,7 +76,7 @@
 									
 								</div>
 							</li>
-							<li><a href="contact.html">Hubungi Kami</a></li>
+							<li><a href="/kontak">Hubungi Kami</a></li>
 
 											
 						</ul>

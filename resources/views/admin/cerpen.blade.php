@@ -5,13 +5,13 @@
 <!-- Mirrored from themesdesign.in/hexzy/vertical/blue/layouts-collapse.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 22:32:31 GMT -->
 <head>
         <meta charset="utf-8" />
-        <title>Hexzy - Responsive Admin Dashboard Template</title>
+        <title>Karya Pribadi</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta content="Admin Dashboard" name="description" />
         <meta content="ThemeDesign" name="author" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <link rel="shortcut icon" href="assets/images/users/Dzaky.jpg">
 
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="assets/css/icons.css" rel="stylesheet" type="text/css">

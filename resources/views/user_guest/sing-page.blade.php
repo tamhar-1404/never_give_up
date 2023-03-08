@@ -5,7 +5,7 @@
 
 <!-- Mirrored from nunforest.com/triptip-demo/sign-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 10:04:22 GMT -->
 <head>
-	<title>Triptip</title>
+	<title>Login</title>
 
 	<meta charset="utf-8">
 
@@ -27,7 +27,7 @@
 				<nav class="navbar navbar-expand-lg navbar-light bg-light">
 					<div class="container">
 	
-						<a class="navbar-brand" href="home4.html">
+						<a class="navbar-brand" >
 							<img src="images/logo-black.png" alt="">
 						</a>
 	
@@ -38,28 +38,28 @@
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav mr-auto">
 								<li>
-									<a class="active" href="index04b9.html">Home <i class="" aria-hidden="true"></i></a>
+									<a class="active" href="/index04b9">Home <i class="" aria-hidden="true"></i></a>
 								</li>
 								<li ><a  href="#">kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
 									<div class="megadropdown">
 										<div class="dropdown-box">
 											
 											<ul class="dropdown-list">
-												<li><a href="artikel.html">artikel</a></li>
-												<li><a href="cerpen.html">cerpen</a></li>
-												<li><a href="puisi.html">puisi</a></li>
-												<li><a href="fotografi.html">fotografi</a></li>
-												<li><a href="pantun.html">pantun</a></li>
-												<li><a href="esai.html">esai</a></li>
+												<li><a href="/artikel">artikel</a></li>
+												<li><a href="/cerpen">cerpen</a></li>
+												<li><a href="/puisi">puisi</a></li>
+												<li><a href="/fotografi">fotografi</a></li>
+												<li><a href="/pantun">pantun</a></li>
+												<li><a href="/esai">esai</a></li>
 											</ul>
 										</div>
 										<div class="dropdown-box">
 											<ul class="dropdown-list">
-												<li><a href="diary.html">diary</a></li>
-												<li><a href="ilustrasi.html">ilustrasi</a></li>
-												<li><a href="makalah.html">makalah</a></li>
-												<li><a href="skripsi.html">skripsi</a></li>
-												<li><a href="ilmiah.html">karya ilmiah</a></li>
+												<li><a href="/diary">diary</a></li>
+												<li><a href="/ilustrasi">ilustrasi</a></li>
+												<li><a href="/makalah">makalah</a></li>
+												<li><a href="/skripsi">skripsi</a></li>
+												<li><a href="/ilmiah">karya ilmiah</a></li>
 											</ul>
 										</div>
 										
@@ -68,7 +68,7 @@
 								
 							</ul>
 							<ul class="navbar-nav ml-auto right-list">
-								<li><a href="sign-page.html"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Sign In</a></li>
+								<li><a href="/user_register"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Register</a></li>
 								
 							</ul>
 							

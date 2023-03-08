@@ -38,7 +38,7 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav mr-auto">
 							<li>
-								<a class="active" href="home4.html">Home <i class="" aria-hidden="true"></i></a>
+								<a class="active" href="/">Home <i class="" aria-hidden="true"></i></a>
 								
 							</li>
 							<li ><a  href="#">Kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>

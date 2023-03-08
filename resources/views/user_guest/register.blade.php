@@ -5,7 +5,7 @@
 
 <!-- Mirrored from nunforest.com/triptip-demo/sign-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 10:04:22 GMT -->
 <head>
-	<title>Triptip</title>
+	<title>Register</title>
 
 	<meta charset="utf-8">
 
@@ -38,33 +38,9 @@
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav mr-auto">
 								<li>
-									<a class="active" href="index04b9.html">Home <i class="" aria-hidden="true"></i></a>
+									<a class="active" href="/">Home <i class="" aria-hidden="true"></i></a>
 								</li>
-								<li ><a  href="#">kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-									<div class="megadropdown">
-										<div class="dropdown-box">
-											
-											<ul class="dropdown-list">
-												<li><a href="artikel.html">artikel</a></li>
-												<li><a href="cerpen.html">cerpen</a></li>
-												<li><a href="puisi.html">puisi</a></li>
-												<li><a href="fotografi.html">fotografi</a></li>
-												<li><a href="pantun.html">pantun</a></li>
-												<li><a href="esai.html">esai</a></li>
-											</ul>
-										</div>
-										<div class="dropdown-box">
-											<ul class="dropdown-list">
-												<li><a href="diary.html">diary</a></li>
-												<li><a href="ilustrasi.html">ilustrasi</a></li>
-												<li><a href="makalah.html">makalah</a></li>
-												<li><a href="skripsi.html">skripsi</a></li>
-												<li><a href="ilmiah.html">karya ilmiah</a></li>
-											</ul>
-										</div>
-										
-									</div>
-								</li>
+								
 								
 							</ul>
 							<ul class="navbar-nav ml-auto right-list">
