@@ -54,28 +54,6 @@ class loginController extends Controller
 
     }
 
-    public function login1(Request $request)
-    {
-        $user = user::all();
-
-        $user = $request->only('email', 'password');
-
-        if (user::attempt($user)) {
-                // login user setelah berhasil registrasi
-            user::login($user);
-
-            if ($user->role == 'admin') {
-                return redirect()->route('admin.index');
-            } else {
-                return redirect()->route('user_login.index04b9');
-            };
-        }
-
-        // return back()->withErrors([
-        //     'email' => 'The provided credentials do not match our records.',
-        // ]);
-    }
-
     public function register(Request $request)
     {
     // $this->validate($request, [

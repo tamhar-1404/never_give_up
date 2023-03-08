@@ -25,6 +25,6 @@ class UserSeeder extends Seeder
                 'remember_token' => Str::random (60),
             ],
         ];
-        User::insert($user);
+        Users::insert($user);
     }
 }
