@@ -99,7 +99,7 @@ class loginController extends Controller
             
         }$user->save();
         
-        return redirect('/');
+        return redirect('/sing-page');
 
     
     }

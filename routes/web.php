@@ -17,6 +17,7 @@ use App\Http\Controllers\Fotografi1Controller;
 use App\Http\Controllers\Ilustrasi1Controller;
 use App\Http\Controllers\PuisiPertiwiController;
 use App\Http\Controllers\loginController;
+use App\Http\Controllers\IndexController;
 use App\Http\Controllers\adminController;
 use App\Http\Middleware\admin;
 use App\Http\Middleware\Auth;
@@ -86,5 +87,12 @@ Route::get('/user-login', function () {
 Route::get('/create_cerpen', [CerpenController::class, 'create_cerpen']);
 Route::post('/simpan_cerpen', [CerpenController::class, 'simpan_cerpen']);
 
+// userlogin
+Route::get('/contact', [IndexController:: class, 'contact'])->name('contact');
+Route::get('/pilihkategori', [IndexController:: class, 'pilihkategori'])->name('pilihkategori');
+Route::get('/postingartikel', [IndexController:: class, 'postingartikel'])->name('postingartikel');
+Route::get('/userpage', [IndexController:: class, 'userpage'])->name('userpage');
 })
 ?>
+
+

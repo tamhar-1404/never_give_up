@@ -93,152 +93,223 @@
 
 		<!-- discover-module section
 			================================================== -->
-		<section class="discover discover-best">
-			<div class="container">
+			<section class="discover discover-best">
+				<div class="container">
+	
+					<p class="discover__description">
+						Temukan karya tulis yang kau cari
+					</p>
+	
+					<h1 class="discover__title places-tab">
+						Karya Pribadi
+					</h1>
+					<form class="discover__form discover__form-favourite">
+						<input class="discover__form-input discover__form-input-favourite" type="text" name="place-event" id="place-event" placeholder="Apa yang Ingin Anda Cari?" />
+						
+						<select class="discover__form-input discover__form-input-favourite js-example-basic-multiple">
+							<option>Kategori: </option>
+							<option>Artikel</option>
+							<option>Cerpen</option>
+							<option>Puisi</option>
+							<option>Diary</option>
+							<option>Fotografi</option>
+							<option>Ilustrasi</option>
+							<option>Makalah</option>
+							<option>Skripsi</option>
+							<option>Pantun</option>
+							<option>Essai</option>
+							<option>Karya Ilmiah</option>
+						</select>
+						<button class="btn-default btn-default-red" type="submit"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
+					</form>
+	
+					<div class="discover__box-place owl-wrapper">
+						<div class="owl-carousel" data-num="4">
+						
+							<div class="item">
+	
+								<!-- place-gal module -->
+								<div class="place-gal">
+									<img class="place-gal__image" src="upload/top1.jpg" alt="place-image">
+									<div class="place-gal__content">
+										<h2 class="place-gal__title permanent-font">
+											<a href="/artikel">Artikel</a>
+										</h2>
+										<ul class="place-gal__list">
+											<li class="place-gal__list-item">
+												<a href="#">5 Cities</a>
+											</li>
+											<li class="place-gal__list-item">
+												<a href="#">255 Listing</a>
+											</li>
+										</ul>
+										<a class="btn-default" href="bacaartikel.html">
+											<!-- <i class="fa fa-caret-right" aria-hidden="true"></i> -->
+											<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
+												<path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+												<path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"/>
+											  </svg> -->
 
-				<p class="discover__description">
-					Temukan karya pribadi yang kau cari
-				</p>
-
-				<h1 class="discover__title places-tab">
-					Karya Pribadi
-				</h1>
-
-				
-				<div style="display: flex; justify-content: center;">
-					<p style="font-size: 20px; color: white;">REKOMENDASI</p>
-				</div>
-
-				<div class="discover__box-place owl-wrapper">
-					<div class="owl-carousel" data-num="4">
-					
-						<div class="item">
-
-							<!-- place-gal module -->
-							<div class="place-gal">
-								<img class="place-gal__image" src="upload/top1.jpg" alt="place-image">
-								<div class="place-gal__content">
-									<h2 class="place-gal__title permanent-font">
-										<a href="/artikel_guest">Artikel</a>
-									</h2>
-									
-									<a class="btn-default" href="/artikel_guest">
-										<i class="fa fa-caret-right" aria-hidden="true"></i>
-										lihat
-									</a>
+Baca											</a>
+									</div>
 								</div>
+								<!-- end place-gal module -->
+	
 							</div>
-							<!-- end place-gal module -->
-
-						</div>
-					
-						<div class="item">
-
-							<!-- place-gal module -->
-							<div class="place-gal">
-								<img class="place-gal__image" src="upload/top2.jpg" alt="place-image">
-								<div class="place-gal__content">
-									<h2 class="place-gal__title">
-										<a href="photography.html">fotografi</a>
-									</h2>
-									
-									<a class="btn-default" href="sign-page.html">
-										<i class="fa fa-caret-right" aria-hidden="true"></i>
-										lihat
-									</a>
+						
+							<div class="item">
+	
+								<!-- place-gal module -->
+								<div class="place-gal">
+									<img class="place-gal__image" src="upload/top2.jpg" alt="place-image">
+									<div class="place-gal__content">
+										<h2 class="place-gal__title">
+											<a href="#">fotografi</a>
+										</h2>
+										<ul class="place-gal__list">
+											<li class="place-gal__list-item">
+												<a href="#">8 Cities</a>
+											</li>
+											<li class="place-gal__list-item">
+												<a href="#">749 Listing</a>
+											</li>
+										</ul>
+										<a class="btn-default" href="bacafotografi.html">
+											<i class="fa fa-caret-right" aria-hidden="true"></i>
+											<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
+												<path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+												<path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"/>
+											  </svg> -->
+Baca										</a>
+									</div>
 								</div>
+								<!-- end place-gal module -->
+	
 							</div>
-							<!-- end place-gal module -->
-
-						</div>
-					
-						<div class="item">
-
-							<!-- place-gal module -->
-							<div class="place-gal">
-								<img class="place-gal__image" src="upload/top3.jpg" alt="place-image">
-								<div class="place-gal__content">
-									<h2 class="place-gal__title permanent-font">
-										<a href="makalah.html">makalah</a>
-									</h2>
-									
-									<a class="btn-default" href="sign-page.html">
-										<i class="fa fa-caret-right" aria-hidden="true"></i>
-										lihat
-									</a>
+						
+							<div class="item">
+	
+								<!-- place-gal module -->
+								<div class="place-gal">
+									<img class="place-gal__image" src="upload/top3.jpg" alt="place-image">
+									<div class="place-gal__content">
+										<h2 class="place-gal__title permanent-font">
+											<a href="#">makalah</a>
+										</h2>
+										<p class="isi_postingan">mkjffjkfkdkfkvmkmgkdm,vm</p>
+										<a class="btn-default" href="bacamakalah.html">
+											<!-- <i class="fa fa-caret-right" aria-hidden="true"></i> -->
+											<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
+												<path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+												<path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"/>
+											  </svg> -->
+											Baca
+										</a>
+									</div>
 								</div>
+								<!-- end place-gal module -->
+	
 							</div>
-							<!-- end place-gal module -->
-
-						</div>
-					
-						<div class="item">
-
-							<!-- place-gal module -->
-							<div class="place-gal">
-								<img class="place-gal__image" src="upload/top4.jpg" alt="place-image">
-								<div class="place-gal__content">
-									<h2 class="place-gal__title">
-										<a href="essai.html">esai</a>
-									</h2>
-									
-									<a class="btn-default" href="sign-page.html">
-										<i class="fa fa-caret-right" aria-hidden="true"></i>
-										lihat
-									</a>
+						
+							<div class="item">
+	
+								<!-- place-gal module -->
+								<div class="place-gal">
+									<img class="place-gal__image" src="upload/top4.jpg" alt="place-image">
+									<div class="place-gal__content">
+										<h2 class="place-gal__title">
+											<a href="#">esai</a>
+										</h2>
+										<ul class="place-gal__list">
+											<li class="place-gal__list-item">
+												<a href="#">4 Cities</a>
+											</li>
+											<li class="place-gal__list-item">
+												<a href="#">409 Listing</a>
+											</li>
+										</ul>
+										<a class="btn-default" href="bacaessai.html">
+											<!-- <i class="fa fa-caret-right" aria-hidden="true"></i> -->
+											<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
+												<path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+												<path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"/>
+											  </svg> -->
+Baca										</a>
+									</div>
 								</div>
+								<!-- end place-gal module -->
+	
 							</div>
-							<!-- end place-gal module -->
-
-						</div>
-					
-						<div class="item">
-
-							<!-- place-gal module -->
-							<div class="place-gal">
-								<img class="place-gal__image" src="upload/top1.jpg" alt="place-image">
-								<div class="place-gal__content">
-									<h2 class="place-gal__title permanent-font">
-										<a href="ilustrasi.html">ilustrasi</a>
-									</h2>
-									
-									<a class="btn-default" href="sign-page.html">
-										<i class="fa fa-caret-right" aria-hidden="true"></i>
-										lihat
-									</a>
+						
+							<div class="item">
+	
+								<!-- place-gal module -->
+								<div class="place-gal">
+									<img class="place-gal__image" src="upload/top1.jpg" alt="place-image">
+									<div class="place-gal__content">
+										<h2 class="place-gal__title permanent-font">
+											<a href="#">ilustrasi</a>
+										</h2>
+										<ul class="place-gal__list">
+											<li class="place-gal__list-item">
+												<a href="#">5 Cities</a>
+											</li>
+											<li class="place-gal__list-item">
+												<a href="#">255 Listing</a>
+											</li>
+										</ul>
+										<a class="btn-default" href="bacailustrasi.html">
+											<!-- <i class="fa fa-caret-right" aria-hidden="true"></i> -->
+											<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
+												<path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+												<path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"/>
+											  </svg> -->
+											Baca
+										</a>
+									</div>
 								</div>
+								<!-- end place-gal module -->
+	
 							</div>
-							<!-- end place-gal module -->
-
-						</div>
-					
-						<div class="item">
-
-							<!-- place-gal module -->
-							<div class="place-gal">
-								<img class="place-gal__image" src="upload/top2.jpg" alt="place-image">
-								<div class="place-gal__content">
-									<h2 class="place-gal__title">
-										<a href="photography.html">fotografi</a>
-									</h2>
-									
-									<a class="btn-default" href="sign-page.html">
-										<i class="fa fa-caret-right" aria-hidden="true"></i>
-										lihat
-									</a>
+						
+							<div class="item">
+	
+								<!-- place-gal module -->
+								<div class="place-gal">
+									<img class="place-gal__image" src="upload/top2.jpg" alt="place-image">
+									<div class="place-gal__content">
+										<h2 class="place-gal__title">
+											<a href="#">fotografi</a>
+										</h2>
+										<ul class="place-gal__list">
+											<li class="place-gal__list-item">
+												<a href="#">8 Cities</a>
+											</li>
+											<li class="place-gal__list-item">
+												<a href="#">749 Listing</a>
+											</li>
+										</ul>
+										<a class="btn-default" href="bacafotografi.html">
+											<!-- <i class="fa fa-caret-right" aria-hidden="true"></i> -->
+											<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
+												<path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+												<path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"/>
+											  </svg> -->
+											Baca
+										</a>
+									</div>
 								</div>
+								<!-- end place-gal module -->
+	
 							</div>
-							<!-- end place-gal module -->
-
 						</div>
 					</div>
+					
 				</div>
-				
-			</div>
-		</section>
-		<!-- End discover-module section -->
+			</section>
+			<!-- End discover-module section -->
 
-			<!-- services-block
+	<!-- services-block
 			================================================== -->
 			<section class="services">
 				<div class="container">
@@ -270,10 +341,7 @@
 										<h2 class="services-post__title">
 											artikel
 										</h2>
-										<p class="services-post__location">
-											
-										</p>
-									</div>
+										</div>
 								</a>
 								<!-- end services-post module -->
 	
@@ -290,11 +358,8 @@
 											  </svg>
 										</i>
 										<h2 class="services-post__title">
-											cerpen
+											Cerpen
 										</h2>
-										<p class="services-post__location">
-											
-										</p>
 									</div>
 								</a>
 								<!-- end services-post module -->
@@ -305,7 +370,7 @@
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="puisi.html" class="services-post">
+								<a href="#" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-activit" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-file-earmark-richtext" viewBox="0 0 16 16">
@@ -316,10 +381,7 @@
 										<h2 class="services-post__title">
 											puisi
 										</h2>
-										<p class="services-post__location">
-											
-										</p>
-									</div>
+										</div>
 								</a>
 								<!-- end services-post module -->
 	
@@ -341,9 +403,6 @@
 										<h2 class="services-post__title">
 											diary
 										</h2>
-										<p class="services-post__location">
-											
-										</p>
 									</div>
 								</a>
 								<!-- end services-post module -->
@@ -365,10 +424,7 @@
 										<h2 class="services-post__title">
 											fotografi
 										</h2>
-										<p class="services-post__location">
-											
-										</p>
-									</div>
+										</div>
 								</a>
 								<!-- end services-post module -->
 	
@@ -388,145 +444,142 @@
 										<h2 class="services-post__title">
 											ilustrasi
 										</h2>
-										<p class="services-post__location">
-										
-										</p>
+										</div>
+								</a>
+								<!-- end services-post module -->
+	
+							</div>
+							
+							<div class="col-xl-2 col-md-4 col-sm-6">
+	
+								<!-- services-post module -->
+								<a href="#" class="services-post">
+									<div class="services-post__content">
+										<i class="la la-" aria-hidden="true">
+											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
+												<path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z"/>
+												<path d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z"/>
+											  </svg>
+											  
+										</i>
+										<h2 class="services-post__title">
+											makalah
+										</h2>
 									</div>
 								</a>
 								<!-- end services-post module -->
 	
 							</div>
 							
-							<div style=" display: flex; gap: 75px;">
-								<div class="col-xl-2 col-md-4 col-sm-6">
-		
-									<!-- services-post module -->
-									<a href="makalah.html" class="services-post">
-										<div class="services-post__content">
-											<i class="la la-" aria-hidden="true">
-												<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
-													<path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z"/>
-													<path d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z"/>
-												  </svg>
-												  
-											</i>
-											<h2 class="services-post__title">
-												makalah
-											</h2>
-											<p class="services-post__location">
-												
-											</p>
-										</div>
-									</a>
-									<!-- end services-post module -->
-									
-								</div>
+							<div class="col-xl-2 col-md-4 col-sm-6">
 								
-								<div class="col-xl-2 col-md-4 col-sm-6">
-		
-									<!-- services-post module -->
-									<a href="skripsi.html" class="services-post">
-										<div class="services-post__content">
-											<i class="la la-" aria-hidden="true">
-												<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-journal-bookmark" viewBox="0 0 16 16">
-													<path fill-rule="evenodd" d="M6 8V1h1v6.117L8.743 6.07a.5.5 0 0 1 .514 0L11 7.117V1h1v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8z"/>
-													<path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
-													<path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
-												  </svg>
-											</i>
-											<h2 class="services-post__title">
-												skripsi
-											</h2>
-											<p class="services-post__location">
-												
-											</p>
-										</div>
-									</a>
-									<!-- end services-post module -->
-		
-								</div>
-								
-								
-								<div class="col-xl-2 col-md-4 col-sm-6">
-		
-									<!-- services-post module -->
-									<a href="pantun.html" class="services-post">
-										<div class="services-post__content">
-											<i class="la la-" aria-hidden="true">
-												<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
-													<path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
-													<path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8zm0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
-												  </svg>
-											</i>
-											<h2 class="services-post__title">
-												pantun
-											</h2>
-											<p class="services-post__location">
-												
-											</p>
-										</div>
-									</a>
-									<!-- end services-post module -->
-		
-								</div>
-		
-								<div class="col-xl-2 col-md-4 col-sm-6">
-		
-									<!-- services-post module -->
-									<a href="essay.html" class="services-post">
-										<div class="services-post__content">
-											<i class="la la-" aria-hidden="true">
-												<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list-task" viewBox="0 0 16 16">
-													<path fill-rule="evenodd" d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z"/>
-													<path d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z"/>
-													<path fill-rule="evenodd" d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z"/>
-												  </svg>
-											</i>
-											<h2 class="services-post__title">
-												esai
-											</h2>
-											<p class="services-post__location">
-												
-											</p>
-										</div>
-									</a>
-									<!-- end services-post module -->
-		
-								</div>
-		
-								<div class="col-xl-2 col-md-4 col-sm-6">
-		
-									<!-- services-post module -->
-									<a href="ilmiah.html" class="services-post">
-										<div class="services-post__content">
-											<i class="la la-" aria-hidden="true">
-												<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-journals" viewBox="0 0 16 16">
-													<path d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2z"/>
-													<path d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z"/>
-												  </svg>
-											</i>
-											<h2 class="services-post__title" style="display: flex; font-size: 15px;">
-												karya ilmiah
-											</h2>
-											<p class="services-post__location">
-												
-											</p>
-										</div>
-									</a>
-									<!-- end services-post module -->
-		
-								</div>
-							</div>	
+								<!-- services-post module -->
+								<a href="#" class="services-post">
+									<div class="services-post__content">
+									<i class="la la-" aria-hidden="true">
+										<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-journal-bookmark" viewBox="0 0 16 16">
+											<path fill-rule="evenodd" d="M6 8V1h1v6.117L8.743 6.07a.5.5 0 0 1 .514 0L11 7.117V1h1v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8z"/>
+											<path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+											<path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+										  </svg>
+									</i>
+									<h2 class="services-post__title">
+										pantun
+									</h2>
+									</div>
+							</a>
+							<!-- end services-post module -->
+
+						</div>
+							
+							<div class="col-xl-2 col-md-4 col-sm-6">
 	
+								<!-- services-post module -->
+								<a href="#" class="services-post">
+									<div class="services-post__content">
+										<i class="la la-" aria-hidden="true">
+											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
+												<path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+												<path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8zm0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
+											  </svg>
+										</i>
+										<h2 class="services-post__title">
+											pantun
+										</h2>
+										</div>
+								</a>
+								<!-- end services-post module -->
+	
+							</div>
+	
+							<div class="col-xl-2 col-md-4 col-sm-6">
+	
+								<!-- services-post module -->
+								<a href="essai.html" class="services-post">
+									<div class="services-post__content">
+										<i class="la la-" aria-hidden="true">
+											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list-task" viewBox="0 0 16 16">
+												<path fill-rule="evenodd" d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z"/>
+												<path d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z"/>
+												<path fill-rule="evenodd" d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z"/>
+											  </svg>
+										</i>
+										<h2 class="services-post__title">
+											esai
+										</h2>
+										</div>
+								</a>
+								<!-- end services-post module -->
+	
+							</div>
+	
+							<div class="col-xl-2 col-md-4 col-sm-6">
+	
+								<!-- services-post module -->
+								<a href="ilmiah.html" class="services-post">
+									<div class="services-post__content">
+										<i class="la la-" aria-hidden="true">
+											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-journals" viewBox="0 0 16 16">
+												<path d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2z"/>
+												<path d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z"/>
+											  </svg>
+										</i>
+										<h2 class="services-post__title">
+											karya ilmiah
+										</h2>
+										</div>
+								</a>
+								<!-- end services-post module -->
+	
+							</div>
+
+							<div class="col-xl-2 col-md-4 col-sm-6">
+	
+								<!-- services-post module -->
+								<a href="semua.html" class="services-post">
+									<div class="services-post__content">
+										<i class="la la-" aria-hidden="true">
+											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-bar-chart-steps" viewBox="0 0 16 16">
+												<path d="M.5 0a.5.5 0 0 1 .5.5v15a.5.5 0 0 1-1 0V.5A.5.5 0 0 1 .5 0zM2 1.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-6a.5.5 0 0 1-.5-.5v-1zm2 4a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5v-1z"/>
+											  </svg>
+										</i>
+										<h2 class="services-post__title" style="font-size: medium;">
+											Semua Kategori
+										</h2>
+										</div>
+								</a>
+								<!-- end services-post module -->
+	
+							</div>
 						</div>
 					</div>
-	
 	
 				</div>
 			</section>
 			<!-- End services-block -->
 
-			<!-- trending-places-block
+
+		<!-- trending-places-block
 			================================================== -->
 			<section class="trending-places">
 				<div class="container">
@@ -539,7 +592,7 @@
 						<p class="section-header__description">
 							Berbagai Kategori postingan dengan gambar.
 						</p>
-						<div class="semua" style="display: flex; justify-content: end;"><a href="sign-page.html"><p class="semuat" style="text-decoration: underline;">lihat semua</p></a></div>
+						<div class="semua" style="display: flex; justify-content: end;"><a href="/semua"><p class="semuat" style="text-decoration: underline;">lihat semua</p></a></div>
 						
 						
 					</div>
@@ -582,7 +635,7 @@
 												54 Reviews
 											</span>
 										</p>
-										<a class="contact-form__submit" href="bacafotografi.html" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
+										<a class="contact-form__submit" href="/user_register" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
 													<i class="fa fa-caret-right" aria-hidden="true"></i>
 													Baca
 												</a>
@@ -626,7 +679,7 @@
 												54 Reviews
 											</span>
 										</p>
-										<a class="contact-form__submit" href="bacafotografi.html" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
+										<a class="contact-form__submit" href="/user_register" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
 													<i class="fa fa-caret-right" aria-hidden="true"></i>
 													Baca
 												</a>
@@ -670,7 +723,7 @@
 												54 Reviews
 											</span>
 										</p>
-										<a class="contact-form__submit" href="bacafotografi.html" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
+										<a class="contact-form__submit" href="/user_register" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
 													<i class="fa fa-caret-right" aria-hidden="true"></i>
 													Baca
 												</a>
@@ -714,7 +767,7 @@
 												54 Reviews
 											</span>
 										</p>
-										<a class="contact-form__submit" href="bacafotografi.html" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
+										<a class="contact-form__submit" href="/user_register" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
 													<i class="fa fa-caret-right" aria-hidden="true"></i>
 													Baca
 												</a>
@@ -758,7 +811,7 @@
 												54 Reviews
 											</span>
 										</p>
-										<a class="contact-form__submit" href="bacafotografi.html" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
+										<a class="contact-form__submit" href="/user_register" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
 													<i class="fa fa-caret-right" aria-hidden="true"></i>
 													Baca
 												</a>
@@ -802,7 +855,7 @@
 												54 Reviews
 											</span>
 										</p>
-										<a class="contact-form__submit" href="bacafotografi.html" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
+										<a class="contact-form__submit" href="/user_register" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
 													<i class="fa fa-caret-right" aria-hidden="true"></i>
 													Baca
 												</a>
@@ -819,12 +872,10 @@
 				</div>
 			</section>
 			<!-- End trending-places-block -->
-		<!-- End trending-places-block -->
-		<!-- End trending-places-block -->
 
-		<!-- trending-events-block
-			================================================== -->
 	
+
+		
 
 		<!-- testimonial-block
 			================================================== -->
@@ -955,89 +1006,84 @@
 				</div>
 			</section>
 			<!-- End testimonial-block -->
+  
+		<!-- End trending-places-block -->
+
+	
 
 		
-
-		<!-- banner-block
-			================================================== -->
-	
-		<!-- End banner-block -->
-
 		<!-- footer block module
 			================================================== -->
-		<footer class="footer footer-black">
-			<div class="container">
-
-				<div class="footer__up-part">
-					<div class="row">
-						<div class="col-md-4">
-
-							<div class="footer__widget text-widget">
-								<img src="images/logo.png" alt="triptip-logo">
-								<p class="footer__widget-description">
-									Lorem ipsum dolor sit amet, conse ctetuer adipiscing elit, sed diam nonu mmy nibh euismod tincidunt ut laoreet dolore magna aliquam erat. 
-								</p>
+			<footer class="footer footer-black">
+				<div class="container">
+	
+					<div class="footer__up-part">
+						<div class="row">
+							<div class="col-md-4">
+	
+								<div class="footer__widget text-widget">
+									<img src="images/logo.png" alt="triptip-logo">
+									<p class="footer__widget-description">
+										Menggembangkan dunia baca tulis menggunakan website menuju dunia digital. Temukan berbagai artikel, postingan, cerita, jurnal dan buat postinganmu sendiri disini	
+									</p>
+								</div>
+	
 							</div>
-
-						</div>
-						<div class="col-md-4">
-
-							<div class="footer__widget subscribe-widget">
-								<h2 class="footer__widget-title footer__widget-title-white">
-									Subscribe
-								</h2>
-								<p class="footer__widget-description">
-									Be notified about new 
-								</p>
-								<form class="footer__subscribe-form">
-									<input class="footer__subscribe-input" type="text" name="email-sub" id="email-sub" placeholder="Enter your Email" />
-									<button class="footer__subscribe-button footer__subscribe-button-primary" type="submit">
-										<i class="la la-arrow-circle-o-right" aria-hidden="true"></i>
-									</button>
-								</form>
+							<div class="col-md-4">
+	
+								<div class="footer__widget subscribe-widget">
+									<h2 class="footer__widget-title footer__widget-title-white">
+										Alamat
+									</h2>
+									<p class="footer__widget-description">
+										Jl. Pandawa No. 66, Dusun Mawar RT 001 RW 001 Desa Pandan
+									</p>
+									
+								</div>
+	
 							</div>
-
-						</div>
-						<div class="col-md-4">
-
-							<div class="footer__widget text-widget">
-								<h2 class="footer__widget-title footer__widget-title-white">
-									Contact Info 
-								</h2>
-								<p class="footer__widget-description">
-									1000 5th Ave to Central Park, New York <br>
-									+1 246-345-0695 <br>
-									info@example.com
-								</p>
+							<div class="col-md-4">
+	
+								<div class="footer__widget text-widget">
+									<h2 class="footer__widget-title footer__widget-title-white">
+										Kontak 
+									</h2>
+									<p class="footer__widget-description">
+										+62 898-1342-6657<br>
+										info@example.com <br>
+										YouTube: ngu_never122
+									</p>
+								</div>
+	
 							</div>
-
 						</div>
 					</div>
-				</div>
-
-				<div class="footer__down-part footer__down-part-black">
-					<div class="row">
-						<div class="col-md-7">
-							<p class="footer__copyright">
-								© Copyright 2018 - All Rights Reserved
-							</p>
-						</div>
-						<div class="col-md-5">
-							<ul class="footer__social-list">
-								<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-								<li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
-								<li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
-							</ul>
+	
+					<div class="footer__down-part footer__down-part-black">
+						<div class="row">
+							<div class="col-md-7">
+								<p class="footer__copyright">
+									© Copyright 2018 - All Rights Reserved
+								</p>
+							</div>
+							<div class="col-md-5">
+								<ul class="footer__social-list">
+									<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
+									<li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
+	
 				</div>
+	
+			</footer>
 
-			</div>
-
-		</footer>
 		<!-- End footer -->
+
 
 	</div>
 	<!-- End Container -->
