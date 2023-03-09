@@ -22,64 +22,58 @@
 	<div id="container">
 	<header class="clearfix dark-header-style fullwidth-with-search">
 
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<div class="container-fluid">
+				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+					<div class="container">
+	
+						<a class="navbar-brand" href="index.html">
+							<img src="images/logo.png" alt="">
+						</a>
+	
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+	
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav mr-auto">
+								<li>
 
-			<a class="navbar-brand" href="index.html">
-			<img src="images/logo.png" alt="triptip-logo">
-			</a>
-
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mr-auto">
-					<li>
-						<a class="active" href="/">Beranda <i class="" aria-hidden="true"></i></a>
-								
-							</li>
-							<li ><a  href="#">Kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-								<div class="megadropdown">
-									<div class="dropdown-box">
-										
-										<ul class="dropdown-list">
-											<li><a href="/artikel">artikel</a></li>
-											<li><a href="/cerpen">cerpen</a></li>
-											<li><a href="/puisi">puisi</a></li>
-											<li><a href="/photography">fotografi</a></li>
+									<a class="active" href="/user-login">Beranda <i class="" aria-hidden="true"></i></a>
+								</li>
+								<li ><a  href="#">Kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+									<div class="megadropdown">
+										<div class="dropdown-box">
+											
+											<ul class="dropdown-list">
+												<li><a href="/artikel">artikel</a></li>
+												<li><a href="/cerpen">cerpen</a></li>
+												<li><a href="/puisi">puisi</a></li>
+												<li><a href="/photography">fotografi</a></li>
+												</ul>
+										</div>
+										<div class="dropdown-box">
+											<ul class="dropdown-list">
+												<li><a href="/makalah">makalah</a></li>
+												<li><a href="/skripsi">skripsi</a></li>
+												<li><a href="/ilmiah">karya ilmiah</a></li>
 											</ul>
+										</div>
+										<div class="dropdown-box">
+											<ul class="dropdown-list">
+												<li><a href="/diary">diary</a></li>
+												<li><a href="/ilustrasi">ilustrasi</a></li>
+												<li><a href="/pantun">pantun</a></li>
+												<li><a href="/essai">esai</a></li>											
+												</ul>
+										</div>
 									</div>
-									<div class="dropdown-box">
-										<ul class="dropdown-list">
-										
-											<li><a href="/makalah">makalah</a></li>
-											<li><a href="/skripsi">skripsi</a></li>
-											<li><a href="/ilmiah">karya ilmiah</a></li>
-										</ul>
-									</div>
-									<div class="dropdown-box">
-										<ul class="dropdown-list">
-											<li><a href="/diary">diary</a></li>
-											<li><a href="/ilustrasi">ilustrasi</a></li>
-											<li><a href="/pantun">pantun</a></li>
-											<li><a href="/essai">esai</a></li>
-								
-									</ul>
-							</div>
+								</li>
 
-
-							
-						</div>
-					</li>
-					<li><a href="contact.html">Hubungi Kami</a></li>
-					
-				
-				</ul>
-					<a href="index04b9.html" class="add-list-btn btn-default">Kembali</a>
-			</div>
-		</div>
-	</nav>
+								<li><a href="/contact">Hubungi Kami</a></li>	
+							</ul>
+							<a href="/user-login" class="add-list-btn btn-default">Kembali</a>	
+					</div>
+				</nav>
+			</header>
 		<!-- End Header -->
 
 		<!-- page-title-module

@@ -157,7 +157,7 @@
 							
 							<p class="card-text">Diary.... ini aku bete banget sama seseorang. Tahu gak, ternyata dia itu sombong banget orangnya...</p>
 							<div style="width: 100%; display: flex; justify-content: center;  " >
-								<a class="contact-form__submit" href="diary-1.html" style="margin-right: 20px; margin-bottom: 10px; ">
+								<a class="contact-form__submit" href="/diary-1" style="margin-right: 20px; margin-bottom: 10px; ">
 									<i class="fa fa-caret-right" aria-hidden="true"></i>
 									Baca
 								</a>

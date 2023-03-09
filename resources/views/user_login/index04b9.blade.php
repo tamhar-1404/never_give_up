@@ -635,7 +635,7 @@
 												54 Reviews
 											</span>
 										</p>
-										<a class="contact-form__submit" href="/bacaartikel" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
+										<a class="contact-form__submit" href="/artikel-sukses" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
 													<i class="fa fa-caret-right" aria-hidden="true"></i>
 													Baca
 												</a>

@@ -155,7 +155,7 @@
 							
 							<p class="card-text">Jika diberi pertanyaan siapa sih yang ingin baik? Mungkin semua orang yang diberi pertanyaan tersebut akan mengangkat tangan mereka tinggi-tinggi. Namun, masih banyak orang yang belum mengerti apa itu kebaikan ...</p>
 							<div style="width: 100%; display: flex; justify-content: center;  " >
-								<a class="contact-form__submit" href="cerpen-baik.html" style="margin-right: 20px; margin-bottom: 10px; ">
+								<a class="contact-form__submit" href="/cerpen-baik" style="margin-right: 20px; margin-bottom: 10px; ">
 									<i class="fa fa-caret-right" aria-hidden="true"></i>
 									Baca
 								</a>

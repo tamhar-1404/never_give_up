@@ -63,7 +63,7 @@
 	<div id="container">
 		<!-- Header
 		    ================================================== -->
-			<header class="clearfix">
+			<header class="clearfix dark-header-style fullwidth-with-search">
 
 				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 					<div class="container">
@@ -79,42 +79,42 @@
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav mr-auto">
 								<li>
-									<a class="active" href="index04b9.html">Home <i class="" aria-hidden="true"></i></a>
+									<a class="active" href="/user-login">Beranda <i class="" aria-hidden="true"></i></a>
 								</li>
 								<li ><a  href="#">Kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
 									<div class="megadropdown">
 										<div class="dropdown-box">
 											
 											<ul class="dropdown-list">
-												<li><a href="artikel.html">artikel</a></li>
-												<li><a href="cerpen.html">cerpen</a></li>
-												<li><a href="puisi.html">puisi</a></li>
-												<li><a href="fotografi.html">fotografi</a></li>
-												<li><a href="pantun.html">pantun</a></li>
-												<li><a href="esai.html">esai</a></li>
+												<li><a href="/artikel">artikel</a></li>
+												<li><a href="/cerpen">cerpen</a></li>
+												<li><a href="/puisi">puisi</a></li>
+												<li><a href="/photography">fotografi</a></li>
+												</ul>
+										</div>
+										<div class="dropdown-box">
+											<ul class="dropdown-list">
+											
+												<li><a href="/makalah">makalah</a></li>
+												<li><a href="/skripsi">skripsi</a></li>
+												<li><a href="/ilmiah">karya ilmiah</a></li>
 											</ul>
 										</div>
 										<div class="dropdown-box">
 											<ul class="dropdown-list">
-												<li><a href="diary.html">diary</a></li>
-												<li><a href="ilustrasi.html">ilustrasi</a></li>
-												<li><a href="makalah.html">makalah</a></li>
-												<li><a href="skripsi.html">skripsi</a></li>
-												<li><a href="ilmiah.html">karya ilmiah</a></li>
-											</ul>
+												<li><a href="/diary">diary</a></li>
+												<li><a href="/ilustrasi">ilustrasi</a></li>
+												<li><a href="/pantun">pantun</a></li>
+												<li><a href="/essai">esai</a></li>
+											
+												</ul>
 										</div>
-										
 									</div>
 								</li>
-								<li><a href="contact.html">Hubungi Kami</a></li>
-								
+								<li><a href="/contact">Hubungi Kami</a></li>	
 							</ul>
-							
-							<a href="index04b9.html" class="add-list-btn btn-default"><i class="fa fa-plus" aria-hidden="true"></i> Kembali </a>
-							
-				
-						
-						</div>
+							<a href="/user-login" class="add-list-btn btn-default">Kembali</a>
+	
 					</div>
 				</nav>
 			</header>
@@ -131,9 +131,9 @@
 								<a class="user-detail__profile-image" href="#"><img style="width: 80px; height: 80px; border-radius: 100%;" src="upload/avat1.jpg" alt=""></a>
 								<div>
 									<h3 class="user-detail__profile-title">
-										<a href="prf.html">Yuki Hayasi</a>
+										<a href="/prf">Yuki Hayasi</a>
 									</h3>
-									<a href="prf.html" style="color: #db3458; margin-top: 10px;">Edit Profil</a>
+									<a href="/prf" style="color: #db3458; margin-top: 10px;">Edit Profil</a>
 								</div>
 								
 									<p></p>
@@ -676,5 +676,5 @@
 	
 </body>
 
-<!-- Mirrored from nunforest.com/triptip-demo/user-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 10:04:30 GMT -->
+<!-- Mirrored from nunforest.com/triptip-demo/user-page by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 10:04:30 GMT -->
 </html>

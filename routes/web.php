@@ -108,11 +108,14 @@ Route::get('/semua', [Index04b9Controller::class, 'semua'])-> name('semua');
 Route::get('/contact', [Index04b9Controller::class, 'contact'])-> name('contact');
 Route::get('/pilihkategori', [Index04b9Controller::class, 'pilihkategori'])-> name('pilihkategori');
 Route::get('/user-page', [Index04b9Controller::class, 'userpage'])-> name('user-page');
+Route::get('/prf', [Index04b9Controller::class, 'prf'])-> name('prf');
 
 Route::get('/artikel-sukses', [Index04b9Controller::class, 'artikelsukses'])-> name('srtikel-sukses');
 Route::get('/cerpen-baik', [Index04b9Controller::class, 'cerpenbaik'])-> name('cerpen-baik');
 Route::get('/puisi-pertiwi', [Index04b9Controller::class, 'puisipertiwi'])-> name('puisi-pertiwi');
+Route::get('/diary-1', [Index04b9Controller::class, 'diary1'])-> name('diary-1');
 Route::get('/fotografi-1', [Index04b9Controller::class, 'fotografi1'])-> name('fotografi-1');
+Route::get('/ilustrasi-1', [Index04b9Controller::class, 'ilustrasi1'])-> name('ilustrasi-1');
 Route::get('/makalah-detail', [Index04b9Controller::class, 'makalahdetail'])-> name('makalah-detail');
 Route::get('/skripsi-detail', [Index04b9Controller::class, 'skripsidetail'])-> name('skripsi-detail');
 Route::get('/ilmiah-detail', [Index04b9Controller::class, 'ilmiahdetail'])-> name('ilmiah-detail');
