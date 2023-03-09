@@ -457,17 +457,17 @@
 										Kategori
 									</h2>
 									<ul class="sidebar__tags-list">
-										<li><a href="artikel.html">Artikel</a></li>
-										<li><a href="cerpen.html">Cerpen</a></li>
-										<li><a href="puisi.html">Puisi</a></li>
-										<li><a href="diary.html">Diary</a></li>
-										<li><a href="photography.html">Fotografi</a></li>
-										<li><a href="ilustrasi.html">Ilustrasi</a></li>
-										<li><a href="makalah.html">Makalah</a></li>
-										<li><a href="skripsi.html">Skripsi</a></li>
-										<li><a href="pantun.html">Pantun</a></li>
-										<li><a href="essai.html">Esai</a></li>
-										<li><a href="ilmiah.html">Karya Ilmiah</a></li>
+										<li><a href="/artikel">Artikel</a></li>
+										<li><a href="/cerpen">Cerpen</a></li>
+										<li><a href="/puisi">Puisi</a></li>
+										<li><a href="/diary">Diary</a></li>
+										<li><a href="/photography">Fotografi</a></li>
+										<li><a href="/ilustrasi">Ilustrasi</a></li>
+										<li><a href="/makalah">Makalah</a></li>
+										<li><a href="/skripsi">Skripsi</a></li>
+										<li><a href="/pantun">Pantun</a></li>
+										<li><a href="/essai">Esai</a></li>
+										<li><a href="/ilmiah">Karya Ilmiah</a></li>
 									</ul>
 								</div>
 
@@ -571,5 +571,5 @@
 	
 </body>
 
-<!-- Mirrored from nunforest.com/triptip-demo/listing-detail-sidebar.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 10:03:41 GMT -->
+<!-- Mirrored from nunforest.com/triptip-demo/listing-detail-sidebar by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 10:03:41 GMT -->
 </html>

@@ -39,7 +39,6 @@
 							<ul class="navbar-nav mr-auto">
 								<li>
 
-<<<<<<< Updated upstream
 									<a class="active" href="/user-login">Beranda <i class="" aria-hidden="true"></i></a>
 								</li>
 								<li ><a  href="#">Kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
@@ -58,48 +57,7 @@
 												<li><a href="/makalah">makalah</a></li>
 												<li><a href="/skripsi">skripsi</a></li>
 												<li><a href="/ilmiah">karya ilmiah</a></li>
-=======
-		<a class="navbar-brand" href="index.html">
-			<img src="images/logo.png" alt="">
-		</a>
 
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav mr-auto">
-							<li>
-								<a class="active" href="/">Beranda <i class="" aria-hidden="true"></i></a>
-								
-							</li>
-							<li ><a  href="#">Kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-								<div class="megadropdown">
-									<div class="dropdown-box">
-										
-										<ul class="dropdown-list">
-											<li><a href="/artikel">artikel</a></li>
-											<li><a href="/cerpen">cerpen</a></li>
-											<li><a href="/puisi">puisi</a></li>
-											<li><a href="/photography">fotografi</a></li>
-											</ul>
-									</div>
-									<div class="dropdown-box">
-										<ul class="dropdown-list">
-										
-											<li><a href="/makalah">makalah</a></li>
-											<li><a href="/skripsi">skripsi</a></li>
-											<li><a href="/ilmiah">karya ilmiah</a></li>
-										</ul>
-									</div>
-									<div class="dropdown-box">
-										<ul class="dropdown-list">
-											<li><a href="/diary">diary</a></li>
-											<li><a href="/ilustrasi">ilustrasi</a></li>
-											<li><a href="/pantun">pantun</a></li>
-											<li><a href="/essai">esai</a></li>
-										
->>>>>>> Stashed changes
 											</ul>
 										</div>
 										<div class="dropdown-box">
@@ -113,29 +71,8 @@
 									</div>
 								</li>
 
-<<<<<<< Updated upstream
 								<li><a href="/contact">Hubungi Kami</a></li>	
-=======
 
-									
-								</div>
-							</li>
-							<li><a href="contact.html">Hubungi Kami</a></li>
-							
-							<ul class="dropdown-list">
-								<li><a href="/artikel">artikel</a></li>
-								<li><a href="/cerpen">cerpen</a></li>
-								<li><a href="/puisi">puisi</a></li>
-								<li><a href="/photography">fotografi</a></li>
-								</ul>
-						</div>
-						<div class="dropdown-box">
-							<ul class="dropdown-list">
-							
-								<li><a href="/makalah">makalah</a></li>
-								<li><a href="/skripsi">skripsi</a></li>
-								<li><a href="/ilmiah">karya ilmiah</a></li>
->>>>>>> Stashed changes
 							</ul>
 							<a href="/user-login" class="add-list-btn btn-default">Kembali</a>	
 					</div>
@@ -373,12 +310,12 @@
 										<ul class="author-wrapper__list">
 											<li>
 												<span>42</span>
-												List
+												Postingan
 											</li>
 											
 											<li>
 												<span>56</span>
-												Reviews
+												Komentar
 											</li>
 										</ul>
 									</div>
@@ -390,22 +327,19 @@
 										Kategori
 									</h2>
 									<ul class="sidebar__tags-list">
-										<li><a href="artikel.html">Artikel</a></li>
-										<li><a href="cerpen.html">Cerpen</a></li>
-										<li><a href="puisi.html">Puisi</a></li>
-										<li><a href="diary.html">Diary</a></li>
-										<li><a href="photography.html">Fotografi</a></li>
-										<li><a href="ilustrasi.html">Ilustrasi</a></li>
-										<li><a href="makalah.html">Makalah</a></li>
-										<li><a href="skripsi.html">Skripsi</a></li>
-										<li><a href="pantun.html">Pantun</a></li>
-										<li><a href="essai.html">Esai</a></li>
-										<li><a href="ilmiah.html">Karya Ilmiah</a></li>
+										<li><a href="/artikel">Artikel</a></li>
+										<li><a href="/cerpen">Cerpen</a></li>
+										<li><a href="/puisi">Puisi</a></li>
+										<li><a href="/diary">Diary</a></li>
+										<li><a href="/photography">Fotografi</a></li>
+										<li><a href="/ilustrasi">Ilustrasi</a></li>
+										<li><a href="/makalah">Makalah</a></li>
+										<li><a href="/skripsi">Skripsi</a></li>
+										<li><a href="/pantun">Pantun</a></li>
+										<li><a href="/essai">Esai</a></li>
+										<li><a href="/ilmiah">Karya Ilmiah</a></li>
 									</ul>
 								</div>
-
-								
-
 							</div>
 						</div>
 					</div>

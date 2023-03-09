@@ -115,5 +115,9 @@ class Index04b9Controller extends Controller
     return view('user_login.prf',['prf']);
     }
    
+    public function makalahpkn(){
+    return view('user_login.makalah-pkn',['makalah-pkn']);
+    }
+   
 }
 ?>

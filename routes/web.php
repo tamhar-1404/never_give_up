@@ -126,6 +126,7 @@ Route::get('/skripsi-detail', [Index04b9Controller::class, 'skripsidetail'])-> n
 Route::get('/ilmiah-detail', [Index04b9Controller::class, 'ilmiahdetail'])-> name('ilmiah-detail');
 Route::get('/pantun-1', [Index04b9Controller::class, 'pantun1'])-> name('pantun-1');
 Route::get('/essai-1', [Index04b9Controller::class, 'essai1'])-> name('essai-1');
+Route::get('/makalah-pkn', [Index04b9Controller::class, 'makalahpkn'])-> name('makalah-pkn');
 
 
 ?>
