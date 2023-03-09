@@ -11,17 +11,22 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('skripsis', function (Blueprint $table) {
+        Schema::create('postingans', function (Blueprint $table) {
             $table->id();
-            $table->string('foto_profil');
             $table->string('foto');
-            $table->string('nama');
             $table->string('judul');
             $table->string('isi');
+            $table->string('status')->default('pandding');
             $table->foreignId('user_id');
             $table->foreign('user_id')
             ->references('id')
             ->on('users')
+            ->onDelete('cascade')
+            ->onUpdate('cascade');
+            $table->foreignId('kategori_id');
+            $table->foreign('kategori_id')
+            ->references('id')
+            ->on('kategoris')
             ->onDelete('cascade')
             ->onUpdate('cascade');
             $table->timestamps();
@@ -33,6 +38,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('skripsis');
+        Schema::dropIfExists('postingans');
     }
 };

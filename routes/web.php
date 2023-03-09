@@ -17,6 +17,7 @@ use App\Http\Controllers\Diary1Controller;
 use App\Http\Controllers\Fotografi1Controller;
 use App\Http\Controllers\Ilustrasi1Controller;
 use App\Http\Controllers\PuisiPertiwiController;
+use App\Http\Controllers\PostingController;
 use App\Http\Controllers\loginController;
 use App\Http\Controllers\AdminController;
 use App\Http\Middleware\admin;
@@ -84,7 +85,8 @@ Route::group(['middleware'=> ['auth','hakakses:Admin']], function() {
 
 //user_login
 Route::group(['middleware'=> ['auth', 'hakakses:user']], function(){
-    Route::get('/cerpen', [CerpenController::class, 'cerpen'])->name('cerpen');
+    // Route::get('/cerpen', [CerpenController::class, 'cerpen'])->name('cerpen');
+    Route::get('/posting', [PostingController::class, 'posting'])->name('posting');
     Route::get('/makalah', [MakalahController::class, 'makalah'])->name('makalah');
     Route::get('/puisi-pertiwi', [PuisiPertiwiController::class, 'puisipertiwi'])->name('puisi-pertiwi');
     Route::get('/user-login', function () {
@@ -92,7 +94,7 @@ Route::group(['middleware'=> ['auth', 'hakakses:user']], function(){
     });
     // Route::get('/create_cerpen', function () {
     //     return view('user_login.create.create_cerpen');
-    Route::get('/create_cerpen', [CerpenController::class, 'create_cerpen'])->name('create-cerpen');
+    // Route::get('/create_cerpen', [CerpenController::class, 'create_cerpen'])->name('create-cerpen');
     Route::post('/simpan_cerpen', [CerpenController::class, 'simpan_cerpen']);
     
     

@@ -29,7 +29,7 @@ class CerpenController extends Controller
     //endadmin
     // user
     public function cerpen(){
-        
+        $cerpen = cerpen::where('kategori_id', '1');
         $cerpen = cerpen::where('status', 'setuju')->get();
 
         return view('user_login.cerpen',['cerpen'=>$cerpen]);

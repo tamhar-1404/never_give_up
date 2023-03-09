@@ -13,9 +13,13 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
     
-     public function cerpen() : HasMany
+     public function postingan() : HasMany
     {
-        return $this-> hasMany(cerpens::class);
+        return $this-> HasMany(postingan::class);
+    }
+    public function kategori()
+    {
+        return $this-> BelongsTo(kategori::class);
     }
     /**
      * The attributes that are mass assignable.
