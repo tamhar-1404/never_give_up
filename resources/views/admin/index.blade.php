@@ -5,13 +5,13 @@
 <!-- Mirrored from themesdesign.in/hexzy/vertical/blue/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 22:31:51 GMT -->
 <head>
     <meta charset="utf-8" />
-    <title>Hexzy - Responsive Admin Dashboard Template</title>
+    <title>Karya Pribadi</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta content="Admin Dashboard" name="description" />
     <meta content="ThemeDesign" name="author" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" href="assets/images/users/Dzaky.jpg">
 
     <!--Morris Chart CSS -->
     <link rel="stylesheet" href="assets/plugins/morris/morris.css">
@@ -32,8 +32,8 @@
             <!-- LOGO -->
             <div class="topbar-left">
                 <div class="text-center">
-                    <a href="index.html" class="logo"><img src="assets/images/logo-dark.png" alt="" height="24"></a>
-                    <a href="index.html" class="logo-sm"><img src="assets/images/logo-sm.png" alt="" height="28"></a>
+                    <a href="/admin" class="logo"><img src="assets/images/logo-dark.png" alt="" height="24"></a>
+                    <a href="/admin" class="logo-sm"><img src="assets/images/logo-sm.png" alt="" height="28"></a>
                 </div>
             </div>
             <!-- Button mobile view to collapse sidebar menu -->

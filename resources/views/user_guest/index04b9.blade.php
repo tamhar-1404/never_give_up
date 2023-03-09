@@ -57,24 +57,24 @@
 											<ul class="dropdown-list">
 												<li><a href="artikel.html">artikel</a></li>
 												<li><a href="/cerpen">cerpen</a></li>
-												<li><a href="puisi.html">puisi</a></li>
-												<li><a href="photography.html">fotografi</a></li>
+												<li><a href="/puisi">puisi</a></li>
+												<li><a href="/photography">fotografi</a></li>
 												</ul>
 										</div>
 										<div class="dropdown-box">
 											<ul class="dropdown-list">
 											
-												<li><a href="makalah.html">makalah</a></li>
-												<li><a href="skripsi.html">skripsi</a></li>
-												<li><a href="ilmiah.html">karya ilmiah</a></li>
+												<li><a href="/makalah">makalah</a></li>
+												<li><a href="/skripsi">skripsi</a></li>
+												<li><a href="/ilmiah">karya ilmiah</a></li>
 											</ul>
 										</div>
 										<div class="dropdown-box">
 											<ul class="dropdown-list">
-												<li><a href="diary.html">diary</a></li>
-												<li><a href="ilustrasi.html">ilustrasi</a></li>
-												<li><a href="pantun.html">pantun</a></li>
-												<li><a href="essai.html">esai</a></li>
+												<li><a href="/diary">diary</a></li>
+												<li><a href="/ilustrasi">ilustrasi</a></li>
+												<li><a href="/pantun">pantun</a></li>
+												<li><a href="/essai">esai</a></li>
 											
 												</ul>
 										</div>

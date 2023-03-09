@@ -32,13 +32,13 @@ class loginController extends Controller
     }
     public function login(Request $request){
         // $this->validate($request, [
-        //     'email' => 'required|exists:users,email',
-        //     'password' => 'required|min:6',
+        //     'email' => 'required|exists:email',
+        //     'password' => 'required|min:8',
         // ],[
         //     'email.required' => 'Masukkan Email Anda !!',
         //     'email.exists' => 'Email Yang Anda Masukkan Belum Terdaftar !!',
         //     'password.required' => 'Masukkan Kata Sandi Anda !!',
-        //     'password.min' => 'Password Minimal 6 Huruf !!',
+        //     'password.min' => 'Password Minimal 8 Huruf !!',
         // ]);
         // toastr()->success('Berhasil Login!');
 
@@ -50,32 +50,15 @@ class loginController extends Controller
         }
         
 
-            return redirect('/sing-page')->with('password','Password Salah');
+            return redirect('/sing-page');
 
     }
 
-    public function login1(Request $request)
-    {
-        $user = user::all();
+<<<<<<< Updated upstream
+=======
+   
 
-        $user = $request->only('email', 'password');
-
-        if (user::attempt($user)) {
-                // login user setelah berhasil registrasi
-            user::login($user);
-
-            if ($user->role == 'admin') {
-                return redirect()->route('admin.index');
-            } else {
-                return redirect()->route('user_login.index04b9');
-            };
-        }
-
-        // return back()->withErrors([
-        //     'email' => 'The provided credentials do not match our records.',
-        // ]);
-    }
-
+>>>>>>> Stashed changes
     public function register(Request $request)
     {
     // $this->validate($request, [

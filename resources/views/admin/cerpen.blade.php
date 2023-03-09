@@ -5,13 +5,13 @@
 <!-- Mirrored from themesdesign.in/hexzy/vertical/blue/layouts-collapse.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 22:32:31 GMT -->
 <head>
         <meta charset="utf-8" />
-        <title>Hexzy - Responsive Admin Dashboard Template</title>
+        <title>Karya Pribadi</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta content="Admin Dashboard" name="description" />
         <meta content="ThemeDesign" name="author" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <link rel="shortcut icon" href="assets/images/users/Dzaky.jpg">
 
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
@@ -176,13 +176,14 @@
                     </div>
                    
                         <div class="row col-lg-12 justify-content-lg-center"  >
+                            @foreach ($cerpen as $item)
                             <div class="col-3">
                                 <div class="card" style="border-radius: 15px;">
                                 <div class="card-body">
                                     <div style=" display: flex; justify-content:space-between;">
-                                        <img class="" style="border-radius: 100%; width: 30px; height: 30px; " src="assets/images/users/miku.jpg" alt="">
+                                        <img class="" style="border-radius: 100%; width: 30px; height: 30px; " src="asset/{{$item->foto_profil}}" alt="">
                                        <p style="color:black; font-family: Georgia, 'Times New Roman', Times, serif; margin:10px;">
-                                        Nabila
+                                       {{$item->nama}}
                                        </p>
                                        <div >
                                        
@@ -192,17 +193,21 @@
                                     <div >
                                         <p style="margin: 10px;">tanggal posting : 12-03-2022</p>
                                     </div>
-                                    <p class="">Special title treatment</p>
-                                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <p class="">{{$item->judul}}</p>
+                                    <p class="card-text">{{$item->isi}}</p>
                                     <div style="display: flex; gap: 10px; " class="row justify-content-between ">
                                         <a href="tampilan_user/cerpen-baik.html" class="btn btn-primary col-3" style="font-size: 11px;">Lihat</a>
                                         <a href="#" class="btn btn-danger col-3" style="font-size: 11px;" >hapus </a>
-                                        <a href="#" class="btn btn-success col-3" style="font-size: 11px;" >setuju </a>
+                                        <form action="{{Route('uprove', $item->id)}} " method="post" class="col-3">
+                                           @csrf
+                                        <button  type="submit" class="btn btn-success " style="font-size: 11px;" >setuju </button>
+                                        </form>
                                     </div>
                                    
                                 </div>
                                 </div>
                             </div>
+                            @endforeach
                             <div class="col-3">
                                 <div class="card" style="border-radius: 15px;">
                                 <div class="card-body">

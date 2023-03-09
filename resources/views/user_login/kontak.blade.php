@@ -5,7 +5,7 @@
 
 <!-- Mirrored from nunforest.com/triptip-demo/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 10:04:30 GMT -->
 <head>
-	<title>Triptip</title>
+	<title>Kontak Us</title>
 
 	<meta charset="utf-8">
 
@@ -38,7 +38,7 @@
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav mr-auto">
 								<li>
-									<a class="active" href="/index04b9">Beranda <i class="" aria-hidden="true"></i></a>
+									<a class="active" href="/">Beranda <i class="" aria-hidden="true"></i></a>
 								</li>
 								<li ><a  href="#">Kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
 									<div class="megadropdown">
@@ -72,7 +72,7 @@
 								</li>
 								<li><a href="/kontak">Hubungi Kami</a></li>	
 							</ul>\
-							<a href="/index04b9" class="add-list-btn btn-default">Kembali</a>
+							<a href="/" class="add-list-btn btn-default">Kembali</a>
 	
 					</div>
 				</nav>
@@ -90,7 +90,8 @@
 					Hubungi Kami
 				</h1>
 				<p class="contact-page__description">
-				Silahkan Hubungi kami jika ada kendala				</p>
+				Silahkan Hubungi kami jika ada kendala				
+			</p>
 
 				<div class="row">
 					<div class="col-lg-5 col-md-8">
@@ -111,7 +112,7 @@
 								</div>
 							</div>
 							<textarea class="contact-form__textarea" name="alasan" id="comment" placeholder="Alasan:"></textarea>
-							<button type="submit">kirim pesan</button>
+							<button  type="submit" class="btn btn-danger">kirim pesan</button>
 						</form>
 						<!-- End Contact form module -->
 
@@ -130,7 +131,7 @@
 								<h2 class="contact-post__title">
 									Lokasi:
 								</h2>
-								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.9521455536947!2d112.60469731450998!3d-7.900068680795726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7881c2c4637501%3A0x10433eaf1fb2fb4c!2sHummasoft%20Technology!5e0!3m2!1sid!2sid!4v1677661130053!5m2!1sid!2sid" width="150" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+								<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.9521455536947!2d112.60469731450998!3d-7.900068680795726!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7881c2c4637501%3A0x10433eaf1fb2fb4c!2sHummasoft%20Technology!5e0!3m2!1sid!2sid!4v1677661130053!5m2!1sid!2sid" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 								<p class="contact-post__description">
 									1000 5th Karangploso, Malang
 								</p>

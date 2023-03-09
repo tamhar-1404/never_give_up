@@ -5,7 +5,7 @@
 
 <!-- Mirrored from nunforest.com/triptip-demo/sign-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 10:04:22 GMT -->
 <head>
-	<title>Triptip</title>
+	<title>Login</title>
 
 	<meta charset="utf-8">
 
@@ -46,8 +46,8 @@ height: 100%;
 				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 					<div class="container">
 	
-						<a class="navbar-brand" href="/">
-							<img src="images/logo.png" alt="">
+						<a class="navbar-brand" href="home4.html">
+							<img src="images/logo-black.png" alt="">
 						</a>
 	
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,7 +57,7 @@ height: 100%;
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav mr-auto">
 								<li>
-									<a class="" href="/">Home <i class="" aria-hidden="true"></i></a>
+									<a class="active" href="index04b9.html">Home <i class="" aria-hidden="true"></i></a>
 								</li>
 								<li ><a  href="#">kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
 									<div class="megadropdown">
@@ -87,7 +87,7 @@ height: 100%;
 								
 							</ul>
 							<ul class="navbar-nav ml-auto right-list">
-								<li><a href="/sing-page"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Sign In</a></li>
+								<li><a href="sign-page.html"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Sign In</a></li>
 								
 							</ul>
 							
@@ -121,7 +121,10 @@ height: 100%;
 							<label class="sign-form__label" for="username">
                                 Email
 							</label>
-							<input class="sign-form__input-text" type="text" name="email" :value="old('email')" required autofocus id="email" placeholder="Email " />
+							<input class="sign-form__input-text @error('email') is-invalid @enderror" type="text" name="email" :value="old('email')" required autofocus id="email" placeholder="Email "  />
+							@error ('email')
+							<p class="text-white">{{$message}}</p>
+							@enderror
 							<label class="sign-form__label" for="password">
 								password
 							</label>

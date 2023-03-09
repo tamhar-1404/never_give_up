@@ -19,25 +19,30 @@
             padding-top: 5%;
 			background-image: url();
         } */
+		.card-text{
+			text-align: center;
+		}
+		.card-text-judul{
+			text-align: center;
+			color: black;
+		}
     </style>
 
 </head>
-<body><section class="services">
-	<div class="container"><center><h1 >													
-		Fotografi
-	</h1><center>
+<body><section class="services" style="padding: 80px;">
+	<div class="container">
 
 	<!-- Container -->
 	<div id="container">
 		<!-- Header
 		    ================================================== -->
-			<header class="clearfix white-header-style fullwidth-with-search">
+			<header class="clearfix dark-header-style fullwidth-with-search">
 
 				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-					<div class="container-fluid">
+					<div class="container">
 	
 						<a class="navbar-brand" href="index.html">
-							<img src="images/logo-black.png" alt="">
+							<img src="images/logo.png" alt="">
 						</a>
 	
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,50 +52,60 @@
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav mr-auto">
 								<li>
-									<a class="active" href="index04b9.html">Beranda <i class="" aria-hidden="true"></i></a>
-									
+									<a class="active" href="/user-login">Beranda <i class="" aria-hidden="true"></i></a>
 								</li>
 								<li ><a  href="#">Kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
 									<div class="megadropdown">
 										<div class="dropdown-box">
 											
 											<ul class="dropdown-list">
-												<li><a href="artikel.html">artikel</a></li>
-												<li><a href="cerpen.html">cerpen</a></li>
-												<li><a href="puisi.html">puisi</a></li>
-												<li><a href="photography.html">fotografi</a></li>
+												<li><a href="/artikel">artikel</a></li>
+												<li><a href="/cerpen">cerpen</a></li>
+												<li><a href="/puisi">puisi</a></li>
+												<li><a href="/photography">fotografi</a></li>
 												</ul>
 										</div>
 										<div class="dropdown-box">
 											<ul class="dropdown-list">
 											
-												<li><a href="makalah.html">makalah</a></li>
-												<li><a href="skripsi.html">skripsi</a></li>
-												<li><a href="ilmiah.html">karya ilmiah</a></li>
+												<li><a href="/makalah">makalah</a></li>
+												<li><a href="/skripsi">skripsi</a></li>
+												<li><a href="/ilmiah">karya ilmiah</a></li>
 											</ul>
 										</div>
 										<div class="dropdown-box">
 											<ul class="dropdown-list">
-												<li><a href="diary.html">diary</a></li>
-												<li><a href="ilustrasi.html">ilustrasi</a></li>
-												<li><a href="pantun.html">pantun</a></li>
-												<li><a href="essai.html">esai</a></li>
+												<li><a href="/diary">diary</a></li>
+												<li><a href="/ilustrasi">ilustrasi</a></li>
+												<li><a href="/pantun">pantun</a></li>
+												<li><a href="/essai">esai</a></li>
 											
 												</ul>
 										</div>
-	
-	
-										
 									</div>
 								</li>
-								<li><a href="contact.html">Hubungi Kami</a></li>
-								
-							  
+								<li><a href="/contact">Hubungi Kami</a></li>	
 							</ul>
-								<a href="index04b9.html" class="add-list-btn btn-default">Kembali</a>
-						</div>
+							<a href="/user-login" class="add-list-btn btn-default">Kembali</a>
+	
 					</div>
 				</nav>
+			</header>
+
+			<div class="listing-detail__buttons listing-detail__buttons-icons ">
+				<div style="margin-bottom: 2%; display: flex; justify-content: space-between " >
+				<h1 >													
+					Fotografi	</h1>
+					<form class="search-form"  >
+						<div class="search-form__input-holders" style="width: 100% ;">
+							<input class="search-form__input" type="text" name="search-event" placeholder="Cari Judul Postingan" >
+								<a class="btn-default" href="#">
+									<i class="fa fa-search" aria-hidden="true"></i>
+								</a>
+								</div>
+							</form >
+						</div>
+					</div>
 		
 		<!-- End Header -->
 
@@ -160,15 +175,15 @@
 							</div>
 							<img style="border-radius: 10px;" src="upload/city6.jpg" class="card-img-top" alt="" srcset="">
 							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon>
-							<p class=""></p>Beberapa Hal Yang Perlu Diterapkan Agar Sukses
+							<p class="card-text-judul">Beberapa Hal Yang Perlu Diterapkan Agar Sukses</p>
 							
 							<p class="card-text" >Jika diberi pertanyaan siapa sih yang ingin sukses? Mungkin semua orang yang diberi pertanyaan tersebut akan mengangkat tangan mereka tinggi-tinggi. Namun, masih banyak orang yang belum mengerti apa itu kesuksesan ...</p>
 							<div style="width: 100%; display: flex; justify-content: center;  " >
-												<a class="contact-form__submit" href="/fotografi-1" style="margin-right: 20px; margin-bottom: 10px; ">
-													<i class="fa fa-caret-right" aria-hidden="true"></i>
-													lihat
-												</a>
-											</div>
+								<a class="contact-form__submit" href="/fotografi-1" style="margin-right: 20px; margin-bottom: 10px; ">
+									<i class="fa fa-caret-right" aria-hidden="true"></i>
+									Baca
+								</a>
+							</div>
 						</div>
 						</div>
 					</div>
@@ -204,15 +219,15 @@
 							</div>
 							<img style="border-radius: 10px;" src="upload/g4.jpg" class="card-img-top" alt="" srcset="">
 							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon>
-							<p class=""></p>Beberapa Hal Yang Perlu Diterapkan Agar Sukses
+							<p class="card-text-judul">Beberapa Hal Yang Perlu Diterapkan Agar Sukses</p>
 							
 							<p class="card-text">Jika diberi pertanyaan siapa sih yang ingin sukses? Mungkin semua orang yang diberi pertanyaan tersebut akan mengangkat tangan mereka tinggi-tinggi. Namun, masih banyak orang yang belum mengerti apa itu kesuksesan ...</p>
 							<div style="width: 100%; display: flex; justify-content: center;  " >
-												<a class="contact-form__submit" href="" style="margin-right: 20px; margin-bottom: 10px; ">
-													<i class="fa fa-caret-right" aria-hidden="true"></i>
-													lihat
-												</a>
-											</div>
+								<a class="contact-form__submit" href="" style="margin-right: 20px; margin-bottom: 10px; ">
+									<i class="fa fa-caret-right" aria-hidden="true"></i>
+									Baca
+								</a>
+							</div>
 						</div>
 						</div>
 					</div>
@@ -248,15 +263,15 @@
 							</div>
 							<img style="border-radius: 10px;" src="upload/g2.jpg" class="card-img-top" alt="" srcset="">
 							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon>
-							<p class=""></p>Beberapa Hal Yang Perlu Diterapkan Agar Sukses
+							<p class="card-text-judul">Beberapa Hal Yang Perlu Diterapkan Agar Sukses</p>
 							
 							<p class="card-text">Jika diberi pertanyaan siapa sih yang ingin sukses? Mungkin semua orang yang diberi pertanyaan tersebut akan mengangkat tangan mereka tinggi-tinggi. Namun, masih banyak orang yang belum mengerti apa itu kesuksesan ...</p>
 							<div style="width: 100%; display: flex; justify-content: center;  " >
-												<a class="contact-form__submit" href="" style="margin-right: 20px; margin-bottom: 10px; ">
-													<i class="fa fa-caret-right" aria-hidden="true"></i>
-													lihat
-												</a>
-											</div>
+								<a class="contact-form__submit" href="" style="margin-right: 20px; margin-bottom: 10px; ">
+									<i class="fa fa-caret-right" aria-hidden="true"></i>
+									Baca
+								</a>
+							</div>
 						</div>
 						</div>
 					</div>
@@ -295,13 +310,15 @@
 							</div>
 							<img style="border-radius: 10px;" src="upload/city6.jpg" class="card-img-top" alt="" srcset="">
 							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon>
-							<p class=""></p>Beberapa Hal Yang Perlu Diterapkan Agar Sukses
+							<p class="card-text-judul">Beberapa Hal Yang Perlu Diterapkan Agar Sukses</p>
 							
 							<p class="card-text" >Jika diberi pertanyaan siapa sih yang ingin sukses? Mungkin semua orang yang diberi pertanyaan tersebut akan mengangkat tangan mereka tinggi-tinggi. Namun, masih banyak orang yang belum mengerti apa itu kesuksesan ...</p>
-							<a class="btn-default" href="bacafotografi.html">
-											<i class="fa fa-caret-right" aria-hidden="true"></i>
-											Baca
-										</a>
+							<div style="width: 100%; display: flex; justify-content: center;  " >
+								<a class="contact-form__submit" href="" style="margin-right: 20px; margin-bottom: 10px; ">
+									<i class="fa fa-caret-right" aria-hidden="true"></i>
+									Baca
+								</a>
+							</div>
 						</div>
 						</div>
 					</div>
@@ -337,13 +354,15 @@
 							</div>
 							<img style="border-radius: 10px;" src="upload/g4.jpg" class="card-img-top" alt="" srcset="">
 							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon>
-							<p class=""></p>Beberapa Hal Yang Perlu Diterapkan Agar Sukses
+							<p class="card-text-judul">Beberapa Hal Yang Perlu Diterapkan Agar Sukses</p>
 							
 							<p class="card-text">Jika diberi pertanyaan siapa sih yang ingin sukses? Mungkin semua orang yang diberi pertanyaan tersebut akan mengangkat tangan mereka tinggi-tinggi. Namun, masih banyak orang yang belum mengerti apa itu kesuksesan ...</p>
-							<a class="btn-default" href="bacafotografi.html">
-											<i class="fa fa-caret-right" aria-hidden="true"></i>
-											Baca
-										</a>
+							<div style="width: 100%; display: flex; justify-content: center;  " >
+								<a class="contact-form__submit" href="" style="margin-right: 20px; margin-bottom: 10px; ">
+									<i class="fa fa-caret-right" aria-hidden="true"></i>
+									Baca
+								</a>
+							</div>
 						</div>
 						</div>
 					</div>
@@ -379,22 +398,42 @@
 							</div>
 							<img style="border-radius: 10px;" src="upload/g2.jpg" class="card-img-top" alt="" srcset="">
 							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon>
-							<p class=""></p>Beberapa Hal Yang Perlu Diterapkan Agar Sukses
+							<p class="card-text-judul">Beberapa Hal Yang Perlu Diterapkan Agar Sukses</p>
 							
 							<p class="card-text">Jika diberi pertanyaan siapa sih yang ingin sukses? Mungkin semua orang yang diberi pertanyaan tersebut akan mengangkat tangan mereka tinggi-tinggi. Namun, masih banyak orang yang belum mengerti apa itu kesuksesan ...</p>
-							<a class="btn-default" href="bacafotografi.html">
-											<i class="fa fa-caret-right" aria-hidden="true"></i>
-											Baca
-										</a>
+							<div style="width: 100%; display: flex; justify-content: center;  " >
+								<a class="contact-form__submit" href="" style="margin-right: 20px; margin-bottom: 10px; ">
+									<i class="fa fa-caret-right" aria-hidden="true"></i>
+									Baca
+								</a>
+							</div>
 						</div>
 						</div>
 					</div>
 					<!-- end place-post module fotografi-->
-
 				</div>
-
-				
-					
+				</div>
+				<br>
+				<div style="display: flex; justify-content: center;">
+					<nav aria-label="Page navigation example" >
+						<ul class="pagination">
+							<li class="page-item">
+								<a class="page-link" style="color:rgb(236, 107, 128);" href="#" aria-label="Previous">
+									<span aria-hidden="true">&laquo;</span>
+								</a>
+						  </li>
+						  
+						  <li  class="page-item"><a class="page-link" style="color:rgb(236, 107, 128);" href="#">1</a></li>
+						  <li class="page-item"><a class="page-link" style="color:rgb(236, 107, 128);" href="#">2</a></li>
+						  <li class="page-item"><a class="page-link" style="color:rgb(236, 107, 128);" href="#">3</a></li>
+						  <li class="page-item">
+							<a class="page-link" style="color:rgb(236, 107, 128);" href="#" aria-label="Next">
+							  <span aria-hidden="true">&raquo;</span>
+							</a>
+						  </li>
+						</ul>
+					  </nav>
+					</div>
 			</section>
 					
 					<!-- form box -->
@@ -595,78 +634,73 @@
 
 		<!-- footer block module
 			================================================== -->
-		<footer class="footer footer-black">
-			<div class="container">
-
-				<div class="footer__up-part">
-					<div class="row">
-						<div class="col-md-4">
-
-							<div class="footer__widget text-widget">
-								<img src="images/logo.png" alt="triptip-logo">
-								<p class="footer__widget-description">
-									Lorem ipsum dolor sit amet, conse ctetuer adipiscing elit, sed diam nonu mmy nibh euismod tincidunt ut laoreet dolore magna aliquam erat. 
-								</p>
+			<footer class="footer footer-black">
+				<div class="container">
+	
+					<div class="footer__up-part">
+						<div class="row">
+							<div class="col-md-4">
+	
+								<div class="footer__widget text-widget">
+									<img src="images/logo.png" alt="triptip-logo">
+									<p class="footer__widget-description">
+										Menggembangkan dunia baca tulis menggunakan website menuju dunia digital. Temukan berbagai artikel, postingan, cerita, jurnal dan buat postinganmu sendiri disini	
+									</p>
+								</div>
+	
 							</div>
-
-						</div>
-						<div class="col-md-4">
-
-							<div class="footer__widget subscribe-widget">
-								<h2 class="footer__widget-title footer__widget-title-white">
-									Subscribe
-								</h2>
-								<p class="footer__widget-description">
-									Be notified about new locations
-								</p>
-								<form class="footer__subscribe-form">
-									<input class="footer__subscribe-input" type="text" name="email-sub" id="email-sub" placeholder="Enter your Email" />
-									<button class="footer__subscribe-button footer__subscribe-button-primary" type="submit">
-										<i class="la la-arrow-circle-o-right" aria-hidden="true"></i>
-									</button>
-								</form>
+							<div class="col-md-4">
+	
+								<div class="footer__widget subscribe-widget">
+									<h2 class="footer__widget-title footer__widget-title-white">
+										Alamat
+									</h2>
+									<p class="footer__widget-description">
+										Jl. Pandawa No. 66, Dusun Mawar RT 001 RW 001 Desa Pandan
+									</p>
+									
+								</div>
+	
 							</div>
-
-						</div>
-						<div class="col-md-4">
-
-							<div class="footer__widget text-widget">
-								<h2 class="footer__widget-title footer__widget-title-white">
-									Contact Info 
-								</h2>
-								<p class="footer__widget-description">
-									1000 5th Ave to Central Park, New York <br>
-									+1 246-345-0695 <br>
-									info@example.com
-								</p>
+							<div class="col-md-4">
+	
+								<div class="footer__widget text-widget">
+									<h2 class="footer__widget-title footer__widget-title-white">
+										Kontak 
+									</h2>
+									<p class="footer__widget-description">
+										+62 898-1342-6657<br>
+										info@example.com <br>
+										YouTube: ngu_never122
+									</p>
+								</div>
+	
 							</div>
-
 						</div>
 					</div>
-				</div>
-
-				<div class="footer__down-part footer__down-part-black">
-					<div class="row">
-						<div class="col-md-7">
-							<p class="footer__copyright">
-								© Copyright 2018 - All Rights Reserved
-							</p>
-						</div>
-						<div class="col-md-5">
-							<ul class="footer__social-list">
-								<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-								<li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
-								<li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
-							</ul>
+	
+					<div class="footer__down-part footer__down-part-black">
+						<div class="row">
+							<div class="col-md-7">
+								<p class="footer__copyright">
+									© Copyright 2018 - All Rights Reserved
+								</p>
+							</div>
+							<div class="col-md-5">
+								<ul class="footer__social-list">
+									<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
+									<li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
+	
 				</div>
-
-			</div>
-
-		</footer>
+	
+			</footer>
 		<!-- End footer -->
 
 	</div>

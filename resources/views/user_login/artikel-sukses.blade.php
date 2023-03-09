@@ -24,64 +24,59 @@
 		    ================================================== -->
 			<header class="clearfix dark-header-style fullwidth-with-search">
 
-			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-				<div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<div class="container">
 
-					<a class="navbar-brand" href="index.html">
-					<img src="images/logo.png" alt="triptip-logo">
-					</a>
+		<a class="navbar-brand" href="index.html">
+			<img src="images/logo.png" alt="">
+		</a>
 
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav mr-auto">
-							<li>
-								<a class="active" href="/home">Beranda <i class="" aria-hidden="true"></i></a>
-								
-							</li>
-							<li ><a  href="#">Kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-								<div class="megadropdown">
-									<div class="dropdown-box">
-										
-										<ul class="dropdown-list">
-											<li><a href="artikel.html">artikel</a></li>
-											<li><a href="cerpen.html">cerpen</a></li>
-											<li><a href="puisi.html">puisi</a></li>
-											<li><a href="photography.html">fotografi</a></li>
-											</ul>
-									</div>
-									<div class="dropdown-box">
-										<ul class="dropdown-list">
-										
-											<li><a href="makalah.html">makalah</a></li>
-											<li><a href="skripsi.html">skripsi</a></li>
-											<li><a href="ilmiah.html">karya ilmiah</a></li>
-										</ul>
-									</div>
-									<div class="dropdown-box">
-										<ul class="dropdown-list">
-											<li><a href="diary.html">diary</a></li>
-											<li><a href="ilustrasi.html">ilustrasi</a></li>
-											<li><a href="pantun.html">pantun</a></li>
-											<li><a href="essai.html">esai</a></li>
-										
-											</ul>
-									</div>
-
-
-									
-								</div>
-							</li>
-							<li><a href="contact.html">Hubungi Kami</a></li>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li>
+					<a class="active" href="/user-login">Beranda <i class="" aria-hidden="true"></i></a>
+				</li>
+				<li ><a  href="#">Kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+					<div class="megadropdown">
+						<div class="dropdown-box">
 							
-						
-						</ul>
-							<a href="index04b9.html" class="add-list-btn btn-default">Kembali</a>
+							<ul class="dropdown-list">
+								<li><a href="/artikel">artikel</a></li>
+								<li><a href="/cerpen">cerpen</a></li>
+								<li><a href="/puisi">puisi</a></li>
+								<li><a href="/photography">fotografi</a></li>
+								</ul>
+						</div>
+						<div class="dropdown-box">
+							<ul class="dropdown-list">
+							
+								<li><a href="/makalah">makalah</a></li>
+								<li><a href="/skripsi">skripsi</a></li>
+								<li><a href="/ilmiah">karya ilmiah</a></li>
+							</ul>
+						</div>
+						<div class="dropdown-box">
+							<ul class="dropdown-list">
+								<li><a href="/diary">diary</a></li>
+								<li><a href="/ilustrasi">ilustrasi</a></li>
+								<li><a href="/pantun">pantun</a></li>
+								<li><a href="/essai">esai</a></li>
+							
+								</ul>
+						</div>
 					</div>
-				</div>
-			</nav>
+				</li>
+				<li><a href="/contact">Hubungi Kami</a></li>	
+			</ul>
+			<a href="/user-login" class="add-list-btn btn-default">Kembali</a>
+
+	</div>
+</nav>
+</header>
 		<!-- End Header -->
 
 		<!-- listing-detail
@@ -172,56 +167,23 @@
 
 								  <ul class="pagination m-t-20 m-b-5 justify-content-center">
 									<li class="page-item">
-										<a class="page-link" href="#"  aria-label="Previous">
+										<a class="page-link" style="color:rgb(236, 107, 128);" href="#"  aria-label="Previous">
 											<i class="fa fa-angle-left"></i>
 										</a>
 									</li>
-									<li class="page-item"><a class="page-link" href="#">1</a></li>
-									<li class="page-item "><a class="page-link" href="#">2</a></li>
-									<li class="page-item"><a class="page-link" href="#">3</a></li>
-									<li class="page-item "><a class="page-link" href="#">4</a></li>
-									<li class="page-item"><a class="page-link" href="#">5</a></li>
+									<li class="page-item"><a class="page-link" style="color:rgb(236, 107, 128);" href="#">1</a></li>
+									<li class="page-item "><a class="page-link" style="color:rgb(236, 107, 128);" href="#">2</a></li>
+									<li class="page-item"><a class="page-link" style="color:rgb(236, 107, 128);" href="#">3</a></li>
+									<li class="page-item "><a class="page-link" style="color:rgb(236, 107, 128);" href="#">4</a></li>
+									<li class="page-item"><a class="page-link" style="color:rgb(236, 107, 128);" href="#">5</a></li>
 									<li class="page-item">
-										<a class="page-link" href="#" aria-label="Next">
+										<a class="page-link" style="color:rgb(236, 107, 128);" href="#" aria-label="Next">
 											<i class="fa fa-angle-right"></i>
 										</a>
 									</li>
 								</ul>
 
-								<!-- gallery-box -->
-								<!-- <div class="listing-detail__gallery" id="gallery-box">
-									<h2 class="listing-detail__content-title">Gallery</h2>
-									<div class="listing-detail__gallery-inner owl-wrapper">
-										<div class="owl-carousel" data-num="4">
-										
-											<div class="item">
-												<img src="upload/g1.jpg" alt="">
-											</div>
-										
-											<div class="item">
-												<img src="upload/g2.jpg" alt="">
-											</div>
-										
-											<div class="item">
-												<img src="upload/g3.jpg" alt="">
-											</div>
-										
-											<div class="item">
-												<img src="upload/g4.jpg" alt="">
-											</div>
-										
-											<div class="item">
-												<img src="upload/g5.jpg" alt="">
-											</div>
-										
-											<div class="item">
-												<img src="upload/g6.jpg" alt="">
-											</div>
-
-										</div>
-									</div>
-								</div> -->
-								<!-- Contact form module -->
+								
 								<form class="contact-form" id="leave-review">
 									<h2 class="contact-form__title">
 										KOMENTAR
@@ -231,31 +193,8 @@
 											<p class="contact-form__rate">
 												komentarmu dapat membantu pembuat karya
 											</p>
-											<!-- <p class="contact-form__rate-bx">
-												<i class="la la-star"></i>
-												<i class="la la-star"></i>
-												<i class="la la-star"></i>
-												<i class="la la-star"></i>
-												<i class="la la-star"></i>
-												<i class="la la-star"></i>
-												<i class="la la-star"></i>
-												<i class="la la-star"></i>
-												<i class="la la-star"></i>
-												<i class="la la-star"></i>
-											</p> -->
-											<!-- <p class="contact-form__rate-bx-show">
-												<span class="rate-actual">0</span> / 10
-											</p> -->
 										</div>
-										<!-- <div class="col-md-6">
-											<div class="contact-form__upload-btn">
-												<input class="contact-form__input-file" type="file" name="photo-upload" id="photo-upload" />
-												<span>
-													<i class="la la-cloud-upload"></i>
-													Upload Photos
-												</span>
-											</div>
-										</div> -->
+										
 									</div>
 									<div class="row">
 										
@@ -323,46 +262,30 @@
 							<div class="sidebar">
 
 								
-									
-								</div>
-
-								<div class="sidebar__widget sidebar__widget-listing-details">
+								<div class="sidebar_widget sidebar_widget-listing-details">
 									<h2 class="sidebar__widget-title">
-										Detail
+										Details
 									</h2>
 									<ul class="sidebar__listing-list">
 										<li>
 											<i class="la la-map-marker"></i>
-											nama pengunggah : monica
+											305 Franklin Ave (at Lafayette Ave), Brooklyn
 										</li>
 										<li>
 											<i class="la la-mobile-phone"></i>
-											no yang bisa di hubunggi : +44 20 7336 8898
+											+44 20 7336 8898
 										</li>
 										<li>
 											<i class="la la-link"></i>
-											email pengunggah : monic@gmail.com
+											momonica@gmail.com
 										</li>
-										<li>
-											<i class="la la-clock-o"></i>
-										    tanggal posting : 2-10-2022	
-										</li>
-									</ul>
-								</div>
-
-								<div class="sidebar__widget sidebar__widget-tags">
-									<h2 class="sidebar__widget-title">
-										kategori
-									</h2>
-									<ul class="sidebar__tags-list">
-										<li><a href="#">artikel</a></li>
 										
 									</ul>
 								</div>
 
-								<div class="sidebar__widget sidebar__widget-author">
+								<div class="sidebar_widget sidebar_widget-author">
 									<h2 class="sidebar__widget-title">
-										Pembuat
+										Author
 									</h2>
 									
 									<!-- Author-wrapper module -->
@@ -373,9 +296,9 @@
 													<div class="author-wrapper__content">
 														<a class="author-wrapper__image" href="#"><img src="upload/avatar1.jpg" alt=""></a>
 														<h3 class="author-wrapper__title">
-															<a href="#">Matt Smith</a>
+															<a href="#">Monica</a>
 															<span class="author-wrapper__location">
-																New York
+																Malang
 															</span>
 														</h3>
 													</div>
@@ -386,21 +309,39 @@
 										<ul class="author-wrapper__list">
 											<li>
 												<span>42</span>
-												postingan
+												List
 											</li>
 											
 											<li>
 												<span>56</span>
-												komentar
+												Reviews
 											</li>
 										</ul>
 									</div>
 									<!-- End Author-wrapper module-->
 								</div>
 
-								
+								<div class="sidebar_widget sidebar_widget-tags">
+									<h2 class="sidebar__widget-title">
+										Kategori
+									</h2>
+									<ul class="sidebar__tags-list">
+										<li><a href="artikel.html">Artikel</a></li>
+										<li><a href="cerpen.html">Cerpen</a></li>
+										<li><a href="puisi.html">Puisi</a></li>
+										<li><a href="diary.html">Diary</a></li>
+										<li><a href="photography.html">Fotografi</a></li>
+										<li><a href="ilustrasi.html">Ilustrasi</a></li>
+										<li><a href="makalah.html">Makalah</a></li>
+										<li><a href="skripsi.html">Skripsi</a></li>
+										<li><a href="pantun.html">Pantun</a></li>
+										<li><a href="essai.html">Esai</a></li>
+										<li><a href="ilmiah.html">Karya Ilmiah</a></li>
+									</ul>
+								</div>
 
 								
+
 							</div>
 						</div>
 					</div>

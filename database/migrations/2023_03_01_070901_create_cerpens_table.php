@@ -13,18 +13,16 @@ return new class extends Migration
     {
         Schema::create('cerpens', function (Blueprint $table) {
             $table->id();
-            $table->string('foto_profil');
             $table->string('foto');
-            $table->string('nama');
             $table->string('judul');
             $table->string('isi');
             $table->string('status')->default('pandding');
-            // $table->foreignId('user_id');
-            // $table->foreign('user_id')
-            // ->references('id')
-            // ->on('users')
-            // ->onDelete('cascade')
-            // ->onUpdate('cascade');
+            $table->foreignId('user_id');
+            $table->foreign('user_id')
+            ->references('id')
+            ->on('users')
+            ->onDelete('cascade')
+            ->onUpdate('cascade');
             $table->timestamps();
         });
     }

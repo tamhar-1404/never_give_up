@@ -4,8 +4,30 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Cerpen;
+use App\Models\User;
 class CerpenController extends Controller
 {
+    //admin
+    public function admin_cerpen(){
+        
+        $cerpen = cerpen::where('status', 'pandding')->get();
+
+        return view('admin.cerpen',['cerpen'=>$cerpen]);
+    
+    }
+    public function uprove($id){    
+        
+        $cerpen = cerpen::find($id);
+        if($cerpen->status == 'pandding'){
+            $cerpen->status = 'setuju';   
+            $cerpen->save();
+        }
+       
+        return redirect('/cerpen_admin');
+    
+    }
+    //endadmin
+    // user
     public function cerpen(){
         
         $cerpen = cerpen::where('status', 'setuju')->get();
@@ -13,9 +35,10 @@ class CerpenController extends Controller
         return view('user_login.cerpen',['cerpen'=>$cerpen]);
     
     }
+   
     public function create_cerpen(){
-        $cerpen = cerpen::all();
-        return view ('user_login/create/create_cerpen', ['cerpen'=>$cerpen]);
+        $user = user::all();
+        return view ('user_login/create/create_cerpen', ['user'=>$user]);
     }
 
     public function simpan_cerpen(Request $request){

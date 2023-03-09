@@ -5,7 +5,7 @@
 
 <!-- Mirrored from nunforest.com/triptip-demo/sign-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 10:04:22 GMT -->
 <head>
-	<title>Triptip</title>
+	<title>Register</title>
 
 	<meta charset="utf-8">
 
@@ -38,6 +38,7 @@
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav mr-auto">
 								<li>
+<<<<<<< HEAD
 									<a class=" " href="/">Home <i class="" aria-hidden="true"></i></a>
 								</li>
 								<li ><a  href="#">kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
@@ -64,7 +65,11 @@
 										</div>
 										
 									</div>
+=======
+									<a class="active" href="/">Home <i class="" aria-hidden="true"></i></a>
+>>>>>>> 2fcb79861690e5bea471b612e93aefa35cb806a6
 								</li>
+								
 								
 							</ul>
 							<ul class="navbar-nav ml-auto right-list">
