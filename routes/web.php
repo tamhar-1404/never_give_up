@@ -79,6 +79,7 @@ Route::group(['middleware'=> ['auth','hakakses:Admin']], function() {
     Route::get('/data-user', [AdminController::class, 'data_user'])->name('data-user');
     Route::get('/cerpen_admin', [AdminController::class, 'cerpen_admin'])->name('cerpen_admin');
     Route::post('/uprove/{id}', [CerpenController::class, 'uprove'])->name('uprove');
+    Route::get('/akun_blokir', [CerpenController::class, 'akun_blokir'])->name('akun_blokir');
 });
 
 //user_login
@@ -93,6 +94,7 @@ Route::group(['middleware'=> ['auth', 'hakakses:user']], function(){
     //     return view('user_login.create.create_cerpen');
     Route::get('/create_cerpen', [CerpenController::class, 'create_cerpen'])->name('create-cerpen');
     Route::post('/simpan_cerpen', [CerpenController::class, 'simpan_cerpen']);
+    
     
 });
 

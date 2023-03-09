@@ -5,7 +5,7 @@
 
 <!-- Mirrored from nunforest.com/triptip-demo/?storefront=envato-elements by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 09:53:49 GMT -->
 <head>
-	<title>Home</title>
+	<title>Beranda </title>
 
 	<meta charset="utf-8">
 

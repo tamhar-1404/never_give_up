@@ -5,7 +5,7 @@
 <!-- Mirrored from themesdesign.in/hexzy/vertical/blue/layouts-collapse.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 22:32:31 GMT -->
 <head>
         <meta charset="utf-8" />
-        <title>Karya Pribadi</title>
+        <title>BUAT CERPEN</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta content="Admin Dashboard" name="description" />
         <meta content="ThemeDesign" name="author" />
@@ -32,8 +32,8 @@
             <!-- LOGO -->
             <div class="topbar-left">
                 <div class="text-center">
-                    <a href="index.html" class="logo"><img src="assets/images/logo-dark.png" alt="" height="24"></a>
-                    <a href="index.html" class="logo-sm"><img src="assets/images/logo-sm.png" alt="" height="28"></a>
+                    <a href="/admin" class="logo"><img src="assets/images/logo-dark.png" alt="" height="24"></a>
+                    <a href="/admin" class="logo-sm"><img src="assets/images/logo-sm.png" alt="" height="28"></a>
                 </div>
             </div>
             <!-- Button mobile view to collapse sidebar menu -->
@@ -59,7 +59,7 @@
                             <a href="#" class="dropdown-toggle profile waves-effect waves-light" data-toggle="dropdown" aria-expanded="true">
                                 <img src="assets/images/users/Dzaky.jpg" alt="user-img" class="rounded-circle">
                                 <span class="profile-username">
-                                        Dzaky <span class="mdi mdi-chevron-down font-15"></span>
+                                        N.V.G <span class="mdi mdi-chevron-down font-15"></span>
                                 </span>
                             </a>
                             <ul class="dropdown-menu">
@@ -85,7 +85,7 @@
                     </div>
                     <div class="user-info">
                         <div class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dzaky NVG</a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">N.V.G<a>
                             <ul class="dropdown-menu">
                                 <li><a href="javascript:void(0)" class="dropdown-item"> Profile</a></li>
                                 <li><a href="javascript:void(0)" class="dropdown-item"><span class="badge badge-success float-right">5</span> Settings </a></li>
@@ -105,7 +105,7 @@
                         <li class="menu-title">Menu</li>
 
                         <li>
-                            <a href="index.html" class="waves-effect"><i class="ti-home"></i><span> Dashboard <span class="badge badge-primary float-right">500</span></span></a>
+                            <a href="/admin" class="waves-effect"><i class="ti-home"></i><span> Dashboard <span class="badge badge-primary float-right">500</span></span></a>
                         </li>
 
 

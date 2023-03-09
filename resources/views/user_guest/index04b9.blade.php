@@ -48,33 +48,33 @@
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav mr-auto">
 								<li>
-									<a class="active" href="index04b9.html">Home <i class="" aria-hidden="true"></i></a>
+									<a class="active" href="/">Home <i class="" aria-hidden="true"></i></a>
 								</li>
 								<li ><a  href="#">Kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
 									<div class="megadropdown">
 										<div class="dropdown-box">
 											
 											<ul class="dropdown-list">
-												<li><a href="artikel.html">artikel</a></li>
-												<li><a href="/cerpen">cerpen</a></li>
-												<li><a href="puisi.html">puisi</a></li>
-												<li><a href="photography.html">fotografi</a></li>
+												<li><a href="{{Route('sing-page')}}">artikel</a></li>
+												<li><a href="{{Route('sing-page')}}">cerpen</a></li>
+												<li><a href="{{Route('sing-page')}}">puisi</a></li>
+												<li><a href="{{Route('sing-page')}}">fotografi</a></li>
 												</ul>
 										</div>
 										<div class="dropdown-box">
 											<ul class="dropdown-list">
 											
-												<li><a href="makalah.html">makalah</a></li>
-												<li><a href="skripsi.html">skripsi</a></li>
-												<li><a href="ilmiah.html">karya ilmiah</a></li>
+												<li><a href="{{Route('sing-page')}}">makalah</a></li>
+												<li><a href="{{Route('sing-page')}}">skripsi</a></li>
+												<li><a href="{{Route('sing-page')}}">karya ilmiah</a></li>
 											</ul>
 										</div>
 										<div class="dropdown-box">
 											<ul class="dropdown-list">
-												<li><a href="diary.html">diary</a></li>
-												<li><a href="ilustrasi.html">ilustrasi</a></li>
-												<li><a href="pantun.html">pantun</a></li>
-												<li><a href="essai.html">esai</a></li>
+												<li><a href="{{Route('sing-page')}}">diary</a></li>
+												<li><a href="{{Route('sing-page')}}">ilustrasi</a></li>
+												<li><a href="{{Route('sing-page')}}">pantun</a></li>
+												<li><a href="{{Route('sing-page')}}">esai</a></li>
 											
 												</ul>
 										</div>
@@ -97,7 +97,7 @@
 			<div class="container">
 
 				<p class="discover__description">
-					Temukan karya pribadi yang kau cari
+					Temukan karya pribadi yang kamu suka sesuai selera mu
 				</p>
 
 				<h1 class="discover__title places-tab">
@@ -119,10 +119,10 @@
 								<img class="place-gal__image" src="upload/top1.jpg" alt="place-image">
 								<div class="place-gal__content">
 									<h2 class="place-gal__title permanent-font">
-										<a href="/artikel_guest">Artikel</a>
+										<a href="{{Route('sing-page')}}">Artikel</a>
 									</h2>
 									
-									<a class="btn-default" href="/artikel_guest">
+									<a class="btn-default" href="{{Route('sing-page')}}">
 										<i class="fa fa-caret-right" aria-hidden="true"></i>
 										lihat
 									</a>
@@ -139,12 +139,12 @@
 								<img class="place-gal__image" src="upload/top2.jpg" alt="place-image">
 								<div class="place-gal__content">
 									<h2 class="place-gal__title">
-										<a href="photography.html">fotografi</a>
+										<a href="{{Route('sing-page')}}">Fotografi</a>
 									</h2>
 									
-									<a class="btn-default" href="sign-page.html">
+									<a class="btn-default" href="{{Route('sing-page')}}">
 										<i class="fa fa-caret-right" aria-hidden="true"></i>
-										lihat
+										Lihat
 									</a>
 								</div>
 							</div>
@@ -159,12 +159,12 @@
 								<img class="place-gal__image" src="upload/top3.jpg" alt="place-image">
 								<div class="place-gal__content">
 									<h2 class="place-gal__title permanent-font">
-										<a href="makalah.html">makalah</a>
+										<a href="{{Route('sing-page')}}">Makalah</a>
 									</h2>
 									
-									<a class="btn-default" href="sign-page.html">
+									<a class="btn-default" href="{{Route('sing-page')}}">
 										<i class="fa fa-caret-right" aria-hidden="true"></i>
-										lihat
+										Lihat
 									</a>
 								</div>
 							</div>
@@ -179,12 +179,12 @@
 								<img class="place-gal__image" src="upload/top4.jpg" alt="place-image">
 								<div class="place-gal__content">
 									<h2 class="place-gal__title">
-										<a href="essai.html">esai</a>
+										<a href="{{Route('sing-page')}}">Esai</a>
 									</h2>
 									
-									<a class="btn-default" href="sign-page.html">
+									<a class="btn-default" href="{{Route('sing-page')}}">
 										<i class="fa fa-caret-right" aria-hidden="true"></i>
-										lihat
+										Lihat
 									</a>
 								</div>
 							</div>
@@ -199,10 +199,10 @@
 								<img class="place-gal__image" src="upload/top1.jpg" alt="place-image">
 								<div class="place-gal__content">
 									<h2 class="place-gal__title permanent-font">
-										<a href="ilustrasi.html">ilustrasi</a>
+										<a href="{{Route('sing-page')}}">Ilustrasi</a>
 									</h2>
 									
-									<a class="btn-default" href="sign-page.html">
+									<a class="btn-default" href="{{Route('sing-page')}}">
 										<i class="fa fa-caret-right" aria-hidden="true"></i>
 										lihat
 									</a>
@@ -219,10 +219,10 @@
 								<img class="place-gal__image" src="upload/top2.jpg" alt="place-image">
 								<div class="place-gal__content">
 									<h2 class="place-gal__title">
-										<a href="photography.html">fotografi</a>
+										<a href="{{Route('sing-page')}}">Fotografi</a>
 									</h2>
 									
-									<a class="btn-default" href="sign-page.html">
+									<a class="btn-default" href="{{Route('sing-page')}}">
 										<i class="fa fa-caret-right" aria-hidden="true"></i>
 										lihat
 									</a>
@@ -260,7 +260,7 @@
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="artikel.html" class="services-post">
+								<a href="{{Route('sing-page')}}" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-activit" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-file-earmark-post-fill" viewBox="0 0 16 16">
@@ -268,7 +268,7 @@
 											  </svg>
 										</i>
 										<h2 class="services-post__title">
-											artikel
+											Artikel
 										</h2>
 										<p class="services-post__location">
 											
@@ -282,7 +282,7 @@
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="cerpen.html" class="services-post">
+								<a href="{{Route('sing-page')}}" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-activit" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
@@ -290,7 +290,7 @@
 											  </svg>
 										</i>
 										<h2 class="services-post__title">
-											cerpen
+											Cerpen
 										</h2>
 										<p class="services-post__location">
 											
@@ -305,7 +305,7 @@
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="puisi.html" class="services-post">
+								<a href="{{Route('sing-page')}}" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-activit" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-file-earmark-richtext" viewBox="0 0 16 16">
@@ -314,7 +314,7 @@
 											  </svg>
 										</i>
 										<h2 class="services-post__title">
-											puisi
+											Puisi
 										</h2>
 										<p class="services-post__location">
 											
@@ -329,7 +329,7 @@
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="diary.html" class="services-post">
+								<a href="{{Route('sing-page')}}" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-activit" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16">
@@ -339,7 +339,7 @@
 											  </svg>
 										</i>
 										<h2 class="services-post__title">
-											diary
+											Diary
 										</h2>
 										<p class="services-post__location">
 											
@@ -354,7 +354,7 @@
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="photography.html" class="services-post">
+								<a href="{{Route('sing-page')}}" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-activit" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-camera2" viewBox="0 0 16 16">
@@ -363,7 +363,7 @@
 											  </svg>
 										</i>
 										<h2 class="services-post__title">
-											fotografi
+											Fotografi
 										</h2>
 										<p class="services-post__location">
 											
@@ -378,7 +378,7 @@
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="ilustrasi.html" class="services-post">
+								<a href="{{Route('sing-page')}}" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-easel2" viewBox="0 0 16 16">
@@ -386,7 +386,7 @@
 											  </svg>
 										</i>
 										<h2 class="services-post__title">
-											ilustrasi
+											Ilustrasi
 										</h2>
 										<p class="services-post__location">
 										
@@ -401,7 +401,7 @@
 								<div class="col-xl-2 col-md-4 col-sm-6">
 		
 									<!-- services-post module -->
-									<a href="makalah.html" class="services-post">
+									<a href="{{Route('sing-page')}}" class="services-post">
 										<div class="services-post__content">
 											<i class="la la-" aria-hidden="true">
 												<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
@@ -411,7 +411,7 @@
 												  
 											</i>
 											<h2 class="services-post__title">
-												makalah
+												Makalah
 											</h2>
 											<p class="services-post__location">
 												
@@ -425,7 +425,7 @@
 								<div class="col-xl-2 col-md-4 col-sm-6">
 		
 									<!-- services-post module -->
-									<a href="skripsi.html" class="services-post">
+									<a href="{{Route('sing-page')}}" class="services-post">
 										<div class="services-post__content">
 											<i class="la la-" aria-hidden="true">
 												<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-journal-bookmark" viewBox="0 0 16 16">
@@ -435,7 +435,7 @@
 												  </svg>
 											</i>
 											<h2 class="services-post__title">
-												skripsi
+												Skripsi
 											</h2>
 											<p class="services-post__location">
 												
@@ -450,7 +450,7 @@
 								<div class="col-xl-2 col-md-4 col-sm-6">
 		
 									<!-- services-post module -->
-									<a href="pantun.html" class="services-post">
+									<a href="{{Route('sing-page')}}" class="services-post">
 										<div class="services-post__content">
 											<i class="la la-" aria-hidden="true">
 												<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
@@ -459,7 +459,7 @@
 												  </svg>
 											</i>
 											<h2 class="services-post__title">
-												pantun
+												Pantun
 											</h2>
 											<p class="services-post__location">
 												
@@ -473,7 +473,7 @@
 								<div class="col-xl-2 col-md-4 col-sm-6">
 		
 									<!-- services-post module -->
-									<a href="essay.html" class="services-post">
+									<a href="{{Route('sing-page')}}" class="services-post">
 										<div class="services-post__content">
 											<i class="la la-" aria-hidden="true">
 												<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list-task" viewBox="0 0 16 16">
@@ -483,7 +483,7 @@
 												  </svg>
 											</i>
 											<h2 class="services-post__title">
-												esai
+												Esai
 											</h2>
 											<p class="services-post__location">
 												
@@ -497,7 +497,7 @@
 								<div class="col-xl-2 col-md-4 col-sm-6">
 		
 									<!-- services-post module -->
-									<a href="ilmiah.html" class="services-post">
+									<a href="{{Route('sing-page')}}" class="services-post">
 										<div class="services-post__content">
 											<i class="la la-" aria-hidden="true">
 												<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-journals" viewBox="0 0 16 16">
@@ -506,7 +506,7 @@
 												  </svg>
 											</i>
 											<h2 class="services-post__title" style="display: flex; font-size: 15px;">
-												karya ilmiah
+												Karya ilmiah
 											</h2>
 											<p class="services-post__location">
 												
@@ -562,7 +562,7 @@
 										sumanto
 									   </p>
 									   <div style="padding-bottom: 30px;" >
-										<a class="place-post__like" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+										<a class="place-post__like" href="{{Route('sing-page')}}"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
 									   </div>
 									</div>
 									
@@ -582,7 +582,7 @@
 												54 Reviews
 											</span>
 										</p>
-										<a class="contact-form__submit" href="bacafotografi.html" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
+										<a class="contact-form__submit" href="{{Route('sing-page')}}" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
 													<i class="fa fa-caret-right" aria-hidden="true"></i>
 													Baca
 												</a>
@@ -606,7 +606,7 @@
 										sumanto
 									   </p>
 									   <div style="padding-bottom: 30px;" >
-										<a class="place-post__like" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+										<a class="place-post__like" href="{{Route('sing-page')}}"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
 									   </div>
 									</div>
 									
@@ -626,7 +626,7 @@
 												54 Reviews
 											</span>
 										</p>
-										<a class="contact-form__submit" href="bacafotografi.html" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
+										<a class="contact-form__submit" href="{{Route('sing-page')}}" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
 													<i class="fa fa-caret-right" aria-hidden="true"></i>
 													Baca
 												</a>
@@ -650,7 +650,7 @@
 										sumanto
 									   </p>
 									   <div style="padding-bottom: 30px;" >
-										<a class="place-post__like" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+										<a class="place-post__like" href="{{Route('sing-page')}}"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
 									   </div>
 									</div>
 									
@@ -670,7 +670,7 @@
 												54 Reviews
 											</span>
 										</p>
-										<a class="contact-form__submit" href="bacafotografi.html" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
+										<a class="contact-form__submit" href="{{Route('sing-page')}}" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
 													<i class="fa fa-caret-right" aria-hidden="true"></i>
 													Baca
 												</a>
@@ -694,7 +694,7 @@
 										sumanto
 									   </p>
 									   <div style="padding-bottom: 30px;" >
-										<a class="place-post__like" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+										<a class="place-post__like" href="{{Route('sing-page')}}"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
 									   </div>
 									</div>
 									
@@ -714,7 +714,7 @@
 												54 Reviews
 											</span>
 										</p>
-										<a class="contact-form__submit" href="bacafotografi.html" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
+										<a class="contact-form__submit" href="{{Route('sing-page')}}" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
 													<i class="fa fa-caret-right" aria-hidden="true"></i>
 													Baca
 												</a>
@@ -738,7 +738,7 @@
 										sumanto
 									   </p>
 									   <div style="padding-bottom: 30px;" >
-										<a class="place-post__like" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+										<a class="place-post__like" href="{{Route('sing-page')}}"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
 									   </div>
 									</div>
 									
@@ -758,7 +758,7 @@
 												54 Reviews
 											</span>
 										</p>
-										<a class="contact-form__submit" href="bacafotografi.html" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
+										<a class="contact-form__submit" href="{{Route('sing-page')}} style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
 													<i class="fa fa-caret-right" aria-hidden="true"></i>
 													Baca
 												</a>
@@ -782,7 +782,7 @@
 										sumanto
 									   </p>
 									   <div style="padding-bottom: 30px;" >
-										<a class="place-post__like" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+										<a class="place-post__like" href="{{Route('sing-page')}}"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
 									   </div>
 									</div>
 									
@@ -802,7 +802,7 @@
 												54 Reviews
 											</span>
 										</p>
-										<a class="contact-form__submit" href="bacafotografi.html" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
+										<a class="contact-form__submit" href="{{Route('sing-page')}}" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
 													<i class="fa fa-caret-right" aria-hidden="true"></i>
 													Baca
 												</a>
