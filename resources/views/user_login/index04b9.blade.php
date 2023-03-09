@@ -41,21 +41,17 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav mr-auto">
 							<li>
-<<<<<<< Updated upstream
-								<a class="active" href="/">Beranda <i class="" aria-hidden="true"></i></a>
-=======
-								<a class="active" href="/index04b9">Beranda <i class="" aria-hidden="true"></i></a>
->>>>>>> Stashed changes
+								<a class="active" href="">Beranda <i class="" aria-hidden="true"></i></a>
 							</li>
 							<li ><a  href="#">Kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
 								<div class="megadropdown">
 									<div class="dropdown-box">
 										
 										<ul class="dropdown-list">
-											<li><a href="artikel.html">artikel</a></li>
-											<li><a href="cerpen.html">cerpen</a></li>
-											<li><a href="puisi.html">puisi</a></li>
-											<li><a href="photography.html">fotografi</a></li>
+											<li><a href="/artikel">artikel</a></li>
+											<li><a href="/cerpen">cerpen</a></li>
+											<li><a href="/puisi">puisi</a></li>
+											<li><a href="/photography">fotografi</a></li>
 											</ul>
 									</div>
 									<div class="dropdown-box">
@@ -80,8 +76,11 @@
 									
 								</div>
 							</li>
+<<<<<<< Updated upstream
 							<li><a href="/kontak">Hubungi Kami</a></li>
+=======
 							<li><a href="/contact">Hubungi Kami</a></li>
+>>>>>>> Stashed changes
 
 											
 						</ul>
