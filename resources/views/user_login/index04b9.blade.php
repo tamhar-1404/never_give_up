@@ -76,13 +76,7 @@
 									
 								</div>
 							</li>
-<<<<<<< Updated upstream
-							<li><a href="/kontak">Hubungi Kami</a></li>
-=======
-							<li><a href="/contact">Hubungi Kami</a></li>
->>>>>>> Stashed changes
-
-											
+								<li><a href="/contact">Hubungi Kami</a></li>				
 						</ul>
 						
 						<a href="/pilihkategori" class="add-list-btn btn-default"><i class="fa fa-plus" aria-hidden="true"></i> posting</a>
@@ -153,11 +147,7 @@
 											<a href="/artikel">Artikel</a>
 										</h2>
 										
-<<<<<<< Updated upstream
-										<a class="btn-default" href="artikel">
-=======
-										<a class="btn-default" href="/artikel">
->>>>>>> Stashed changes
+											<a class="btn-default" href="/artikel">	
 											<i class="fa fa-caret-right" aria-hidden="true"></i>
 											<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
 												<path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
