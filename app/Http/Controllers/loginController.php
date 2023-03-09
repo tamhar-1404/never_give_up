@@ -54,11 +54,7 @@ class loginController extends Controller
 
     }
 
-<<<<<<< Updated upstream
-=======
-   
 
->>>>>>> Stashed changes
     public function register(Request $request)
     {
     // $this->validate($request, [
@@ -82,7 +78,7 @@ class loginController extends Controller
             
         }$user->save();
         
-        return redirect('/');
+        return redirect('/sing-page');
 
     
     }
