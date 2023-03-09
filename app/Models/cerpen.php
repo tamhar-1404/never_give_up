@@ -7,9 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class cerpen extends Model
 {
+    protected $guarded = [];
     use HasFactory;
     public function user()
     {
-        return $this-> belongsTo(users::class);
+        return $this-> BelongsTo(user::class);
     }
 }

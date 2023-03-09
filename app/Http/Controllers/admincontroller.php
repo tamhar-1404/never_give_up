@@ -3,15 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\user;
-use App\Models\kontak;
-use App\Models\cerpen;
+use App\Models\User;
+use App\Models\Kontak;
+use App\Models\Cerpen;
 
-class admincontroller extends Controller
+class AdminController extends Controller
 {
     public function indexadmin()
     {
-         return view('admin.index');
+        return view('admin.index');
 
     }
     public function data_user()
@@ -36,3 +36,4 @@ class admincontroller extends Controller
         
     }
 }
+?>
