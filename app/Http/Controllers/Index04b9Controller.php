@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 
 class Index04b9Controller extends Controller
 {
+    public function user_login(){
+        return view('user_login.index04b9');
+        }
     public function cerpen(){
         $cerpen = cerpen::where('status', 'setuju')->get();
         return view('user_login.cerpen',['cerpen'=>$cerpen]);

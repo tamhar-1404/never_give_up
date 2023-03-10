@@ -176,7 +176,7 @@
                     </div>
                    
                         <div class="row col-lg-12 justify-content-lg-center"  >
-                            @foreach ($cerpen as $item)
+                            @foreach ($postingan as $item)
                             <div class="col-3">
                                 <div class="card" style="border-radius: 15px;">
                                 <div class="card-body">
@@ -189,7 +189,7 @@
                                        
                                        </div>
                                     </div>
-                                    <img style="border-radius: 10px;" src="assets/layout.img/sukses2.jpg" class="card-img-top" alt="" srcset="">
+                                    <img style="border-radius: 10px;" src="asset/{{$item->foto}}" class="card-img-top" alt="" srcset="">
                                     <div >
                                         <p style="margin: 10px;">tanggal posting : 12-03-2022</p>
                                     </div>
