@@ -5,7 +5,7 @@
 
 <!-- Mirrored from nunforest.com/triptip-demo/add-listing.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 10:04:22 GMT -->
 <head>
-	<title>Triptip</title>
+	<title>Artikel</title>
 
 	<meta charset="utf-8">
 
@@ -54,8 +54,8 @@ Artikel	</h1><center>
 											
 											<ul class="dropdown-list">
 												<li><a href="/artikel_guest">artikel</a></li>
-												<li><a href="cerpen.html">cerpen</a></li>
-												<li><a href="puisi.html">puisi</a></li>
+												<li><a href="cerpen">cerpen</a></li>
+												<li><a href="/puisi">puisi</a></li>
 												<li><a href="photography.html">fotografi</a></li>
 												</ul>
 										</div>

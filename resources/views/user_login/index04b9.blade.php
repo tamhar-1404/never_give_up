@@ -42,6 +42,7 @@
 						<ul class="navbar-nav mr-auto">
 							<li>
 <<<<<<< HEAD
+<<<<<<< HEAD
 								<a class="active" href="/user-login">Beranda <i class="" aria-hidden="true"></i></a>
 =======
 <<<<<<< Updated upstream
@@ -50,6 +51,9 @@
 								<a class="active" href="/index04b9">Beranda <i class="" aria-hidden="true"></i></a>
 >>>>>>> Stashed changes
 >>>>>>> 2fcb79861690e5bea471b612e93aefa35cb806a6
+=======
+								<a class="active" href="">Beranda <i class="" aria-hidden="true"></i></a>
+>>>>>>> 1c8c078ee6886639169cadeab8c04434bcd57a80
 							</li>
 							<li ><a  href="#">Kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
 								<div class="megadropdown">
@@ -85,6 +89,7 @@
 								</div>
 							</li>
 <<<<<<< HEAD
+<<<<<<< HEAD
 							<li><a href="/contact">Hubungi Kami</a></li>
 =======
 <<<<<<< Updated upstream
@@ -95,6 +100,9 @@
 >>>>>>> 2fcb79861690e5bea471b612e93aefa35cb806a6
 
 											
+=======
+								<li><a href="/contact">Hubungi Kami</a></li>				
+>>>>>>> 1c8c078ee6886639169cadeab8c04434bcd57a80
 						</ul>
 						
 						<a href="/pilihkategori" class="add-list-btn btn-default"><i class="fa fa-plus" aria-hidden="true"></i> posting</a>
@@ -197,7 +205,7 @@
 											<!-- <i class="fa fa-caret-right" aria-hidden="true"></i> -->
 =======
 										
-										<a class="btn-default" href="artikel">
+											<a class="btn-default" href="/artikel">	
 											<i class="fa fa-caret-right" aria-hidden="true"></i>
 >>>>>>> 2fcb79861690e5bea471b612e93aefa35cb806a6
 											<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">

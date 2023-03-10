@@ -5,7 +5,7 @@
 
 <!-- Mirrored from nunforest.com/triptip-demo/add-listing.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 10:04:22 GMT -->
 <head>
-	<title>Triptip</title>
+	<title>create cerpen</title>
 
 	<meta charset="utf-8">
 
@@ -38,7 +38,7 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav mr-auto">
 							<li>
-								<a class="active" href="/">Home <i class="" aria-hidden="true"></i></a>
+								<a class="active" href="/">Beranda <i class="" aria-hidden="true"></i></a>
 								
 							</li>
 							<li ><a  href="#">Kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
@@ -46,26 +46,26 @@
 									<div class="dropdown-box">
 										
 										<ul class="dropdown-list">
-											<li><a href="artikel.html">artikel</a></li>
-											<li><a href="cerpen.html">cerpen</a></li>
-											<li><a href="puisi.html">puisi</a></li>
-											<li><a href="photography.html">fotografi</a></li>
+											<li><a href="/artikel">artikel</a></li>
+											<li><a href="/cerpen">cerpen</a></li>
+											<li><a href="/puisi">puisi</a></li>
+											<li><a href="/photography">fotografi</a></li>
 											</ul>
 									</div>
 									<div class="dropdown-box">
 										<ul class="dropdown-list">
 										
-											<li><a href="makalah.html">makalah</a></li>
-											<li><a href="skripsi.html">skripsi</a></li>
-											<li><a href="ilmiah.html">karya ilmiah</a></li>
+											<li><a href="/makalah">makalah</a></li>
+											<li><a href="/skripsi">skripsi</a></li>
+											<li><a href="/ilmiah">karya ilmiah</a></li>
 										</ul>
 									</div>
 									<div class="dropdown-box">
 										<ul class="dropdown-list">
-											<li><a href="diary.html">diary</a></li>
-											<li><a href="ilustrasi.html">ilustrasi</a></li>
-											<li><a href="pantun.html">pantun</a></li>
-											<li><a href="essai.html">esai</a></li>
+											<li><a href="/diary">diary</a></li>
+											<li><a href="/ilustrasi">ilustrasi</a></li>
+											<li><a href="/pantun">pantun</a></li>
+											<li><a href="/essai">esai</a></li>
 										
 											</ul>
 									</div>
@@ -74,7 +74,7 @@
 									
 								</div>
 							</li>
-							<li><a href="contact.html">Contact</a></li>
+							<li><a href="/kontak">Kontak US</a></li>
 						</ul>
 						<a href="pilihkategori.html" class="add-list-btn btn-default"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
                             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>

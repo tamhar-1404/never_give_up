@@ -5,7 +5,7 @@
 
 <!-- Mirrored from nunforest.com/triptip-demo/home4.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 10:02:21 GMT -->
 <head>
-	<title>Triptip</title>
+	<title>beranda</title>
 
 	<meta charset="utf-8">
 

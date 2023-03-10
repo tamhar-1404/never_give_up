@@ -5,7 +5,7 @@
 
 <!-- Mirrored from nunforest.com/triptip-demo/listing-detail-large.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 10:02:50 GMT -->
 <head>
-	<title>Triptip</title>
+	<title>Artikel</title>
 
 	<meta charset="utf-8">
 
@@ -35,6 +35,7 @@
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
+<<<<<<< Updated upstream
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
 			<ul class="navbar-nav mr-auto">
 				<li>
@@ -43,6 +44,48 @@
 				<li ><a  href="#">Kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
 					<div class="megadropdown">
 						<div class="dropdown-box">
+=======
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto">
+							<li>
+								<a class="active" href="/">Beranda <i class="" aria-hidden="true"></i></a>
+								
+							</li>
+							<li ><a  href="#">Kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+								<div class="megadropdown">
+									<div class="dropdown-box">
+										
+										<ul class="dropdown-list">
+											<li><a href="/artikel">artikel</a></li>
+											<li><a href="/cerpen">cerpen</a></li>
+											<li><a href="/puisi">puisi</a></li>
+											<li><a href="/photography">fotografi</a></li>
+											</ul>
+									</div>
+									<div class="dropdown-box">
+										<ul class="dropdown-list">
+										
+											<li><a href="/makalah">makalah</a></li>
+											<li><a href="/skripsi">skripsi</a></li>
+											<li><a href="/ilmiah">karya ilmiah</a></li>
+										</ul>
+									</div>
+									<div class="dropdown-box">
+										<ul class="dropdown-list">
+											<li><a href="/diary">diary</a></li>
+											<li><a href="/ilustrasi">ilustrasi</a></li>
+											<li><a href="/pantun">pantun</a></li>
+											<li><a href="/essai">esai</a></li>
+										
+											</ul>
+									</div>
+
+
+									
+								</div>
+							</li>
+							<li><a href="contact.html">Hubungi Kami</a></li>
+>>>>>>> Stashed changes
 							
 							<ul class="dropdown-list">
 								<li><a href="/artikel">artikel</a></li>
