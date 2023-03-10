@@ -90,9 +90,9 @@ Route::group(['middleware'=> ['auth', 'hakakses:user']], function(){
     Route::get('/posting', [PostingController::class, 'posting'])->name('posting');
     Route::get('/makalah', [MakalahController::class, 'makalah'])->name('makalah');
     Route::get('/puisi-pertiwi', [PuisiPertiwiController::class, 'puisipertiwi'])->name('puisi-pertiwi');
-    // Route::get('/user-login', function () {
-    // return view('user_login.index04b9');
-    // });
+    Route::get('/tambah', function () {
+    return view('user_login.create.create');
+    });
     Route::get('/user-login', [Index04b9Controller::class, 'user_login']);
     // Route::get('/create_cerpen', function () {
     //     return view('user_login.create.create_cerpen');
