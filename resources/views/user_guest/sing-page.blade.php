@@ -87,7 +87,7 @@ height: 100%;
 								
 							</ul>
 							<ul class="navbar-nav ml-auto right-list">
-								<li><a href="sign-page.html"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Sign In</a></li>
+								<li><a href="/user_register"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Register</a></li>
 								
 							</ul>
 							

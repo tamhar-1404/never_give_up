@@ -14,6 +14,13 @@ class ArtikelController extends Controller
         $artikel = artikel::all();
         return view ('user_login/create/create_artikel', ['artikel'=>$artikel]);
     }
+    public function admin_artikel(){
+        
+        $artikel = artikel::where('status', 'pandding')->get();
+
+        return view('admin.artikel',['artikel'=>$artikel]);
+    
+    }
 
     public function simpan_artikel(Request $request){
        
@@ -29,8 +36,8 @@ class ArtikelController extends Controller
         
         
         $artikel->nama = $request->nama;
-        $artikel->judul = $request->judul;
-        $artikel->isi = $request-> isi;
+        $artikel->judul_ar = $request->judul;
+        $artikel->isi_ar = $request-> isi;
         $artikel->save();
         return redirect('/artikel');
     }
