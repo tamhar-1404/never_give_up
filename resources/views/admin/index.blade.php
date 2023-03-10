@@ -172,7 +172,7 @@
                             <a href="javascript:void(0);" class="waves-effect"><i class="ti-files"></i><span> Halaman </span><span class="float-right"><i class="mdi mdi-plus"></i></span></a>
                             <ul class="list-unstyled">
                                 <li><a href="{{Route('data-user')}}">Data user</a></li>
-                                <li><a href="akun-yang-diblokir.html">Akun User yang di blokir</a></li>
+                                <li><a href="{{Route('data-user')}}">Akun Yang Di Blokir</a></li>
                                 <li><a href="{{Route('pesan-user')}}">Pesan Dari User</a></li>
                                 <li><a href="postingan-yang-disematkan.html">postingan yang disematkan</a></li>
                             </ul>
