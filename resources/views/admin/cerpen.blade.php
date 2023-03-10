@@ -130,7 +130,7 @@
                             <a href="javascript:void(0);" class="waves-effect"><i class="ti-files"></i><span> Halaman </span><span class="float-right"><i class="mdi mdi-plus"></i></span></a>
                             <ul class="list-unstyled">
                                 <li><a href="Data-User.html">Data Pengguna</a></li>
-                                
+                                <li><a href="/akun_blokir">Data Pengguna Yang Di Blokir</a></li>
                                 <li><a href="pesan-dari-user.html">Pesan Dari Pengguna</a></li>
                                
                             </ul>

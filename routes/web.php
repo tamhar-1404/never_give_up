@@ -80,6 +80,7 @@ Route::group(['middleware'=> ['auth','hakakses:Admin']], function() {
     Route::get('/cerpen_admin', [AdminController::class, 'cerpen_admin'])->name('cerpen_admin');
     Route::post('/uprove/{id}', [CerpenController::class, 'uprove'])->name('uprove');
     Route::get('/akun_blokir', [CerpenController::class, 'akun_blokir'])->name('akun_blokir');
+    Route::post('/blokir/{id}', [CerpenController::class, 'blokir'])->name('blokir');
 });
 
 //user_login
