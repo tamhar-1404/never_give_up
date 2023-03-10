@@ -175,18 +175,24 @@
 											October 1, 2018 
 										</li>
 										</ul><p></p>
-									<div class="sidebar__widget sidebar__widget-tags">
-												<h2 class="sidebar__widget-title">
-													Kategori
-												</h2>
-												<ul class="sidebar__tags-list">
-													<li><a href="#">Pantun</a></li>
-													<li><a href="#">Pantun</a></li>
-													<li><a href="#">Pantun</a></li>
-
-													
-													</ul>
-											</div>
+										<div class="sidebar__widget sidebar__widget-tags">
+									<h2 class="sidebar__widget-title">
+										Kategori
+									</h2>
+									<ul class="sidebar__tags-list">
+										<li><a href="/artikel">Artikel</a></li>
+										<li><a href="/cerpen">Cerpen</a></li>
+										<li><a href="/puisi">Puisi</a></li>
+										<li><a href="/diary">Diary</a></li>
+										<li><a href="/photography">Fotografi</a></li>
+										<li><a href="/ilustrasi">Ilustrasi</a></li>
+										<li><a href="/makalah">Makalah</a></li>
+										<li><a href="/skripsi">Skripsi</a></li>
+										<li><a href="/pantun">Pantun</a></li>
+										<li><a href="/essai">Esai</a></li>
+										<li><a href="/ilmiah">Karya Ilmiah</a></li>
+									</ul>
+								</div>
 			
 											<div class="sidebar__widget sidebar__widget-author">
 												<h2 class="sidebar__widget-title">

@@ -17,6 +17,7 @@ use App\Http\Controllers\Diary1Controller;
 use App\Http\Controllers\Fotografi1Controller;
 use App\Http\Controllers\Ilustrasi1Controller;
 use App\Http\Controllers\PuisiPertiwiController;
+use App\Http\Controllers\PostingController;
 use App\Http\Controllers\loginController;
 use App\Http\Controllers\AdminController;
 use App\Http\Middleware\admin;
@@ -78,23 +79,25 @@ Route::group(['middleware'=> ['auth','hakakses:Admin']], function() {
     Route::get('/pesan-dari-user', [AdminController::class, 'pesan'])->name('pesan-user');
     Route::get('/data-user', [AdminController::class, 'data_user'])->name('data-user');
     Route::get('/cerpen_admin', [AdminController::class, 'cerpen_admin'])->name('cerpen_admin');
-    Route::post('/uprove/{id}', [CerpenController::class, 'uprove'])->name('uprove');
+    Route::post('/uprove/{id}', [AdminController::class, 'uprove'])->name('uprove');
     Route::get('/akun_blokir', [CerpenController::class, 'akun_blokir'])->name('akun_blokir');
     Route::post('/blokir/{id}', [CerpenController::class, 'blokir'])->name('blokir');
 });
 
 //user_login
 Route::group(['middleware'=> ['auth', 'hakakses:user']], function(){
-    Route::get('/cerpen', [CerpenController::class, 'cerpen'])->name('cerpen');
+    // Route::get('/cerpen', [CerpenController::class, 'cerpen'])->name('cerpen');
+    Route::get('/posting', [PostingController::class, 'posting'])->name('posting');
     Route::get('/makalah', [MakalahController::class, 'makalah'])->name('makalah');
     Route::get('/puisi-pertiwi', [PuisiPertiwiController::class, 'puisipertiwi'])->name('puisi-pertiwi');
-    Route::get('/user-login', function () {
-    return view('user_login.index04b9');
-    });
+    // Route::get('/user-login', function () {
+    // return view('user_login.index04b9');
+    // });
+    Route::get('/user-login', [Index04b9Controller::class, 'user_login']);
     // Route::get('/create_cerpen', function () {
     //     return view('user_login.create.create_cerpen');
-    Route::get('/create_cerpen', [CerpenController::class, 'create_cerpen'])->name('create-cerpen');
-    Route::post('/simpan_cerpen', [CerpenController::class, 'simpan_cerpen']);
+    // Route::get('/create_cerpen', [CerpenController::class, 'create_cerpen'])->name('create-cerpen');
+    Route::post('/simpan_cerpen', [PostingController::class, 'simpan_postingan']);
     
     
 });
@@ -127,6 +130,7 @@ Route::get('/skripsi-detail', [Index04b9Controller::class, 'skripsidetail'])-> n
 Route::get('/ilmiah-detail', [Index04b9Controller::class, 'ilmiahdetail'])-> name('ilmiah-detail');
 Route::get('/pantun-1', [Index04b9Controller::class, 'pantun1'])-> name('pantun-1');
 Route::get('/essai-1', [Index04b9Controller::class, 'essai1'])-> name('essai-1');
+Route::get('/makalah-pkn', [Index04b9Controller::class, 'makalahpkn'])-> name('makalah-pkn');
 
 
 ?>

@@ -212,7 +212,7 @@
 					</div>
 					
 					<!-- form box -->
-					<!-- <div class="add-listing__form-box" id="location-box">
+					<div class="add-listing__form-box" id="location-box">
 
 						<h2 class="add-listing__form-title">
 							Your Location:
@@ -220,39 +220,21 @@
 
 						<div class="add-listing__form-content">
 							<div class="row">
-								<div class="col-md-4">
-									<label class="add-listing__label" for="country">
-										Country:
-									</label>
-									<input class="add-listing__input" type="text" name="country" id="country" placeholder="Enter your country" />
-								</div>
-								<div class="col-md-4">
+								<div class="col-md-12">
 									<label class="add-listing__label" for="city">
-										City:
+										Kategori:
 									</label>
-									<select class="add-listing__input js-example-basic-multiple" name="city" id="city">
-										<option>Select City: </option>
-										<option>London</option>
-										<option>Liverpool</option>
-										<option>Amsterdal</option>
-										<option>Berlin</option>
-										<option>Hamburg</option>
-										<option>Viena</option>
-										<option>Istanbul</option>
-										<option>New Yourk</option>
-										<option>Madrid</option>
+									<select class="add-listing__input js-example-basic-multiple" name="kategori" id="city">
+										@foreach ($kategori as $items)
+										<option value="{{$items->id}}">{{$items->kategori}} </option>
+										@endforeach
 									</select>
 								</div>
-								<div class="col-md-4">
-									<label class="add-listing__label" for="address">
-										Address:
-									</label>
-									<input class="add-listing__input" type="text" name="address" id="address" placeholder="Enter address" />
-								</div>
+								
 							</div>
 						</div>
 
-					</div> -->
+					</div>
 					
 					<!-- form box -->
 					<!-- <div class="add-listing__form-box" id="opening-box">

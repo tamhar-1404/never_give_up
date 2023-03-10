@@ -15,21 +15,21 @@ class CerpenController extends Controller
         return view('admin.cerpen',['cerpen'=>$cerpen]);
     
     }
-    public function uprove($id){    
+    // public function uprove($id){    
         
-        $cerpen = cerpen::find($id);
-        if($cerpen->status == 'pandding'){
-            $cerpen->status = 'setuju';   
-            $cerpen->save();
-        }
+    //     $cerpen = cerpen::find($id);
+    //     if($cerpen->status == 'pandding'){
+    //         $cerpen->status = 'setuju';   
+    //         $cerpen->save();
+    //     }
        
-        return redirect('/cerpen_admin');
+    //     return redirect('/cerpen_admin');
     
-    }
+    // }
     //endadmin
     // user
     public function cerpen(){
-        
+        $cerpen = cerpen::where('kategori_id', '1');
         $cerpen = cerpen::where('status', 'setuju')->get();
 
         return view('user_login.cerpen',['cerpen'=>$cerpen]);
