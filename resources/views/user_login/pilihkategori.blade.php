@@ -43,6 +43,7 @@
 							<ul class="navbar-nav mr-auto">
 								<li>
 <<<<<<< HEAD
+<<<<<<< HEAD
 									<a class="active" href="/user-login">Beranda <i class="" aria-hidden="true"></i></a>
 =======
 <<<<<<< Updated upstream
@@ -51,12 +52,17 @@
 									<a class="active" href="/user-login">Beranda <i class="" aria-hidden="true"></i></a>
 >>>>>>> Stashed changes
 >>>>>>> 2fcb79861690e5bea471b612e93aefa35cb806a6
+=======
+
+									<a class="active" href="/user-login">Beranda <i class="" aria-hidden="true"></i></a>
+>>>>>>> 5581efe7c3b3741f3da2ba73d4ad9933eae3272c
 								</li>
 								<li ><a  href="#">Kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
 									<div class="megadropdown">
 										<div class="dropdown-box">
 											
 											<ul class="dropdown-list">
+<<<<<<< HEAD
 <<<<<<< HEAD
 												<li><a href="/artikel">artikel</a></li>
 												<li><a href="/cerpen.html">cerpen</a></li>
@@ -69,16 +75,22 @@
 												<li><a href="puisi.html">puisi</a></li>
 												<li><a href="photography.html">fotografi</a></li>
 =======
+=======
+>>>>>>> 5581efe7c3b3741f3da2ba73d4ad9933eae3272c
 												<li><a href="/artikel">artikel</a></li>
 												<li><a href="/cerpen">cerpen</a></li>
 												<li><a href="/puisi">puisi</a></li>
 												<li><a href="/photography">fotografi</a></li>
+<<<<<<< HEAD
 >>>>>>> Stashed changes
 >>>>>>> 2fcb79861690e5bea471b612e93aefa35cb806a6
+=======
+>>>>>>> 5581efe7c3b3741f3da2ba73d4ad9933eae3272c
 												</ul>
 										</div>
 										<div class="dropdown-box">
 											<ul class="dropdown-list">
+<<<<<<< HEAD
 											
 <<<<<<< HEAD
 												<li><a href="/makalah">makalah</a></li>
@@ -95,10 +107,16 @@
 												<li><a href="/ilmiah">karya ilmiah</a></li>
 >>>>>>> Stashed changes
 >>>>>>> 2fcb79861690e5bea471b612e93aefa35cb806a6
+=======
+												<li><a href="/makalah">makalah</a></li>
+												<li><a href="/skripsi">skripsi</a></li>
+												<li><a href="/ilmiah">karya ilmiah</a></li>
+>>>>>>> 5581efe7c3b3741f3da2ba73d4ad9933eae3272c
 											</ul>
 										</div>
 										<div class="dropdown-box">
 											<ul class="dropdown-list">
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 <<<<<<< Updated upstream
@@ -117,10 +135,17 @@
 >>>>>>> Stashed changes
 >>>>>>> 2fcb79861690e5bea471b612e93aefa35cb806a6
 											
+=======
+												<li><a href="/diary">diary</a></li>
+												<li><a href="/ilustrasi">ilustrasi</a></li>
+												<li><a href="/pantun">pantun</a></li>
+												<li><a href="/essai">esai</a></li>											
+>>>>>>> 5581efe7c3b3741f3da2ba73d4ad9933eae3272c
 												</ul>
 										</div>
 									</div>
 								</li>
+<<<<<<< HEAD
 <<<<<<< HEAD
 								<li><a href="/contact">Hubungi Kami</a></li>	
 							</ul>
@@ -137,6 +162,12 @@
 >>>>>>> Stashed changes
 >>>>>>> 2fcb79861690e5bea471b612e93aefa35cb806a6
 	
+=======
+
+								<li><a href="/contact">Hubungi Kami</a></li>	
+							</ul>
+							<a href="/user-login" class="add-list-btn btn-default">Kembali</a>	
+>>>>>>> 5581efe7c3b3741f3da2ba73d4ad9933eae3272c
 					</div>
 				</nav>
 			</header>
@@ -434,13 +465,6 @@
 										<h2 class="services-post__title">
 											artikel
 										</h2>
-<<<<<<< Updated upstream
-										<p class="services-post__location">
-											12 postingan
-										</p>
-=======
-										
->>>>>>> Stashed changes
 									</div>
 								</a>
 								<!-- end services-post module -->
@@ -464,13 +488,7 @@
 										<h2 class="services-post__title">
 											Cerpen
 										</h2>
-<<<<<<< Updated upstream
-										<p class="services-post__location">
-											12 postingan
-										</p>
-=======
-										
->>>>>>> Stashed changes
+
 									</div>
 								</a>
 								<!-- end services-post module -->
@@ -492,26 +510,18 @@
 										<h2 class="services-post__title">
 											puisi
 										</h2>
-<<<<<<< Updated upstream
-										<p class="services-post__location">
-											12 postingan
-										</p>
-=======
-										
->>>>>>> Stashed changes
+
 									</div>
 								</a>
 								<!-- end services-post module -->
 	
 							</div>
-							
-	
-							<div class="col-xl-2 col-md-4 col-sm-6">
+	 						<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="add-listing.html" class="services-post" >
+								<a href="add-listing.html" class="services-post">
 									<div class="services-post__content">
-										<i class="la la-activit" aria-hidden="true">
+									<i class="la la-activit" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16">
 												<path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
 												<path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
@@ -521,26 +531,18 @@
 										<h2 class="services-post__title">
 											diary
 										</h2>
-<<<<<<< Updated upstream
-										<p class="services-post__location">
-											12 postingan
-										</p>
-=======
-										
->>>>>>> Stashed changes
+
 									</div>
 								</a>
 								<!-- end services-post module -->
 	
 							</div>
-							
-	
-							<div class="col-xl-2 col-md-4 col-sm-6">
+	 						<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="add-listing.html" class="services-post" >
+								<a href="add-listing.html" class="services-post">
 									<div class="services-post__content">
-										<i class="la la-activit" aria-hidden="true">
+									<i class="la la-activit" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-camera2" viewBox="0 0 16 16">
 												<path d="M5 8c0-1.657 2.343-3 4-3V4a4 4 0 0 0-4 4z"/>
 												<path d="M12.318 3h2.015C15.253 3 16 3.746 16 4.667v6.666c0 .92-.746 1.667-1.667 1.667h-2.015A5.97 5.97 0 0 1 9 14a5.972 5.972 0 0 1-3.318-1H1.667C.747 13 0 12.254 0 11.333V4.667C0 3.747.746 3 1.667 3H2a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1h.682A5.97 5.97 0 0 1 9 2c1.227 0 2.367.368 3.318 1zM2 4.5a.5.5 0 1 0-1 0 .5.5 0 0 0 1 0zM14 8A5 5 0 1 0 4 8a5 5 0 0 0 10 0z"/>
@@ -549,26 +551,18 @@
 										<h2 class="services-post__title">
 											fotografi
 										</h2>
-<<<<<<< Updated upstream
-										<p class="services-post__location">
-											12 Locations
-										</p>
-=======
-										
->>>>>>> Stashed changes
+
 									</div>
 								</a>
 								<!-- end services-post module -->
 	
 							</div>
-							
-							
-							<div class="col-xl-2 col-md-4 col-sm-6">
+	 						<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="add-listing.html" class="services-post" >
+								<a href="add-listing.html" class="services-post">
 									<div class="services-post__content">
-										<i class="la la-" aria-hidden="true">
+									<i class="la la-" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-easel2" viewBox="0 0 16 16">
 												<path fill-rule="evenodd" d="M8 0a.5.5 0 0 1 .447.276L8.81 1h4.69A1.5 1.5 0 0 1 15 2.5V11h.5a.5.5 0 0 1 0 1h-2.86l.845 3.379a.5.5 0 0 1-.97.242L12.11 14H3.89l-.405 1.621a.5.5 0 0 1-.97-.242L3.36 12H.5a.5.5 0 0 1 0-1H1V2.5A1.5 1.5 0 0 1 2.5 1h4.691l.362-.724A.5.5 0 0 1 8 0ZM2 11h12V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5V11Zm9.61 1H4.39l-.25 1h7.72l-.25-1Z"/>
 											  </svg>
@@ -576,29 +570,18 @@
 										<h2 class="services-post__title">
 											ilustrasi
 										</h2>
-<<<<<<< Updated upstream
-										<p class="services-post__location">
-											16 Locations
-										</p>
-=======
-										
->>>>>>> Stashed changes
+
 									</div>
 								</a>
 								<!-- end services-post module -->
 	
 							</div>
-<<<<<<< Updated upstream
-							<div style=" display: flex; gap: 55px;">
-=======
-							<!-- <div style=" display: flex; gap: 55px;"> -->
->>>>>>> Stashed changes
-							<div class="col-xl-2 col-md-4 col-sm-6">
+	 						<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="add-listing.html" class="services-post" >
+								<a href="add-listing.html" class="services-post">
 									<div class="services-post__content">
-										<i class="la la-" aria-hidden="true">
+									<i class="la la-" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
 												<path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z"/>
 												<path d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z"/>
@@ -608,30 +591,18 @@
 										<h2 class="services-post__title">
 											makalah
 										</h2>
-<<<<<<< Updated upstream
-										<p class="services-post__location">
-											22 Locations
-										</p>
-=======
-										
-										
->>>>>>> Stashed changes
+
 									</div>
 								</a>
 								<!-- end services-post module -->
 	
 							</div>
-							
-							<div class="col-xl-2 col-md-4 col-sm-6">
+	 						<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="add-listing.html" class="services-post" data-bs-toggle="" data-bs-target="#staticBackdrop7">
+								<a href="add-listing.html" class="services-post">
 									<div class="services-post__content">
-<<<<<<< Updated upstream
-										<i class="" aria-hidden="true">
-=======
-										<i class="la la-" aria-hidden="true">
->>>>>>> Stashed changes
+									<i class="la la-" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-journal-bookmark" viewBox="0 0 16 16">
 												<path fill-rule="evenodd" d="M6 8V1h1v6.117L8.743 6.07a.5.5 0 0 1 .514 0L11 7.117V1h1v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8z"/>
 												<path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
@@ -641,18 +612,15 @@
 										<h2 class="services-post__title">
 											skripsi
 										</h2>
-<<<<<<< Updated upstream
-										<p class="services-post__location">
-											30 Locations
-										</p>
-=======
-										
->>>>>>> Stashed changes
+
 									</div>
 								</a>
 								<!-- end services-post module -->
 	
 							</div>
+							
+	
+							
 							
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
@@ -668,13 +636,7 @@
 										<h2 class="services-post__title">
 											pantun
 										</h2>
-<<<<<<< Updated upstream
-										<p class="services-post__location">
-											8 Locations
-										</p>
-=======
-										
->>>>>>> Stashed changes
+
 									</div>
 								</a>
 								<!-- end services-post module -->
@@ -696,13 +658,7 @@
 										<h2 class="services-post__title">
 											esai
 										</h2>
-<<<<<<< Updated upstream
-										<p class="services-post__location">
-											19 Locations
-										</p>
-=======
-										
->>>>>>> Stashed changes
+
 									</div>
 								</a>
 								<!-- end services-post module -->
@@ -723,13 +679,6 @@
 										<h2 class="services-post__title">
 											karya ilmiah
 										</h2>
-<<<<<<< Updated upstream
-										<p class="services-post__location">
-											19 Locations
-										</p>
-=======
-										
->>>>>>> Stashed changes
 									</div>
 								</a>
 								<!-- end services-post module -->
@@ -745,6 +694,7 @@
 			<!-- End services-block -->
 
 			
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 >>>>>>> 2fcb79861690e5bea471b612e93aefa35cb806a6
 			<div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="margin-top: 5%;">
@@ -1028,6 +978,8 @@
 
 >>>>>>> Stashed changes
 >>>>>>> 2fcb79861690e5bea471b612e93aefa35cb806a6
+=======
+>>>>>>> 5581efe7c3b3741f3da2ba73d4ad9933eae3272c
 
 	</div>
 	<!-- footer block module

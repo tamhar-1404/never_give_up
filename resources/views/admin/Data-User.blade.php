@@ -5,7 +5,7 @@
 <!-- Mirrored from themesdesign.in/hexzy/vertical/blue/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 22:31:51 GMT -->
 <head>
     <meta charset="utf-8" />
-    <title>Karya Pribadi</title>
+    <title>Data Pengguna</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta content="Admin Dashboard" name="description" />
     <meta content="ThemeDesign" name="author" />
@@ -32,8 +32,8 @@
             <!-- LOGO -->
             <div class="topbar-left">
                 <div class="text-center">
-                    <a href="index.html" class="logo"><img src="assets/images/logo-dark.png" alt="" height="24"></a>
-                    <a href="index.html" class="logo-sm"><img src="assets/images/logo-sm.png" alt="" height="28"></a>
+                    <a href="/admin" class="logo"><img src="assets/images/logo-dark.png" alt="" height="24"></a>
+                    <a href="/admin" class="logo-sm"><img src="assets/images/logo-sm.png" alt="" height="28"></a>
                 </div>
             </div>
             <!-- Button mobile view to collapse sidebar menu -->
@@ -154,27 +154,26 @@
                         <li class="has_sub">
                             <a href="javascript:void(0);" class="waves-effect"><i class="ti-layout"></i><span> Kategori </span><span class="float-right"><i class="mdi mdi-plus"></i></span></a>
                             <ul class="list-unstyled">
-                                <li><a href="layouts-artikel.html">Artikel</a></li>
-                                <li><a href="layouts-cerpen.html">Cerpen</a></li>
-                                <li><a href="layouts-puisi.html">Puisi</a></li>
-                                <li><a href="layouts-diary.html">Diary</a></li>
-                                <li><a href="layouts-karya-fotografi.html">Karya fotografi</a></li>
-                                <li><a href="layouts-karya-ilustrasi.html">Karya ilustrasi</a></li>
-                                <li><a href="layouts-makalah.html">Makalah</a></li>
-                                <li><a href="layouts-skripsi.html">Skripsi</a></li>
-                                <li><a href="layouts-pantun.html">Pantun</a></li>
-                                <li><a href="layouts-esai.html">Esai</a></li>
-                                <li><a href="layouts-karya-ilmiah.html">Karya ilmiah</a></li>
+                                <li><a href="/layouts-artikel">Artikel</a></li>
+                                <li><a href="{{Route('cerpen_admin')}}">Cerpen</a></li>
+                                <li><a href="/layouts-puisi">Puisi</a></li>
+                                <li><a href="/layouts-diary">Diary</a></li>
+                                <li><a href="/layouts-karya-fotografi">Karya fotografi</a></li>
+                                <li><a href="/layouts-karya-ilustrasi">Karya ilustrasi</a></li>
+                                <li><a href="/layouts-makalah">Makalah</a></li>
+                                <li><a href="/layouts-skripsi">Skripsi</a></li>
+                                <li><a href="/layouts-pantun">Pantun</a></li>
+                                <li><a href="/layouts-esai">Esai</a></li>
+                                <li><a href="/layouts-karya-ilmiah">Karya ilmiah</a></li>
                             </ul>
                         </li>
 
                         <li class="has_sub">
                             <a href="javascript:void(0);" class="waves-effect"><i class="ti-files"></i><span> Halaman </span><span class="float-right"><i class="mdi mdi-plus"></i></span></a>
                             <ul class="list-unstyled">
-                                <li><a href="Data-User.html">Data user</a></li>
-                                <li><a href="akun-yang-diblokir.html">Akun User yang di blokir</a></li>
-                                <li><a href="akun-yang-dihapus.html">Akun user yang di hapus</a></li>
-                                <li><a href="postingan-yang-disematkan.html">postingan yang disematkan</a></li>
+                                <li><a href="{{Route('data-user')}}">Data user</a></li>
+                                <li><a href="/Akun_blokir">Data Pengguna Yang Di Blokir</a></li>
+                               <li><a href="/postingan-yang-disematkan">postingan yang disematkan</a></li>
                             </ul>
                         </li>
                         

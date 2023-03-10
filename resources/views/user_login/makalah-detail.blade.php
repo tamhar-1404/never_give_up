@@ -408,7 +408,7 @@
 											momonica@gmail.com
 										</li>
 										<div style="width:70%; display: flex; justify-content: end; margin-left: 45%; margin-top: 20px;" >
-											<a class="contact-form__submit" href="makalah-pkn.html" style="margin-right: 20px; margin-bottom: 10px;">
+											<a class="contact-form__submit" href="/makalah-pkn" style="margin-right: 20px; margin-bottom: 10px;">
 												<i class="fa fa-caret-right" aria-hidden="true"></i>
 												
 											lihat
@@ -484,17 +484,17 @@
 										Kategori
 									</h2>
 									<ul class="sidebar__tags-list">
-										<li><a href="artikel.html">Artikel</a></li>
-										<li><a href="cerpen.html">Cerpen</a></li>
-										<li><a href="puisi.html">Puisi</a></li>
-										<li><a href="diary.html">Diary</a></li>
-										<li><a href="photography.html">Fotografi</a></li>
-										<li><a href="ilustrasi.html">Ilustrasi</a></li>
-										<li><a href="makalah.html">Makalah</a></li>
-										<li><a href="skripsi.html">Skripsi</a></li>
-										<li><a href="pantun.html">Pantun</a></li>
-										<li><a href="essai.html">Esai</a></li>
-										<li><a href="ilmiah.html">Karya Ilmiah</a></li>
+										<li><a href="/artikel">Artikel</a></li>
+										<li><a href="/cerpen">Cerpen</a></li>
+										<li><a href="/puisi">Puisi</a></li>
+										<li><a href="/diary">Diary</a></li>
+										<li><a href="/photography">Fotografi</a></li>
+										<li><a href="/ilustrasi">Ilustrasi</a></li>
+										<li><a href="/makalah">Makalah</a></li>
+										<li><a href="/skripsi">Skripsi</a></li>
+										<li><a href="/pantun">Pantun</a></li>
+										<li><a href="/essai">Esai</a></li>
+										<li><a href="/ilmiah">Karya Ilmiah</a></li>
 									</ul>
 								</div>
 

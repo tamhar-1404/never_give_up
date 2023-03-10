@@ -11,8 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('artikels', function (Blueprint $table) {
+        Schema::create('akun_blokirs', function (Blueprint $table) {
             $table->id();
+            $table->string('username')->unique();
+            $table->string('email')->unique();
+            $table->string('password');
+            $table->string('foto');
+            $table->string('role')->default('user');
+            $table->rememberToken();
             $table->timestamps();
         });
     }
@@ -22,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('artikels');
+        Schema::dropIfExists('akun_blokirs');
     }
 };

@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 
 class Index04b9Controller extends Controller
 {
+    public function user_login(){
+        return view('user_login.index04b9');
+        }
     public function cerpen(){
         $cerpen = cerpen::where('status', 'setuju')->get();
         return view('user_login.cerpen',['cerpen'=>$cerpen]);
@@ -79,8 +82,16 @@ class Index04b9Controller extends Controller
     return view('user_login.puisi-pertiwi',['puisi-pertiwi']);
     }
    
+    public function diary1(){
+    return view('user_login.diary-1',['diary-1']);
+    }
+   
     public function fotografi1(){
     return view('user_login.fotografi-1',['fotografi-1']);
+    }
+   
+    public function ilustrasi1(){
+    return view('user_login.ilustrasi-1',['ilustrasi-1']);
     }
    
     public function makalahdetail(){
@@ -101,6 +112,14 @@ class Index04b9Controller extends Controller
    
     public function essai1(){
     return view('user_login.essai-1',['essai-1']);
+    }
+   
+    public function prf(){
+    return view('user_login.prf',['prf']);
+    }
+   
+    public function makalahpkn(){
+    return view('user_login.makalah-pkn',['makalah-pkn']);
     }
    
 }

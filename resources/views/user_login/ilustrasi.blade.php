@@ -187,7 +187,7 @@
 							
 							<p class="card-text" >Jika diberi pertanyaan siapa sih yang ingin sukses? Mungkin semua orang yang diberi pertanyaan tersebut akan mengangkat tangan mereka tinggi-tinggi. Namun, masih banyak orang yang belum mengerti apa itu kesuksesan ...</p>
 							<div style="width: 100%; display: flex; justify-content: center;  " >
-								<a class="contact-form__submit" href="ilustrasi-1.html" style="margin-right: 20px; margin-bottom: 10px; ">
+								<a class="contact-form__submit" href="/ilustrasi-1" style="margin-right: 20px; margin-bottom: 10px; ">
 									<i class="fa fa-caret-right" aria-hidden="true"></i>
 									Baca
 								</a>

@@ -5,7 +5,7 @@
 <!-- Mirrored from themesdesign.in/hexzy/vertical/blue/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 22:31:51 GMT -->
 <head>
     <meta charset="utf-8" />
-    <title>Pesan Dari User</title>
+    <title>Data Pengguna</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta content="Admin Dashboard" name="description" />
     <meta content="ThemeDesign" name="author" />
@@ -32,7 +32,7 @@
             <!-- LOGO -->
             <div class="topbar-left">
                 <div class="text-center">
-                   <a href="/admin" class="logo"><img src="assets/images/logo-dark.png" alt="" height="24"></a>
+                    <a href="/admin" class="logo"><img src="assets/images/logo-dark.png" alt="" height="24"></a>
                     <a href="/admin" class="logo-sm"><img src="assets/images/logo-sm.png" alt="" height="28"></a>
                 </div>
             </div>
@@ -154,7 +154,7 @@
                         <li class="has_sub">
                             <a href="javascript:void(0);" class="waves-effect"><i class="ti-layout"></i><span> Kategori </span><span class="float-right"><i class="mdi mdi-plus"></i></span></a>
                             <ul class="list-unstyled">
-                            <li><a href="/layouts-artikel">Artikel</a></li>
+                                <li><a href="/layouts-artikel">Artikel</a></li>
                                 <li><a href="{{Route('cerpen_admin')}}">Cerpen</a></li>
                                 <li><a href="/layouts-puisi">Puisi</a></li>
                                 <li><a href="/layouts-diary">Diary</a></li>
@@ -171,9 +171,9 @@
                         <li class="has_sub">
                             <a href="javascript:void(0);" class="waves-effect"><i class="ti-files"></i><span> Halaman </span><span class="float-right"><i class="mdi mdi-plus"></i></span></a>
                             <ul class="list-unstyled">
-                            <li><a href="{{Route('data-user')}}">Data pengguna</a></li>
-                                <li><a href="/pesan-dari-user">Pesan Dari pengguna</a></li>
-                                <li><a href="/postingan-yang-disematkan">postingan yang di Uprove</a></li>
+                                <li><a href="{{Route('data-user')}}">Data user</a></li>
+                                <li><a href="{{Route('akun_blokir')}}">  Data Pengguna Yang Di Blokir</a></li>
+                               <li><a href="/postingan-yang-disematkan">postingan yang disematkan</a></li>
                             </ul>
                         </li>
                         
@@ -196,7 +196,7 @@
 
                     <div class="">
                         <div class="page-header-title">
-                            <h4 class="page-title">Pesan Dari pengguna</h4>
+                            <h4 class="page-title">Datatables</h4>
                         </div>
                     </div>
 
@@ -204,40 +204,53 @@
 
                         <div class="container-fluid">
                             <div class="row">
-                                @foreach ($kontak as $item)
-                                <div class="col-lg-4">
+                                <div class="col-lg-12">
                                     <div class="card">
-                                        <div class="card-body user-card">
-                                            <div class="media-main">
-                                                <a class="float-left" href="#">
-                                                    <img class="thumb-lg rounded-circle" src="assets/images/users/avatar-2.jpg" alt="">
-                                                </a>
-                                                <div class="info pl-3">
-                                                    <h4 class="mt-3">{{$item->username}}</h4>
-                                                    <p class="text-muted">{{$item->email}}</p>
+                                        <div class="card-body">
+                                            <h4 class="m-b-30 m-t-0">Akun Terblokir</h4>
+                                            <div class="row">
+                                                <div class="col-lg-12 col-sm-12 col-12">
+
+                                                    <table id="datatable" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; width: 100%;">
+                                                        <thead>
+                                                            <tr>
+                                                                <th >No</th>
+                                                                <th >Id</th>
+                                                                <th >Username</th>
+                                                                <th >Email</th>
+                                                                <th >Avatar</th>
+                                                                <th >Pilihan</th>
+                                                              </tr>
+                                                        </thead>
+
+
+                                                        <tbody>
+                                                            @foreach ($user as $item)
+                                                            <tr>
+                                                                <th>{{$loop->iteration}}</th>
+                                                                <td>{{$item->id}}</td>
+                                                                <td>{{$item->username}}</td>
+                                                                <td>{{$item->email}}</td>
+                                                                <td><img src="asset/{{$item->foto}}" width="150" alt="150" srcset="" ></td>
+                                                                <td><button type="button" class="btn btn-warning">Blokir</button><button type="button" class="btn btn-danger">Hapus</button></td>
+                                                              </tr>
+                                                            @endforeach                                               
+                                                            
+                                                            </tbody>
+                                                    </table>
+
                                                 </div>
                                             </div>
-                                            <div class="clearfix"></div>
-
-                                            <p class="text-muted info-text">
-                                               {{$item->alasan}}
-                                            </p>
-                                            <hr>
-                                            
-                                            </ul>
-                                            
-                                            <div style="display: flex; justify-content: end;">
-                                            <a href="/hapus_kontak/{{ $item->id }}">
-                                            <button class="btn btn-danger" style="border-radius: 10%; "><span style="color: white; font-weight:bold; ">hapus</span></button>
-                                            </a>
                                         </div>
-
-                                        </div> <!-- card-body -->
                                     </div>
                                 </div>
-                                @endforeach
-                           </div> <!-- end row -->
 
+                            </div> <!-- End Row -->
+
+
+
+
+                            </div> <!-- End Row -->
 
 
                         </div><!-- container-fluid -->
@@ -247,8 +260,8 @@
                 </div> <!-- content -->
 
                 <footer class="footer">
-                      Kelompok NEVER GIVE UP <span class="d-none d-md-inline-block"> - Di Pimpin oleh </i> Rahmat .</span>
-                </footer>
+                    NEVER GIVE UP <span class="d-none d-md-inline-block"> LEADER <i class=""></i> BY <a href="https://1.envato.market/themesdesign" target="_blank">RAHMAT</a>.</span>
+                </footer> 
 
             </div>
             <!-- End Right content here -->
@@ -270,9 +283,33 @@
         <script src="assets/js/jquery.nicescroll.js"></script>
         <script src="assets/js/jquery.scrollTo.min.js"></script>
 
+        <!-- Required datatable js-->
+        <script src="assets/plugins/datatables/jquery.dataTables.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+        <!-- Buttons examples -->
+        <script src="assets/plugins/datatables/dataTables.buttons.min.js"></script>
+        <script src="assets/plugins/datatables/buttons.bootstrap4.min.js"></script>
+        
+        <script src="assets/plugins/datatables/jszip.min.js"></script>
+        <script src="assets/plugins/datatables/pdfmake.min.js"></script>
+        <script src="assets/plugins/datatables/vfs_fonts.js"></script>
+        <script src="assets/plugins/datatables/buttons.html5.min.js"></script>
+        <script src="assets/plugins/datatables/buttons.print.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.fixedHeader.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.keyTable.min.js"></script>
+        <script src="assets/plugins/datatables/dataTables.scroller.min.js"></script>
+
+        <!-- Responsive examples -->
+        <script src="assets/plugins/datatables/dataTables.responsive.min.js"></script>
+        <script src="assets/plugins/datatables/responsive.bootstrap4.min.js"></script>
+
+        <!-- Datatable init js -->
+        <script src="assets/pages/datatables.init.js"></script>
+
+
         <script src="assets/js/app.js"></script>
 
     </body>
 
-<!-- Mirrored from themesdesign.in/hexzy/vertical/blue/pages-directory.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 22:32:32 GMT -->
+<!-- Mirrored from themesdesign.in/hexzy/vertical/blue/tables-datatable.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 22:33:15 GMT -->
 </html>

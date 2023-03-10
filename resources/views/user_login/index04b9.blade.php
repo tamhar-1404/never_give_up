@@ -5,7 +5,7 @@
 
 <!-- Mirrored from nunforest.com/triptip-demo/?storefront=envato-elements by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 09:53:49 GMT -->
 <head>
-	<title>Home</title>
+	<title>Beranda </title>
 
 	<meta charset="utf-8">
 
@@ -894,10 +894,14 @@ Baca										</a>
 											</span>
 										</p>
 <<<<<<< HEAD
+<<<<<<< HEAD
 										<a class="contact-form__submit" href="/user_register" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
 =======
 										<a class="contact-form__submit" href="/bacaartikel" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
 >>>>>>> 2fcb79861690e5bea471b612e93aefa35cb806a6
+=======
+										<a class="contact-form__submit" href="/artikel-sukses" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
+>>>>>>> 5581efe7c3b3741f3da2ba73d4ad9933eae3272c
 													<i class="fa fa-caret-right" aria-hidden="true"></i>
 													Baca
 												</a>

@@ -5,12 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class cerpen extends Model
+class akun_blokir extends Model
 {
-    protected $guarded = [];
     use HasFactory;
-    public function user()
-    {
-        return $this-> BelongsTo(user::class);
-    }
 }

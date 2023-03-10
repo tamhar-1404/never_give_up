@@ -133,7 +133,7 @@
 									<h3 class="user-detail__profile-title">
 										<a href="prf.html">Yuki Hayasi</a>
 									</h3>
-									<a href="prf.html" style="color: #db3458; margin-top: 10px;">Edit Profil</a>
+									<a href="/prf" style="color: #db3458; margin-top: 10px;">Edit Profil</a>
 								</div>
 								
 									<p></p>
@@ -219,7 +219,7 @@
 										
 										<p class="card-text">Di suatu siang yang cerah, terdapat dua orang gadis bernama Lisa dan Yeni yang sedang mengerjakan tugas sekolah di rumahnya Lisa. Mereka berdua mengerjakan tugas...</p>
 										<div style="width: 100%; display: flex; justify-content: center;  " >
-											<a class="contact-form__submit" href="/makalah-pkn" style="margin-right: 20px; margin-bottom: 10px; ">
+											<a class="contact-form__submit" href="/cerpen-baik" style="margin-right: 20px; margin-bottom: 10px; ">
 												<i class="fa fa-caret-right" aria-hidden="true"></i>
 												Lihat
 											</a>
@@ -341,7 +341,7 @@
 										</span>
 									</p>
 									<div style="width: 100%; display: flex; justify-content: center;  " >
-											<a class="contact-form__submit" href="/makalah-pkn" style="margin-right: 20px; margin-bottom: 10px; ">
+											<a class="contact-form__submit" href="/cerpen-baik" style="margin-right: 20px; margin-bottom: 10px; ">
 												<i class="fa fa-caret-right" aria-hidden="true"></i>
 												Lihat
 											</a>
