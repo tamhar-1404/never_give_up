@@ -19,7 +19,12 @@ use App\Http\Controllers\Ilustrasi1Controller;
 use App\Http\Controllers\PuisiPertiwiController;
 use App\Http\Controllers\PostingController;
 use App\Http\Controllers\loginController;
+<<<<<<< HEAD
+use App\Http\Controllers\IndexController;
+use App\Http\Controllers\adminController;
+=======
 use App\Http\Controllers\AdminController;
+>>>>>>> 5581efe7c3b3741f3da2ba73d4ad9933eae3272c
 use App\Http\Middleware\admin;
 use App\Http\Middleware\Auth;
 /*
@@ -133,4 +138,16 @@ Route::get('/essai-1', [Index04b9Controller::class, 'essai1'])-> name('essai-1')
 Route::get('/makalah-pkn', [Index04b9Controller::class, 'makalahpkn'])-> name('makalah-pkn');
 
 
+<<<<<<< HEAD
+// userlogin
+Route::get('/contact', [IndexController:: class, 'contact'])->name('contact');
+Route::get('/pilihkategori', [IndexController:: class, 'pilihkategori'])->name('pilihkategori');
+Route::get('/postingartikel', [IndexController:: class, 'postingartikel'])->name('postingartikel');
+Route::get('/userpage', [IndexController:: class, 'userpage'])->name('userpage');
+})
 ?>
+
+
+=======
+?>
+>>>>>>> 5581efe7c3b3741f3da2ba73d4ad9933eae3272c
