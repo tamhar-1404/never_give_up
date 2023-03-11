@@ -173,7 +173,7 @@
                             <ul class="list-unstyled">
                                 <li><a href="{{Route('data-user')}}">Data user</a></li>
                                 <li><a href="/Akun_blokir">Data Pengguna Yang Di Blokir</a></li>
-                               <li><a href="/postingan-yang-disematkan">postingan yang disematkan</a></li>
+                               <li><a href="/pesan-dari-user">Pesan Dari User</a></li>
                             </ul>
                         </li>
                         
@@ -232,7 +232,8 @@
                                                                 <td>{{$item->username}}</td>
                                                                 <td>{{$item->email}}</td>
                                                                 <td><img src="asset/{{$item->foto}}" width="150" alt="150" srcset="" ></td>
-                                                                <td><button type="button" class="btn btn-warning">Blokir</button><button type="button" class="btn btn-danger">Hapus</button></td>
+                                                                <td><button type="button" class="btn  btn-warning">Blokir</button>
+                                                                <button type="button" class="btn ml-20 btn-danger">Hapus</button></td>
                                                               </tr>
                                                             @endforeach                                               
                                                             
