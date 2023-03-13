@@ -32,8 +32,8 @@
 				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 					<div class="container">
 	
-						<a class="navbar-brand" href="index.html">
-							<img src="images/logo.png" alt="">
+						<a class="navbar-brand" style="width:13%;" href="index">
+							<img src="asset/Logo 1.png" style="width:100%;" alt="">
 						</a>
 	
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,7 +74,6 @@
 										</div>
 									</div>
 								</li>
-
 								<li><a href="/contact">Hubungi Kami</a></li>	
 							</ul>
 							<a href="/user-login" class="add-list-btn btn-default">Kembali</a>	
@@ -1105,7 +1104,9 @@
 							<div class="col-md-4">
 	
 								<div class="footer__widget text-widget">
-									<img src="images/logo.png" alt="triptip-logo">
+								<a class="navbar-brand" style="width:60%;" href="index.html">
+									<img src="asset/Logo 1.png" style="width:100%;" alt="">
+								</a>
 									<p class="footer__widget-description">
 										Menggembangkan dunia baca tulis menggunakan website menuju dunia digital. Temukan berbagai artikel, postingan, cerita, jurnal dan buat postinganmu sendiri disini	
 									</p>

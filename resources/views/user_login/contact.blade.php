@@ -27,8 +27,8 @@
 				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 					<div class="container">
 	
-						<a class="navbar-brand" href="index.html">
-							<img src="images/logo.png" alt="">
+						<a class="navbar-brand" style="width:13%;" href="/index04b9">
+							<img src="asset/Logo 1.png" style="width:100%;" alt="">
 						</a>
 	
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,104 +38,39 @@
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav mr-auto">
 								<li>
-<<<<<<< HEAD
-<<<<<<< HEAD
 									<a class="active" href="/user-login">Beranda <i class="" aria-hidden="true"></i></a>
-=======
-									<a class="active" href="index04b9.html">Beranda <i class="" aria-hidden="true"></i></a>
->>>>>>> 2fcb79861690e5bea471b612e93aefa35cb806a6
-=======
-
-									<a class="active" href="/user-login">Beranda <i class="" aria-hidden="true"></i></a>
->>>>>>> 5581efe7c3b3741f3da2ba73d4ad9933eae3272c
 								</li>
 								<li ><a  href="#">Kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
 									<div class="megadropdown">
 										<div class="dropdown-box">
 											
 											<ul class="dropdown-list">
-<<<<<<< HEAD
-<<<<<<< HEAD
-												<li><a href="/artikel">artikel</a></li>
-												<li><a href="/cerpen.html">cerpen</a></li>
-												<li><a href="/puisi">puisi</a></li>
-												<li><a href="/photography">fotografi</a></li>
-=======
-												<li><a href="artikel.html">artikel</a></li>
-												<li><a href="cerpen.html">cerpen</a></li>
-												<li><a href="puisi.html">puisi</a></li>
-												<li><a href="photography.html">fotografi</a></li>
->>>>>>> 2fcb79861690e5bea471b612e93aefa35cb806a6
-=======
 												<li><a href="/artikel">artikel</a></li>
 												<li><a href="/cerpen">cerpen</a></li>
 												<li><a href="/puisi">puisi</a></li>
 												<li><a href="/photography">fotografi</a></li>
->>>>>>> 5581efe7c3b3741f3da2ba73d4ad9933eae3272c
 												</ul>
 										</div>
 										<div class="dropdown-box">
 											<ul class="dropdown-list">
-<<<<<<< HEAD
-											
-<<<<<<< HEAD
 												<li><a href="/makalah">makalah</a></li>
 												<li><a href="/skripsi">skripsi</a></li>
 												<li><a href="/ilmiah">karya ilmiah</a></li>
-=======
-												<li><a href="makalah.html">makalah</a></li>
-												<li><a href="skripsi.html">skripsi</a></li>
-												<li><a href="ilmiah.html">karya ilmiah</a></li>
->>>>>>> 2fcb79861690e5bea471b612e93aefa35cb806a6
-=======
-												<li><a href="/makalah">makalah</a></li>
-												<li><a href="/skripsi">skripsi</a></li>
-												<li><a href="/ilmiah">karya ilmiah</a></li>
->>>>>>> 5581efe7c3b3741f3da2ba73d4ad9933eae3272c
 											</ul>
 										</div>
 										<div class="dropdown-box">
 											<ul class="dropdown-list">
-<<<<<<< HEAD
-<<<<<<< HEAD
-												<li><a href="/diary">diary</a></li>
-												<li><a href="/ilustrasi">ilustrasi</a></li>
-												<li><a href="/pantun">pantun</a></li>
-												<li><a href="/essai">esai</a></li>
-=======
-												<li><a href="diary.html">diary</a></li>
-												<li><a href="ilustrasi.html">ilustrasi</a></li>
-												<li><a href="pantun.html">pantun</a></li>
-												<li><a href="essai.html">esai</a></li>
->>>>>>> 2fcb79861690e5bea471b612e93aefa35cb806a6
-											
-=======
 												<li><a href="/diary">diary</a></li>
 												<li><a href="/ilustrasi">ilustrasi</a></li>
 												<li><a href="/pantun">pantun</a></li>
 												<li><a href="/essai">esai</a></li>											
->>>>>>> 5581efe7c3b3741f3da2ba73d4ad9933eae3272c
 												</ul>
 										</div>
 									</div>
 								</li>
-<<<<<<< HEAD
-<<<<<<< HEAD
-								<li><a href="/contact">Hubungi Kami</a></li>	
-							</ul>
-							<a href="/user-login" class="add-list-btn btn-default">Kembali</a>
-=======
-								<li><a href="contact.html">Hubungi Kami</a></li>	
-							</ul>
-							<a href="index04b9.html" class="add-list-btn btn-default">Kembali</a>
->>>>>>> 2fcb79861690e5bea471b612e93aefa35cb806a6
-	
-=======
-
 								<li><a href="/contact">Hubungi Kami</a></li>	
 							</ul>
 							<a href="/user-login" class="add-list-btn btn-default">Kembali</a>	
->>>>>>> 5581efe7c3b3741f3da2ba73d4ad9933eae3272c
 					</div>
 				</nav>
 			</header>
@@ -243,7 +178,9 @@
 							<div class="col-md-4">
 	
 								<div class="footer__widget text-widget">
-									<img src="images/logo.png" alt="triptip-logo">
+								<a class="navbar-brand" style="width:60%;" href="index.html">
+									<img src="asset/Logo 1.png" style="width:100%;" alt="">
+								</a>
 									<p class="footer__widget-description">
 										Menggembangkan dunia baca tulis menggunakan website menuju dunia digital. Temukan berbagai artikel, postingan, cerita, jurnal dan buat postinganmu sendiri disini	
 									</p>

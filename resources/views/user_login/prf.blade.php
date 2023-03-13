@@ -78,56 +78,54 @@
 <header class="clearfix dark-header-style fullwidth-with-search">
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
+	<div class="container">
 
-        <a class="navbar-brand" href="index.html">
-            <img src="images/logo.png" alt="">
-        </a>
+		<a class="navbar-brand" style="width:13%;" href="index">
+			<img src="asset/Logo 1.png" style="width:100%;" alt="">
+		</a>
 
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li>
-                    <a class="active" href="/user-login">Beranda <i class="" aria-hidden="true"></i></a>
-                </li>
-                <li ><a  href="#">Kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                    <div class="megadropdown">
-                        <div class="dropdown-box">
-                            
-                            <ul class="dropdown-list">
-                                <li><a href="/artikel">artikel</a></li>
-                                <li><a href="/cerpen">cerpen</a></li>
-                                <li><a href="/puisi">puisi</a></li>
-                                <li><a href="/photography">fotografi</a></li>
-                                </ul>
-                        </div>
-                        <div class="dropdown-box">
-                            <ul class="dropdown-list">
-                            
-                                <li><a href="/makalah">makalah</a></li>
-                                <li><a href="/skripsi">skripsi</a></li>
-                                <li><a href="/ilmiah">karya ilmiah</a></li>
-                            </ul>
-                        </div>
-                        <div class="dropdown-box">
-                            <ul class="dropdown-list">
-                                <li><a href="/diary">diary</a></li>
-                                <li><a href="/ilustrasi">ilustrasi</a></li>
-                                <li><a href="/pantun">pantun</a></li>
-                                <li><a href="/essai">esai</a></li>
-                            
-                                </ul>
-                        </div>
-                    </div>
-                </li>
-                <li><a href="/contact">Hubungi Kami</a></li>	
-            </ul>
-            <a href="/user-login" class="add-list-btn btn-default">Kembali</a>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li>
 
-    </div>
+					<a class="active" href="/user-login">Beranda <i class="" aria-hidden="true"></i></a>
+				</li>
+				<li ><a  href="#">Kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+					<div class="megadropdown">
+						<div class="dropdown-box">
+							
+							<ul class="dropdown-list">
+								<li><a href="/artikel">artikel</a></li>
+								<li><a href="/cerpen">cerpen</a></li>
+								<li><a href="/puisi">puisi</a></li>
+								<li><a href="/photography">fotografi</a></li>
+								</ul>
+						</div>
+						<div class="dropdown-box">
+							<ul class="dropdown-list">
+								<li><a href="/makalah">makalah</a></li>
+								<li><a href="/skripsi">skripsi</a></li>
+								<li><a href="/ilmiah">karya ilmiah</a></li>
+							</ul>
+						</div>
+						<div class="dropdown-box">
+							<ul class="dropdown-list">
+								<li><a href="/diary">diary</a></li>
+								<li><a href="/ilustrasi">ilustrasi</a></li>
+								<li><a href="/pantun">pantun</a></li>
+								<li><a href="/essai">esai</a></li>											
+								</ul>
+						</div>
+					</div>
+				</li>
+				<li><a href="/contact">Hubungi Kami</a></li>	
+			</ul>
+			<a href="/user-login" class="add-list-btn btn-default">Kembali</a>	
+	</div>
 </nav>
 </header>
 	
@@ -240,6 +238,75 @@
 </div>
 </div>
 </div>
+<footer class="footer footer-black">
+				<div class="container">
+	
+					<div class="footer__up-part">
+						<div class="row">
+							<div class="col-md-4">
+	
+								<div class="footer__widget text-widget">
+								<a class="navbar-brand" style="width:60%;" href="index.html">
+									<img src="asset/Logo 1.png" style="width:100%;" alt="">
+								</a>
+									<p class="footer__widget-description">
+										Menggembangkan dunia baca tulis menggunakan website menuju dunia digital. Temukan berbagai artikel, postingan, cerita, jurnal dan buat postinganmu sendiri disini	
+									</p>
+								</div>
+	
+							</div>
+							<div class="col-md-4">
+	
+								<div class="footer__widget subscribe-widget">
+									<h2 class="footer__widget-title footer__widget-title-white">
+										Alamat
+									</h2>
+									<p class="footer__widget-description">
+										Jl. Pandawa No. 66, Dusun Mawar RT 001 RW 001 Desa Pandan
+									</p>
+									
+								</div>
+	
+							</div>
+							<div class="col-md-4">
+	
+								<div class="footer__widget text-widget">
+									<h2 class="footer__widget-title footer__widget-title-white">
+										Kontak 
+									</h2>
+									<p class="footer__widget-description">
+										+62 898-1342-6657<br>
+										info@example.com <br>
+										YouTube: ngu_never122
+									</p>
+								</div>
+	
+							</div>
+						</div>
+					</div>
+	
+					<div class="footer__down-part footer__down-part-black">
+						<div class="row">
+							<div class="col-md-7">
+								<p class="footer__copyright">
+									© Copyright 2018 - All Rights Reserved
+								</p>
+							</div>
+							<div class="col-md-5">
+								<ul class="footer__social-list">
+									<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
+									<li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+	
+				</div>
+	
+			</footer>
 </div>
 </body>
 </html>
