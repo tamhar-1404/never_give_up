@@ -55,23 +55,12 @@
 										<div class="dropdown-box">
 											
 											<ul class="dropdown-list">
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 													<li><a href="artikel.html">artikel</a></li>
 												<li><a href="/cerpen">cerpen</a></li>
 												<li><a href="/puisi">puisi</a></li>
 												<li><a href="/photography">fotografi</a></li>
-=======
-=======
->>>>>>> 661889a2cab009d15976776745e29c396815e760
-												<li><a href="{{Route('sing-page')}}">artikel</a></li>
-												<li><a href="{{Route('sing-page')}}">cerpen</a></li>
-												<li><a href="{{Route('sing-page')}}">puisi</a></li>
-												<li><a href="{{Route('sing-page')}}">fotografi</a></li>
-<<<<<<< HEAD
->>>>>>> 661889a2cab009d15976776745e29c396815e760
-=======
->>>>>>> 661889a2cab009d15976776745e29c396815e760
+
 												</ul>
 										</div>
 										<div class="dropdown-box">
@@ -80,10 +69,7 @@
 												<li><a href="{{Route('sing-page')}}">makalah</a></li>
 												<li><a href="{{Route('sing-page')}}">skripsi</a></li>
 												<li><a href="{{Route('sing-page')}}">karya ilmiah</a></li>
-<<<<<<< HEAD
->>>>>>> 661889a2cab009d15976776745e29c396815e760
-=======
->>>>>>> 661889a2cab009d15976776745e29c396815e760
+
 											</ul>
 										</div>
 										<div class="dropdown-box">
@@ -92,10 +78,7 @@
 												<li><a href="{{Route('sing-page')}}">ilustrasi</a></li>
 												<li><a href="{{Route('sing-page')}}">pantun</a></li>
 												<li><a href="{{Route('sing-page')}}">esai</a></li>
-<<<<<<< HEAD
->>>>>>> 661889a2cab009d15976776745e29c396815e760
-=======
->>>>>>> 661889a2cab009d15976776745e29c396815e760
+
 											
 												</ul>
 										</div>
@@ -391,15 +374,9 @@ Baca										</a>
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-<<<<<<< HEAD
-<<<<<<< HEAD
-								<a href="#" class="services-post">
-=======
+
 								<a href="/puisi" class="services-post">
->>>>>>> 661889a2cab009d15976776745e29c396815e760
-=======
-								<a href="/puisi" class="services-post">
->>>>>>> 661889a2cab009d15976776745e29c396815e760
+
 									<div class="services-post__content">
 										<i class="la la-activit" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-file-earmark-richtext" viewBox="0 0 16 16">
