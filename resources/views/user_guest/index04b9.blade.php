@@ -56,45 +56,46 @@
 											
 											<ul class="dropdown-list">
 <<<<<<< HEAD
-												<li><a href="artikel.html">artikel</a></li>
+<<<<<<< HEAD
+													<li><a href="artikel.html">artikel</a></li>
 												<li><a href="/cerpen">cerpen</a></li>
 												<li><a href="/puisi">puisi</a></li>
 												<li><a href="/photography">fotografi</a></li>
 =======
+=======
+>>>>>>> 661889a2cab009d15976776745e29c396815e760
 												<li><a href="{{Route('sing-page')}}">artikel</a></li>
 												<li><a href="{{Route('sing-page')}}">cerpen</a></li>
 												<li><a href="{{Route('sing-page')}}">puisi</a></li>
 												<li><a href="{{Route('sing-page')}}">fotografi</a></li>
->>>>>>> 5581efe7c3b3741f3da2ba73d4ad9933eae3272c
+<<<<<<< HEAD
+>>>>>>> 661889a2cab009d15976776745e29c396815e760
+=======
+>>>>>>> 661889a2cab009d15976776745e29c396815e760
 												</ul>
 										</div>
 										<div class="dropdown-box">
 											<ul class="dropdown-list">
 											
-<<<<<<< HEAD
-												<li><a href="/makalah">makalah</a></li>
-												<li><a href="/skripsi">skripsi</a></li>
-												<li><a href="/ilmiah">karya ilmiah</a></li>
-=======
 												<li><a href="{{Route('sing-page')}}">makalah</a></li>
 												<li><a href="{{Route('sing-page')}}">skripsi</a></li>
 												<li><a href="{{Route('sing-page')}}">karya ilmiah</a></li>
->>>>>>> 5581efe7c3b3741f3da2ba73d4ad9933eae3272c
+<<<<<<< HEAD
+>>>>>>> 661889a2cab009d15976776745e29c396815e760
+=======
+>>>>>>> 661889a2cab009d15976776745e29c396815e760
 											</ul>
 										</div>
 										<div class="dropdown-box">
 											<ul class="dropdown-list">
-<<<<<<< HEAD
-												<li><a href="/diary">diary</a></li>
-												<li><a href="/ilustrasi">ilustrasi</a></li>
-												<li><a href="/pantun">pantun</a></li>
-												<li><a href="/essai">esai</a></li>
-=======
 												<li><a href="{{Route('sing-page')}}">diary</a></li>
 												<li><a href="{{Route('sing-page')}}">ilustrasi</a></li>
 												<li><a href="{{Route('sing-page')}}">pantun</a></li>
 												<li><a href="{{Route('sing-page')}}">esai</a></li>
->>>>>>> 5581efe7c3b3741f3da2ba73d4ad9933eae3272c
+<<<<<<< HEAD
+>>>>>>> 661889a2cab009d15976776745e29c396815e760
+=======
+>>>>>>> 661889a2cab009d15976776745e29c396815e760
 											
 												</ul>
 										</div>
@@ -153,7 +154,7 @@
 									<img class="place-gal__image" src="upload/top1.jpg" alt="place-image">
 									<div class="place-gal__content">
 										<h2 class="place-gal__title permanent-font">
-											<a href="/artikel">Artikel</a>
+											<a href="artikel.html">Artikel</a>
 										</h2>
 										<ul class="place-gal__list">
 											<li class="place-gal__list-item">
@@ -170,46 +171,12 @@
 												<path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"/>
 											  </svg> -->
 
-<<<<<<< HEAD
 Baca											</a>
 									</div>
-=======
-				<p class="discover__description">
-					Temukan karya pribadi yang kamu suka sesuai selera mu
-				</p>
-
-				<h1 class="discover__title places-tab">
-					Karya Pribadi
-				</h1>
-
-				
-				<div style="display: flex; justify-content: center;">
-					<p style="font-size: 20px; color: white;">REKOMENDASI</p>
-				</div>
-
-				<div class="discover__box-place owl-wrapper">
-					<div class="owl-carousel" data-num="4">
-					
-						<div class="item">
-
-							<!-- place-gal module -->
-							<div class="place-gal">
-								<img class="place-gal__image" src="upload/top1.jpg" alt="place-image">
-								<div class="place-gal__content">
-									<h2 class="place-gal__title permanent-font">
-										<a href="{{Route('sing-page')}}">Artikel</a>
-									</h2>
-									
-									<a class="btn-default" href="{{Route('sing-page')}}">
-										<i class="fa fa-caret-right" aria-hidden="true"></i>
-										lihat
-									</a>
->>>>>>> 5581efe7c3b3741f3da2ba73d4ad9933eae3272c
 								</div>
 								<!-- end place-gal module -->
 	
 							</div>
-<<<<<<< HEAD
 						
 							<div class="item">
 	
@@ -236,31 +203,10 @@ Baca											</a>
 											  </svg> -->
 Baca										</a>
 									</div>
-=======
-							<!-- end place-gal module -->
-
-						</div>
-					
-						<div class="item">
-
-							<!-- place-gal module -->
-							<div class="place-gal">
-								<img class="place-gal__image" src="upload/top2.jpg" alt="place-image">
-								<div class="place-gal__content">
-									<h2 class="place-gal__title">
-										<a href="{{Route('sing-page')}}">Fotografi</a>
-									</h2>
-									
-									<a class="btn-default" href="{{Route('sing-page')}}">
-										<i class="fa fa-caret-right" aria-hidden="true"></i>
-										Lihat
-									</a>
->>>>>>> 5581efe7c3b3741f3da2ba73d4ad9933eae3272c
 								</div>
 								<!-- end place-gal module -->
 	
 							</div>
-<<<<<<< HEAD
 						
 							<div class="item">
 	
@@ -281,31 +227,10 @@ Baca										</a>
 											Baca
 										</a>
 									</div>
-=======
-							<!-- end place-gal module -->
-
-						</div>
-					
-						<div class="item">
-
-							<!-- place-gal module -->
-							<div class="place-gal">
-								<img class="place-gal__image" src="upload/top3.jpg" alt="place-image">
-								<div class="place-gal__content">
-									<h2 class="place-gal__title permanent-font">
-										<a href="{{Route('sing-page')}}">Makalah</a>
-									</h2>
-									
-									<a class="btn-default" href="{{Route('sing-page')}}">
-										<i class="fa fa-caret-right" aria-hidden="true"></i>
-										Lihat
-									</a>
->>>>>>> 5581efe7c3b3741f3da2ba73d4ad9933eae3272c
 								</div>
 								<!-- end place-gal module -->
 	
 							</div>
-<<<<<<< HEAD
 						
 							<div class="item">
 	
@@ -332,31 +257,10 @@ Baca										</a>
 											  </svg> -->
 Baca										</a>
 									</div>
-=======
-							<!-- end place-gal module -->
-
-						</div>
-					
-						<div class="item">
-
-							<!-- place-gal module -->
-							<div class="place-gal">
-								<img class="place-gal__image" src="upload/top4.jpg" alt="place-image">
-								<div class="place-gal__content">
-									<h2 class="place-gal__title">
-										<a href="{{Route('sing-page')}}">Esai</a>
-									</h2>
-									
-									<a class="btn-default" href="{{Route('sing-page')}}">
-										<i class="fa fa-caret-right" aria-hidden="true"></i>
-										Lihat
-									</a>
->>>>>>> 5581efe7c3b3741f3da2ba73d4ad9933eae3272c
 								</div>
 								<!-- end place-gal module -->
 	
 							</div>
-<<<<<<< HEAD
 						
 							<div class="item">
 	
@@ -384,31 +288,10 @@ Baca										</a>
 											Baca
 										</a>
 									</div>
-=======
-							<!-- end place-gal module -->
-
-						</div>
-					
-						<div class="item">
-
-							<!-- place-gal module -->
-							<div class="place-gal">
-								<img class="place-gal__image" src="upload/top1.jpg" alt="place-image">
-								<div class="place-gal__content">
-									<h2 class="place-gal__title permanent-font">
-										<a href="{{Route('sing-page')}}">Ilustrasi</a>
-									</h2>
-									
-									<a class="btn-default" href="{{Route('sing-page')}}">
-										<i class="fa fa-caret-right" aria-hidden="true"></i>
-										lihat
-									</a>
->>>>>>> 5581efe7c3b3741f3da2ba73d4ad9933eae3272c
 								</div>
 								<!-- end place-gal module -->
 	
 							</div>
-<<<<<<< HEAD
 						
 							<div class="item">
 	
@@ -436,26 +319,6 @@ Baca										</a>
 											Baca
 										</a>
 									</div>
-=======
-							<!-- end place-gal module -->
-
-						</div>
-					
-						<div class="item">
-
-							<!-- place-gal module -->
-							<div class="place-gal">
-								<img class="place-gal__image" src="upload/top2.jpg" alt="place-image">
-								<div class="place-gal__content">
-									<h2 class="place-gal__title">
-										<a href="{{Route('sing-page')}}">Fotografi</a>
-									</h2>
-									
-									<a class="btn-default" href="{{Route('sing-page')}}">
-										<i class="fa fa-caret-right" aria-hidden="true"></i>
-										lihat
-									</a>
->>>>>>> 5581efe7c3b3741f3da2ba73d4ad9933eae3272c
 								</div>
 								<!-- end place-gal module -->
 	
@@ -489,7 +352,7 @@ Baca										</a>
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="{{Route('sing-page')}}" class="services-post">
+								<a href="/artikel" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-activit" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-file-earmark-post-fill" viewBox="0 0 16 16">
@@ -497,7 +360,7 @@ Baca										</a>
 											  </svg>
 										</i>
 										<h2 class="services-post__title">
-											Artikel
+											artikel
 										</h2>
 										</div>
 								</a>
@@ -508,7 +371,7 @@ Baca										</a>
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="{{Route('sing-page')}}" class="services-post">
+								<a href="/cerpen" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-activit" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
@@ -529,10 +392,14 @@ Baca										</a>
 	
 								<!-- services-post module -->
 <<<<<<< HEAD
+<<<<<<< HEAD
 								<a href="#" class="services-post">
 =======
-								<a href="{{Route('sing-page')}}" class="services-post">
->>>>>>> 5581efe7c3b3741f3da2ba73d4ad9933eae3272c
+								<a href="/puisi" class="services-post">
+>>>>>>> 661889a2cab009d15976776745e29c396815e760
+=======
+								<a href="/puisi" class="services-post">
+>>>>>>> 661889a2cab009d15976776745e29c396815e760
 									<div class="services-post__content">
 										<i class="la la-activit" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-file-earmark-richtext" viewBox="0 0 16 16">
@@ -541,7 +408,7 @@ Baca										</a>
 											  </svg>
 										</i>
 										<h2 class="services-post__title">
-											Puisi
+											puisi
 										</h2>
 										</div>
 								</a>
@@ -553,7 +420,7 @@ Baca										</a>
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="{{Route('sing-page')}}" class="services-post">
+								<a href="/diary" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-activit" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16">
@@ -563,7 +430,7 @@ Baca										</a>
 											  </svg>
 										</i>
 										<h2 class="services-post__title">
-											Diary
+											diary
 										</h2>
 									</div>
 								</a>
@@ -575,7 +442,7 @@ Baca										</a>
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="{{Route('sing-page')}}" class="services-post">
+								<a href="/photography" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-activit" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-camera2" viewBox="0 0 16 16">
@@ -584,7 +451,7 @@ Baca										</a>
 											  </svg>
 										</i>
 										<h2 class="services-post__title">
-											Fotografi
+											fotografi
 										</h2>
 										</div>
 								</a>
@@ -596,7 +463,7 @@ Baca										</a>
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="{{Route('sing-page')}}" class="services-post">
+								<a href="/ilustrasi" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-easel2" viewBox="0 0 16 16">
@@ -604,7 +471,7 @@ Baca										</a>
 											  </svg>
 										</i>
 										<h2 class="services-post__title">
-											Ilustrasi
+											ilustrasi
 										</h2>
 										</div>
 								</a>
@@ -615,7 +482,7 @@ Baca										</a>
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="#" class="services-post">
+								<a href="/makalah" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
@@ -633,11 +500,10 @@ Baca										</a>
 	
 							</div>
 							
-<<<<<<< HEAD
 							<div class="col-xl-2 col-md-4 col-sm-6">
 								
 								<!-- services-post module -->
-								<a href="#" class="services-post">
+								<a href="/pantun" class="services-post">
 									<div class="services-post__content">
 									<i class="la la-" aria-hidden="true">
 										<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-journal-bookmark" viewBox="0 0 16 16">
@@ -656,131 +522,9 @@ Baca										</a>
 						</div>
 							
 							<div class="col-xl-2 col-md-4 col-sm-6">
-=======
-							<div style=" display: flex; gap: 75px;">
-								<div class="col-xl-2 col-md-4 col-sm-6">
-		
-									<!-- services-post module -->
-									<a href="{{Route('sing-page')}}" class="services-post">
-										<div class="services-post__content">
-											<i class="la la-" aria-hidden="true">
-												<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
-													<path d="M0 2.5A1.5 1.5 0 0 1 1.5 1h11A1.5 1.5 0 0 1 14 2.5v10.528c0 .3-.05.654-.238.972h.738a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 1 1 0v9a1.5 1.5 0 0 1-1.5 1.5H1.497A1.497 1.497 0 0 1 0 13.5v-11zM12 14c.37 0 .654-.211.853-.441.092-.106.147-.279.147-.531V2.5a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0-.5.5v11c0 .278.223.5.497.5H12z"/>
-													<path d="M2 3h10v2H2V3zm0 3h4v3H2V6zm0 4h4v1H2v-1zm0 2h4v1H2v-1zm5-6h2v1H7V6zm3 0h2v1h-2V6zM7 8h2v1H7V8zm3 0h2v1h-2V8zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1zm-3 2h2v1H7v-1zm3 0h2v1h-2v-1z"/>
-												  </svg>
-												  
-											</i>
-											<h2 class="services-post__title">
-												Makalah
-											</h2>
-											<p class="services-post__location">
-												
-											</p>
-										</div>
-									</a>
-									<!-- end services-post module -->
-									
-								</div>
-								
-								<div class="col-xl-2 col-md-4 col-sm-6">
-		
-									<!-- services-post module -->
-									<a href="{{Route('sing-page')}}" class="services-post">
-										<div class="services-post__content">
-											<i class="la la-" aria-hidden="true">
-												<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-journal-bookmark" viewBox="0 0 16 16">
-													<path fill-rule="evenodd" d="M6 8V1h1v6.117L8.743 6.07a.5.5 0 0 1 .514 0L11 7.117V1h1v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8z"/>
-													<path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
-													<path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
-												  </svg>
-											</i>
-											<h2 class="services-post__title">
-												Skripsi
-											</h2>
-											<p class="services-post__location">
-												
-											</p>
-										</div>
-									</a>
-									<!-- end services-post module -->
-		
-								</div>
-								
-								
-								<div class="col-xl-2 col-md-4 col-sm-6">
-		
-									<!-- services-post module -->
-									<a href="{{Route('sing-page')}}" class="services-post">
-										<div class="services-post__content">
-											<i class="la la-" aria-hidden="true">
-												<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
-													<path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
-													<path d="M3 5.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 8a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 8zm0 2.5a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z"/>
-												  </svg>
-											</i>
-											<h2 class="services-post__title">
-												Pantun
-											</h2>
-											<p class="services-post__location">
-												
-											</p>
-										</div>
-									</a>
-									<!-- end services-post module -->
-		
-								</div>
-		
-								<div class="col-xl-2 col-md-4 col-sm-6">
-		
-									<!-- services-post module -->
-									<a href="{{Route('sing-page')}}" class="services-post">
-										<div class="services-post__content">
-											<i class="la la-" aria-hidden="true">
-												<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list-task" viewBox="0 0 16 16">
-													<path fill-rule="evenodd" d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z"/>
-													<path d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z"/>
-													<path fill-rule="evenodd" d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z"/>
-												  </svg>
-											</i>
-											<h2 class="services-post__title">
-												Esai
-											</h2>
-											<p class="services-post__location">
-												
-											</p>
-										</div>
-									</a>
-									<!-- end services-post module -->
-		
-								</div>
-		
-								<div class="col-xl-2 col-md-4 col-sm-6">
-		
-									<!-- services-post module -->
-									<a href="{{Route('sing-page')}}" class="services-post">
-										<div class="services-post__content">
-											<i class="la la-" aria-hidden="true">
-												<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-journals" viewBox="0 0 16 16">
-													<path d="M5 0h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2 2 2 0 0 1-2 2H3a2 2 0 0 1-2-2h1a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1H1a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v9a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1H3a2 2 0 0 1 2-2z"/>
-													<path d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z"/>
-												  </svg>
-											</i>
-											<h2 class="services-post__title" style="display: flex; font-size: 15px;">
-												Karya ilmiah
-											</h2>
-											<p class="services-post__location">
-												
-											</p>
-										</div>
-									</a>
-									<!-- end services-post module -->
-		
-								</div>
-							</div>	
->>>>>>> 5581efe7c3b3741f3da2ba73d4ad9933eae3272c
 	
 								<!-- services-post module -->
-								<a href="#" class="services-post">
+								<a href="/pantun" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
@@ -800,7 +544,7 @@ Baca										</a>
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="essai.html" class="services-post">
+								<a href="/essai" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list-task" viewBox="0 0 16 16">
@@ -821,7 +565,7 @@ Baca										</a>
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="ilmiah.html" class="services-post">
+								<a href="/ilmiah" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-journals" viewBox="0 0 16 16">
@@ -841,7 +585,7 @@ Baca										</a>
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="semua.html" class="services-post">
+								<a href="/semua" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-bar-chart-steps" viewBox="0 0 16 16">
@@ -920,11 +664,7 @@ Baca										</a>
 												54 Reviews
 											</span>
 										</p>
-<<<<<<< HEAD
 										<a class="contact-form__submit" href="/user_register" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
-=======
-										<a class="contact-form__submit" href="{{Route('sing-page')}}" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
->>>>>>> 5581efe7c3b3741f3da2ba73d4ad9933eae3272c
 													<i class="fa fa-caret-right" aria-hidden="true"></i>
 													Baca
 												</a>
@@ -968,11 +708,7 @@ Baca										</a>
 												54 Reviews
 											</span>
 										</p>
-<<<<<<< HEAD
 										<a class="contact-form__submit" href="/user_register" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
-=======
-										<a class="contact-form__submit" href="{{Route('sing-page')}}" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
->>>>>>> 5581efe7c3b3741f3da2ba73d4ad9933eae3272c
 													<i class="fa fa-caret-right" aria-hidden="true"></i>
 													Baca
 												</a>
@@ -1016,11 +752,7 @@ Baca										</a>
 												54 Reviews
 											</span>
 										</p>
-<<<<<<< HEAD
 										<a class="contact-form__submit" href="/user_register" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
-=======
-										<a class="contact-form__submit" href="{{Route('sing-page')}}" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
->>>>>>> 5581efe7c3b3741f3da2ba73d4ad9933eae3272c
 													<i class="fa fa-caret-right" aria-hidden="true"></i>
 													Baca
 												</a>
@@ -1064,11 +796,7 @@ Baca										</a>
 												54 Reviews
 											</span>
 										</p>
-<<<<<<< HEAD
 										<a class="contact-form__submit" href="/user_register" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
-=======
-										<a class="contact-form__submit" href="{{Route('sing-page')}}" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
->>>>>>> 5581efe7c3b3741f3da2ba73d4ad9933eae3272c
 													<i class="fa fa-caret-right" aria-hidden="true"></i>
 													Baca
 												</a>
@@ -1112,11 +840,7 @@ Baca										</a>
 												54 Reviews
 											</span>
 										</p>
-<<<<<<< HEAD
 										<a class="contact-form__submit" href="/user_register" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
-=======
-										<a class="contact-form__submit" href="{{Route('sing-page')}} style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
->>>>>>> 5581efe7c3b3741f3da2ba73d4ad9933eae3272c
 													<i class="fa fa-caret-right" aria-hidden="true"></i>
 													Baca
 												</a>
@@ -1160,11 +884,7 @@ Baca										</a>
 												54 Reviews
 											</span>
 										</p>
-<<<<<<< HEAD
 										<a class="contact-form__submit" href="/user_register" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
-=======
-										<a class="contact-form__submit" href="{{Route('sing-page')}}" style="margin-left: 10px; margin-bottom: 10px; margin-top: 10px;">
->>>>>>> 5581efe7c3b3741f3da2ba73d4ad9933eae3272c
 													<i class="fa fa-caret-right" aria-hidden="true"></i>
 													Baca
 												</a>
@@ -1323,15 +1043,17 @@ Baca										</a>
 		
 		<!-- footer block module
 			================================================== -->
-			<footer class="footer footer-black">
+		<!-- footer block module
+			================================================== -->
+			<footer class="footer">
 				<div class="container">
 	
 					<div class="footer__up-part">
 						<div class="row">
 							<div class="col-md-4">
 	
-								<div class="footer__widget text-widget">
-									<img src="images/logo.png" alt="triptip-logo">
+							<div class="footer__widget text-widget">
+								<img src="asset/Logo 2.png" style="width:100%;" alt="triptrip-logo">
 									<p class="footer__widget-description">
 										Menggembangkan dunia baca tulis menggunakan website menuju dunia digital. Temukan berbagai artikel, postingan, cerita, jurnal dan buat postinganmu sendiri disini	
 									</p>
@@ -1341,26 +1063,31 @@ Baca										</a>
 							<div class="col-md-4">
 	
 								<div class="footer__widget subscribe-widget">
-									<h2 class="footer__widget-title footer__widget-title-white">
+									<h2 class="footer__widget-title">
 										Alamat
 									</h2>
 									<p class="footer__widget-description">
 										Jl. Pandawa No. 66, Dusun Mawar RT 001 RW 001 Desa Pandan
 									</p>
-									
+									<form class="footer__subscribe-form">
+										<input class="footer__subscribe-input" type="text" name="email-sub" id="email-sub" placeholder="Enter your Email" />
+										<button class="footer__subscribe-button" type="submit">
+											<i class="la la-arrow-circle-o-right" aria-hidden="true"></i>
+										</button>
+									</form>
 								</div>
 	
 							</div>
 							<div class="col-md-4">
 	
 								<div class="footer__widget text-widget">
-									<h2 class="footer__widget-title footer__widget-title-white">
-										Kontak 
+									<h2 class="footer__widget-title">
+										Kontak
 									</h2>
 									<p class="footer__widget-description">
 										+62 898-1342-6657<br>
-										info@example.com <br>
-										YouTube: ngu_never122
+									info@example.com <br>
+									YouTube: ngu_never122
 									</p>
 								</div>
 	
@@ -1368,11 +1095,11 @@ Baca										</a>
 						</div>
 					</div>
 	
-					<div class="footer__down-part footer__down-part-black">
+					<div class="footer__down-part">
 						<div class="row">
 							<div class="col-md-7">
 								<p class="footer__copyright">
-									© Copyright 2018 - All Rights Reserved
+									
 								</p>
 							</div>
 							<div class="col-md-5">
@@ -1390,6 +1117,8 @@ Baca										</a>
 				</div>
 	
 			</footer>
+		<!-- End footer -->
+
 
 		<!-- End footer -->
 
