@@ -30,15 +30,13 @@ height: calc(100% - 73px);
 height: 100%;
 }
 }
-.body{
-	padding:3px;
-}
+
     </style>
 </head>
 <body >
 
 	<!-- Container -->
-	<div id="container" >
+	<div id="container" padding="20%;" >
 		<!-- Header
 		    ================================================== -->
 			<header class="clearfix ">
@@ -46,8 +44,8 @@ height: 100%;
 				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 					<div class="container">
 	
-						<a class="navbar-brand" href="home4.html">
-							<img src="images/logo-black.png" alt="">
+					<a class="navbar-brand" style="width:13%;" href="/user-login">
+							<img src="asset/Logo 1.png" style="width:100%;" alt="">
 						</a>
 	
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,7 +55,7 @@ height: 100%;
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav mr-auto">
 								<li>
-									<a class="active" href="index04b9.html">Home <i class="" aria-hidden="true"></i></a>
+									<a class="" href="/">Beranda <i class="" aria-hidden="true"></i></a>
 								</li>
 								<li ><a  href="#">kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
 									<div class="megadropdown">
