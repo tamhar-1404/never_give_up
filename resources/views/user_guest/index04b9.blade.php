@@ -55,10 +55,12 @@
 										<div class="dropdown-box">
 											
 											<ul class="dropdown-list">
-												<li><a href="{{Route('sing-page')}}">artikel</a></li>
-												<li><a href="{{Route('sing-page')}}">cerpen</a></li>
-												<li><a href="{{Route('sing-page')}}">puisi</a></li>
-												<li><a href="{{Route('sing-page')}}">fotografi</a></li>
+
+													<li><a href="artikel.html">artikel</a></li>
+												<li><a href="/cerpen">cerpen</a></li>
+												<li><a href="/puisi">puisi</a></li>
+												<li><a href="/photography">fotografi</a></li>
+
 												</ul>
 										</div>
 										<div class="dropdown-box">
@@ -67,6 +69,7 @@
 												<li><a href="{{Route('sing-page')}}">makalah</a></li>
 												<li><a href="{{Route('sing-page')}}">skripsi</a></li>
 												<li><a href="{{Route('sing-page')}}">karya ilmiah</a></li>
+
 											</ul>
 										</div>
 										<div class="dropdown-box">
@@ -75,6 +78,7 @@
 												<li><a href="{{Route('sing-page')}}">ilustrasi</a></li>
 												<li><a href="{{Route('sing-page')}}">pantun</a></li>
 												<li><a href="{{Route('sing-page')}}">esai</a></li>
+
 											
 												</ul>
 										</div>

@@ -11,10 +11,19 @@
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
+    <link rel="stylesheet" href="assets/css/summernote-lite.css">
+    <link rel="stylesheet" href="assets/font/summernote.eot">
+    <link rel="stylesheet" href="assets/font/summernote.ttf">
+    <link rel="stylesheet" href="assets/font/summernote.woff">
+    <link rel="stylesheet" href="assets/font/summernote.woff2">
 	<link rel="stylesheet" href="css/triptip-assets.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" href="assets/summernote-lite.css">
+    <!-- Summernote css -->
+    <link rel="stylesheet" href="assets/plugins/summernote/summernote-bs4.css" />
+        <!--bootstrap-wysihtml5-->
+        <link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.css">
+
+    
   
     
 
@@ -160,9 +169,9 @@
 						<h2 class="add-listing__form-title">
 						Posting:
 						</h2>
-
+                            <textarea name="" id="summernote" cols="30" rows="10"></textarea>
 					
-                        <div id="summernote"></div>
+                        <!-- <div id="summernote"></div> -->
 
 
 					</div>
@@ -474,7 +483,7 @@
 	<!-- End Container -->
 	
 	<script src="js/jquery.min.js"></script>
-    <script src="assets/summernote-lite.min.js"></script>
+    <script src="assets/js/summernote-lite.min.js"></script>
 	<script src="js/jquery.migrate.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiqrIen8rWQrvJsu-7f4rOta0fmI5r2SI"></script>
 	<script src="js/triptip-plugins.min.js"></script>
@@ -482,9 +491,12 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.countTo.js"></script>
 	<script src="js/script.js"></script>
+     <!--Summernote js-->
+	<script src="assets/plugins/summernote/summernote-bs4.min.js"></script>
+    <script src="assets/js/app.js"></script>
     <script>
       $('#summernote').summernote({
-        placeholder: 'Hello Bootstrap 4',
+        placeholder: '',
         tabsize: 2,
         height: 100
       });

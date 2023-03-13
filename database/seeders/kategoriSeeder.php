@@ -15,7 +15,8 @@ class kategoriSeeder extends Seeder
     public function run(): void
     {
       Kategori::create([
-        'kategori' => 'cerpen'
+        'kategori' => 'cerpen',
+        'icon' => 'book.jpg'
       ]);
       Kategori::create([
         'kategori' => 'artikel'
@@ -30,7 +31,8 @@ class kategoriSeeder extends Seeder
         'kategori' => 'potografi'
       ]);
       Kategori::create([
-        'kategori' => 'diari'
+        'kategori' => 'diari',
+        'icon' => 'journal.jpg'
       ]);
       Kategori::create([
         'kategori' => 'makalah'
