@@ -133,6 +133,12 @@ class Index04b9Controller extends Controller
     public function makalahpkn(){
     return view('user_login.makalah-pkn',['makalah-pkn']);
     }
+    public function search(Request $request)
+    {
+        $keyword = $request->search;
+        $users = users::where('name', 'like', "%" . $keyword . "%")->paginate(5);
+        return view('users.artikel', compact('users'))->with('i', (request()->input('page', 1) - 1) * 5);
+    }
    
 }
 ?>
