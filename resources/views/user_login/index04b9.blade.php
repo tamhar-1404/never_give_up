@@ -14,6 +14,28 @@
 	
 	<link rel="stylesheet" href="css/triptip-assets.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<style>
+		/* Style the button that is used to open the dropdown */
+		/* Style the button that is used to open the dropdown */
+		.dropbtn {
+		background-color: #4CAF50;
+		color: white;
+		padding: 16px;
+		font-size: 16px;
+		border: none;
+		}
+
+		/* Style the dropdown content (hidden by default) */
+		.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f1f1f1;
+		min-width: 160px;
+		z-index: 1;
+		}
+
+
+	</style>
 
 </head>
 <body>
@@ -82,6 +104,10 @@
 										
 					</ul>
 					
+
+
+                        
+					<a href="/logout" class="add-list-btn btn-default"><i class="fa fa-plus" aria-hidden="true"></i> log out</a>
 					<a href="/pilihkategori" class="add-list-btn btn-default"><i class="fa fa-plus" aria-hidden="true"></i> posting</a>
 						
 						
@@ -1108,6 +1134,37 @@ Baca										</a>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.countTo.js"></script>
 	<script src="js/script.js"></script>
+	<script src="assets/plugins/jquery-knob/excanvas.js"></script>
+    <script src="assets/plugins/jquery-knob/jquery.knob.js"></script>
+
+    <script src="assets/plugins/flot-chart/jquery.flot.min.js"></script>
+    <script src="assets/plugins/flot-chart/jquery.flot.tooltip.min.js"></script>
+    <script src="assets/plugins/flot-chart/jquery.flot.resize.js"></script>
+    <script src="assets/plugins/flot-chart/jquery.flot.pie.js"></script>
+    <script src="assets/plugins/flot-chart/jquery.flot.selection.js"></script>
+    <script src="assets/plugins/flot-chart/jquery.flot.stack.js"></script>
+    <script src="assets/plugins/flot-chart/jquery.flot.crosshair.js"></script>
+
+    <script src="assets/pages/dashboard.js"></script>
+
+    <script src="assets/js/app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	<script>
+		$(document).ready(function() {
+		$(".dropbtn").click(function() {
+			$(".dropdown-content").toggle();
+		});
+
+		$(document).click(function(event) {
+			if (!$(event.target).closest(".dropdown").length) {
+			$(".dropdown-content").hide();
+			}
+		});
+		});
+
+
+	</script>
 	
 </body>
 
