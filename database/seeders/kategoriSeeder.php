@@ -19,35 +19,44 @@ class kategoriSeeder extends Seeder
         'icon' => 'book.jpg'
       ]);
       Kategori::create([
-        'kategori' => 'artikel'
+        'kategori' => 'artikel',
+        'icon' => 'book.jpg'
       ]);
       Kategori::create([
-        'kategori' => 'pantun'
+        'kategori' => 'pantun',
+        'icon' => 'book.jpg'
       ]);
       Kategori::create([
-        'kategori' => 'puisi'
+        'kategori' => 'puisi',
+        'icon' => 'book.jpg'
       ]);
       Kategori::create([
-        'kategori' => 'potografi'
+        'kategori' => 'potografi',
+        'icon' => 'book.jpg'
       ]);
       Kategori::create([
         'kategori' => 'diari',
         'icon' => 'journal.jpg'
       ]);
       Kategori::create([
-        'kategori' => 'makalah'
+        'kategori' => 'makalah',
+        'icon' => 'book.jpg'
       ]);
       Kategori::create([
-        'kategori' => 'ilustrasi'
+        'kategori' => 'ilustrasi',
+        'icon' => 'book.jpg'
       ]);
       Kategori::create([
-        'kategori' => 'skripsi'
+        'kategori' => 'skripsi',
+        'icon' => 'book.jpg'
       ]);
       Kategori::create([
-        'kategori' => 'esai'
+        'kategori' => 'esai',
+        'icon' => 'book.jpg'
       ]);
       Kategori::create([
-        'kategori' => 'Karya ilmiah'
+        'kategori' => 'Karya ilmiah',
+        'icon' => 'book.jpg'
       ]);
     }
 }

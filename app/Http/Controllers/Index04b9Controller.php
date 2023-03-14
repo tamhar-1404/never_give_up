@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 use App\Models\Cerpen;
+use App\Models\User;
+use App\Models\Kategori;
 use Illuminate\Http\Request;
 
 class Index04b9Controller extends Controller
@@ -63,7 +65,15 @@ class Index04b9Controller extends Controller
     }
    
     public function pilihkategori(){
-    return view('user_login.pilihkategori',['pilihkategori']);
+        $kategori = kategori::all();
+    return view('user_login.pilihkategori',['kategori'=>$kategori]);
+    }
+
+    public function kirim_kategori($id){
+        $user = User::all();
+        $kirim_kategori = $id;
+        $kategori = Kategori::all();
+        return view ('user_login.create.create_cerpen', ['user'=>$user], ['kategori'=>$kategori], ['kirim_kategori'=>$kirim_kategori]);
     }
    
     public function userpage(){
@@ -115,7 +125,9 @@ class Index04b9Controller extends Controller
     }
    
     public function prf(){
-    return view('user_login.prf',['prf']);
+    $id = Auth()->User()->id;
+    $user = User::find($id);
+    return view('user_login.prf',['User'=>$user]);
     }
    
     public function makalahpkn(){

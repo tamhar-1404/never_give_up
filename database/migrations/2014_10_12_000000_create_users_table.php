@@ -18,6 +18,11 @@ return new class extends Migration
             $table->string('password');
             $table->string('foto');
             $table->string('role')->default('user');
+            $table->string('namalengkap')->nullable();
+            $table->bigInteger('notlp')->nullable();
+            $table->string('medsos')->nullable();
+            $table->date('tgllahir')->nullable();
+            $table->string('askot')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
