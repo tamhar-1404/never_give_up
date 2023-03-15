@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use App\Models\Cerpen;
+use App\Models\Postingan;
 use App\Models\User;
 use App\Models\Kategori;
 use Illuminate\Http\Request;
@@ -17,6 +18,8 @@ class Index04b9Controller extends Controller
         }
 
     public function artikel(){
+        $artikel = postingan::where('status', 'setuju')->get();
+        return view('user_login.artikel',['artikel'=>$artikel]);
     return view('user_login.artikel',['artikel']);
     }
 
@@ -66,14 +69,14 @@ class Index04b9Controller extends Controller
    
     public function pilihkategori(){
         $kategori = kategori::all();
-    return view('user_login.pilihkategori',['kategori'=>$kategori]);
+        return view('user_login.pilihkategori',['kategori'=>$kategori]);
     }
 
     public function kirim_kategori($id){
         $user = User::all();
-        $kirim_kategori = $id;
-        $kategori = Kategori::all();
-        return view ('user_login.create.create_cerpen', ['user'=>$user], ['kategori'=>$kategori], ['kirim_kategori'=>$kirim_kategori]);
+        $kirim_kategori = $id;  
+        $kategori = Kategori::find($id);
+        return view ('user_login.create.create_cerpen', ['user'=>$user,'kategori'=>$kategori,'kirim_kategori'=>$kirim_kategori]);
     }
    
     public function userpage(){
@@ -125,9 +128,8 @@ class Index04b9Controller extends Controller
     }
    
     public function prf(){
-    $id = Auth()->User()->id;
-    $user = User::find($id);
-    return view('user_login.prf',['User'=>$user]);
+    $user = User::find(Auth()->User()->id);
+    return view('user_login.prf',['user'=>$user]);
     }
    
     public function makalahpkn(){

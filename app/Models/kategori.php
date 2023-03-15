@@ -13,4 +13,8 @@ class kategori extends Model
     {
         return $this-> BelongsTo(user::class);
     }
+    public function postingan()
+    {
+        return $this-> HasMany(postingan::class);
+    }
 }

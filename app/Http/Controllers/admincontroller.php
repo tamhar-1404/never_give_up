@@ -6,12 +6,22 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Kontak;
 use App\Models\Cerpen;
+use App\Models\Postingan;
+use App\Models\Kategori;
 
 class AdminController extends Controller
 {
     public function indexadmin()
     {
-        return view('admin.index');
+             
+        $user = User::where('role', 'user')->count();
+        $semua = postingan::count();
+        $setuju = postingan::where('status', 'setuju')->count();
+        $postingan = postingan::where('status', 'pandding')->count();
+        $posting = postingan::all();
+
+        return view('admin.index', ['user'=>$user,'semua'=>$semua,'setuju'=>$setuju,'postingan'=>$postingan, 'posting'=>$posting] );
+
 
     }
     public function data_user()
@@ -21,12 +31,19 @@ class AdminController extends Controller
          return view('admin.Data-user',['user'=>$user]);
 
     }
-    public function cerpen_admin()
+    public function uprove($id)
     {
-        $cerpen = cerpen::where('status', 'pandding')->get();
-
-         return view('admin.cerpen',['cerpen'=>$cerpen]);
-
+         
+        
+        $posting = postingan::find($id);
+        if($posting->status == 'pandding'){
+            $posting->status = 'setuju';   
+            $posting->save();
+        }
+       
+        return redirect('/admin');
+    
+   
     }
 
     public function pesan()

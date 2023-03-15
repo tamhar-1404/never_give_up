@@ -169,7 +169,7 @@
 						<h2 class="add-listing__form-title">
 						Posting:
 						</h2>
-                            <textarea name="" id="summernote" cols="30" rows="10"></textarea>
+                        	    			<textarea name="" id="summernote" cols="30" rows="10"></textarea>	
 					
                         <!-- <div id="summernote"></div> -->
 
