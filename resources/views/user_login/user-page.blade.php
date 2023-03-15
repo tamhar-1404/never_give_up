@@ -126,10 +126,10 @@
 					<div class="row">
 						<div class="col-lg-5">
 							<div class="user-detail__profile-box">
-								<a class="user-detail__profile-image" href="#"><img style="width: 80px; height: 80px; border-radius: 100%;" src="asset/{{Auth()->User()->foto}}" alt=""></a>
+								<a class="user-detail__profile-image" href="#"><img style="width: 80px; height: 80px; border-radius: 100%;" src="{{ asset('storage/' . $user->foto) }}" alt=""></a>
 								<div>
 									<h3 class="user-detail__profile-title">
-										<a href="prf.html">{{Auth()->user()->username}}</a>
+										<a href="/prf">{{$user->username}}</a>
 									</h3>
 									<a href="/prf" style="color: #db3458; margin-top: 10px;">Edit Profil</a>
 								</div>

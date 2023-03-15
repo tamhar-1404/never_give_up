@@ -82,11 +82,40 @@ class loginController extends Controller
 
     
     }
+    
     public function logout()
     {
         Auth::logout();
         request()->session()->invalidate();
         request()->session()->regenerateToken();
         return redirect('/sing-page');
+    }
+
+    // public function prf($id){
+       
+    //     $data = Prf::find($id);
+    //     return view('user_login.prf', compact('data'));
+    // }
+
+    public function upprof(Request $request, $id)
+    {
+        $data = auth()->user();
+        // dd($request);
+        $isi = [
+            'username' => $request-> username,
+            'email' => $request-> email,
+            'namalengkap' => $request-> namalengkap,
+            'notlp' => $request-> notlp,
+            'medsos' => $request-> medsos,
+            'tgllahir' => $request-> tgllahir,
+            'askot' => $request-> askot,
+        ];
+        if ($request->hasFile('foto')){
+            $isi['foto'] = $request->file('foto')->store('foto','public');
+        }
+        $data->update($isi);
+        // $data->save();
+
+        return redirect('prf')->with('sukses','Data Berhasil di Perbarui');
     }
 }

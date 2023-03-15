@@ -131,18 +131,22 @@
 	
 		
     <div class="container">
-<div class="row gutters">
+		<form method="POST" action="/upprof/{id}" enctype="multipart/form-data">
+		@csrf
+<div class="row">
+
 <div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
 <div class="card h-100">
 	<div class="card-body">
 		<div class="account-settings">
 			<div class="user-profile">
 				<div class="user-avatar">
-					<img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Maxwell Admin">
+					<!-- <img src="asset/{{Auth()->User()->foto}}" alt="Maxwell Admin"> -->
+					<img src="{{ asset('storage/' . $user->foto) }}" alt="Maxwell Admin">
 				</div>
-				<h5 class="user-name">Yuki Hayashi</h5>
-				<h6 class="user-email">yuki@Maxwell.com</h6><br>
-				<input type="file" class="filestyle" data-input="false" data-buttonname="btn-secondary" style="width: 43%;   font-size: 12px;">
+				<h5 class="user-name">{{$user->username}}</h5>
+				<h6 class="user-email">{{$user->email}}</h6><br>
+				<input type="file" name="foto" class="filestyle" data-input="false" data-buttonname="btn-secondary" style="width: 43%;   font-size: 12px;" value="{{Auth::User()->foto}}">
 			</div>
 			<div class="aboutt">
 				<h5>Profil</h5>
@@ -159,154 +163,66 @@
 			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 				<h6 class="mb-2 text-primary">Data Pribadi</h6>
 			</div>
-			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+			<div class="col-xl-6 col-lg-6 col-md-6 co l-sm-6 col-12">
 				<div class="form-group">
-					<label for="fullName">Nama Lengkap</label>
-					<input type="text" class="form-control" id="fullName" placeholder="Masukkan Nama Lengkap">
+					<label for="username">Username</label>
+					<input type="text" class="form-control" name="username" id="username" value="{{$user->username}}">
 				</div>
 			</div>
 			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 				<div class="form-group">
-					<label for="eMail">Email</label>
-					<input type="email" class="form-control" id="eMail" placeholder="Masukkan Alamat Email">
+					<label for="namalengkap">Nama Lengkap</label>
+					<input type="text" class="form-control" name="namalengkap" id="fullName" value="{{$user->namalengkap}}">
+				</div>
+			</div>
+			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="email" class="form-control" name="email" id="email" value="{{$user->email}}">
 				</div>
 			</div>
 			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 				<div class="form-group">
 					<label for="phone">Nomor Telepon</label>
-					<input type="text" class="form-control" id="phone" placeholder="Masukkan Nomor Telepon">
+					<input type="text" class="form-control" id="phone" name="notlp" value="{{$user->notlp}}">
 				</div>
 			</div>
 			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 				<div class="form-group">
-					<label for="website">Akun Media Sosial</label>
-					<input type="url" class="form-control" id="website" placeholder="Masukkan Akun Instagram">
+					<label for="tgllahir">Tanggal Lahir</label>
+					<input type="date" class="form-control" id="tgllahir" name="tgllahir" value="{{$user->tgllahir}}">
 				</div>
 			</div>
 			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 				<div class="form-group">
-					<label for="website">Tanggal Lahir</label>
-					<input type="url" class="form-control" id="website" placeholder="Masukkan Akun Instagram">
+					<label for="phone">Medsos</label>
+					<input type="text" class="form-control" id="phone" name="medsos" value="{{$user->medsos}}">
 				</div>
 			</div>
 			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 				<div class="form-group">
-					<label for="website">Asal Kota</label>
-					<input type="url" class="form-control" id="website" placeholder="Masukkan Akun Instagram">
-				</div>
+					<label for="askot">Asal Kota</label>
+					<input type="text" class="form-control" id="askot" name="askot" value="{{$user->askot}}">
+				</div>	
 			</div>
 		</div>
-		<!-- <div class="row gutters">
-			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-				<h6 class="mt-3 mb-2 text-primary">Alamat</h6>
-			</div>
-			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-				<div class="form-group">
-					<label for="Street">Rincian Alamat</label>
-					<input type="name" class="form-control" id="Street" placeholder="Masukkan Alamat Lengkap">
-				</div>
-			</div>
-			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-				<div class="form-group">
-					<label for="ciTy">Kota</label>
-					<input type="name" class="form-control" id="ciTy" placeholder="Masukkan Kota">
-				</div>
-			</div>
-			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-				<div class="form-group">
-					<label for="sTate">State</label>
-					<input type="text" class="form-control" id="sTate" placeholder="Enter State">
-				</div>
-			</div>
-			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-				<div class="form-group">
-					<label for="zIp">Zip Code</label>
-					<input type="text" class="form-control" id="zIp" placeholder="Zip Code">
-				</div>
-			</div>
-		</div> -->
 		<div class="row gutters">
 			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 				<div class="text-right">
 					<a href="/user-page" class="btn btn-secondary" type="button" id="submit" name="submit">Batal</a>
-					<a href="/user-page" class="btn btn-primary" type="button" id="submit" name="submit">Simpan</a>
+                    <button type="submit" class="btn btn-success">Simpan</button>
+					<!-- <a class="btn btn-primary" type="submit" name="submit">Simpan</a> -->
 					<!-- <button type="button" id="submit" name="submit" class="btn btn-primary">Simpan</button> -->
 				</div>
 			</div>
+			
 		</div>
 	</div>
 </div>
 </div>
 </div>
-<footer class="footer footer-black">
-				<div class="container">
-	
-					<div class="footer__up-part">
-						<div class="row">
-							<div class="col-md-4">
-	
-								<div class="footer__widget text-widget">
-								<a class="navbar-brand" style="width:60%;" href="index.html">
-									<img src="asset/Logo 1.png" style="width:100%;" alt="">
-								</a>
-									<p class="footer__widget-description">
-										Menggembangkan dunia baca tulis menggunakan website menuju dunia digital. Temukan berbagai artikel, postingan, cerita, jurnal dan buat postinganmu sendiri disini	
-									</p>
-								</div>
-	
-							</div>
-							<div class="col-md-4">
-	
-								<div class="footer__widget subscribe-widget">
-									<h2 class="footer__widget-title footer__widget-title-white">
-										Alamat
-									</h2>
-									<p class="footer__widget-description">
-										Jl. Pandawa No. 66, Dusun Mawar RT 001 RW 001 Desa Pandan
-									</p>
-									
-								</div>
-	
-							</div>
-							<div class="col-md-4">
-	
-								<div class="footer__widget text-widget">
-									<h2 class="footer__widget-title footer__widget-title-white">
-										Kontak 
-									</h2>
-									<p class="footer__widget-description">
-										+62 898-1342-6657<br>
-										info@example.com <br>
-										YouTube: ngu_never122
-									</p>
-								</div>
-	
-							</div>
-						</div>
-					</div>
-	
-					<div class="footer__down-part footer__down-part-black">
-						<div class="row">
-							<div class="col-md-7">
-								<p class="footer__copyright">
-									© Copyright 2018 - All Rights Reserved
-								</p>
-							</div>
-							<div class="col-md-5">
-								<ul class="footer__social-list">
-									<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-									<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-									<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-									<li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
-									<li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-	
-				</div>
-	
-			</footer>
+</form>
+
 </div>
 </body>
 </html>
