@@ -14,8 +14,13 @@
 	
 	<link rel="stylesheet" href="css/triptip-assets.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-
+<style>
+	.body{
+		padding:20%;
+	}
+	</style>
 </head>
+
 <body >
 
 	<!-- Container -->
@@ -27,8 +32,8 @@
 				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 					<div class="container">
 	
-						<a class="navbar-brand" href="/">
-							<img src="images/logo-black.png" alt="">
+					<a class="navbar-brand" style="width:13%;" href="/user">
+							<img src="asset/Logo 1.png" style="width:100%;" alt="">
 						</a>
 	
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,8 +43,7 @@
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav mr-auto">
 								<li>
-<<<<<<< HEAD
-									<a class=" " href="/">Home <i class="" aria-hidden="true"></i></a>
+									<a class=" " href="/">Beranda <i class="" aria-hidden="true"></i></a>
 								</li>
 								<li ><a  href="#">kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
 									<div class="megadropdown">
@@ -65,16 +69,12 @@
 										</div>
 										
 									</div>
-=======
-									<a class="active" href="/">Home <i class="" aria-hidden="true"></i></a>
->>>>>>> 2fcb79861690e5bea471b612e93aefa35cb806a6
 								</li>
 								
 								
 							</ul>
 							<ul class="navbar-nav ml-auto right-list">
-								<li><a href="/sing-page"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Sign In</a></li>
-								<li><a href="/sing-page"><i class="fa fa-user-o" aria-hidden="true"></i> Register</a></li>
+								<li><a href="/sing-page"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Login</a></li>
 							</ul>
 							
 						</div>

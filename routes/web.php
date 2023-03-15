@@ -20,6 +20,7 @@ use App\Http\Controllers\PuisiPertiwiController;
 use App\Http\Controllers\PostingController;
 use App\Http\Controllers\loginController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\PengawasController;
 use App\Http\Middleware\admin;
 use App\Http\Middleware\Auth;
 /*
@@ -83,6 +84,12 @@ Route::group(['middleware'=> ['auth','hakakses:Admin']], function() {
     Route::get('/akun_blokir', [CerpenController::class, 'akun_blokir'])->name('akun_blokir');
     Route::post('/hapus/{id}', [AdminController::class, 'hapus'])->name('hapus');
 });
+
+
+//pengawas
+Route::get('/daftarpengawas', [PengawasController::class, 'daftarpengawas'])-> name('daftarpengawas');
+
+
 
 //user_login
 Route::group(['middleware'=> ['auth', 'hakakses:user']], function(){

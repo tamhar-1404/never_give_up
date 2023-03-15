@@ -46,7 +46,7 @@ Artikel	</h1><center>
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav mr-auto">
 								<li>
-									<a class="active" href="index04b9.html">Home <i class="" aria-hidden="true"></i></a>
+									<a class="" href="/">Beranda <i class="" aria-hidden="true"></i></a>
 								</li>
 								<li ><a  href="#">Kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
 									<div class="megadropdown">
@@ -56,7 +56,7 @@ Artikel	</h1><center>
 												<li><a href="/artikel_guest">artikel</a></li>
 												<li><a href="cerpen">cerpen</a></li>
 												<li><a href="/puisi">puisi</a></li>
-												<li><a href="photography.html">fotografi</a></li>
+												<li><a href="/photography">fotografi</a></li>
 												</ul>
 										</div>
 										<div class="dropdown-box">
@@ -136,7 +136,7 @@ Artikel	</h1><center>
 							<p class=""></p>Beberapa Hal Yang Perlu Diterapkan Agar Sukses
 							
 							<p class="card-text">Jika diberi pertanyaan siapa sih yang ingin sukses? Mungkin semua orang yang diberi pertanyaan tersebut akan mengangkat tangan mereka tinggi-tinggi. Namun, masih banyak orang yang belum mengerti apa itu kesuksesan ...</p>
-							<a class="contact-form__submit" href="/sing-page" style="margin-right: 20px; margin-bottom: 10px;">
+							<a class="contact-form__submit" href="/user_register" style="margin-right: 20px; margin-bottom: 10px;">
 								<i class="fa fa-caret-right" aria-hidden="true"></i>
 								Baca
 							</a>
@@ -179,7 +179,7 @@ Artikel	</h1><center>
 							<p class=""></p>Beberapa Hal Yang Perlu Diterapkan Agar Sukses
 							
 							<p class="card-text">Jika diberi pertanyaan siapa sih yang ingin sukses? Mungkin semua orang yang diberi pertanyaan tersebut akan mengangkat tangan mereka tinggi-tinggi. Namun, masih banyak orang yang belum mengerti apa itu kesuksesan ...</p>
-							<a class="btn-default" href="#">
+							<a class="btn-default" href="/user_register">
 											<i class="fa fa-caret-right" aria-hidden="true"></i>
 											Baca
 										</a>
@@ -223,7 +223,7 @@ Artikel	</h1><center>
 							<p class=""></p>Beberapa Hal Yang Perlu Diterapkan Agar Sukses
 							
 							<p class="card-text">Jika diberi pertanyaan siapa sih yang ingin sukses? Mungkin semua orang yang diberi pertanyaan tersebut akan mengangkat tangan mereka tinggi-tinggi. Namun, masih banyak orang yang belum mengerti apa itu kesuksesan ...</p>
-							<a class="btn-default" href="#">
+							<a class="btn-default" href="/user_register">
 											<i class="fa fa-caret-right" aria-hidden="true"></i>
 											Baca
 										</a>
@@ -271,7 +271,7 @@ Artikel	</h1><center>
 							<p class=""></p>Beberapa Hal Yang Perlu Diterapkan Agar Sukses
 							
 							<p class="card-text">Jika diberi pertanyaan siapa sih yang ingin sukses? Mungkin semua orang yang diberi pertanyaan tersebut akan mengangkat tangan mereka tinggi-tinggi. Namun, masih banyak orang yang belum mengerti apa itu kesuksesan ...</p>
-							<a class="btn-default" href="bacafotografi.html">
+							<a class="btn-default" href="/user_register">
 											<i class="fa fa-caret-right" aria-hidden="true"></i>
 											Baca
 										</a>
@@ -314,7 +314,7 @@ Artikel	</h1><center>
 							<p class=""></p>Beberapa Hal Yang Perlu Diterapkan Agar Sukses
 							
 							<p class="card-text">Jika diberi pertanyaan siapa sih yang ingin sukses? Mungkin semua orang yang diberi pertanyaan tersebut akan mengangkat tangan mereka tinggi-tinggi. Namun, masih banyak orang yang belum mengerti apa itu kesuksesan ...</p>
-							<a class="btn-default" href="bacafotografi.html">
+							<a class="btn-default" href="/user_register">
 											<i class="fa fa-caret-right" aria-hidden="true"></i>
 											Baca
 										</a>
@@ -358,7 +358,7 @@ Artikel	</h1><center>
 							<p class=""></p>Beberapa Hal Yang Perlu Diterapkan Agar Sukses
 							
 							<p class="card-text">Jika diberi pertanyaan siapa sih yang ingin sukses? Mungkin semua orang yang diberi pertanyaan tersebut akan mengangkat tangan mereka tinggi-tinggi. Namun, masih banyak orang yang belum mengerti apa itu kesuksesan ...</p>
-							<a class="btn-default" href="bacafotografi.html">
+							<a class="btn-default" href="/user_register">
 											<i class="fa fa-caret-right" aria-hidden="true"></i>
 											Baca
 										</a>

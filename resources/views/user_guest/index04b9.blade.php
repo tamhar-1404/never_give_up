@@ -37,8 +37,8 @@
 				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 					<div class="container">
 	
-						<a class="navbar-brand" href="index.html">
-							<img src="images/logo.png" alt="">
+					<a class="navbar-brand" style="width:13%;" href="/user-login">
+							<img src="asset/Logo 1.png" style="width:100%;" alt="">
 						</a>
 	
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -335,7 +335,7 @@ Baca										</a>
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="/artikel" class="services-post">
+								<a href="/user_register" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-activit" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-file-earmark-post-fill" viewBox="0 0 16 16">
@@ -354,7 +354,7 @@ Baca										</a>
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="/cerpen" class="services-post">
+								<a href="/user_register" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-activit" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
@@ -374,9 +374,7 @@ Baca										</a>
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-
-								<a href="/puisi" class="services-post">
-
+								<a href="/user_register" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-activit" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-file-earmark-richtext" viewBox="0 0 16 16">
@@ -397,7 +395,7 @@ Baca										</a>
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="/diary" class="services-post">
+								<a href="/user_register" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-activit" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-journal-text" viewBox="0 0 16 16">
@@ -419,7 +417,7 @@ Baca										</a>
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="/photography" class="services-post">
+								<a href="/user_register" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-activit" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-camera2" viewBox="0 0 16 16">
@@ -440,7 +438,7 @@ Baca										</a>
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="/ilustrasi" class="services-post">
+								<a href="/user_register" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-easel2" viewBox="0 0 16 16">
@@ -459,7 +457,7 @@ Baca										</a>
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="/makalah" class="services-post">
+								<a href="/user_register" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
@@ -480,7 +478,7 @@ Baca										</a>
 							<div class="col-xl-2 col-md-4 col-sm-6">
 								
 								<!-- services-post module -->
-								<a href="/pantun" class="services-post">
+								<a href="/user_register" class="services-post">
 									<div class="services-post__content">
 									<i class="la la-" aria-hidden="true">
 										<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-journal-bookmark" viewBox="0 0 16 16">
@@ -501,7 +499,7 @@ Baca										</a>
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="/pantun" class="services-post">
+								<a href="/user_register" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
@@ -521,7 +519,7 @@ Baca										</a>
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="/essai" class="services-post">
+								<a href="/user_register" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list-task" viewBox="0 0 16 16">
@@ -542,7 +540,7 @@ Baca										</a>
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="/ilmiah" class="services-post">
+								<a href="/user_register" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-journals" viewBox="0 0 16 16">
@@ -562,7 +560,7 @@ Baca										</a>
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="/semua" class="services-post">
+								<a href="/user_register" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-bar-chart-steps" viewBox="0 0 16 16">
@@ -598,7 +596,6 @@ Baca										</a>
 						<p class="section-header__description">
 							Berbagai Kategori postingan dengan gambar.
 						</p>
-						<div class="semua" style="display: flex; justify-content: end;"><a href="/semua"><p class="semuat" style="text-decoration: underline;">lihat semua</p></a></div>
 						
 						
 					</div>
@@ -1020,17 +1017,18 @@ Baca										</a>
 		
 		<!-- footer block module
 			================================================== -->
-		<!-- footer block module
-			================================================== -->
-			<footer class="footer">
+			<footer class="footer footer-black">
 				<div class="container">
 	
 					<div class="footer__up-part">
 						<div class="row">
 							<div class="col-md-4">
 	
-							<div class="footer__widget text-widget">
-								<img src="asset/Logo 2.png" style="width:100%;" alt="triptrip-logo">
+								<div class="footer__widget text-widget">
+								<a class="navbar-brand" style="width:65%;" href="/user-login">
+							<img src="asset/Logo 1.png" style="width:100%;" alt="">
+						</a>
+                                <br>
 									<p class="footer__widget-description">
 										Menggembangkan dunia baca tulis menggunakan website menuju dunia digital. Temukan berbagai artikel, postingan, cerita, jurnal dan buat postinganmu sendiri disini	
 									</p>
@@ -1040,31 +1038,28 @@ Baca										</a>
 							<div class="col-md-4">
 	
 								<div class="footer__widget subscribe-widget">
-									<h2 class="footer__widget-title">
+									<h2 class="footer__widget-title footer__widget-title-white">
 										Alamat
 									</h2>
+                                    <br>
 									<p class="footer__widget-description">
 										Jl. Pandawa No. 66, Dusun Mawar RT 001 RW 001 Desa Pandan
 									</p>
-									<form class="footer__subscribe-form">
-										<input class="footer__subscribe-input" type="text" name="email-sub" id="email-sub" placeholder="Enter your Email" />
-										<button class="footer__subscribe-button" type="submit">
-											<i class="la la-arrow-circle-o-right" aria-hidden="true"></i>
-										</button>
-									</form>
+									
 								</div>
 	
 							</div>
 							<div class="col-md-4">
 	
 								<div class="footer__widget text-widget">
-									<h2 class="footer__widget-title">
-										Kontak
+									<h2 class="footer__widget-title footer__widget-title-white">
+										Kontak 
 									</h2>
+                                    <br>
 									<p class="footer__widget-description">
 										+62 898-1342-6657<br>
-									info@example.com <br>
-									YouTube: ngu_never122
+										info@example.com <br>
+										YouTube: ngu_never122
 									</p>
 								</div>
 	
@@ -1072,11 +1067,11 @@ Baca										</a>
 						</div>
 					</div>
 	
-					<div class="footer__down-part">
+					<div class="footer__down-part footer__down-part-black">
 						<div class="row">
 							<div class="col-md-7">
 								<p class="footer__copyright">
-									
+									© Copyright 2018 - All Rights Reserved
 								</p>
 							</div>
 							<div class="col-md-5">
@@ -1094,8 +1089,6 @@ Baca										</a>
 				</div>
 	
 			</footer>
-		<!-- End footer -->
-
 
 		<!-- End footer -->
 
