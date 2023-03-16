@@ -211,7 +211,7 @@
                                             <div class="row">
                                                 <div class="col-lg-12 col-sm-12 col-12">
 
-                                                    <table id="datatable" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; width: 100%;">
+                                                <table id="datatable" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; width: 100%;">
                                                         <thead>
                                                             <tr>
                                                                 <th >No</th>
@@ -233,7 +233,9 @@
                                                                 <td>{{$item->email}}</td>
                                                                 <td><img src="asset/{{$item->foto}}" width="150" alt="150" srcset="" ></td>
                                                                 <td><button type="button" class="btn  btn-warning">Blokir</button>
-                                                                <button type="button" class="btn ml-20 btn-danger">Hapus</button></td>
+                                                                <a href="/delete/{{ $item->id }}">
+                                                                 <button class="btn btn-danger" style="border-radius: 10%; "><span style="color: white; font-weight:bold; ">hapus</span></button>
+                                                                </a>
                                                               </tr>
                                                             @endforeach                                               
                                                             

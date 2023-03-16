@@ -20,7 +20,6 @@ class Index04b9Controller extends Controller
     public function artikel(){
         $artikel = postingan::where('status', 'setuju')->get();
         return view('user_login.artikel',['artikel'=>$artikel]);
-    return view('user_login.artikel',['artikel']);
     }
 
     public function puisi(){
@@ -80,7 +79,10 @@ class Index04b9Controller extends Controller
     }
    
     public function userpage(){
-    return view('user_login.user-page',['user-page']);
+        $user = auth()->user();
+        $postingan = postingan::where('user_id', Auth()->user()->id)->get();
+     
+    return view('user_login.user-page',compact('user'), ['postingan'=>$postingan]);
     }
    
     public function artikelsukses(){
@@ -128,8 +130,10 @@ class Index04b9Controller extends Controller
     }
    
     public function prf(){
-    $user = User::find(Auth()->User()->id);
-    return view('user_login.prf',['user'=>$user]);
+    // $user = User::find(Auth()->User()->id);
+    $user = auth()->user();
+    return view('user_login.prf', compact('user'));
+    // return view('user_login.prf',['user'=>$user]);
     }
    
     public function makalahpkn(){

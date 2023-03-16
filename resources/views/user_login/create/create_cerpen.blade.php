@@ -101,6 +101,7 @@
 					</h1>
 				</div>
 			</div>
+				
 
 			<!-- user scroll menu box -->
 			<div class="user-detail__scroll-menu-box">
@@ -186,7 +187,7 @@
 						</h2>
 						<div class="add-listing__form-content">
 							<div class="add-listing__input-file-box">
-								<input class="add-listing__input-file" type="file" name="foto" id="file" multiple />
+								<input class="add-listing__input-file @error('foto') is-invalid @enderror" type="file" name="foto" id="file" multiple  />
 								<div class="add-listing__input-file-wrap">
 									<i class="la la-cloud-upload"></i>  
 								</div>
@@ -194,6 +195,8 @@
 						</div>
                        
 					</div>
+					
+					
 					@endif
 					<!-- form box -->
 					<div class="center-button" >
