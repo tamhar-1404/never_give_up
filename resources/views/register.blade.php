@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <!-- Design by foolishdeveloper.com -->
-    <title>Login</title>
+    <title>Register</title>
  
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -13,7 +13,7 @@
 *:before,
 *:after{
     padding: 0;
-    margin: 0;asset
+    margin: 0;
     box-sizing: border-box;
 }
 body{
@@ -52,8 +52,8 @@ body{
     bottom: -80px;
 }
 form{
-    height: 520px;
-    width: 400px;
+    height: 850px;
+    width: 500px;
     background-color: rgba(255,255,255,0.13);
     position: absolute;
     transform: translate(-50%,-50%);
@@ -63,7 +63,7 @@ form{
     backdrop-filter: blur(10px);
     border: 2px solid rgba(255,255,255,0.1);
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
-    padding: 50px 35px;
+    padding: 80px 30px;
 }
 form *{
     font-family: 'Poppins',sans-serif;
@@ -132,9 +132,7 @@ button{
 .social i{
   margin-right: 4px;
 }
-.body{
-	padding:3px;
-}
+
     </style>
 </head>
 <body>
@@ -142,29 +140,39 @@ button{
         <div class="shape"></div>
         <div class="shape"></div> -->
     </div>
-     @if(\Session::has('alert'))
-                <div class="alert alert-danger">
-                    <div>{{Session::get('alert')}}</div>
-                </div>
-            @endif
-            @if(\Session::has('alert-success'))
-                <div class="alert alert-success">
-                    <div>{{Session::get('alert-success')}}</div>
-                </div>
-            @endif
-    <form method="POST" action="{{ route('user_login') }}" class="sign-form" >
+    <form action="{{ url('/registerPost') }}" method="post">
         @csrf
-     
-        <h3>Login </h3>
+        <h3>Register </h3><br>
+        @if ($errors->any())
+                   <div class="alert alert-danger">
+                       <ul>
+                           @foreach ($errors->all() as $error)
+                               <li>{{ $error }}</li>
+                           @endforeach
+                       </ul>
+                   </div>
+               @endif
 
-        <label for="username">Username</label>
-        <input class="sign-form__input-text" type="text" name="email" :value="old('email')" required autofocus id="email" placeholder="Email@gmail.com " />
+        <label for="username">Email</label>
+        <input class="sign-form__input-text" type="text" name="email" :value="old('email')" required placeholder="Enter your email" />
 
-        <label for="password">Password</label>
-        <input class="sign-form__input-text" type="password"  name="password" required id="password" placeholder="Password" />
+        <label for="password">Username</label>
+        <input class="sign-form__input-text" type="text" name="name" :value="old('name')" required autofocus  id="name" placeholder="Enter your name" />
+        
+        <label for="username">Password</label>
+        <input class="sign-form__input-text" type="password" name="password" required id="password" placeholder="Password" />
 
-        <button type="submit"  id="submit-loggin">Log In</button>
-       Belum Punya Akun?<a href="user_register" style="text-decoration-color: #23a2f6;">Register</a>
-    </form>
+        <label for="password">Konfirmasi Password</label>
+        <input class="sign-form__input-text" type="password" name="password_confirmation" required id="password" placeholder="Password" />
+       
+        <label for="password">foto Profil</label>
+        <input class="sign-form__input-text" type="file" name="foto" id="foto" placeholder="masukan  foto anda" />
+
+        <div class="form-group">
+                    <button type="submit" class="btn btn-md btn-primary">Submit</button>
+                    <button type="reset" class="btn btn-md btn-danger">Cancel</button>
+                </div>
+            </form>
+
 </body>
 </html>

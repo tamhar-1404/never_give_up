@@ -142,29 +142,30 @@ button{
         <div class="shape"></div>
         <div class="shape"></div> -->
     </div>
-     @if(\Session::has('alert'))
-                <div class="alert alert-danger">
-                    <div>{{Session::get('alert')}}</div>
-                </div>
-            @endif
-            @if(\Session::has('alert-success'))
-                <div class="alert alert-success">
-                    <div>{{Session::get('alert-success')}}</div>
-                </div>
-            @endif
-    <form method="POST" action="{{ route('user_login') }}" class="sign-form" >
-        @csrf
-     
-        <h3>Login </h3>
+    <hr>
+    <form action="{{ url('/loginPost') }}" method="post">
+                    @csrf
+                    
+                    <h3>Login </h3>
+                    @if(\Session::has('alert'))
+                        <div class="alert alert-danger">
+                            <div>{{Session::get('alert')}}</div>
+                        </div>
+                    @endif
+                    @if(\Session::has('alert-success'))
+                        <div class="alert alert-success">
+                            <div>{{Session::get('alert-success')}}</div>
+                        </div>
+                    @endif
 
         <label for="username">Username</label>
         <input class="sign-form__input-text" type="text" name="email" :value="old('email')" required autofocus id="email" placeholder="Email@gmail.com " />
 
         <label for="password">Password</label>
         <input class="sign-form__input-text" type="password"  name="password" required id="password" placeholder="Password" />
-
-        <button type="submit"  id="submit-loggin">Log In</button>
-       Belum Punya Akun?<a href="user_register" style="text-decoration-color: #23a2f6;">Register</a>
+        <button type="submit" class="btn btn-md btn-primary">Login</button>
+       Belum Punya Akun?<a href="{{url('register')}}" class="btn btn-md btn-warning">Register</a>
     </form>
+
 </body>
 </html>
