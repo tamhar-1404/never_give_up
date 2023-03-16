@@ -13,7 +13,7 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
     
-     public function postingan()
+     public function postingan() : HasMany
     {
         return $this-> HasMany(postingan::class);
     }
@@ -26,17 +26,11 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
-    protected $table = 'users';
     protected $fillable = [
         'username',
         'email',
         'password',
         'foto',
-        'namalengkap',
-        'notlp',
-        'medsos',
-        'tgllahir',
-        'askot',
     ];
 
     /**

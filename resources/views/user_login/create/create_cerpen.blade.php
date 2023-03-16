@@ -5,15 +5,19 @@
 
 <!-- Mirrored from nunforest.com/triptip-demo/add-listing.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 10:04:22 GMT -->
 <head>
-	<title>create cerpen</title>
+	<title>buat postingan</title>
 
 	<meta charset="utf-8">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
-	<link rel="stylesheet" href="css/triptip-assets.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="../css/triptip-assets.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<!-- Summernote css -->
+    <link rel="stylesheet" href="../assets/plugins/summernote/summernote-bs4.css" />
+        <!--bootstrap-wysihtml5-->
+        <link rel="stylesheet" type="text/css" href="../assets/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.css">
 
 </head>
 <body>
@@ -80,30 +84,7 @@
                             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
                             <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
                           </svg> </a>
-						<!-- <form class="search-form">
-							<div class="search-form__input-holders">
-								<input class="search-form__input" type="text" name="search-event" placeholder="What are you looking for?" />
-								<select class="search-form__input search-form__input-location js-example-basic-multiple">
-									<option>Location? </option>
-									<option>New York</option>
-									<option>California</option>
-									<option>Washington</option>
-									<option>New Jersey</option>
-									<option>Miami</option>
-									<option>San Francisco</option>
-									<option>Boston</option>
-									<option>Pensilvania</option>
-									<option>Other</option>
-								</select>
-							</div>
-								
-							<button class="search-form__submit" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-						</form> -->
-						<!-- <ul class="navbar-nav ml-auto right-list">
-							<li><a href="sign-page.html"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Sign In</a></li>
-							<li><a href="sign-page.html"><i class="fa fa-user-o" aria-hidden="true"></i> Register</a></li>
-						</ul>
-						<a href="add-listing.html" class="add-list-btn btn-default"><i class="fa fa-plus" aria-hidden="true"></i> Add Listing</a> -->
+					
 					</div>
 				</div>
 			</nav>
@@ -116,7 +97,8 @@
 			<div class="add-listing__title-box">
 				<div class="container">
 					<h1 class="add-listing__title">
-                        Buat Postingan Baru					</h1>
+                        Buat Postingan {{$kategori -> kategori}}				
+					</h1>
 				</div>
 			</div>
 
@@ -147,20 +129,19 @@
 			</div>
 
 			<!-- form listing -->
-			<form action="{{('/simpan_cerpen')}}" class="add-listing__form" method="post" enctype="multipart/form-data">
+			<form action="{{('/posting')}}" class="add-listing__form" method="post" enctype="multipart/form-data">
             @csrf 
 				<div class="container">
 					
 					<!-- form box -->
 					<div class="add-listing__form-box" id="tentang-penulis">
 
-						<h2 class="add-listing__form-title">
-						Posting:
-						</h2>
-
 						@foreach ($user as $item)
 						<input type="hidden" name="default" value="{{$item->id}}"> 
 						@endforeach
+						<input type="hidden" name="kategori" value="{{$kirim_kategori}}">
+						
+						
 
 					</div>
 					
@@ -182,191 +163,26 @@
 									</label>
 									<input class="add-listing__input" type="text" name="judul" id="list-title" placeholder="Judul" />
 								</div>
-								<!-- <div class="col-md-6">
-									<label class="add-listing__label" for="category">
-										Kategori:
-									</label>
-									<select class="add-listing__input js-example-basic-multiple" name="category" id="category">
-										<option>Kategori: </option>
-										<option>Artikel</option>
-										<option>Cerpen</option>
-										<option>puisi</option>
-										<option>Fotography</option>
-										<option>Makalah</option>
-										<option>Skripsi</option>
-										<option>Karya Ilmiah</option>
-										<option>Diary</option>
-										<option>Pantun</option>
-										<option>Essai</option>
-									</select>
-								</div> -->
+								
 							</div>	
 							
 						
 							<label class="add-listing__label" for="description">
 								Isi Cerita Anda:
+						
 							</label>
-							<textarea  style="resize:none;width: 950px;height:750px;" class="add-listing__textarea" name="isi" id="description" placeholder="Tulis Cerita Anda "></textarea>
+							<textarea name="isi" id="summernote" cols="30" rows="10"></textarea>	
+							<!-- <textarea  style="resize:none;width: 950px;height:750px;" class="add-listing__textarea" name="isi" id="description" placeholder="Tulis Cerita Anda "></textarea> -->
 						</div>
 
 					</div>
-					
-					<!-- form box -->
-					<div class="add-listing__form-box" id="location-box">
-
-						<h2 class="add-listing__form-title">
-							Your Location:
-						</h2>
-
-						<div class="add-listing__form-content">
-							<div class="row">
-								<div class="col-md-12">
-									<label class="add-listing__label" for="city">
-										Kategori:
-									</label>
-									<select class="add-listing__input js-example-basic-multiple" name="kategori" id="city">
-										@foreach ($kategori as $items)
-										<option value="{{$items->id}}">{{$items->kategori}} </option>
-										@endforeach
-									</select>
-								</div>
-								
-							</div>
-						</div>
-
-					</div>
-					
-					<!-- form box -->
-					<!-- <div class="add-listing__form-box" id="opening-box">
-
-						<h2 class="add-listing__form-title">
-							Opening Hours:
-						</h2>
-
-						<div class="add-listing__form-content">
-							<div class="row">
-								<div class="col-lg-1 col-md-2">
-									<label class="add-listing__label with-padding-top" for="weekdays">
-										Weekdays:
-									</label>
-								</div>
-								<div class="col-lg-11 col-md-10">
-									<div class="row">
-										<div class="col-md-6">
-											<select class="add-listing__input js-example-basic-multiple" name="weekdays" id="weekdays">
-												<option>Opening time </option>
-												<option>7:00 A.M</option>
-												<option>8:00 A.M</option>
-												<option>9:00 A.M</option>
-												<option>10:00 A.M</option>
-												<option>11:00 A.M</option>
-												<option>12:00 A.M</option>
-												<option>01:00 P.M</option>
-												<option>02:00 P.M</option>
-												<option>03:00 P.M</option>
-												<option>04:00 P.M</option>
-												<option>05:00 P.M</option>
-												<option>06:00 P.M</option>
-												<option>07:00 P.M</option>
-												<option>08:00 P.M</option>
-												<option>09:00 P.M</option>
-												<option>10:00 P.M</option>
-												<option>11:00 P.M</option>
-												<option>00:00 A.M</option>
-											</select>
-										</div> -->
-										<!-- <div class="col-md-6">
-											<select class="add-listing__input js-example-basic-multiple">
-												<option>Closing time </option>
-												<option>7:00 A.M</option>
-												<option>8:00 A.M</option>
-												<option>9:00 A.M</option>
-												<option>10:00 A.M</option>
-												<option>11:00 A.M</option>
-												<option>12:00 A.M</option>
-												<option>01:00 P.M</option>
-												<option>02:00 P.M</option>
-												<option>03:00 P.M</option>
-												<option>04:00 P.M</option>
-												<option>05:00 P.M</option>
-												<option>06:00 P.M</option>
-												<option>07:00 P.M</option>
-												<option>08:00 P.M</option>
-												<option>09:00 P.M</option>
-												<option>10:00 P.M</option>
-												<option>11:00 P.M</option>
-												<option>00:00 A.M</option>
-											</select>
-										</div> -->
-									<!-- </div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-1 col-md-2">
-									<label class="add-listing__label with-padding-top" for="weekends">
-										Weekends:
-									</label>
-								</div>
-								<div class="col-lg-11 col-md-10">
-									<div class="row">
-										<div class="col-md-6">
-											<select class="add-listing__input js-example-basic-multiple" name="weekends" id="weekends">
-												<option>Opening time </option>
-												<option>7:00 A.M</option>
-												<option>8:00 A.M</option>
-												<option>9:00 A.M</option>
-												<option>10:00 A.M</option>
-												<option>11:00 A.M</option>
-												<option>12:00 A.M</option>
-												<option>01:00 P.M</option>
-												<option>02:00 P.M</option>
-												<option>03:00 P.M</option>
-												<option>04:00 P.M</option>
-												<option>05:00 P.M</option>
-												<option>06:00 P.M</option>
-												<option>07:00 P.M</option>
-												<option>08:00 P.M</option>
-												<option>09:00 P.M</option>
-												<option>10:00 P.M</option>
-												<option>11:00 P.M</option>
-												<option>00:00 A.M</option>
-											</select>
-										</div>
-										<div class="col-md-6">
-											<select class="add-listing__input js-example-basic-multiple">
-												<option>Closing time </option>
-												<option>7:00 A.M</option>
-												<option>8:00 A.M</option>
-												<option>9:00 A.M</option>
-												<option>10:00 A.M</option>
-												<option>11:00 A.M</option>
-												<option>12:00 A.M</option>
-												<option>01:00 P.M</option>
-												<option>02:00 P.M</option>
-												<option>03:00 P.M</option>
-												<option>04:00 P.M</option>
-												<option>05:00 P.M</option>
-												<option>06:00 P.M</option>
-												<option>07:00 P.M</option>
-												<option>08:00 P.M</option>
-												<option>09:00 P.M</option>
-												<option>10:00 P.M</option>
-												<option>11:00 P.M</option>
-												<option>00:00 A.M</option>
-											</select>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-					</div> -->
+					@if ($kirim_kategori != 3)
 					
 					<!-- form box -->
 					<div class="add-listing__form-box" id="gallery-box">
 
                         <h2 class="add-listing__form-title">
-							Gambar cerpen:
+							Gambar 	{{$kategori->kategori}}:
 						</h2>
 						<div class="add-listing__form-content">
 							<div class="add-listing__input-file-box">
@@ -378,7 +194,7 @@
 						</div>
                        
 					</div>
-					
+					@endif
 					<!-- form box -->
 					<div class="center-button" >
 						<button class="add-listing__submit" type="submit" >
@@ -472,14 +288,24 @@
 	</div>
 	<!-- End Container -->
 	
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.migrate.js"></script>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/jquery.migrate.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiqrIen8rWQrvJsu-7f4rOta0fmI5r2SI"></script>
-	<script src="js/triptip-plugins.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.countTo.js"></script>
-	<script src="js/script.js"></script>
+	<script src="../js/triptip-plugins.min.js"></script>
+	<script src="../js/popper.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/jquery.countTo.js"></script>
+	<script src="../js/script.js"></script>
+	 <!--Summernote js-->
+	 <script src="../assets/plugins/summernote/summernote-bs4.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+    <script>
+      $('#summernote').summernote({
+        placeholder: '',
+        tabsize: 2,
+        height: 100
+      });
+    </script>
 	
 </body>
 
