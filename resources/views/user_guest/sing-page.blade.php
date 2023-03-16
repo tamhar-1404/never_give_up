@@ -1,225 +1,162 @@
-<!doctype html>
-
-
-<html lang="en" class="no-js">
-
-<!-- Mirrored from nunforest.com/triptip-demo/sign-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 10:04:22 GMT -->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Login</title>
+  <!-- Design by foolishdeveloper.com -->
+    <title>Login</title>
+ 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    <!--Stylesheet-->
+    <style media="screen">
+      *,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;asset
+    box-sizing: border-box;
+}
+body{
+    /* background-color: #080710; */
+    background-image: url("upload/slide5.jpg");
+}
+.background{
+    width: 430px;
+    height: 520px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+}
+.background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.shape:first-child{
+    background: linear-gradient(
+        #1845ad,
+        #23a2f6
+    );
+    left: -80px;
+    top: -80px;
+}
+.shape:last-child{
+    background: linear-gradient(
+        to right,
+        #ff512f,
+        #f09819
+    );
+    right: -30px;
+    bottom: -80px;
+}
+form{
+    height: 520px;
+    width: 400px;
+    background-color: rgba(255,255,255,0.13);
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+}
+form *{
+    font-family: 'Poppins',sans-serif;
+    color: #000000;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+}
+form h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+    text-align: center;
+}
 
-	<meta charset="utf-8">
-
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
-	<link rel="stylesheet" href="css/triptip-assets.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-    <style>
-  .divider:after,
-.divider:before {
-content: "";
-flex: 1;
-height: 1px;
-background: #eee;
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
 }
-.h-custom {
-height: calc(100% - 73px);
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
 }
-@media (max-width: 450px) {
-.h-custom {
-height: 100%;
+::placeholder{
+    color: #e5e5e5;
 }
+button{
+    margin-top: 50px;
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.social{
+  margin-top: 30px;
+  display: flex;
+}
+.social div{
+  background: red;
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255,255,255,0.27);
+  color: #eaf0fb;
+  text-align: center;
+}
+.social div:hover{
+  background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+  margin-left: 25px;
+}
+.social i{
+  margin-right: 4px;
 }
 
     </style>
 </head>
-<body >
-
-	<!-- Container -->
-	<div id="container" padding="20%;" >
-		<!-- Header
-		    ================================================== -->
-			<header class="clearfix ">
-
-				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-					<div class="container">
-	
-					<a class="navbar-brand" style="width:13%;" href="/user-login">
-							<img src="asset/Logo 1.png" style="width:100%;" alt="">
-						</a>
-	
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						</button>
-	
-						<div class="collapse navbar-collapse" id="navbarSupportedContent">
-							<ul class="navbar-nav mr-auto">
-								<li>
-									<a class="" href="/">Beranda <i class="" aria-hidden="true"></i></a>
-								</li>
-								<li ><a  href="#">kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-									<div class="megadropdown">
-										<div class="dropdown-box">
-											
-											<ul class="dropdown-list">
-												<li><a href="/artikel">artikel</a></li>
-												<li><a href="/cerpen">cerpen</a></li>
-												<li><a href="/puisi">puisi</a></li>
-												<li><a href="/fotografi">fotografi</a></li>
-												<li><a href="/pantun">pantun</a></li>
-												<li><a href="/esai">esai</a></li>
-											</ul>
-										</div>
-										<div class="dropdown-box">
-											<ul class="dropdown-list">
-												<li><a href="/diary">diary</a></li>
-												<li><a href="/ilustrasi">ilustrasi</a></li>
-												<li><a href="/makalah">makalah</a></li>
-												<li><a href="/skripsi">skripsi</a></li>
-												<li><a href="/ilmiah">karya ilmiah</a></li>
-											</ul>
-										</div>
-										
-									</div>
-								</li>
-								
-							</ul>
-							<ul class="navbar-nav ml-auto right-list">
-								<li><a href="/user_register"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> Register</a></li>
-								
-							</ul>
-							
-						</div>
-					</div>
-				</nav>
-			</header>
-			<!-- End Header -->
-
-		<!-- sign-block
-			================================================== -->
-		<!-- <section class="sign" style="background-image: url('upload/slide1.jpg'); background-attachment:fixed ; background-size: cover; background-position: start; background-repeat: no-repeat;" >
-			<div class="sign__area" style="background-color: #d7dae0;">
-				<nav>
-					<div class="nav nav-tabs" id="nav-tab" role="tablist">
-						<a style="color:black;" class="nav-item nav-link active" id="nav-sign-tab" data-toggle="tab" href="#nav-sign" role="tab" aria-controls="nav-sign" aria-selected="true">Login</a>
-						
-					</div>
-				</nav>
-				<div class="tab-content" id="nav-tabContent">
-					<div class="tab-pane fade show active" id="nav-sign" role="tabpanel" aria-labelledby="nav-sign-tab"> -->
-
-						<!-- sign-form-module -->
-						<!-- <form method="POST" action="{{ route('user_login') }}" class="sign-form" >
-                            @csrf
-                            @if (session('status'))
-                                <div class="alert alert-danger">
-                                    {{ session('message') }}
-                                </div>
-                            @endif
-							<label class="sign-form__label" for="username">
-                                Email
-							</label>
-							<input class="sign-form__input-text @error('email') is-invalid @enderror" type="text" name="email" :value="old('email')" required autofocus id="email" placeholder="Email "  />
-							@error ('email')
-							<p class="text-white">{{$message}}</p>
-							@enderror
-							<label class="sign-form__label" for="password">
-								password
-							</label>
-							<input class="sign-form__input-text" type="password"  name="password" required id="password" placeholder="Password" />
-
-							<button  class="sign-form__submit" id="submit-loggin" type="submit">
-								<a href=""></a><i class="fa fa-sign-in" aria-hidden="true"></i>
-								Login</a>
-							</button>
-							
-						</form> -->
-
-						<!-- End sign-form-module -->
-
-					<!-- </div>
-					
-				</div>
-			</div>
-		
-		</section> -->
-
-		<section class="vh-100">
-        <div class="container-fluid h-custom">
-          <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col-md-9 col-lg-6 col-xl-5">
-              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
-                class="img-fluid" alt="Sample image">
+<body>
+    <!-- <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div> -->
+    </div>
+    <form method="POST" action="{{ route('user_login') }}" class="sign-form" >
+        @csrf
+        @if (session('status'))
+            <div class="alert alert-danger">
+                {{ session('message') }}
             </div>
-            <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-              <form method="POST" action="{{ route('user_login') }}" class="sign-form" >
-                @csrf
-                @if (session('status'))
-                    <div class="alert alert-danger">
-                        {{ session('message') }}
-                    </div>
-                @endif
-                
-                <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
-                <h1 class="mb-5">Sign in</h1>
-                </div>
-      
-              
-                <!-- Email input -->
-                <div class="form-outline mb-4">
-                  <input class="sign-form__input-text" type="text" name="email" :value="old('email')" required autofocus id="email" placeholder="Email@gmail.com " />
-                  <label class="form-label" for="username">Email address</label>
-                </div>
-      
-                <!-- Password input -->
-                <div class="form-outline mb-3">
-                  <input class="sign-form__input-text" type="password"  name="password" required id="password" placeholder="Password" />
-                  <label class="form-label" for="form3Example4">Password</label>
-                </div>
-      
-                <!-- <div class="d-flex justify-content-between align-items-center"> -->
-                  <!-- Checkbox -->
-                  <!-- <div class="form-check mb-0">
-                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
-                    <label class="form-check-label" for="form2Example3">
-                      Remember me
-                    </label>
-                  </div>
-                  <a href="#!" class="text-body">Forgot password?</a>
-                </div> -->
-      
-                <div class="text-center text-lg-start mt-4 pt-2">
-                  <button type="submit" class="btn btn-danger btn-lg" id="submit-loggin" style="background-color: rgb(228, 72, 98)" 
-                    style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
-                  <p class="small fw-bold mt-2 pt-1 mb-0">Tidak Punya Akun? <a href="/user_register"
-                      class="link-danger">Register</a></p>
-                </div>
-      
-              </form>
-            </div>
-          </div>
-        </div>
-     
-      </section>
+        @endif
+        <h3>Login </h3>
 
-		<!-- End sign-block -->
+        <label for="username">Username</label>
+        <input class="sign-form__input-text" type="text" name="email" :value="old('email')" required autofocus id="email" placeholder="Email@gmail.com " />
 
-	</div>
-	<!-- End Container -->
-	
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.migrate.js"></script>
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiqrIen8rWQrvJsu-7f4rOta0fmI5r2SI"></script>
-	<script src="js/triptip-plugins.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.countTo.js"></script>
-	<script src="js/script.js"></script>
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <label for="password">Password</label>
+        <input class="sign-form__input-text" type="password"  name="password" required id="password" placeholder="Password" />
 
-	
+        <button type="submit"  id="submit-loggin">Log In</button>
+       Belum Punya Akun?<a href="user_register" style="text-decoration-color: #23a2f6;">Register</a>
+    </form>
 </body>
-
-<!-- Mirrored from nunforest.com/triptip-demo/sign-page.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 10:04:22 GMT -->
 </html>
