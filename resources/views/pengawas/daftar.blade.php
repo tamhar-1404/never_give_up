@@ -141,7 +141,7 @@ Daftar Menjadi Pengawas					</h1>
 </style> 	
 
 			<!-- form listing -->
-			<form class="" action="" >
+			<form class="" action="" style="color:pink;">
 
 				<div class="container">
 					
@@ -156,7 +156,7 @@ Daftar Menjadi Pengawas					</h1>
 						<div class="add-listing__form-content">
 							<div class="row">
 								<div class="col-md-11">
-									<label style="resize:none;width: 100px;height:100px; class="add-listing__label" for="list-title" style="resize="witdh="">
+									<label class="add-listing__label" for="list-title">
 										Nama :
 									</label>
 									<input class="add-listing__input" type="text" name="list-title" id="list-title" placeholder="Nama" witdh="50px" />

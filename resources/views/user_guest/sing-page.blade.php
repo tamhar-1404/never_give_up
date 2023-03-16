@@ -132,7 +132,9 @@ button{
 .social i{
   margin-right: 4px;
 }
-
+.body{
+	padding:3px;
+}
     </style>
 </head>
 <body>
@@ -140,6 +142,16 @@ button{
         <div class="shape"></div>
         <div class="shape"></div> -->
     </div>
+     @if(\Session::has('alert'))
+                <div class="alert alert-danger">
+                    <div>{{Session::get('alert')}}</div>
+                </div>
+            @endif
+            @if(\Session::has('alert-success'))
+                <div class="alert alert-success">
+                    <div>{{Session::get('alert-success')}}</div>
+                </div>
+            @endif
     <form method="POST" action="{{ route('user_login') }}" class="sign-form" >
         @csrf
         @if (session('status'))
