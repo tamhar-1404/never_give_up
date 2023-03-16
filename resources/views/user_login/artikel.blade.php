@@ -107,12 +107,12 @@
 			<div style="margin-bottom: 2%; display: flex; justify-content: space-between " >
 			<h1 >													
 				Artikel	</h1>
-				<form class="search-form"  >
+				<form class="search-form" method="GET"action="{{route('search')}}"  >
 					<div class="search-form__input-holders" style="width: 100% ;">
-						<input class="search-form__input" type="text" name="search-event" placeholder="Cari Judul Postingan" >
-							<a class="btn-default" href="#">
+						<input class="search-form__input" type="text" name="search" placeholder="Cari Judul Postingan" >
+							<button class="btn-default" type="submit">
 								<i class="fa fa-search" aria-hidden="true"></i>
-							</a>
+							</button>
 							</div>
 						</form >
 					</div>

@@ -5,8 +5,10 @@ namespace App\Http\Controllers;
 use App;
 use Illuminate\Http\Request;
 use App\Models\User;
+use App\Models\Postingan;
 use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Storage;
 
 class loginController extends Controller
 {
@@ -73,7 +75,10 @@ class loginController extends Controller
         
         ]);
         if($request->hasFile('foto')){
-            $request->file('foto')->move('asset/', $request->file('foto')->getClientOriginalName());
+            // unlink(public_path('fotopromo/ .$'))
+            // Storage::delete('foto');
+            // $request->file('foto')->store('foto', 'public');
+            $request->file('foto')->move('storage/', $request->file('foto')->getClientOriginalName());
             $user->foto = $request->file('foto')->getClientOriginalName();
             
         }$user->save();
@@ -88,5 +93,48 @@ class loginController extends Controller
         request()->session()->invalidate();
         request()->session()->regenerateToken();
         return redirect('/sing-page');
+    }
+
+    // public function prf($id){
+       
+    //     $data = Prf::find($id);
+    //     return view('user_login.prf', compact('data'));
+    // }
+
+    public function upprof(Request $request, $id)
+    {
+        $data = auth()->user();
+        // $this->validate($request, [
+        //     'foto' => 'required|file|image|mimes:jpeg,png,jpg|max:2048',
+        //     'keterangan' => 'required',
+        // ]);
+        // dd($request);
+        $isi = [
+            'username' => $request-> username,
+            'email' => $request-> email,
+            'namalengkap' => $request-> namalengkap,
+            'notlp' => $request-> notlp,
+            'medsos' => $request-> medsos,
+            'tgllahir' => $request-> tgllahir,
+            'askot' => $request-> askot,
+            'foto' => public_path($request -> foto),
+        ];
+        if ($request->hasFile('foto')){
+            // dd($isi);
+                unlink(public_path('storage' . $isi->foto));
+                $file = $request->file('foto');
+                $filename = has_file( $file->path()) . '.' . $file->getClientOriginalExtension();
+                $file->move('storage', $filename);
+                $isi->foto = $filename;
+                $isi->save();
+        
+            // Storage::delete('foto');
+            // $isi['foto'] = $request->file('foto')->store('foto','public');
+        }
+        
+        $data->update($isi);
+        // $data->save();
+
+        return redirect('prf')->with('sukses','Data Berhasil di Perbarui');
     }
 }
