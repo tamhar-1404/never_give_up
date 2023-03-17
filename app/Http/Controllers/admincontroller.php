@@ -31,6 +31,22 @@ class AdminController extends Controller
          return view('admin.Data-user',['user'=>$user]);
 
     }
+
+    public function data_blokir()
+    {
+        $user = user::where('role', 'diblokir')->get();
+
+         return view('admin.akun_blokir',['user'=>$user]);
+
+    }
+
+    public function delete($id)
+    {
+        $user=user::find($id);
+        $user->delete();
+        return redirect()->back();
+    }
+    
     public function uprove($id)
     {
          
@@ -51,6 +67,36 @@ class AdminController extends Controller
         $kontak = kontak::all();
         return view('admin/pesan-dari-user',['kontak'=>$kontak]);
         
+    }
+
+    public function pulihkan($id)
+    {
+         
+        
+        $user = user::find($id);
+        if($user->role== 'diblokir'){
+            $user->role= 'user';   
+            $user->save();
+        }
+       
+        return redirect()->back();
+    
+   
+    }
+
+    public function akun_blokir($id)
+    {
+         
+        
+        $user = user::find($id);
+        if($user->role== 'user'){
+            $user->role= 'diblokir';   
+            $user->save();
+        }
+       
+        return redirect()->back();
+    
+   
     }
 }
 ?>

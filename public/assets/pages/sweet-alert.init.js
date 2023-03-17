@@ -73,7 +73,7 @@
                 customClass: {
                   confirmButton: 'btn btn-success',
                   cancelButton: 'btn btn-danger mr-2'
-                },
+                }, 
                 buttonsStyling: false,
               })
               
