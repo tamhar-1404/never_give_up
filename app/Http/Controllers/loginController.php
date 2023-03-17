@@ -33,15 +33,10 @@ class loginController extends Controller
         return view('user_guest.sing-page');
     }
     public function login(Request $request){
-        // $this->validate($request, [
-        //     'email' => 'required|exists:email',
-        //     'password' => 'required|min:8',
-        // ],[
-        //     'email.required' => 'Masukkan Email Anda !!',
-        //     'email.exists' => 'Email Yang Anda Masukkan Belum Terdaftar !!',
-        //     'password.required' => 'Masukkan Kata Sandi Anda !!',
-        //     'password.min' => 'Password Minimal 8 Huruf !!',
-        // ]);
+        $this->validate($request, [
+            'email' => 'required|exists:users',
+            'password' => 'required',
+        ]);
         // toastr()->success('Berhasil Login!');
 
         if (Auth::attempt(['email' => $request->email, 'password' => $request->password, 'role' => 'Admin'])) {
@@ -52,36 +47,39 @@ class loginController extends Controller
         }
         
 
-            return redirect('/sing-page');
-
+        return redirect()->back()->withErrors(['msg' => 'salah, silakan coba lagi']);
     }
 
 
     public function register(Request $request)
     {
-    // $this->validate($request, [
-    //     'username' => 'required|string|max:255',
-    //     'email' => 'required|string|email|max:255|unique:users',
-    //     'password' => 'required|string|min:8|confirmed',
-    //     'foto' => 'required|string'
-    // ]);
+    $this->validate($request, [
+        'email' => 'required|unique:users',
+        'username' => 'required|unique:users',
+        'password' => 'required|confirmed',
+    ]);
         $user = User::create([
-            'username' => $request->name,
+            'username' => $request->username,
             'email' => $request-> email,
             'password' => bcrypt($request->password),
             'remember_token' => Str::random(60),
-            'foto' => $request->foto,
+            // 'foto' => $request->foto,
             'role' => 'User',
         
         ]);
-        if($request->hasFile('foto')){
+        // if($request->hasFile('foto')){
             // unlink(public_path('fotopromo/ .$'))
             // Storage::delete('foto');
-            // $request->file('foto')->store('foto', 'public');
-            $request->file('foto')->move('storage/', $request->file('foto')->getClientOriginalName());
-            $user->foto = $request->file('foto')->getClientOriginalName();
+            // $request->file('foto')->store('foto', 'public')
+
             
-        }$user->save();
+            // $type = $request->file('foto')->getClientOriginalExtension();
+            // $filename = time().'.'.$type;
+            // $request->file('foto')->move('foto/',$filename);
+            // $user->foto = $filename;
+            
+        // }
+        $user->save();
         
         return redirect('/sing-page');
 
@@ -101,40 +99,37 @@ class loginController extends Controller
     //     return view('user_login.prf', compact('data'));
     // }
 
-    public function upprof(Request $request, $id)
+    public function upprof(Request $request)
     {
+        
         $data = auth()->user();
-        // $this->validate($request, [
-        //     'foto' => 'required|file|image|mimes:jpeg,png,jpg|max:2048',
-        //     'keterangan' => 'required',
-        // ]);
+        $this->validate($request, [
+            'foto' => 'required|mimes:jpeg,png,jpg',
+        ]);
         // dd($request);
+        if($data -> foto != 'default.jpg'){
+        Unlink('foto/'.$data->foto);
+        }
+        $type = $request->file('foto')->getClientOriginalExtension();
+        $filename = time().'.'.$type;
+        $request->file('foto')->move('foto/',$filename);
         $isi = [
-            'username' => $request-> username,
+            
+      
             'email' => $request-> email,
             'namalengkap' => $request-> namalengkap,
             'notlp' => $request-> notlp,
             'medsos' => $request-> medsos,
             'tgllahir' => $request-> tgllahir,
             'askot' => $request-> askot,
-            'foto' => public_path($request -> foto),
+            'foto' => $filename,
         ];
-        if ($request->hasFile('foto')){
-            // dd($isi);
-                unlink(public_path('storage' . $isi->foto));
-                $file = $request->file('foto');
-                $filename = has_file( $file->path()) . '.' . $file->getClientOriginalExtension();
-                $file->move('storage', $filename);
-                $isi->foto = $filename;
-                $isi->save();
-        
-            // Storage::delete('foto');
-            // $isi['foto'] = $request->file('foto')->store('foto','public');
-        }
+       
         
         $data->update($isi);
         // $data->save();
+    
 
-        return redirect('prf')->with('sukses','Data Berhasil di Perbarui');
+        return redirect()->back()->with('sukses','Data Berhasil di Perbarui');
     }
 }

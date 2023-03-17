@@ -100,9 +100,12 @@
                           </svg></i>
                           <div class="form-outline flex-fill mb-0">
                             <label class="form-label" for="email"> Email</label>
-                            <input class="sign-form__input-text" type="text" name="email" :value="old('email')" required placeholder="Enter your email" />
+                            <input class="sign-form__input-text  @error('email') is-invalid @enderror" type="text" name="email" :value="old('email')" required placeholder="Enter your email" />
                           </div>
                         </div>
+						@error ('email')
+						<p class="text-black" style="color:black;">{{$message}}</p>
+						@enderror
       
                         <div class="d-flex flex-row align-items-center mb-20">
                           <i class="" ><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
@@ -110,10 +113,12 @@
                           </svg></i>
                           <div class="form-outline flex-fill mb-20">
                             <label class="form-label" for="username2">Username</label>
-                            <input class="sign-form__input-text" type="text" name="name" :value="old('name')" required autofocus  id="name" placeholder="Enter your name" />
+                            <input class="sign-form__input-text @error('username') is-invalid @enderror" type="text" name="username" :value="old('username')" required autofocus  id="name" placeholder="Enter your name" />
                           </div>
                         </div>
-      
+						@error ('username')
+						<p class="text-black" style="color:black;">{{$message}}</p>
+						@enderror
       
                         <div class="d-flex flex-row align-items-center mb-10">
                           <i class=""><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
@@ -121,9 +126,15 @@
                           </svg></i>
                           <div class="form-outline flex-fill mb-0">
                             <label class="form-label" for="password2">Password</label>
-                            <input class="sign-form__input-text" type="password" name="password" required id="password" placeholder="Password" />
+                            <input class="sign-form__input-text   @error('password') is-invalid @enderror" type="password" name="password" required id="password" placeholder="Password" />
                           </div>
                         </div>
+						@error ('password')
+						<p class="text-black" style="color:black;">{{$message}}</p>
+						@enderror
+
+						
+
       
                         <div class="d-flex flex-row align-items-center mb-4">
                           <i class=""><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-key-fill" viewBox="0 0 16 16">
@@ -131,19 +142,13 @@
                           </svg></i>
                           <div class="form-outline flex-fill mb-0">
                             <label class="form-label" for="password2">konfirmasi password</label>
-                            <input class="sign-form__input-text" type="password" name="password_confirmation" required id="password" placeholder="Password" />
+                            <input class="sign-form__input-text  @error('password_confirmation') is-invalid @enderror" type="password" name="password_confirmation" required id="password" placeholder="Password" />
                           </div>
                         </div>
-                        <div class="d-flex flex-row align-items-center mb-0">
-                          <i class=""><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-square" viewBox="0 0 16 16">
-						<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-						<path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"/>
-						</svg></i>
-                          <div class="form-outline flex-fill mb-0">
-                            <label class="form-label" for="foto">Foto Profil</label>
-                            <input class="sign-form__input-text" type="file" name="foto" id="foto" placeholder="masukan  foto anda" />
-                          </div>
-                        </div>
+						@error ('password_confirmation')
+						<p class="text-black" style="color:black;">{{$message}}</p>
+						@enderror
+                       
                       
       
                         <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">

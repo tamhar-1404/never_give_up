@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('notifs', function (Blueprint $table) {
             $table->id();
+            $table->string('isi');
             $table->foreignId('user_id');
             $table->foreign('user_id')
             ->references('id')
@@ -22,10 +23,10 @@ return new class extends Migration
             $table->foreignId('postingan_id');
             $table->foreign('postingan_id')
             ->references('id')
-            ->on('postingan')
+            ->on('postingans')
             ->onDelete('cascade')
             ->onUpdate('cascade');
-            $table->string('isi');
+            
             $table->timestamps();
         });
     }
