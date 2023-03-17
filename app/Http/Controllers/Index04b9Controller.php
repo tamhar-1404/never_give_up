@@ -89,16 +89,19 @@ class Index04b9Controller extends Controller
     return view('user_login.artikel-sukses',['artikel-sukses']);
     }
    
-    public function cerpenbaik(){
-    return view('user_login.cerpen-baik',['cerpen-baik']);
+    public function cerpenbaik($id){
+        $postingan = postingan::find($id);
+        // $postingan = postingan::where('id', $data )->get();
+    return view('user_login.cerpen-baik', compact('postingan'));
     }
    
     public function puisipertiwi(){
     return view('user_login.puisi-pertiwi',['puisi-pertiwi']);
     }
    
-    public function diary1(){
-    return view('user_login.diary-1',['diary-1']);
+    public function diary1($id){
+        $postingan = postingan::find($id);
+    return view('user_login.diary-1', compact('postingan'));
     }
    
     public function fotografi1(){

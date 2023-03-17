@@ -12,8 +12,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
-	<link rel="stylesheet" href="css/triptip-assets.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="{{asset('css/triptip-assets.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
 
 </head>
 <style>
@@ -206,11 +206,11 @@
 										</div>
 										<img style="border-radius: 10px; max-width: 750px; max-height: 200px;" src="asset/{{$item -> foto}}" class="card-img-top" alt="" srcset="">
 										<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon>
-										<p class="">{{$item->status}}</p>
-										<p class="">{{$item->judul}}</p>
+										<p class="" >{{$item->status}}</p>
+										<p class=""></p>{{$item->judul}}
 										<p class="card-text">{!!$item -> isi!!}</p>
 										<div style="width: 100%; display: flex; justify-content: center;  " >
-											<a class="contact-form__submit" href="/cerpen-baik" style="margin-right: 20px; margin-bottom: 10px; ">
+											<a class="contact-form__submit" href="/cerpen-baik/{{$item->id}}" style="margin-right: 20px; margin-bottom: 10px; ">
 												<i class="fa fa-caret-right" aria-hidden="true"></i>
 												Lihat
 											</a>

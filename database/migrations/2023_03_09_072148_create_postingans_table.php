@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('foto');
             $table->string('judul');
-            $table->string('isi');
+            $table->text('isi');
             $table->string('status')->default('pandding');
             $table->foreignId('user_id');
             $table->foreign('user_id')
