@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Kategori;
 use App\Models\User;
+
 use App\Models\Postingan;
+
 class PostingController extends Controller
 {
     public function posting(){
@@ -15,6 +17,9 @@ class PostingController extends Controller
     }
 
     public function simpan_postingan(Request $request){
+        $request->validate([
+            'foto'=>'required|mimes:jpg,png'
+        ]);
         $postingan = new postingan;
         if($request->hasFile('foto')){
             $request->file('foto')->move('asset/',$request->file('foto')->getClientOriginalName());

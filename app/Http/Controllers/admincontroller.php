@@ -18,7 +18,7 @@ class AdminController extends Controller
         $semua = postingan::count();
         $setuju = postingan::where('status', 'setuju')->count();
         $postingan = postingan::where('status', 'pandding')->count();
-        $posting = postingan::all();
+        $posting =postingan::where('status', 'pandding')->get();
 
         return view('admin.index', ['user'=>$user,'semua'=>$semua,'setuju'=>$setuju,'postingan'=>$postingan, 'posting'=>$posting] );
 
@@ -61,6 +61,23 @@ class AdminController extends Controller
     
    
     }
+
+    public function tolak($id)
+    {
+         
+        
+        $posting = postingan::find($id);
+        if($posting->status == 'pandding'){
+            $posting->status = 'tolak';   
+            $posting->save();
+        }
+       
+        return redirect('/admin');
+    
+   
+    }
+
+
 
     public function pesan()
     {

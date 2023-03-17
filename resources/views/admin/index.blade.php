@@ -425,7 +425,6 @@
                                                 </div>
                                                 <img style="border-radius: 10px;" src="asset/{{$post-> foto}}" class="card-img-top" alt="" srcset="">
                                                 <div >
-                                                    <input type="datetime" name="date" value="{{$post -> created_at}}" id="">
                                                     <p style="margin: 10px;">{{$post -> created_at}}</p>
                                                 </div>
                                                 <p class="">Kategori : {{$post -> kategori -> kategori}}</p>
@@ -433,7 +432,10 @@
                                                 {!!$post -> isi!!}
                                                 <div style="display: flex; gap: 10px; " class="row justify-content-between ">
                                                     <a href="tampilan_user/cerpen-baik.html" class="btn btn-primary col-5" style="font-size: 11px;">Lihat</a>
-                                                    <a href="#" class="btn btn-danger col-5" style="font-size: 11px;" >hapus </a>
+                                                    <form action="{{Route('tolak', $post->id)}} " method="post" class="col-5">
+                                                    @csrf
+                                                    <button  type="submit" class="btn btn-danger " style="font-size: 11px;" >tolak </button>
+                                                    </form>
                                                     <form action="{{Route('uprove', $post->id)}} " method="post" class="col-5">
                                                     @csrf
                                                     <button  type="submit" class="btn btn-success " style="font-size: 11px;" >setuju </button>

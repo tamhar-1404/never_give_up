@@ -20,7 +20,6 @@ class Index04b9Controller extends Controller
     public function artikel(){
         $artikel = postingan::where('status', 'setuju')->get();
         return view('user_login.artikel',['artikel'=>$artikel]);
-    return view('user_login.artikel',['artikel']);
     }
 
     public function puisi(){
@@ -80,23 +79,29 @@ class Index04b9Controller extends Controller
     }
    
     public function userpage(){
-    return view('user_login.user-page',['user-page']);
+        $user = auth()->user();
+        $postingan = postingan::where('user_id', Auth()->user()->id)->get();
+     
+    return view('user_login.user-page',compact('user'), ['postingan'=>$postingan]);
     }
    
     public function artikelsukses(){
     return view('user_login.artikel-sukses',['artikel-sukses']);
     }
    
-    public function cerpenbaik(){
-    return view('user_login.cerpen-baik',['cerpen-baik']);
+    public function cerpenbaik($id){
+        $postingan = postingan::find($id);
+        // $postingan = postingan::where('id', $data )->get();
+    return view('user_login.cerpen-baik', compact('postingan'));
     }
    
     public function puisipertiwi(){
     return view('user_login.puisi-pertiwi',['puisi-pertiwi']);
     }
    
-    public function diary1(){
-    return view('user_login.diary-1',['diary-1']);
+    public function diary1($id){
+        $postingan = postingan::find($id);
+    return view('user_login.diary-1', compact('postingan'));
     }
    
     public function fotografi1(){
@@ -128,8 +133,10 @@ class Index04b9Controller extends Controller
     }
    
     public function prf(){
-    $user = User::find(Auth()->User()->id);
-    return view('user_login.prf',['user'=>$user]);
+    // $user = User::find(Auth()->User()->id);
+    $user = auth()->user();
+    return view('user_login.prf', compact('user'));
+    // return view('user_login.prf',['user'=>$user]);
     }
    
     public function makalahpkn(){

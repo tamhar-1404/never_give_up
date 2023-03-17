@@ -227,7 +227,7 @@
                                             <div class="row">
                                                 <div class="col-lg-12 col-sm-12 col-12">
 
-                                                    <table id="datatable" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; width: 100%;">
+                                                <table id="datatable" class="table table-striped table-bordered dt-responsive nowrap" style="border-collapse: collapse; width: 100%;">
                                                         <thead>
                                                         <tr>
                                                                 <th >No</th>

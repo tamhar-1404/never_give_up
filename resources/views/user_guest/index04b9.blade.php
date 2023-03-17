@@ -37,9 +37,9 @@
 				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 					<div class="container">
 	
-						<a class="navbar-brand" href="index.html">
-							<img src="images/logo.png" alt="">
-						</a>
+					<a class="navbar-brand" style="width:13%;" href="/user-login">
+							<img src="asset/Logo 1.png" style="width:100%;" alt="">
+						</a> 
 	
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
@@ -66,18 +66,18 @@
 										<div class="dropdown-box">
 											<ul class="dropdown-list">
 											
-												<li><a href="{{Route('sing-page')}}">makalah</a></li>
-												<li><a href="{{Route('sing-page')}}">skripsi</a></li>
-												<li><a href="{{Route('sing-page')}}">karya ilmiah</a></li>
+												<li><a href="{{Route('login')}}">makalah</a></li>
+												<li><a href="{{Route('login')}}">skripsi</a></li>
+												<li><a href="{{Route('login')}}">karya ilmiah</a></li>
 
 											</ul>
 										</div>
 										<div class="dropdown-box">
 											<ul class="dropdown-list">
-												<li><a href="{{Route('sing-page')}}">diary</a></li>
-												<li><a href="{{Route('sing-page')}}">ilustrasi</a></li>
-												<li><a href="{{Route('sing-page')}}">pantun</a></li>
-												<li><a href="{{Route('sing-page')}}">esai</a></li>
+												<li><a href="{{Route('login')}}">diary</a></li>
+												<li><a href="{{Route('login')}}">ilustrasi</a></li>
+												<li><a href="{{Route('login')}}">pantun</a></li>
+												<li><a href="{{Route('login')}}">esai</a></li>
 
 											
 												</ul>
@@ -87,7 +87,7 @@
 								
 							</ul>
 							<ul class="navbar-nav ml-auto right-list">
-								<li><a href="{{Route('sing-page')}}"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> login</a></li>
+								<li><a href="{{Route('login')}}"><i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> login</a></li>
 								<li><a href="{{Route('user_register')}}"><i class="fa fa-user-o" aria-hidden="true"></i> register</a></li>
 							</ul>
 					</div>
@@ -621,7 +621,7 @@ Baca										</a>
 										sumanto
 									   </p>
 									   <div style="padding-bottom: 30px;" >
-										<a class="place-post__like" href="{{Route('sing-page')}}"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+										<a class="place-post__like" href="{{Route('login')}}"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
 									   </div>
 									</div>
 									
@@ -665,7 +665,7 @@ Baca										</a>
 										sumanto
 									   </p>
 									   <div style="padding-bottom: 30px;" >
-										<a class="place-post__like" href="{{Route('sing-page')}}"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+										<a class="place-post__like" href="{{Route('login')}}"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
 									   </div>
 									</div>
 									
@@ -709,7 +709,7 @@ Baca										</a>
 										sumanto
 									   </p>
 									   <div style="padding-bottom: 30px;" >
-										<a class="place-post__like" href="{{Route('sing-page')}}"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+										<a class="place-post__like" href="{{Route('login')}}"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
 									   </div>
 									</div>
 									
@@ -753,7 +753,7 @@ Baca										</a>
 										sumanto
 									   </p>
 									   <div style="padding-bottom: 30px;" >
-										<a class="place-post__like" href="{{Route('sing-page')}}"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+										<a class="place-post__like" href="{{Route('login')}}"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
 									   </div>
 									</div>
 									
@@ -797,7 +797,7 @@ Baca										</a>
 										sumanto
 									   </p>
 									   <div style="padding-bottom: 30px;" >
-										<a class="place-post__like" href="{{Route('sing-page')}}"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+										<a class="place-post__like" href="{{Route('login')}}"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
 									   </div>
 									</div>
 									
@@ -841,7 +841,7 @@ Baca										</a>
 										sumanto
 									   </p>
 									   <div style="padding-bottom: 30px;" >
-										<a class="place-post__like" href="{{Route('sing-page')}}"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+										<a class="place-post__like" href="{{Route('login')}}"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
 									   </div>
 									</div>
 									

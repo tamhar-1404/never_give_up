@@ -12,8 +12,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
-	<link rel="stylesheet" href="css/triptip-assets.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="{{asset('css/triptip-assets.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
 
 </head>
 <body>
@@ -88,7 +88,7 @@
 							<div class="col-sm-9">
 								
 								<h1 class="listing-detail__title listing-detail__title-black">
-									<span>My Diary</span>
+									<span>{{$postingan->judul}}</span>
 									<!-- <span cla	ss="listing-detail__rate">9.3 <span>/ 10</span></span> -->
 								</h1>
 								<p>penulis: Monica</p>
@@ -143,7 +143,7 @@
 								<!-- overview box -->
 								<div class="listing-detail__galleria">
 									<div  style=" display:flex; justify-content: center; align-items: center;">
-										<img style="width: 400px;" src="asset/diaryb.jpg" alt="" >
+										<img style="width: 400px;" src="asset/{{$postingan->foto}}" alt="" >
 									</div>
 
 								</div>
@@ -155,12 +155,7 @@
 										<!-- <h2>Ibu Pertiwi</h2> -->
 									
 										<p class="listing-detail__content-description" style="color: black;">
-										<p class="listing-detail__content-description" style="color: black;">Diary</p>
-										<p class="listing-detail__content-description" style="color: black;">ini aku bete banget sama seseorang. Tahu gak, ternyata dia itu sombong banget orangnya. Bayangin aja, udah baik baik aku sapa dan kasih senyuman, tapi dianya malah cuek aja. Dan lebih parahnya lagi dia pura pura gak denger dan nylonong gitu aja.</p>
-										<p class="listing-detail__content-description" style="color: black;">Diary</p>
-										<p class="listing-detail__content-description" style="color: black;">Ternyata masih ada ya orang sombong kayak gitu. Apa susah bersikap ramah sama orang lain? Kayaknya gak susah deh. Kan Cuma senyum kemudian pura pura baik atau gimana gitu. Mungkin dia gak perlu teman kali jadi dia cuek dan gak peduli dengan orang lain.</p>
-										<p class="listing-detail__content-description" style="color: black;">Diary ….</p>
-										<p class="listing-detail__content-description" style="color: black;">Pokoknya males aku nyapa dia lagi. Daripada dicuekin lagi dan gak dianggep, lebih baik diem aja kalo ketemu dia lagi. Biar aja dia gak ada temen. Toh temen kayak gitu mana ada yang mau. Bete deh jadinya.</p>
+										{{$postingan->isi}}
 									</p>
 
 									</div>
@@ -557,14 +552,14 @@
 	</div>
 	<!-- End Container -->
 	
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.migrate.js"></script>
+	<script src="{{asset('js/jquery.min.js')}}"></script>
+	<script src="{{asset('js/jquery.migrate.js')}}"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiqrIen8rWQrvJsu-7f4rOta0fmI5r2SI"></script>
-	<script src="js/triptip-plugins.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.countTo.js"></script>
-	<script src="js/script.js"></script>
+	<script src="{{asset('js/triptip-plugins.min.js')}}"></script>
+	<script src="{{asset('js/popper.js')}}"></script>
+	<script src="{{asset('js/bootstrap.min.js')}}"></script>
+	<script src="{{asset('js/jquery.countTo.js')}}"></script>
+	<script src="{{asset('js/script.js')}}"></script>
 	
 </body>
 
