@@ -1,16 +1,16 @@
 <!doctype html>
 <html lang="en">
-
-
-<!-- Mirrored from themesdesign.in/hexzy/vertical/blue/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 22:31:51 GMT -->
+    
+<!-- Mirrored from themesdesign.in/hexzy/vertical/blue/tables-datatable.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 22:33:03 GMT -->
 <head>
-    <meta charset="utf-8" />
-    <title>Data Pengguna</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta content="Admin Dashboard" name="description" />
-    <meta content="ThemeDesign" name="author" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta charset="utf-8" />
+        <title>Hexzy - Responsive Admin Dashboard Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta content="Admin Dashboard" name="description" />
+        <meta content="ThemeDesign" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
+<<<<<<< Updated upstream
     <link rel="shortcut icon" href="assets/images/users/Dzaky.jpg">
 
     <!-- DataTables -->
@@ -28,17 +28,30 @@
 
     <!-- Sweet Alert -->
     <link href="assets/plugins/sweetalert2/sweetalert2.css" rel="stylesheet" type="text/css">
+=======
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+>>>>>>> Stashed changes
 
-    <!--Morris Chart CSS -->
-    <link rel="stylesheet" href="assets/plugins/morris/morris.css">
+        <!-- DataTables -->
+        <link href="assets/plugins/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/datatables/fixedHeader.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css"/>
+        <link href="assets/plugins/datatables/scroller.bootstrap4.min.css" rel="stylesheet" type="text/css" />
 
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+        <!-- Sweet Alert -->
+        <link href="assets/plugins/sweetalert2/sweetalert2.css" rel="stylesheet" type="text/css">
 
-</head>
 
-<body class="fixed-left">
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+
+    </head>
+
+
+    <body class="fixed-left">
 
     <!-- Begin page -->
     <div id="wrapper" >
@@ -190,6 +203,7 @@
                                 <li><a href="{{Route('data-user')}}">Data user</a></li>
                                 <li><a href="{{Route('data-blokir')}}">Data Pengguna Yang Di Blokir</a></li>
                                <li><a href="/pesan-dari-user">Pesan Dari User</a></li>
+                               <li><a href="postingan-yang-disematkan.html">postingan yang disematkan</a></li>
                             </ul>
                         </li>
                         
@@ -210,7 +224,11 @@
                 <!-- Start content -->
                 <div class="content">
 
+<<<<<<< Updated upstream
                 <div class="">
+=======
+                   <div class="">
+>>>>>>> Stashed changes
                         <div class="page-header-title">
                             <h4 class="page-title">Data User</h4>
                         </div>
@@ -223,7 +241,11 @@
                                 <div class="col-lg-12">
                                     <div class="card">
                                         <div class="card-body">
+<<<<<<< Updated upstream
                                             <h4 class="m-b-30 m-t-0">List</h4>
+=======
+                                            <h4 class="m-b-30 m-t-0">Default Example</h4>
+>>>>>>> Stashed changes
                                             <div class="row">
                                                 <div class="col-lg-12 col-sm-12 col-12">
 
@@ -248,12 +270,19 @@
                                                                 <td>{{$item->username}}</td>
                                                                 <td>{{$item->email}}</td>
                                                                 <td><img src="asset/{{$item->foto}}" width="150" alt="150" srcset="" ></td>
+<<<<<<< Updated upstream
                                                                 <td><form action="{{Route('akun_blokir', $item->id)}} " method="post" class="col-5">
                                                                 @csrf
                                                                     <td><button  type="submit" class="btn btn-warning " style="border-radius: 10%; "><span style="color: white; font-weight:bold;" >Blokir </button>
                                                                 </form>
                                                                 <a href="#">
                                                                  <button class="btn btn-danger delete" data-id="{{$item-> id}}" data-nama="{{$item ->username}}" style="border-radius: 10%; "><span style="color: white; font-weight:bold; ">hapus</span></button>
+=======
+                                                                <td><button type="button" class="btn  btn-warning">Blokir</button>
+                                                                <button type="button" class="btn btn-primary waves-effect waves-light " id="sa-params" data-id="{{$item-> id}}" data-nama="{{$item ->username}}">Click me</button>
+                                                                <a href="/delete/{{ $item->id }}">
+                                                                 <button class="btn btn-danger" style="border-radius: 10%; "><span style="color: white; font-weight:bold; ">hapus</span></button>
+>>>>>>> Stashed changes
                                                                 </a>
                                                               </tr>
                                                             @endforeach                                               
@@ -321,6 +350,11 @@
         <script src="assets/plugins/datatables/dataTables.fixedHeader.min.js"></script>
         <script src="assets/plugins/datatables/dataTables.keyTable.min.js"></script>
         <script src="assets/plugins/datatables/dataTables.scroller.min.js"></script>
+
+        <!-- Sweet-Alert  -->
+        <script src="assets/plugins/sweetalert2/sweetalert2.min.js"></script>
+        <script src="assets/pages/sweet-alert.init.js"></script>
+
 
         <!-- Responsive examples -->
         <script src="assets/plugins/datatables/dataTables.responsive.min.js"></script>

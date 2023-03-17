@@ -135,36 +135,36 @@
 
 
               //creates Pie Chart
-              Dashboard.prototype.createPieGraph = function(selector, labels, datas, colors) {
-                var data = [{
-                    label: labels[0],
-                    data: datas[0]
-                }, { 
-                    label: labels[1],
-                    data: datas[1]
-                }];
-                var options = {
-                    series: {
-                        pie: {
-                            show: true
-                        }
-                    },
-                    legend : {
-                show : false
-              },
-              grid : {
-                hoverable : true,
-                clickable : true
-              },
-              colors : colors,
-              tooltip : true,
-              tooltipOpts : {
-                content : "%s, %p.0%"
-              }
-                };
+            //   Dashboard.prototype.createPieGraph = function(selector, labels, datas, colors) {
+            //     var data = [{
+            //         label: labels[0],
+            //         data: datas[0]
+            //     }, { 
+            //         label: labels[1],
+            //         data: datas[1]
+            //     }];
+            //     var options = {
+            //         series: {
+            //             pie: {
+            //                 show: true
+            //             }
+            //         },
+            //         legend : {
+            //     show : false
+            //   },
+            //   grid : {
+            //     hoverable : true,
+            //     clickable : true
+            //   },
+            //   colors : colors,
+            //   tooltip : true,
+            //   tooltipOpts : {
+            //     content : "%s, %p.0%"
+            //   }
+            //     };
 
-                $.plot($(selector), data, options);
-            },
+            //     $.plot($(selector), data, options);
+            // },
 
         Dashboard.prototype.init = function () {
 
@@ -172,7 +172,7 @@
                    //plot graph data
           var uploads = [[0, 7], [1, 6], [2, 3], [3, 6], [4, 4], [5, 10], [6, 8]];
           var downloads = [[0, 5], [1, 12], [2,4], [3, 3], [4, 12], [5, 8], [6, 4]];
-          var plabels = ["Service One"];
+          var plabels = ["jumlah user"];
           var pcolors = ['#6cbafa'];
           var borderColor = '#efefef';
           var bgColor = '#fff';
@@ -258,30 +258,30 @@
             [0, 200]
         ];
         var ticks = [
-            [0, "22h"],
-            [1, ""],
-            [2, "00h"],
-            [3, ""],
-            [4, "02h"],
-            [5, ""],
-            [6, "04h"],
-            [7, ""],
-            [8, "06h"],
-            [9, ""],
-            [10, "08h"],
-            [11, ""],
-            [12, "10h"],
-            [13, ""],
-            [14, "12h"],
-            [15, ""],
-            [16, "14h"],
-            [17, ""],
-            [18, "16h"],
-            [19, ""],
-            [20, "18h"],
-            [21, ""],
-            [22, "20h"],
-            [23, ""]
+            [0, "1h"],
+            [1, "2h"],
+            [2, "3h"],
+            [3, "4h"],
+            [4, "5h"],
+            [5, "6h"],
+            [6, "7h"],
+            [7, "8h"],
+            [8, "9h"],
+            [9, "10h"],
+            [10, "11h"],
+            [11, "12h"],
+            [12, "13h"],
+            [13, "14h"],
+            [14, "15h"],
+            [15, "16h"],
+            [16, "17h"],
+            [17, "18h"],
+            [18, "19h"],
+            [19, "20h"],
+            [20, "21h"],
+            [21, "22h"],
+            [22, "23h"],
+            [23, "24h"]
         ];
           var combinelabels = ["Last 24 Hours","Last 48 Hours","Difference"];
           var combinedatas = [data24Hours,data48Hours,dataDifference];
