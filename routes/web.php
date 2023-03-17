@@ -70,6 +70,8 @@ Route::get('/hapus_kontak/{id}', [Pesan_dari_userController::class, 'hapus_konta
 Route::get('/kontak', function () {
     return view('user_login.kontak');
 });
+
+
 Route::middleware(['auth'])->group(function () {
     
 
@@ -103,7 +105,8 @@ Route::group(['middleware'=> ['auth', 'hakakses:user']], function(){
     // Route::get('/create_cerpen', [CerpenController::class, 'create_cerpen'])->name('create-cerpen');
     Route::post('/simpan_cerpen', [PostingController::class, 'simpan_postingan']);
     Route::get('/logout', [loginController::class, 'logout']);
-    Route::post('/upprof/{id}', [loginController::class, 'upprof'])->name('upprof');
+    //update
+    Route::put('/upprof', [loginController::class, 'upprof'])->name('upprof');
         
     Route::get('/cerpen', [Index04b9Controller::class, 'cerpen'])-> name('cerpen');
     Route::get('/artikel', [Index04b9Controller::class, 'artikel'])-> name('artikel');

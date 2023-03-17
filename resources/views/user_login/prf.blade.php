@@ -130,114 +130,94 @@
 </header>
 	
 		
-    <div class="container">
-<div class="row gutters">
-<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
-<div class="card h-100">
-	<div class="card-body">
-		<div class="account-settings">
-			<div class="user-profile">
-				<div class="user-avatar">
-					<img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Maxwell Admin">
+<div class="container">
+	<div class="row gutters">
+		<form action="{{Route('upprof')}}"  method="post" enctype="multipart/form-data" style="display:flex;">
+			@csrf
+			@method('put')
+			<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
+				<div class="card h-100">
+					<div class="card-body">
+						<div class="account-settings">
+							<div class="user-profile">
+
+								<div class="user-avatar">
+									<img src="foto/{{$user->foto}}" alt="Maxwell Admin">
+								</div>
+
+								<h5 class="user-name">{{$user->username}}</h5>
+								<h6 class="user-email">{{$user->email}}</h6><br>
+								<input name="foto" type="file" class="filestyle" data-input="false" data-buttonname="btn-secondary" style="width: 43%;   font-size: 12px;">
+							</div>
+							
+							<div class="aboutt">
+								<h5>Profil</h5>
+								<p>Saya Yuki, memiliki hobi menulis dari kecil. Saya menuangkan hobi dengan menulis cerpen pada website ini</p><br>
+							</div>
+						</div>
+					</div>
 				</div>
-				<h5 class="user-name">Yuki Hayashi</h5>
-				<h6 class="user-email">yuki@Maxwell.com</h6><br>
-				<input type="file" class="filestyle" data-input="false" data-buttonname="btn-secondary" style="width: 43%;   font-size: 12px;">
 			</div>
-			<div class="aboutt">
-				<h5>Profil</h5>
-				<p>Saya Yuki, memiliki hobi menulis dari kecil. Saya menuangkan hobi dengan menulis cerpen pada website ini</p><br>
+			<div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
+				<div class="card h-100">
+					<div class="card-body">
+						<div class="row gutters">
+							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+								<h6 class="mb-2 text-primary">Data Pribadi</h6>
+							</div>
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+								<div class="form-group">
+									<label for="fullName">Nama Lengkap</label>
+									<input type="text" name="namelengkap" value="{{$user->namalengkap}}" class="form-control" id="fullName" placeholder="Masukkan Nama Lengkap">
+								</div>
+							</div>
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+								<div class="form-group">
+									<label for="eMail">Email</label>
+									<input type="email" name="email" value="{{$user->email}}" class="form-control" id="eMail" placeholder="Masukkan Alamat Email">
+								</div>
+							</div>
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+								<div class="form-group">
+									<label for="phone">Nomor Telepon</label>
+									<input type="text" name="notlp" value="{{$user->notlp}}" class="form-control" id="phone" placeholder="Masukkan Nomor Telepon">
+								</div>
+							</div>
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+								<div class="form-group">
+									<label for="website">Akun Media Sosial</label>
+									<input type="url" name="namelengkap" value="" class="form-control" id="website" placeholder="Masukkan Akun Instagram">
+								</div>
+							</div>
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+								<div class="form-group">
+									<label for="website">Tanggal Lahir</label>
+									<input type="url" name="namelengkap" value="" class="form-control" id="website" placeholder="Masukkan Akun Instagram">
+								</div>
+							</div>
+							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+								<div class="form-group">
+									<label for="website">Asal Kota</label>
+									<input type="url" name="namelengkap" value="" class="form-control" id="website" placeholder="Masukkan Akun Instagram">
+								</div>
+							</div>
+						</div>
+						<div class="row gutters">
+							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+								<div class="text-right">
+									<a href="/user-page" class="btn btn-secondary" type="button" id="submit" name="submit">Batal</a>
+									<button  class="btn btn-primary" type="submit" id="submit" >Simpan</button>
+									<!-- <button type="button" id="submit" name="submit" class="btn btn-primary">Simpan</button> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
+		</form>
 	</div>
 </div>
-</div>
-<div class="col-xl-9 col-lg-9 col-md-12 col-sm-12 col-12">
-<div class="card h-100">
-	<div class="card-body">
-		<div class="row gutters">
-			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-				<h6 class="mb-2 text-primary">Data Pribadi</h6>
-			</div>
-			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-				<div class="form-group">
-					<label for="fullName">Nama Lengkap</label>
-					<input type="text" class="form-control" id="fullName" placeholder="Masukkan Nama Lengkap">
-				</div>
-			</div>
-			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-				<div class="form-group">
-					<label for="eMail">Email</label>
-					<input type="email" class="form-control" id="eMail" placeholder="Masukkan Alamat Email">
-				</div>
-			</div>
-			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-				<div class="form-group">
-					<label for="phone">Nomor Telepon</label>
-					<input type="text" class="form-control" id="phone" placeholder="Masukkan Nomor Telepon">
-				</div>
-			</div>
-			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-				<div class="form-group">
-					<label for="website">Akun Media Sosial</label>
-					<input type="url" class="form-control" id="website" placeholder="Masukkan Akun Instagram">
-				</div>
-			</div>
-			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-				<div class="form-group">
-					<label for="website">Tanggal Lahir</label>
-					<input type="url" class="form-control" id="website" placeholder="Masukkan Akun Instagram">
-				</div>
-			</div>
-			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-				<div class="form-group">
-					<label for="website">Asal Kota</label>
-					<input type="url" class="form-control" id="website" placeholder="Masukkan Akun Instagram">
-				</div>
-			</div>
-		</div>
-		<!-- <div class="row gutters">
-			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-				<h6 class="mt-3 mb-2 text-primary">Alamat</h6>
-			</div>
-			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-				<div class="form-group">
-					<label for="Street">Rincian Alamat</label>
-					<input type="name" class="form-control" id="Street" placeholder="Masukkan Alamat Lengkap">
-				</div>
-			</div>
-			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-				<div class="form-group">
-					<label for="ciTy">Kota</label>
-					<input type="name" class="form-control" id="ciTy" placeholder="Masukkan Kota">
-				</div>
-			</div>
-			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-				<div class="form-group">
-					<label for="sTate">State</label>
-					<input type="text" class="form-control" id="sTate" placeholder="Enter State">
-				</div>
-			</div>
-			<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
-				<div class="form-group">
-					<label for="zIp">Zip Code</label>
-					<input type="text" class="form-control" id="zIp" placeholder="Zip Code">
-				</div>
-			</div>
-		</div> -->
-		<div class="row gutters">
-			<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-				<div class="text-right">
-					<a href="/user-page" class="btn btn-secondary" type="button" id="submit" name="submit">Batal</a>
-					<a href="/user-page" class="btn btn-primary" type="button" id="submit" name="submit">Simpan</a>
-					<!-- <button type="button" id="submit" name="submit" class="btn btn-primary">Simpan</button> -->
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-</div>
-</div>
+
 <footer class="footer footer-black">
 				<div class="container">
 	

@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('username')->unique();
             $table->string('email')->unique();
             $table->string('password');
-            $table->string('foto');
+            $table->string('foto')->default('default.jpg');
             $table->string('role')->default('user');
             $table->string('namalengkap')->nullable();
             $table->bigInteger('notlp')->nullable();

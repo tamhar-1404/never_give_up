@@ -126,7 +126,7 @@
 					<div class="row">
 						<div class="col-lg-5">
 							<div class="user-detail__profile-box">
-								<a class="user-detail__profile-image" href="#"><img style="width: 80px; height: 80px; border-radius: 100%;" src="asset/{{Auth()->User()->foto}}" alt=""></a>
+								<a class="user-detail__profile-image" href="#"><img style="width: 80px; height: 80px; border-radius: 100%;" src="foto/{{Auth()->User()->foto}}" alt=""></a>
 								<div>
 									<h3 class="user-detail__profile-title">
 										<a href="prf.html">{{Auth()->user()->username}}</a>
@@ -196,7 +196,7 @@
 									<div class="card" style="border-radius: 15px;">
 									<div class="card-body">
 										<div style=" display: flex; justify-content:space-between;">
-											<img class="" style="border-radius: 100%; width: 30px; height: 30px; " src="asset/{{$item->user->foto}}" alt="">
+											<img class="" style="border-radius: 100%; width: 30px; height: 30px; " src="foto/{{$item->user->foto}}" alt="">
 										   <p style="color:black; font-family: Georgia, 'Times New Roman', Times, serif; margin:10px;">
 											{{$item->user->username}}
 										   </p>

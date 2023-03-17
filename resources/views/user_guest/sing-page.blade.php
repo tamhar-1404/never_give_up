@@ -142,7 +142,7 @@ button{
         <div class="shape"></div>
         <div class="shape"></div> -->
     </div>
-     @if(\Session::has('alert'))
+     <!-- @if(\Session::has('alert'))
                 <div class="alert alert-danger">
                     <div>{{Session::get('alert')}}</div>
                 </div>
@@ -151,22 +151,24 @@ button{
                 <div class="alert alert-success">
                     <div>{{Session::get('alert-success')}}</div>
                 </div>
-            @endif
+            @endif -->
     <form method="POST" action="{{ route('user_login') }}" class="sign-form" >
         @csrf
-        @if (session('status'))
+        <!-- @if (session('status'))
             <div class="alert alert-danger">
                 {{ session('message') }}
             </div>
-        @endif
+        @endif -->
         <h3>Login </h3>
 
-        <label for="username">Username</label>
-        <input class="sign-form__input-text" type="text" name="email" :value="old('email')" required autofocus id="email" placeholder="Email@gmail.com " />
-
+        <label for="username">email</label>
+        <input class="sign-form__input-text @error('email') is-invalid @enderror" type="text" name="email" :value="old('email')" required autofocus id="email" placeholder="Email@gmail.com " />
+        @if($errors->any())
+        <h4>{{$errors->first()}}</h4>
+        @endif
         <label for="password">Password</label>
-        <input class="sign-form__input-text" type="password"  name="password" required id="password" placeholder="Password" />
-
+        <input class="sign-form__input-text @error('password') is-invalid @enderror" type="password"  name="password" required id="password" placeholder="Password" />
+       
         <button type="submit"  id="submit-loggin">Log In</button>
        Belum Punya Akun?<a href="user_register" style="text-decoration-color: #23a2f6;">Register</a>
     </form>
