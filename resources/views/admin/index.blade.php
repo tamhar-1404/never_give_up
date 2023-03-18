@@ -174,7 +174,6 @@
                                 <li><a href="{{Route('data-user')}}">Data user</a></li>
                                 <li><a href="{{Route('data-user')}}">Akun Yang Di Blokir</a></li>
                                 <li><a href="{{Route('pesan-user')}}">Pesan Dari User</a></li>
-                                <li><a href="postingan-yang-disematkan.html">postingan yang disematkan</a></li>
                             </ul>
                         </li>
                         

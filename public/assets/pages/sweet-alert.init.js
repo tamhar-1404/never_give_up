@@ -69,41 +69,58 @@
 
         //Parameter
         $('#sa-params').click(function () {
+            //button
             const swalWithBootstrapButtons = Swal.mixin({
                 customClass: {
+<<<<<<< Updated upstream
                   confirmButton: 'btn btn-success',
                   cancelButton: 'btn btn-danger mr-2'
+                }, 
+=======
+                  confirmButton: 'btn btn-danger',
+                  cancelButton: 'btn btn-warning mr-2'
                 },
+>>>>>>> Stashed changes
                 buttonsStyling: false,
               })
+
+              var userid = $(this).attr('data-id')
+              var usernama = $(this).attr('data-nama')
+
               
               swalWithBootstrapButtons.fire({
-                title: 'Are you sure?',
-                text: "You won't be able to revert this!",
+                title: 'apakah kamu yakin?',
+                text: "ingin menghapus akun ini!"+usernama+"!",
                 type: 'warning',
                 showCancelButton: true,
-                confirmButtonText: 'Yes, delete it!',
-                cancelButtonText: 'No, cancel!',
+                confirmButtonText: ' hapus!',
+                cancelButtonText: 'cancel!',
                 reverseButtons: true
               }).then((result) => {
                 if (result.value) {
-                  swalWithBootstrapButtons.fire(
-                    'Deleted!',
-                    'Your file has been deleted.',
+                    window.location = "/delete/"+userid  
+                    if(userid == userid)(
+                        swalWithBootstrapButtons.fire(
+                    
+                    'berhasil di hapus!',   
+                    'akun meresahkan ini berhasil di hapus',
                     'success'
+                    
                   )
+                    )
                 } else if (
                   // Read more about handling dismissals
                   result.dismiss === Swal.DismissReason.cancel
                 ) {
                   swalWithBootstrapButtons.fire(
-                    'Cancelled',
-                    'Your imaginary file is safe :)',
+                    'cancel',
+                    'semoga ngak kepencet lagi ya hehe :)',
                     'error'
                   )
                 }
             })
         });
+
 
         //Custom Image
         $('#sa-image').click(function () {

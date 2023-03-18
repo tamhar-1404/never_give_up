@@ -13,8 +13,8 @@ class Index04b9Controller extends Controller
         return view('user_login.index04b9');
         }
     public function cerpen(){
-        $cerpen = cerpen::where('status', 'setuju')->get();
-        return view('user_login.cerpen',['cerpen'=>$cerpen]);
+        $postingan = postingan::where('status', 'setuju')->where('kategori_id', '1')->get();
+        return view('user_login.cerpen',['postingan'=>$postingan]);
         }
 
     public function artikel(){
@@ -90,7 +90,7 @@ class Index04b9Controller extends Controller
     }
    
     public function cerpenbaik($id){
-        $postingan = postingan::find($id);
+        $postingan = postingan::find($id);  
         // $postingan = postingan::where('id', $data )->get();
     return view('user_login.cerpen-baik', compact('postingan'));
     }

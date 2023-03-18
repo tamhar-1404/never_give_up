@@ -171,9 +171,9 @@
                         <li class="has_sub">
                             <a href="javascript:void(0);" class="waves-effect"><i class="ti-files"></i><span> Halaman </span><span class="float-right"><i class="mdi mdi-plus"></i></span></a>
                             <ul class="list-unstyled">
-                            <li><a href="{{Route('data-user')}}">Data pengguna</a></li>
-                                <li><a href="/pesan-dari-user">Pesan Dari pengguna</a></li>
-                                <li><a href="/postingan-yang-disematkan">postingan yang di Uprove</a></li>
+                            <li><a href="{{Route('data-user')}}">Data user</a></li>
+                            <li><a href="{{Route('data-blokir')}}">Data Pengguna Yang Di Blokir</a></li>
+                            <li><a href="/pesan-dari-user">Pesan Dari User</a></li>
                             </ul>
                         </li>
                         
@@ -227,8 +227,8 @@
                                             </ul>
                                             
                                             <div style="display: flex; justify-content: end;">
-                                            <a href="/hapus_kontak/{{ $item->id }}">
-                                            <button class="btn btn-danger" style="border-radius: 10%; "><span style="color: white; font-weight:bold; ">hapus</span></button>
+                                            <a href="#">
+                                            <button class="btn btn-danger delete" data-id="{{$item-> alasan}}" data-nama="{{$item ->username}}" style="border-radius: 10%; "><span style="color: white; font-weight:bold; ">hapus</span></button>
                                             </a>
                                         </div>
 
