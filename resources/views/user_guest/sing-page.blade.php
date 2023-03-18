@@ -160,12 +160,12 @@ button{
             </div>
         @endif -->
         <h3>Login </h3>
-
-        <label for="username">email</label>
-        <input class="sign-form__input-text @error('email') is-invalid @enderror" type="text" name="email" :value="old('email')" required autofocus id="email" placeholder="Email@gmail.com " />
         @if($errors->any())
         <h4>{{$errors->first()}}</h4>
         @endif
+
+        <label for="username">email</label>
+        <input class="sign-form__input-text @error('email') is-invalid @enderror" type="text" name="email" :value="old('email')" required autofocus id="email" placeholder="Email@gmail.com " />
         <label for="password">Password</label>
         <input class="sign-form__input-text @error('password') is-invalid @enderror" type="password"  name="password" required id="password" placeholder="Password" />
        

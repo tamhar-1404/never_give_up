@@ -47,7 +47,7 @@ class loginController extends Controller
         }
         
 
-        return redirect()->back()->withErrors(['msg' => 'salah, silakan coba lagi']);
+        return redirect()->back()->withErrors(['msg' => 'emai atau password, silakan coba lagi']);
     }
 
 

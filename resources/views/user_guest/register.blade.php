@@ -18,12 +18,12 @@
 }
 body{
     /* background-color: #080710; */
-    background-image: url("upload/slide3.jpg");
+    background-image: url("upload/slide5.jpg");
     
 }
 .background{
     width: 430px;
-    height: 520px;
+    height: 500px;
     position: absolute;
     transform: translate(-50%,-50%);
     left: 50%;
@@ -53,7 +53,7 @@ body{
     bottom: -80px;
 }
 form{
-    height: 850px;
+    height: 800px;
     width: 500px;
     background-color: rgba(255,255,255,0.13);
     position: absolute;
@@ -153,10 +153,10 @@ button{
                   <div class="row justify-content-center">
                     <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
       
-                     
-      
+                      
                       <form class="mx-1 mx-md-4" method="POST" action="{{Route('create')}}" class="sign-form" enctype="multipart/form-data" >
                         @csrf
+                        <h3>Register</h3>
                         <div class="d-flex flex-row align-items-center mb-20">
                           
                           <div class="form-outline flex-fill mb-0">
@@ -208,6 +208,7 @@ button{
       
                         <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
                           <button  type="submit" id="submit_signup" class="btn btn-danger btn-lg" style="background-color: rgb(228, 72, 98)" >Register</button>
+                        Sudah punya Akun? <a href="user_login">Login</a>
                         </div>
       
                       </form>

@@ -598,7 +598,6 @@ Baca										</a>
 						<p class="section-header__description">
 							Berbagai Kategori postingan dengan gambar.
 						</p>
-						<div class="semua" style="display: flex; justify-content: end;"><a href="/semua"><p class="semuat" style="text-decoration: underline;">lihat semua</p></a></div>
 						
 						
 					</div>
@@ -1030,8 +1029,9 @@ Baca										</a>
 							<div class="col-md-4">
 	
 							<div class="footer__widget text-widget">
-								<img src="asset/Logo 2.png" style="width:100%;" alt="triptrip-logo">
-									<p class="footer__widget-description">
+							<a class="navbar-brand" style="width:60%;" href="index.html">
+									<img src="asset/Logo 2.png" style="width:100%;" alt="">
+								</a>									<p class="footer__widget-description">
 										Menggembangkan dunia baca tulis menggunakan website menuju dunia digital. Temukan berbagai artikel, postingan, cerita, jurnal dan buat postinganmu sendiri disini	
 									</p>
 								</div>

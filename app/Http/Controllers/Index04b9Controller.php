@@ -142,6 +142,20 @@ class Index04b9Controller extends Controller
     public function makalahpkn(){
     return view('user_login.makalah-pkn',['makalah-pkn']);
     }
-   
+
+    public function search(Request $request)
+	{
+		// menangkap data pencarian
+		$cari = $request->cari;
+ 
+    		// mengambil data dari table pegawai sesuai pencarian data
+		$artikel = DB::table('artikel')
+		->where('judul','like',"%".$cari."%")
+		->paginate();
+ 
+    		// mengirim data pegawai ke view index
+		return view('artikel',['artikel' => $artikel]);
+ 
+	}
 }
 ?>
