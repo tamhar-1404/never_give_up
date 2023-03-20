@@ -208,9 +208,9 @@
 										<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon>
 										<p class="" >{{$item->status}}</p>
 										<p class=""></p>{{$item->judul}}
-										<p class="card-text">{!!$item -> isi!!}</p>
+										<p class="card-text" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">{!!$item -> isi!!}</p>
 										<div style="width: 100%; display: flex; justify-content: center;  " >
-											<a class="contact-form__submit" href="/cerpen-baik/{{$item->id}}" style="margin-right: 20px; margin-bottom: 10px; ">
+											<a class="contact-form__submit"image.png style="margin-right: 20px; margin-bottom: 10px; ">
 												<i class="fa fa-caret-right" aria-hidden="true"></i>
 												Lihat
 											</a>

@@ -39,9 +39,15 @@ class Index04b9Controller extends Controller
     }
    
     public function makalah(){
-    return view('user_login.makalah',['makalah']);
-    }
-   
+        $makalah = postingan::where('status', 'setuju')->where('kategori_id', '7')->get();
+        return view('user_login.makalah',['makalah'=>$makalah]);
+        }
+     public function searchmakalah(Request $request)
+        {
+            $keyword = $request->search;
+            $makalah = postingan ::where('judul', 'like', "%" . $keyword . "%")->paginate(5);
+            return view('user_login.makalah', compact('makalah'))->with('i', (request()->input('page', 1) - 1) * 5);
+        }
     public function skripsi(){
     return view('user_login.skripsi',['skripsi']);
     }
@@ -93,7 +99,7 @@ class Index04b9Controller extends Controller
         $postingan = postingan::find($id);  
         // $postingan = postingan::where('id', $data )->get();
     return view('user_login.cerpen-baik', compact('postingan'));
-    }
+    }  
    
     public function puisipertiwi(){
     return view('user_login.puisi-pertiwi',['puisi-pertiwi']);
@@ -112,8 +118,10 @@ class Index04b9Controller extends Controller
     return view('user_login.ilustrasi-1',['ilustrasi-1']);
     }
    
-    public function makalahdetail(){
-    return view('user_login.makalah-detail',['makalah-detail']);
+    public function makalahdetail($id){
+     $kategori = postingan::find($id);  
+        // $postingan = postingan::where('id', $data )->get();
+    return view('user_login.makalah-detail', compact('makalahr'));
     }
    
     public function skripsidetail(){
@@ -144,18 +152,11 @@ class Index04b9Controller extends Controller
     }
 
     public function search(Request $request)
-	{
-		// menangkap data pencarian
-		$cari = $request->cari;
- 
-    		// mengambil data dari table pegawai sesuai pencarian data
-		$artikel = DB::table('artikel')
-		->where('judul','like',"%".$cari."%")
-		->paginate();
- 
-    		// mengirim data pegawai ke view index
-		return view('artikel',['artikel' => $artikel]);
- 
-	}
+    {
+        $keyword = $request->search;
+        $postingan = postingan ::where('judul', 'like', "%" . $keyword . "%")->paginate(5);
+        return view('user_login.cerpen', compact('postingan'))->with('i', (request()->input('page', 1) - 1) * 5);
+    }
+   
 }
 ?>

@@ -95,14 +95,20 @@
 				<div style="margin-bottom: 2%; display: flex; justify-content: space-between " >
 				<h1 >													
 					Cerpen	</h1>
-					<form class="search-form"  >
+					<form class="search-form"   method="get" action="{{ route('search') }}">
+
 						<div class="search-form__input-holders" style="width: 100% ;">
-							<input class="search-form__input" type="text" name="search-event" placeholder="Cari Judul Postingan" >
-								<a class="btn-default" href="#">
+							<input class="search-form__input" type="text" name="search" placeholder="Cari Judul Postingan" >
+								<button class="btn-default" type="submit">
 									<i class="fa fa-search" aria-hidden="true"></i>
-								</a>
+								</button>
 								</div>
 							</form >
+							@if ($message = Session::get('success'))
+							<div class="alert alert-success">
+								<p>{{ $message }}</p>
+							</div>
+							@endif
 						</div>
 					</div>
 		<!-- End Header -->
@@ -131,7 +137,7 @@
 						<div class="card" style="border-radius: 15px;">
 						<div class="card-body">
 							<div style=" display: flex; justify-content:space-between;">
-								<img class="" style="border-radius: 100%; width: 30px; height: 30px; " src="asset/{{$item->User->foto}}" alt="">
+								<img class="" style="border-radius: 100%; width: 30px; height: 30px; " src="foto/{{$item->User->foto}}" alt="">
 								<a class="place-post__like" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
 
 								<p style="color:black; font-family: Georgia, 'Times New Roman', Times, serif; margin:10px;">
@@ -145,9 +151,9 @@
 							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon>
 							<p class="card-text-judul">{{$item->judul}}</p>
 							
-							<p class="card-text mb-0" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">{{$item->isi}}</p>
+							<p class="card-text mb-50" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">{{$item->isi}}</p>
 							<div style="width: 100%; display: flex; justify-content: center;  " >
-								<a class="contact-form__submit" href="" style="margin-right: 20px; margin-bottom: 10px; ">
+								<a class="contact-form__submit" href="/cerpen-baik/{{$item->id}}" style="margin-right: 20px; margin-bottom: 10px; ">
 									<i class="fa fa-caret-right" aria-hidden="true"></i>
 									Baca
 								</a>

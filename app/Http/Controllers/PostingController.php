@@ -32,4 +32,16 @@ class PostingController extends Controller
         $postingan->save();
         return redirect('/user-login');
     }
+    public function search(Request $request)
+    {
+        $keyword = $request->search;
+        $postingan = postingan ::where('judul', 'like', "%" . $keyword . "%")->paginate(5);
+        return view('user_login.cerpen', compact('postingan'))->with('i', (request()->input('page', 1) - 1) * 5);
+    }
+    public function searchmakalah(Request $request)
+    {
+        $keyword = $request->search;
+        $postingan = postingan ::where('judul', 'like', "%" . $keyword . "%")->paginate(5);
+        return view('user_login.makalah', compact('postingan'))->with('i', (request()->input('page', 1) - 1) * 5);
+    }
 }

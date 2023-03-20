@@ -89,7 +89,7 @@
 							<div class="col-sm-9">
 								
 								<h1 class="listing-detail__title listing-detail__title-black">
-									<span>Administrasi Bisnis Falkutas Ilmu Sosial Dan Ilmu Politik </span>
+									<span>{{$kategori->judul}}</span>
 									<!-- <span cla	ss="listing-detail__rate">9.3 <span>/ 10</span></span> -->
 								</h1>
 								<div style="display: flex; justify-content: space-between;">

@@ -117,26 +117,16 @@
 								<p class="single-post__description">
 									{{$postingan->isi}}
 								</p>
-
 								<!-- Contact form module -->
-								<form class="contact-form" id="leave-review">
-									<h2 class="contact-form__title">
-										KOMENTAR
-									</h2>
-									<div class="row">
-										<div class="col-md-6">
-											<p class="contact-form__rate">
-												komentarmu dapat membantu pembuat karya
-											</p>
+								<form class="contact-form inner-review" id="leave-review">
+									<div class="inner-review__form">
+										<img src="upload/avatar1.jpg" alt="">
+										<div class="inner-review__form-box">
+											<textarea class="contact-form__textarea" name="comment" id="comment" placeholder="Silahkan tinggalkan komentar"></textarea>
 											
+											<input class="contact-form__submit" type="submit" name="submit-contact" id="submit_contact" value="Kirim" />
 										</div>
-										
 									</div>
-									<div class="row">
-										
-									</div>
-									<textarea class="contact-form__textarea" name="comment" id="comment" placeholder="Komentar"></textarea>
-									<input class="contact-form__submit" type="submit" name="submit-contact" id="submit_contact" value="Kirim" /> 
 								</form>
 								<!-- End Contact form module -->
 								<!-- <h3 class="single-post__line-title">

@@ -1042,7 +1042,7 @@ Baca										</a>
 								<div class="footer__widget subscribe-widget">
 									<h2 class="footer__widget-title">
 										Alamat
-									</h2>
+									</h2><br>
 									<p class="footer__widget-description">
 										Jl. Pandawa No. 66, Dusun Mawar RT 001 RW 001 Desa Pandan
 									</p>
@@ -1059,8 +1059,8 @@ Baca										</a>
 	
 								<div class="footer__widget text-widget">
 									<h2 class="footer__widget-title">
-										Kontak
-									</h2>
+										Kontak Kami
+									</h2><br>
 									<p class="footer__widget-description">
 										+62 898-1342-6657<br>
 									info@example.com <br>
