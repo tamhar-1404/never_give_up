@@ -548,6 +548,9 @@
     <script src="assets/plugins/morris/morris.min.js"></script>
     <script src="assets/plugins/raphael/raphael.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
     <!-- KNOB JS -->
     <script src="assets/plugins/jquery-knob/excanvas.js"></script>
     <script src="assets/plugins/jquery-knob/jquery.knob.js"></script>
