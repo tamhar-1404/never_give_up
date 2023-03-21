@@ -134,7 +134,8 @@
 <div class="container">
 	<div class="row gutters">
 		<form action="{{Route('upprof')}}"  method="post" enctype="multipart/form-data" style="display:flex;">
-			@csrf			
+			@csrf
+			@method('PUT')	
 			<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
 				<div class="card h-100">
 					<div class="card-body">
@@ -147,7 +148,8 @@
 
 								<h5 class="user-name">{{$user->username}}</h5>
 								<h6 class="user-email">{{$user->email}}</h6><br>
-								<input name="foto" type="file" class="filestyle"  dadata-input="false"ta-buttonname="btn-secondary" style="width: 43%;   font-size: 12px;">
+								<input name="foto" type="file" class="filestyle" data-input="false" data-buttonname="btn-secondary" style="width: 43%;   font-size: 12px;">
+								<input type="hidden" name="foto_lama" value="{{$user->foto}}">
 							</div>
 							
 							<div class="aboutt">
@@ -168,7 +170,7 @@
 							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 								<div class="form-group">
 									<label for="fullName">Nama Lengkap</label>
-									<input class="form-control" type="text" name="namalengkap" value="{{$user->namalengkap}}" data-input="false" id="namalengkap" placeholder="Masukkan Nama Lengkap">
+									<input class="form-control" type="text" name="namalengkap" value="{{$user->namalengkap}}"  id="namalengkap" placeholder="Masukkan Nama Lengkap">
 								</div>
 							</div>
 							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
@@ -186,26 +188,26 @@
 							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 								<div class="form-group">
 									<label for="website">Akun Media Sosial</label>
-									<input type="url" name="." value="" class="form-control" id="website" placeholder="Masukkan Akun Instagram">
+									<input type="text" name="medsos" value="{{$user->medsos}}" class="form-control" id="website" placeholder="Masukkan username Instagram">
 								</div>
 							</div>
 							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 								<div class="form-group">
 									<label for="website">Tanggal Lahir</label>
-									<input type="url" name="l" value="" class="form-control" id="website" placeholder="Masukkan Akun Instagram">
+									<input type="date" name="tgllahir" value="{{$user->tgllahir}}" class="form-control" id="website" placeholder="Masukkan Akun Instagram">
 								</div>
 							</div>
 							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 								<div class="form-group">
 									<label for="website">Asal Kota</label>
-									<input type="url" name="l" value="" class="form-control" id="website" placeholder="Masukkan Akun Instagram">
+									<input type="text" name="askot" value="{{$user->askot}}" class="form-control" id="website" placeholder="Masukkan asal kota">
 								</div>
 							</div>
 						</div>
 						<div class="row gutters">
 							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 								<div class="text-right">
-									<a href="/user-page" class="btn btn-secondary" type="button" id="submit" name="submit">Batal</a>
+									<a href="/user-page" class="btn btn-secondary" type="button" id="" name="">Batal</a>
 									<button  class="btn btn-primary" type="submit" id="submit" name="submit" >Simpan</button>
 									<!-- <button type="button" id="submit" name="submit" class="btn btn-primary">Simpan</button> -->
 								</div>
