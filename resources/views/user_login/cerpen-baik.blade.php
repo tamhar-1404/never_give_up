@@ -115,7 +115,7 @@
 								<!-- <p>{{$postingan->foto}}</p> -->
 
 								<p class="single-post__description">
-									{{$postingan->isi}}
+									{!!$postingan->isi!!}
 								</p>
 								<!-- Contact form module -->
 								<form class="contact-form inner-review" id="leave-review">

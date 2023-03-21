@@ -49,8 +49,9 @@ class Index04b9Controller extends Controller
             return view('user_login.makalah', compact('makalah'))->with('i', (request()->input('page', 1) - 1) * 5);
         }
     public function skripsi(){
-    return view('user_login.skripsi',['skripsi']);
-    }
+            $kategori = postingan::where('status', 'setuju')->where('kategori_id', '8')->get();
+            return view('user_login.skripsi',['kategori'=>$kategori]);
+            }
    
     public function pantun(){
     return view('user_login.pantun',['pantun']);
@@ -121,7 +122,7 @@ class Index04b9Controller extends Controller
     public function makalahdetail($id){
      $kategori = postingan::find($id);  
         // $postingan = postingan::where('id', $data )->get();
-    return view('user_login.makalah-detail', compact('makalahr'));
+    return view('user_login.makalah-detail', compact('kategori'));
     }
    
     public function skripsidetail(){

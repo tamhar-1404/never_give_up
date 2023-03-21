@@ -12,8 +12,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
-	<link rel="stylesheet" href="css/triptip-assets.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="{{asset('css/triptip-assets.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
 
 </head>
 <body>
@@ -27,9 +27,9 @@
 				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 					<div class="container">
 	
-						<a class="navbar-brand" style="width:13%;" href="/index04b9">
-							<img src="asset/Logo 1.png" style="width:100%;" alt="">
-						</a>
+					<a class="navbar-brand" style="width:13%;" href="/user-login">
+							<img src="{{asset('/asset/logo 1.png')}}" style="width:100%;" alt="">
+					</a>
 	
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
@@ -38,7 +38,7 @@
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav mr-auto">
 								<li>
-									<a class="active" href="/user-login">Beranda <i class="" aria-hidden="true"></i></a>
+									<a class="" href="/user-login">Beranda <i class="" aria-hidden="true"></i></a>
 								</li>
 								<li ><a  href="#">Kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
 									<div class="megadropdown">
@@ -93,22 +93,22 @@
 									<!-- <span cla	ss="listing-detail__rate">9.3 <span>/ 10</span></span> -->
 								</h1>
 								<div style="display: flex; justify-content: space-between;">
-									<p>Di upload oleh: Monica</p>
-									
-								</div>
-								
-								<!-- <p class="listing-detail__address">
-									<i class="fa fa-map-marker"></i>1149 3rd St (Wilshire), Santa Monica
-									<span class="listing-detail__dollar-rate">
-										<i class="fa fa-usd red-col" aria-hidden="true"></i>
-										<i class="fa fa-usd red-col" aria-hidden="true"></i>
-										<i class="fa fa-usd" aria-hidden="true"></i>
-										<i class="fa fa-usd" aria-hidden="true"></i>
-									</span>
-									<span class="listing-detail__description-review-numb">
-										23 Reviews
-									</span>
-								</p> -->
+								<ul class="single-post__list">
+					<li class="single-post__list-item">
+						<i class="la la-calendar-check-o"></i>
+						<span>{{$kategori->created_at}}</span>
+					</li>
+					<li class="single-post__list-item">
+						<i class="la la-comments"></i>
+						<a href="#leave-review">komentar</a>
+					</li>
+					<li class="single-post__list-item">
+						<i class="fa fa-heart-o" aria-hidden="true"></i>
+							suka
+					</li>
+				</ul>
+			</div>
+							
 							</div>
 							<div class="col-sm-3" >
 								
@@ -138,12 +138,12 @@
 
 							<div class="user-detail__review-box owl-wrapper">
 									<div class="owl-carousel" data-num="3" >
-										<img style="width:103%;" src="asset/sampul-makalah.webp" alt="" srcset="">
-										<img style="width:103%;" src="asset/sampul-makalah.webp" alt="" srcset="">
-										<img style="width:103%;" src="asset/sampul-makalah.webp" alt="" srcset="">
-										<img style="width:103%;" src="asset/sampul-makalah.webp" alt="" srcset="">
-										<img style="width:103%;" src="asset/sampul-makalah.webp" alt="" srcset="">
-										<img style="width:103%;" src="asset/sampul-makalah.webp" alt="" srcset="">
+										<img style="width:103%;" src="{{asset('asset/' .  	$kategori->foto)}}" alt="" srcset="">
+										<img style="width:103%;" src="{{asset('asset/' .  	$kategori->foto)}}" alt="" srcset="">
+										<img style="width:103%;" src="{{asset('asset/' .  	$kategori->foto)}}" alt="" srcset="">
+										<img style="width:103%;" src="{{asset('asset/' .  	$kategori->foto)}}" alt="" srcset="">
+										<img style="width:103%;" src="{{asset('asset/' .  	$kategori->foto)}}" alt="" srcset="">
+										<img style="width:103%;" src="{{asset('asset/' .  	$kategori->foto)}}" alt="" srcset="">
 									</div>
 								</div>
 								
@@ -154,20 +154,7 @@
 										<h2>Ringkasan  </h2>
 									
 										<p class="listing-detail__content-description" style="color: black;">
-											Makalah adalah salah satu jenis karya tulis ilmiah yang membahas satu 
-											permasalahan tertentu sebagai haril kajian pustaka ataupun kajian lapangan.
-											Makalah disusun dengan tujuan untuk memenuhi tugas tertentu (tugas akademik 
-											maupun tugas non akademik). Sistematika pembuatan makalah yaitu bagian awal, 
-											bagian isi dan bagian penutup. Sementara rangkuman dapat diartikan sebagai 
-											suatu hasil merangkum atau meringkas suatu tulisan atau pembicaraan menjadi 
-											suatu uraian yang lebih singkat dengan perbandingan secara proposional antara 
-											bagian yang dirangkum dengan rangkumannya. Dan buku adalah kumpulan kertas 
-											atau bahan lain yang dijilid menjadi satu pada salah satu ujungnya dan berisi 
-											tulisan atau gambar. Hubungan antara membaca dan menulis antara dengan 
-											menulis pada dasarnya adalah hubungan pembaca dan penulis yang saling 
-											keterkaitan dan saling membutuhkan. Tugas penulis adalah 
-											mengatur/menggerakan suatu proses yang mengakibatkan suatu perubahan 
-											tertentu dalam bayangan/kesan membaca.
+										{!!$kategori->isi!!}
 									</p>
 
 									</div>
@@ -405,7 +392,7 @@
 										</li>
 										<li>
 											<i class="la la-link"></i>
-											momonica@gmail.com
+											{{Auth()->user()->email}}
 										</li>
 										<div style="width:70%; display: flex; justify-content: end; margin-left: 45%; margin-top: 20px;" >
 											<a class="contact-form__submit" href="/makalah-pkn" style="margin-right: 20px; margin-bottom: 10px;">
@@ -440,9 +427,9 @@
 											<div class="row">
 												<div class="col-7">
 													<div class="author-wrapper__content">
-														<a class="author-wrapper__image" href="#"><img src="upload/avatar1.jpg" alt=""></a>
+														<a class="author-wrapper__image" href="/user-page"><img  src="foto/{{Auth()->User()->foto}}" alt=""></a>
 														<h3 class="author-wrapper__title">
-															<a href="#">Monica</a>
+															<a href="/user-page">{{Auth()->user()->username}}</a>
 															<span class="author-wrapper__location">
 																Malang
 															</span>
@@ -519,7 +506,7 @@
 	
 								<div class="footer__widget text-widget">
 								<a class="navbar-brand" style="width:60%;" href="index.html">
-									<img src="asset/Logo 1.png" style="width:100%;" alt="">
+									<img src="{{asset('/asset/logo 1.png')}}" style="width:100%;" alt="">
 								</a>
 									<p class="footer__widget-description">
 										Menggembangkan dunia baca tulis menggunakan website menuju dunia digital. Temukan berbagai artikel, postingan, cerita, jurnal dan buat postinganmu sendiri disini	
@@ -532,7 +519,7 @@
 								<div class="footer__widget subscribe-widget">
 									<h2 class="footer__widget-title footer__widget-title-white">
 										Alamat
-									</h2>
+									</h2><br>
 									<p class="footer__widget-description">
 										Jl. Pandawa No. 66, Dusun Mawar RT 001 RW 001 Desa Pandan
 									</p>
@@ -544,8 +531,8 @@
 	
 								<div class="footer__widget text-widget">
 									<h2 class="footer__widget-title footer__widget-title-white">
-										Kontak 
-									</h2>
+										Kontak Kami
+									</h2><br>
 									<p class="footer__widget-description">
 										+62 898-1342-6657<br>
 										info@example.com <br>
@@ -584,14 +571,14 @@
 	</div>
 	<!-- End Container -->
 	
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.migrate.js"></script>
+	<script src="{{asset('js/jquery.min.js')}}"></script>
+	<script src="{{asset('js/jquery.migrate.js')}}"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiqrIen8rWQrvJsu-7f4rOta0fmI5r2SI"></script>
-	<script src="js/triptip-plugins.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.countTo.js"></script>
-	<script src="js/script.js"></script>
+	<script src="{{asset('js/triptip-plugins.min.js')}}"></script>
+	<script src="{{asset('js/popper.js')}}"></script>
+	<script src="{{asset('js/bootstrap.min.js')}}"></script>
+	<script src="{{asset('js/jquery.countTo.js')}}"></script>
+	<script src="{{asset('js/script.js')}}"></script>
 	
 </body>
 

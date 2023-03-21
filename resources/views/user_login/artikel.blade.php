@@ -50,7 +50,7 @@
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
 						<ul class="navbar-nav mr-auto">
 							<li>
-								<a class="active" href="/user-login">Beranda <i class="" aria-hidden="true"></i></a>
+								<a class="" href="/user-login">Beranda <i class="" aria-hidden="true"></i></a>
 								
 							</li>
 							<li ><a  href="#">Kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
@@ -400,7 +400,7 @@
 								<div class="footer__widget subscribe-widget">
 									<h2 class="footer__widget-title footer__widget-title-white">
 										Alamat
-									</h2>
+									</h2><br>
 									<p class="footer__widget-description">
 										Jl. Pandawa No. 66, Dusun Mawar RT 001 RW 001 Desa Pandan
 									</p>
@@ -412,8 +412,8 @@
 	
 								<div class="footer__widget text-widget">
 									<h2 class="footer__widget-title footer__widget-title-white">
-										Kontak 
-									</h2>
+										Kontak Kami
+									</h2><br>
 									<p class="footer__widget-description">
 										+62 898-1342-6657<br>
 										info@example.com <br>
