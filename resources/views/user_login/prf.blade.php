@@ -125,6 +125,7 @@
 				<li><a href="/contact">Hubungi Kami</a></li>	
 			</ul>
 			<a href="/user-login" class="add-list-btn btn-default">Kembali</a>	
+		</div>
 	</div>
 </nav>
 </header>
@@ -133,8 +134,7 @@
 <div class="container">
 	<div class="row gutters">
 		<form action="{{Route('upprof')}}"  method="post" enctype="multipart/form-data" style="display:flex;">
-			@csrf
-			@method('put')
+			@csrf			
 			<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12 col-12">
 				<div class="card h-100">
 					<div class="card-body">
@@ -147,7 +147,7 @@
 
 								<h5 class="user-name">{{$user->username}}</h5>
 								<h6 class="user-email">{{$user->email}}</h6><br>
-								<input name="foto" type="file" class="filestyle" data-input="false" data-buttonname="btn-secondary" style="width: 43%;   font-size: 12px;">
+								<input name="foto" type="file" class="filestyle"  dadata-input="false"ta-buttonname="btn-secondary" style="width: 43%;   font-size: 12px;">
 							</div>
 							
 							<div class="aboutt">
@@ -168,13 +168,13 @@
 							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 								<div class="form-group">
 									<label for="fullName">Nama Lengkap</label>
-									<input type="text" name="namelengkap" value="{{$user->namalengkap}}" class="form-control" id="fullName" placeholder="Masukkan Nama Lengkap">
+									<input class="form-control" type="text" name="namalengkap" value="{{$user->namalengkap}}" data-input="false" id="namalengkap" placeholder="Masukkan Nama Lengkap">
 								</div>
 							</div>
 							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 								<div class="form-group">
 									<label for="eMail">Email</label>
-									<input type="email" name="email" value="{{$user->email}}" class="form-control" id="eMail" placeholder="Masukkan Alamat Email">
+									<input type="email" name="email" value="{{$user->email}}" class="form-control" id="email" placeholder="Masukkan Alamat Email">
 								</div>
 							</div>
 							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
@@ -186,19 +186,19 @@
 							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 								<div class="form-group">
 									<label for="website">Akun Media Sosial</label>
-									<input type="url" name="namelengkap" value="" class="form-control" id="website" placeholder="Masukkan Akun Instagram">
+									<input type="url" name="." value="" class="form-control" id="website" placeholder="Masukkan Akun Instagram">
 								</div>
 							</div>
 							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 								<div class="form-group">
 									<label for="website">Tanggal Lahir</label>
-									<input type="url" name="namelengkap" value="" class="form-control" id="website" placeholder="Masukkan Akun Instagram">
+									<input type="url" name="l" value="" class="form-control" id="website" placeholder="Masukkan Akun Instagram">
 								</div>
 							</div>
 							<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
 								<div class="form-group">
 									<label for="website">Asal Kota</label>
-									<input type="url" name="namelengkap" value="" class="form-control" id="website" placeholder="Masukkan Akun Instagram">
+									<input type="url" name="l" value="" class="form-control" id="website" placeholder="Masukkan Akun Instagram">
 								</div>
 							</div>
 						</div>
@@ -206,7 +206,7 @@
 							<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 								<div class="text-right">
 									<a href="/user-page" class="btn btn-secondary" type="button" id="submit" name="submit">Batal</a>
-									<button  class="btn btn-primary" type="submit" id="submit" >Simpan</button>
+									<button  class="btn btn-primary" type="submit" id="submit" name="submit" >Simpan</button>
 									<!-- <button type="button" id="submit" name="submit" class="btn btn-primary">Simpan</button> -->
 								</div>
 							</div>
@@ -218,75 +218,5 @@
 	</div>
 </div>
 
-<footer class="footer footer-black">
-				<div class="container">
-	
-					<div class="footer__up-part">
-						<div class="row">
-							<div class="col-md-4">
-	
-								<div class="footer__widget text-widget">
-								<a class="navbar-brand" style="width:60%;" href="index.html">
-									<img src="asset/Logo 1.png" style="width:100%;" alt="">
-								</a>
-									<p class="footer__widget-description">
-										Menggembangkan dunia baca tulis menggunakan website menuju dunia digital. Temukan berbagai artikel, postingan, cerita, jurnal dan buat postinganmu sendiri disini	
-									</p>
-								</div>
-	
-							</div>
-							<div class="col-md-4">
-	
-								<div class="footer__widget subscribe-widget">
-									<h2 class="footer__widget-title footer__widget-title-white">
-										Alamat
-									</h2>
-									<p class="footer__widget-description">
-										Jl. Pandawa No. 66, Dusun Mawar RT 001 RW 001 Desa Pandan
-									</p>
-									
-								</div>
-	
-							</div>
-							<div class="col-md-4">
-	
-								<div class="footer__widget text-widget">
-									<h2 class="footer__widget-title footer__widget-title-white">
-										Kontak 
-									</h2>
-									<p class="footer__widget-description">
-										+62 898-1342-6657<br>
-										info@example.com <br>
-										YouTube: ngu_never122
-									</p>
-								</div>
-	
-							</div>
-						</div>
-					</div>
-	
-					<div class="footer__down-part footer__down-part-black">
-						<div class="row">
-							<div class="col-md-7">
-								<p class="footer__copyright">
-									© Copyright 2018 - All Rights Reserved
-								</p>
-							</div>
-							<div class="col-md-5">
-								<ul class="footer__social-list">
-									<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-									<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-									<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-									<li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
-									<li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-	
-				</div>
-	
-			</footer>
-</div>
 </body>
 </html>

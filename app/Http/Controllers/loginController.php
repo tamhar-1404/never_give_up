@@ -63,7 +63,7 @@ class loginController extends Controller
             'email' => $request-> email,
             'password' => bcrypt($request->password),
             'remember_token' => Str::random(60),
-            // 'foto' => $request->foto,
+            
             'role' => 'User',
         
         ]);
@@ -105,11 +105,13 @@ class loginController extends Controller
         $data = auth()->user();
         $this->validate($request, [
             'foto' => 'required|mimes:jpeg,png,jpg',
+            'namalengkap' => 'required',
         ]);
         // dd($request);
         if($data -> foto != 'default.jpg'){
         Unlink('foto/'.$data->foto);
-        }
+        };
+
         $type = $request->file('foto')->getClientOriginalExtension();
         $filename = time().'.'.$type;
         $request->file('foto')->move('foto/',$filename);

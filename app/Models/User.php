@@ -11,9 +11,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class User extends Authenticatable
 {
+   
     use HasApiTokens, HasFactory, Notifiable;
     
-     public function postingan() : HasMany
+     public function postingan() 
     {
         return $this-> HasMany(postingan::class);
     }
@@ -31,6 +32,23 @@ class User extends Authenticatable
         'email',
         'password',
         'foto',
+        'namalengkap',
+        'notlp',
+        'medsos',
+        'tgllahir',
+        'askot',
+
+    ];
+    protected $guarded = [
+        'username',
+        'email',
+        'password',
+        'foto',
+        'namalengkap',
+        'notlp',
+        'medsos',
+        'tgllahir',
+        'askot',
     ];
 
     /**

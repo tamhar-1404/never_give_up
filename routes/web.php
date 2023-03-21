@@ -106,7 +106,7 @@ Route::group(['middleware'=> ['auth', 'hakakses:user']], function(){
     Route::post('/simpan_cerpen', [PostingController::class, 'simpan_postingan']);
     Route::get('/logout', [loginController::class, 'logout']);
     //update
-    Route::put('/upprof', [loginController::class, 'upprof'])->name('upprof');
+    Route::post('/upprof', [loginController::class, 'upprof'])->name('upprof');
         
     Route::get('/cerpen', [Index04b9Controller::class, 'cerpen'])-> name('cerpen');
     Route::get('/artikel', [Index04b9Controller::class, 'artikel'])-> name('artikel');
@@ -139,7 +139,9 @@ Route::group(['middleware'=> ['auth', 'hakakses:user']], function(){
     Route::get('/pantun-1', [Index04b9Controller::class, 'pantun1'])-> name('pantun-1');
     Route::get('/essai-1', [Index04b9Controller::class, 'essai1'])-> name('essai-1');
     Route::get('/makalah-pkn', [Index04b9Controller::class, 'makalahpkn'])-> name('makalah-pkn');
-
+    Route::get('/search', [PostingController::class, 'search'])->name('search');
+    Route::get('/makalahdetail/{id}', [Index04b9Controller::class, 'makalahdetail'])-> name('makalahdetail');
+    Route::get('/searchmakalah', [Index04b9Controller::class, 'searchmakalah'])->name('searchmakalah');
 });
 });
 

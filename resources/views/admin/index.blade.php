@@ -20,6 +20,8 @@
     <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
 
+
+
 </head>
 
 <body class="fixed-left">
@@ -373,10 +375,10 @@
                                         </div>
                                         <br>
 
-                                        <h5>skripsi <span class="text-primary float-right"><b>78%</b></span></h5>
+                                        <h5>skripsi <span class="text-primary float-right"><b>90%</b></span></h5>
                                         <span class="text-primary float-right"><b></b></span></h5>
                                         <div class="progress" style="height: 10px;">
-                                            <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="78"></div>
+                                            <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" style="width: 78%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="90"></div>
                                         </div>
                                         <br>
 
@@ -431,10 +433,9 @@
                                                 {!!$post -> isi!!}
                                                 <div style="display: flex; gap: 10px; " class="row justify-content-between ">
                                                     <a href="tampilan_user/cerpen-baik.html" class="btn btn-primary col-5" style="font-size: 11px;">Lihat</a>
-                                                    <form action="{{Route('tolak', $post->id)}} " method="post" class="col-5">
-                                                    @csrf
-                                                    <button  type="submit" class="btn btn-danger " style="font-size: 11px;" >tolak </button>
-                                                    </form>
+                                                  
+                                                    <button type="button" data-bs-target="#exampleModal" data-bs-toggle="modal" class="btn btn-danger " style="font-size: 11px;" >tolak </button>
+                                                   
                                                     <form action="{{Route('uprove', $post->id)}} " method="post" class="col-5">
                                                     @csrf
                                                     <button  type="submit" class="btn btn-success " style="font-size: 11px;" >setuju </button>
@@ -444,8 +445,29 @@
                                             </div>
                                             </div>
                                         </div>
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title fs-2" id="exampleModalLabel">Modal title</h4>
+                                                    </div>
+                                                <div class="modal-body">
+                                                   <textarea name="" id="" cols="60" rows="5"></textarea>
+                                                </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">batal</button>
+                                                        <form action="{{Route('tolak', $post->id)}}" method="post">
+                                                            @csrf
+                                                        <button type="button" class="btn btn-success">Save changes</button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- end modals -->
                                      @endforeach   
-                                        
+                                        <!-- modals -->
+                                       
                                         </div>
                                 </div>
 
@@ -529,7 +551,8 @@
 		<!-- End Header -->
 
 		
-           
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
             
     <!-- jQuery  -->
     <script src="assets/js/jquery.min.js"></script>
