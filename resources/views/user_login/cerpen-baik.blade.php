@@ -25,9 +25,9 @@
 				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 					<div class="container">
 	
-						<a class="navbar-brand" href="index.html">
-							<img src="{{asset('image/logo.png')}}" alt="">
-						</a>
+					<a class="navbar-brand" style="width:13%;" href="/user-login">
+							<img src="{{asset('/asset/logo 1.png')}}" style="width:100%;" alt="">
+					</a>
 	
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
@@ -115,7 +115,7 @@
 								<!-- <p>{{$postingan->foto}}</p> -->
 
 								<p class="single-post__description">
-									{{$postingan->isi}}
+								{!!$postingan->isi!!}
 								</p>
 								<!-- Contact form module -->
 								<form class="contact-form inner-review" id="leave-review">
