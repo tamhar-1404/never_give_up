@@ -104,32 +104,32 @@ class loginController extends Controller
         
         $data = auth()->user();
         $this->validate($request, [
-            'foto' => 'required|mimes:jpeg,png,jpg',
-            'namalengkap' => 'required',
+            'foto' => 'mimes:jpg,png',
         ]);
-        // dd($request);
-        if($data -> foto != 'default.jpg'){
-        Unlink('foto/'.$data->foto);
-        };
-
-        $type = $request->file('foto')->getClientOriginalExtension();
-        $filename = time().'.'.$type;
-        $request->file('foto')->move('foto/',$filename);
-        $isi = [
-            
-      
-            'email' => $request-> email,
-            'namalengkap' => $request-> namalengkap,
-            'notlp' => $request-> notlp,
-            'medsos' => $request-> medsos,
-            'tgllahir' => $request-> tgllahir,
-            'askot' => $request-> askot,
-            'foto' => $filename,
-        ];
+        
+        if($request->hasFile('foto')){
+            if($data -> foto != 'default.jpg'){
+                Unlink('foto/'.$data->foto);
+                };
+            $type = $request->file('foto')->getClientOriginalExtension();
+       
+            $filename = time().'.'.$type;
+            $request->file('foto')->move('foto/',$filename);
+            $data->foto = $filename;
+        }else{
+            $data -> foto = $request -> foto_lama;
+        }
+       
+        $data -> namalengkap = $request-> namalengkap;
+        $data -> email = $request-> email;
+        $data -> notlp = $request-> notlp;
+        $data -> medsos = $request-> medsos;
+        $data -> tgllahir = $request-> tgllahir;
+        $data -> askot = $request-> askot;
        
         
-        $data->update($isi);
-        // $data->save();
+        // $data->update($isi);
+        $data->save();
     
 
         return redirect()->back()->with('sukses','Data Berhasil di Perbarui');

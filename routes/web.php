@@ -106,7 +106,7 @@ Route::group(['middleware'=> ['auth', 'hakakses:user']], function(){
     Route::post('/simpan_cerpen', [PostingController::class, 'simpan_postingan']);
     Route::get('/logout', [loginController::class, 'logout']);
     //update
-    Route::post('/upprof', [loginController::class, 'upprof'])->name('upprof');
+    Route::put('/upprof', [loginController::class, 'upprof'])->name('upprof');
         
     Route::get('/cerpen', [Index04b9Controller::class, 'cerpen'])-> name('cerpen');
     Route::get('/artikel', [Index04b9Controller::class, 'artikel'])-> name('artikel');
