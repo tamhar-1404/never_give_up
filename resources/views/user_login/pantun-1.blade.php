@@ -12,9 +12,18 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
-	<link rel="stylesheet" href="css/triptip-assets.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="{{asset('css/triptip-assets.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
+	<style>
+	.listing-detail__content-description{
 
+	 style="display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  margin: 0 auto;
+}
+</style>
 </head>
 <body>
 
@@ -27,8 +36,8 @@
 				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 					<div class="container">
 	
-						<a class="navbar-brand" style="width:13%;" href="index.html">
-							<img src="asset/Logo 1.png" style="width:100%;" alt="">
+						<a class="navbar-brand" style="width:13%;" href="/user-login">
+							<img src="{{asset('/asset/logo 1.png')}}" style="width:100%;" alt="">
 						</a>
 	
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +47,7 @@
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav mr-auto">
 								<li>
-									<a class="active" href="/user-login">Beranda <i class="" aria-hidden="true"></i></a>
+									<a class="" href="/user-login">Beranda <i class="" aria-hidden="true"></i></a>
 								</li>
 								<li ><a  href="#">Kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
 									<div class="megadropdown">
@@ -102,29 +111,38 @@
 				</ul>
 			</div>
 			<div class="container">
+			<div class="listing-detail__gal">
 				<div class="listing-detail__title-box">
-					<div class="row">
-						<div class="col-md-6">
-							<h1 class="listing-detail__title listing-detail__title-black">
-							sumanto
-							</h1>
-							</div>
-						<div class="col-md-6">
-							<div class="listing-detail__buttons">
-								<a class="btn-default btn-default-red navigate-btn" href="#leave-review">
-									<i class="la la-pencil" aria-hidden="true"></i>
-									komentar
-								</a>
-								<a class="btn-default btn-default-red" href="#">
-									<i class="la la-heart-o" aria-hidden="true"></i>
-									suka
-								</a>
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-9">
+							<h2 class="listing-detail__content-title">
 
-							</div>
-						</div>
-					</div>
-				</div>
+								<h1 class="listing-detail__title listing-detail__title-black">
+								{{$kategori->judul}}
+									<!-- <span cla	ss="listing-detail__rate">9.3 <span>/ 10</span></span> -->
+								</h1>
+								</div>
+								<div style="display: flex; justify-content: space-between;">
+								<ul class="single-post__list">
+					<li class="single-post__list-item">
+						<i class="la la-calendar-check-o"></i>
+						<span>{{$kategori->created_at}}</span>
+					</li>
+					<li class="single-post__list-item">
+						<i class="la la-comments"></i>
+						<a href="#leave-review">komentar</a>
+					</li>
+					<li class="single-post__list-item">
+						<i class="fa fa-heart-o" aria-hidden="true"></i>
+							suka
+					</li>
+				</ul>
 			</div>
+			</div>
+			</div>
+			</div>
+
 
 			<div class="listing-detail__content">
 				<div class="container">
@@ -134,13 +152,14 @@
 										<!-- overview box -->
 								<div class="listing-detail__overview" id="overview-box">
 
-									<h2 class="listing-detail__content-title">
-										Pantun Jenaka
-									</h2>
-
 									<div class="row">
 										<div class="col-md-6">
-											<p class="listing-detail__content-description with-border-top">
+											<p class="listing-detail__content-description" style="display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  margin: 0 auto;" >
+												
 												Sebelum berangkat belanja
 											Olahraga terlebih dahulu supaya sehat
 											Jika sudah terlalu lama bekerja
@@ -165,15 +184,14 @@
 									<ul class="sidebar__listing-list">
 										<li>
 											<i class="la la-map-marker"></i>
-											mattsmith@gmail.com										</li>
-										<li>
+											{{Auth()->user()->email}}
+											<li>
 											<i class="la la-mobile-phone"></i>
 											+44 20 7336 8898
 										</li>
 										<li>
 											<i class="la la-link"></i>
-											October 1, 2018 
-										</li>
+											{{$kategori->created_at}}										</li>
 										</ul><p></p>
 										<div class="sidebar__widget sidebar__widget-tags">
 									<h2 class="sidebar__widget-title">
@@ -207,7 +225,7 @@
 																<div class="author-wrapper__content">
 																	<a class="author-wrapper__image" href="#"><img src="upload/avatar1.jpg" alt=""></a>
 																	<h3 class="author-wrapper__title">
-																		<a href="#">Matt Smith</a>
+																		<a href="/user-page">>{{Auth()->user()->username}}</a>
 																		<span class="author-wrapper__location">
 																			New York
 																		</span>
@@ -275,7 +293,7 @@
 									<p class="review-item__description">
 										Sebelum berangkat belanja
 										Olahraga terlebih dahulu supaya sehat
-										Jika sudah terlalu lama bekerja...<a href="pantunn.html">Lihat lainnya</a>
+										Jika sudah terlalu lama bekerja...<a href="/pantun-1/{id}">lihat</a>
 										</div>	
 							</div>
 							<!-- end review item module -->
@@ -310,7 +328,7 @@
 										<p class="review-item__description">
 											Sebelum berangkat belanja
 											Olahraga terlebih dahulu supaya sehat
-											Jika sudah terlalu lama bekerja...<a href="pantun-jenaka.html">Lihat lainnya</a>
+											Jika sudah terlalu lama bekerja...<a href="/pantun-1/{id}">lihat</a>
 											</div>	
 								</div>
 								<!-- end review item module -->
@@ -344,7 +362,7 @@
 										<p class="review-item__description">
 											Sebelum berangkat belanja
 											Olahraga terlebih dahulu supaya sehat
-											Jika sudah terlalu lama bekerja...<a href="pantun-jenaka.html">Lihat lainnya</a>
+											Jika sudah terlalu lama bekerja...<a href="/pantun-1/{id}">lihat</a>
 											</div>	
 								</div>
 								<!-- end review item module -->
@@ -378,7 +396,7 @@
 										<p class="review-item__description">
 											Sebelum berangkat belanja
 											Olahraga terlebih dahulu supaya sehat
-											Jika sudah terlalu lama bekerja...<a href="pantun-jenaka.html">Lihat lainnya</a>
+											Jika sudah terlalu lama bekerja...<a href="/pantun-1/{id}">lihat</a>
 											</div>	
 								</div>
 								<!-- end review item module -->
@@ -412,7 +430,7 @@
 										<p class="review-item__description">
 											Sebelum berangkat belanja
 											Olahraga terlebih dahulu supaya sehat
-											Jika sudah terlalu lama bekerja...<a href="pantun-jenaka.html">Lihat lainnya</a>
+											Jika sudah terlalu lama bekerja...<a href="/pantun-1/{id}">lihat</a>
 											</div>	
 								</div>
 								<!-- end review item module -->
@@ -446,7 +464,7 @@
 										<p class="review-item__description">
 											Sebelum berangkat belanja
 											Olahraga terlebih dahulu supaya sehat
-											Jika sudah terlalu lama bekerja...<a href="pantun-jenaka.html">Lihat lainnya</a>
+											Jika sudah terlalu lama bekerja...<a href="/pantun-1/{id}">lihat</a>
 											</div>	
 								</div>
 								<!-- end review item module -->
@@ -583,8 +601,8 @@
 							<div class="col-md-4">
 	
 								<div class="footer__widget text-widget">
-								<a class="navbar-brand" style="width:60%;" href="index.html">
-									<img src="asset/Logo 1.png" style="width:100%;" alt="">
+								<a class="navbar-brand" style="width:60%;" href="/user-login">
+									<img src="{{asset('/asset/logo 1.png')}}" style="width:100%;" alt="">
 								</a>
 									<p class="footer__widget-description">
 										Menggembangkan dunia baca tulis menggunakan website menuju dunia digital. Temukan berbagai artikel, postingan, cerita, jurnal dan buat postinganmu sendiri disini	
@@ -597,7 +615,7 @@
 								<div class="footer__widget subscribe-widget">
 									<h2 class="footer__widget-title footer__widget-title-white">
 										Alamat
-									</h2>
+									</h2><br>
 									<p class="footer__widget-description">
 										Jl. Pandawa No. 66, Dusun Mawar RT 001 RW 001 Desa Pandan
 									</p>
@@ -609,8 +627,8 @@
 	
 								<div class="footer__widget text-widget">
 									<h2 class="footer__widget-title footer__widget-title-white">
-										Kontak 
-									</h2>
+										Kontak Kami
+									</h2><br>
 									<p class="footer__widget-description">
 										+62 898-1342-6657<br>
 										info@example.com <br>
@@ -649,14 +667,14 @@
 	</div>
 	<!-- End Container -->
 	
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.migrate.js"></script>
+	<script src="{{asset('js/jquery.min.js')}}"></script>
+	<script src="{{asset('js/jquery.migrate.js')}}"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiqrIen8rWQrvJsu-7f4rOta0fmI5r2SI"></script>
-	<script src="js/triptip-plugins.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.countTo.js"></script>
-	<script src="js/script.js"></script>
+	<script src="{{asset('js/triptip-plugins.min.js')}}"></script>
+	<script src="{{asset('js/popper.js')}}"></script>
+	<script src="{{asset('js/bootstrap.min.js')}}"></script>
+	<script src="{{asset('js/jquery.countTo.js')}}"></script>
+	<script src="{{asset('js/script.js')}}"></script>
 	
 </body>
 
