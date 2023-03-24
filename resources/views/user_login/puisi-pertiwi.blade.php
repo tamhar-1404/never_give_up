@@ -12,8 +12,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
-	<link rel="stylesheet" href="css/triptip-assets.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="{{asset('css/triptip-assets.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
 
 </head>
 <body>
@@ -27,8 +27,8 @@
 				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 					<div class="container">
 	
-						<a class="navbar-brand" style="width:13%;" href="index">
-							<img src="asset/Logo 1.png" style="width:100%;" alt="">
+						<a class="navbar-brand" style="width:13%;" href="/index04b9">
+							<img src="{{asset('/asset/logo 1.png')}}" style="width:100%;" alt="">
 						</a>
 	
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -86,22 +86,15 @@
 							<div class="col-sm-9">
 								
 								<h1 class="listing-detail__title listing-detail__title-black">
-									<span>Ibu Monica</span>
+								{{$puisi->judul}}
 									<!-- <span cla	ss="listing-detail__rate">9.3 <span>/ 10</span></span> -->
 								</h1>
-								<p>penulis: ibu pertiwi</p>
-								<!-- <p class="listing-detail__address">
-									<i class="fa fa-map-marker"></i>1149 3rd St (Wilshire), Santa Monica
-									<span class="listing-detail__dollar-rate">
-										<i class="fa fa-usd red-col" aria-hidden="true"></i>
-										<i class="fa fa-usd red-col" aria-hidden="true"></i>
-										<i class="fa fa-usd" aria-hidden="true"></i>
-										<i class="fa fa-usd" aria-hidden="true"></i>
-									</span>
-									<span class="listing-detail__description-review-numb">
-										23 Reviews
-									</span>
-								</p> -->
+								<ul class="single-post__list">
+										<li class="single-post__list-item">
+											<i class="la la-calendar-check-o"></i>
+											<span>{{$puisi->created_at}}</span>
+										</li>
+									</ul>
 							</div>
 							<div class="col-sm-3">
 								<div class="listing-detail__buttons listing-detail__buttons-icons">
@@ -122,263 +115,226 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-8">
-							<div class="listing-detail__content-box listing-detail__content-box-nopadding">
+							<div class="blog-page__box">
 
-								<!-- <div class="listing-detail__scroll-menu-box">
-									<ul class="listing-detail__scroll-menu listing-detail__menu-top-border navigate-section">
-										<li>
-											<a class="active" href="#overview-box">Overview</a>
-										</li>
-										<li>
-											<a href="#photos-box">Gallery</a>
-										</li>
-										<li>
-											<a href="#tips-reviews-box">Tips and Reviews</a>
-										</li>
-									</ul>
-								</div> -->
+								<div class="listing-detail__content-box listing-detail__content-box-nopadding">
 
-								<!-- overview box -->
-								<div class="listing-detail__galleria">
-									<div  style=" display:flex; justify-content: center; align-items: center;">
-										<img style="width: 400px;" src="asset/ibup.jpg" alt="" >
+									<!-- overview box -->
+									<div class="single-post">
+
+									<img class="single-post__image" src="{{asset('asset/' . $puisi->foto)}}" alt="">
+
 									</div>
-
-								</div>
-
-								<!-- overview box -->
-								<div class="listing-detail__overview" id="overview-box">
-									<!-- <h2 class="listing-detail__content-title">Overview</h2> -->
-									<div style="text-align: center;">
-										<!-- <h2>Ibu Pertiwi</h2> -->
-										
-										<b></b><br>Pertiwi yang kami sebut ibu bangsa
-
-										<p></p>Sedari kami dalam kandungnya
-										
-										<p></p>Tak sedikit lara disangga
-										
-										<p></p>Pertiwi, ibu kami yang malang
-										
-										<p></p>Bersamanya halang rintang
-										
-										<p></p>Baginya bukanlah pengadang
-										
-										<p></p>Tetap kami tumbuh berkembang
-										
-										<p></p>Di tanah Ibu Pertiwi yang rindang
-										
-										<p></p>Pertiwi, ibu kami yang lelah
-										
-										<p></p>Meski tanpa ucap keluh kesah
-										
-										<p></p>Masih kami rasa kasihnya berkisah
-										
-										<p></p>Walau acap kali kisahnya susah
-										
-										
-										
-									</div>
-									
-								</div>
-
-								<!-- Contact form module -->
-								<form class="contact-form inner-review" id="leave-review">
-									<div class="inner-review__form">
-										<img src="upload/avatar1.jpg" alt="">
-										<div class="inner-review__form-box">
-											<textarea class="contact-form__textarea" name="comment" id="comment" placeholder="Komentar"></textarea>
+									<!-- overview box -->
+									<div class="listing-detail__overview" id="overview-box">
+										<!-- <h2 class="listing-detail__content-title">Overview</h2> -->
+										<div style="text-align: center; text-color: blck;">
+											<!-- <h2>Ibu Pertiwi</h2> -->
 											
-											<input class="contact-form__submit" type="submit" name="submit-contact" id="submit_contact" value="Kirim" />
+											<p></p>{!!$puisi->isi!!}
+											
 										</div>
+										
 									</div>
-								</form>
-								<!-- End Contact form module -->
 
-								<!-- tips & reviews-box -->
-								<div class="listing-detail__reviews" id="tips-reviews-box">
-									<h2 class="listing-detail__content-title">
-										komentar 
-									</h2>
-									<div class="listing-detail__reviews-box">
+									<!-- Contact form module -->
+									<form class="contact-form inner-review" id="leave-review">
+										<div class="inner-review__form">
+											<img src="upload/avatar1.jpg" alt="">
+											<div class="inner-review__form-box">
+												<textarea class="contact-form__textarea" name="comment" id="comment" placeholder="Komentar"></textarea>
+												
+												<input class="contact-form__submit" type="submit" name="submit-contact" id="submit_contact" value="Kirim" />
+											</div>
+										</div>
+									</form>
+									<!-- End Contact form module -->
 
-										<!-- reviews list -->
-										<ul class="reviews-list">
+									<!-- tips & reviews-box -->
+									<div class="listing-detail__reviews" id="tips-reviews-box">
+										<h2 class="listing-detail__content-title">
+											komentar 
+										</h2>
+										<div class="listing-detail__reviews-box">
 
-											<li class="reviews-list__item">
-												<div class="reviews-list__item-box">
-													<img class="reviews-list__item-image" src="upload/avatar2.jpg" alt="">
-													<div class="reviews-list__item-content">
-														<h3 class="reviews-list__item-title">
-															Philip W
-														</h3>
-														<span class="reviews-list__item-location">
-															Ormskirk, United Kingdom
-														</span>
-														<p class="reviews-list__item-date">
-															Posted October 7, 2018
-															<span class="reviews-list__item-rating">8.0</span>
-														</p>
-														<h3 class="reviews-list__item-title">
-															Good Service but..
-														</h3>
-														<p class="reviews-list__item-description">
-															Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
-														</p>
-														<a class="reviews-list__item-helpful" href="#">
-															<i class="la la-thumbs-o-up"></i>
-															Helpfull review
-															<span>8</span>
-														</a>
-														<a class="reviews-list__item-reply" href="#">
-															<i class="la la-mail-forward"></i>
-															Reply
-														</a>
-													</div>	
-												</div>
-											</li>
+											<!-- reviews list -->
+											<ul class="reviews-list">
 
-											<li class="reviews-list__item">
-												<div class="reviews-list__item-box">
-													<img class="reviews-list__item-image" src="upload/avatar3.jpg" alt="">
-													<div class="reviews-list__item-content">
-														<h3 class="reviews-list__item-title">
-															Jury
-														</h3>
-														<span class="reviews-list__item-location">
-															Sopot, Poland
-														</span>
-														<p class="reviews-list__item-date">
-															Posted October 1, 2018
-															<span class="reviews-list__item-rating average-rat">7.0</span>
-														</p>
-														<h3 class="reviews-list__item-title">
-															Nice!
-														</h3>
-														<p class="reviews-list__item-description">
-															Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
-														</p>
-														<a class="reviews-list__item-helpful active" href="#">
-															<i class="la la-thumbs-o-up"></i>
-															Helpfull review
-															<span>2</span>
-														</a>
-														<a class="reviews-list__item-reply" href="#">
-															<i class="la la-mail-forward"></i>
-															Reply
-														</a>
-													</div>	
-												</div>
-											</li>
+												<li class="reviews-list__item">
+													<div class="reviews-list__item-box">
+														<img class="reviews-list__item-image" src="upload/avatar2.jpg" alt="">
+														<div class="reviews-list__item-content">
+															<h3 class="reviews-list__item-title">
+																Philip W
+															</h3>
+															<span class="reviews-list__item-location">
+																Ormskirk, United Kingdom
+															</span>
+															<p class="reviews-list__item-date">
+																Posted October 7, 2018
+																<span class="reviews-list__item-rating">8.0</span>
+															</p>
+															<h3 class="reviews-list__item-title">
+																Good Service but..
+															</h3>
+															<p class="reviews-list__item-description">
+																Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
+															</p>
+															<a class="reviews-list__item-helpful" href="#">
+																<i class="la la-thumbs-o-up"></i>
+																Helpfull review
+																<span>8</span>
+															</a>
+															<a class="reviews-list__item-reply" href="#">
+																<i class="la la-mail-forward"></i>
+																Reply
+															</a>
+														</div>	
+													</div>
+												</li>
 
-											<li class="reviews-list__item">
-												<div class="reviews-list__item-box">
-													<img class="reviews-list__item-image" src="upload/avatar4.jpg" alt="">
-													<div class="reviews-list__item-content">
-														<h3 class="reviews-list__item-title">
-															Samantha B
-														</h3>
-														<span class="reviews-list__item-location">
-															Viena, Austria
-														</span>
-														<p class="reviews-list__item-date">
-															Posted October 1, 2018
-															<span class="reviews-list__item-rating low-rat">2.0</span>
-														</p>
-														<h3 class="reviews-list__item-title">
-															Horrible!
-														</h3>
-														<p class="reviews-list__item-description">
-															Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. 
-														</p>
-														<a class="reviews-list__item-helpful" href="#">
-															<i class="la la-thumbs-o-up"></i>
-															Helpfull review
-															<span>0</span>
-														</a>
-														<a class="reviews-list__item-reply" href="#">
-															<i class="la la-mail-forward"></i>
-															Reply
-														</a>
-													</div>	
-												</div>
+												<li class="reviews-list__item">
+													<div class="reviews-list__item-box">
+														<img class="reviews-list__item-image" src="upload/avatar3.jpg" alt="">
+														<div class="reviews-list__item-content">
+															<h3 class="reviews-list__item-title">
+																Jury
+															</h3>
+															<span class="reviews-list__item-location">
+																Sopot, Poland
+															</span>
+															<p class="reviews-list__item-date">
+																Posted October 1, 2018
+																<span class="reviews-list__item-rating average-rat">7.0</span>
+															</p>
+															<h3 class="reviews-list__item-title">
+																Nice!
+															</h3>
+															<p class="reviews-list__item-description">
+																Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
+															</p>
+															<a class="reviews-list__item-helpful active" href="#">
+																<i class="la la-thumbs-o-up"></i>
+																Helpfull review
+																<span>2</span>
+															</a>
+															<a class="reviews-list__item-reply" href="#">
+																<i class="la la-mail-forward"></i>
+																Reply
+															</a>
+														</div>	
+													</div>
+												</li>
 
-												<ul class="reviews-list with-depth">
+												<li class="reviews-list__item">
+													<div class="reviews-list__item-box">
+														<img class="reviews-list__item-image" src="upload/avatar4.jpg" alt="">
+														<div class="reviews-list__item-content">
+															<h3 class="reviews-list__item-title">
+																Samantha B
+															</h3>
+															<span class="reviews-list__item-location">
+																Viena, Austria
+															</span>
+															<p class="reviews-list__item-date">
+																Posted October 1, 2018
+																<span class="reviews-list__item-rating low-rat">2.0</span>
+															</p>
+															<h3 class="reviews-list__item-title">
+																Horrible!
+															</h3>
+															<p class="reviews-list__item-description">
+																Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. 
+															</p>
+															<a class="reviews-list__item-helpful" href="#">
+																<i class="la la-thumbs-o-up"></i>
+																Helpfull review
+																<span>0</span>
+															</a>
+															<a class="reviews-list__item-reply" href="#">
+																<i class="la la-mail-forward"></i>
+																Reply
+															</a>
+														</div>	
+													</div>
 
-													<li class="reviews-list__item">
-														<div class="reviews-list__item-box">
-															<img class="reviews-list__item-image" src="upload/avatar-p.jpg" alt="">
-															<div class="reviews-list__item-content">
-																<h3 class="reviews-list__item-title">
-																	Mr Demarest
-																</h3>
-																<span class="reviews-list__item-location">
-																	Austria
-																</span>
-																<p class="reviews-list__item-date">
-																	Posted October 1, 2018
-																</p>
-																<p class="reviews-list__item-description">
-																	Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.
-																</p>
-																<a class="reviews-list__item-helpful" href="#">
-																	<i class="la la-thumbs-o-up"></i>
-																	Helpfull review
-																	<span>0</span>
-																</a>
-																<a class="reviews-list__item-reply" href="#">
-																	<i class="la la-mail-forward"></i>
-																	Reply
-																</a>
-															</div>	
-														</div>
-													</li>
-												</ul>
-											</li>
+													<ul class="reviews-list with-depth">
 
-											<li class="reviews-list__item">
-												<div class="reviews-list__item-box">
-													<img class="reviews-list__item-image" src="upload/avatar5.jpg" alt="">
-													<div class="reviews-list__item-content">
-														<h3 class="reviews-list__item-title">
-															Andreas
-														</h3>
-														<span class="reviews-list__item-location">
-															Paphos, Cyprus
-														</span>
-														<p class="reviews-list__item-date">
-															Posted October 1, 2018
-															<span class="reviews-list__item-rating solid-rat">6.0</span>
-														</p>
-														<h3 class="reviews-list__item-title">
-															Lunch for two!
-														</h3>
-														<p class="reviews-list__item-description">
-															Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
-														</p>
-														<a class="reviews-list__item-helpful" href="#">
-															<i class="la la-thumbs-o-up"></i>
-															Helpfull review
-															<span>1</span>
-														</a>
-														<a class="reviews-list__item-reply" href="#">
-															<i class="la la-mail-forward"></i>
-															Reply
-														</a>
-													</div>	
-												</div>
-											</li>
+														<li class="reviews-list__item">
+															<div class="reviews-list__item-box">
+																<img class="reviews-list__item-image" src="upload/avatar-p.jpg" alt="">
+																<div class="reviews-list__item-content">
+																	<h3 class="reviews-list__item-title">
+																		Mr Demarest
+																	</h3>
+																	<span class="reviews-list__item-location">
+																		Austria
+																	</span>
+																	<p class="reviews-list__item-date">
+																		Posted October 1, 2018
+																	</p>
+																	<p class="reviews-list__item-description">
+																		Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.
+																	</p>
+																	<a class="reviews-list__item-helpful" href="#">
+																		<i class="la la-thumbs-o-up"></i>
+																		Helpfull review
+																		<span>0</span>
+																	</a>
+																	<a class="reviews-list__item-reply" href="#">
+																		<i class="la la-mail-forward"></i>
+																		Reply
+																	</a>
+																</div>	
+															</div>
+														</li>
+													</ul>
+												</li>
 
-										</ul>
-										<!-- reviews-list -->
+												<li class="reviews-list__item">
+													<div class="reviews-list__item-box">
+														<img class="reviews-list__item-image" src="upload/avatar5.jpg" alt="">
+														<div class="reviews-list__item-content">
+															<h3 class="reviews-list__item-title">
+																Andreas
+															</h3>
+															<span class="reviews-list__item-location">
+																Paphos, Cyprus
+															</span>
+															<p class="reviews-list__item-date">
+																Posted October 1, 2018
+																<span class="reviews-list__item-rating solid-rat">6.0</span>
+															</p>
+															<h3 class="reviews-list__item-title">
+																Lunch for two!
+															</h3>
+															<p class="reviews-list__item-description">
+																Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
+															</p>
+															<a class="reviews-list__item-helpful" href="#">
+																<i class="la la-thumbs-o-up"></i>
+																Helpfull review
+																<span>1</span>
+															</a>
+															<a class="reviews-list__item-reply" href="#">
+																<i class="la la-mail-forward"></i>
+																Reply
+															</a>
+														</div>	
+													</div>
+												</li>
+
+											</ul>
+											<!-- reviews-list -->
+
+										</div>
 
 									</div>
+
+									<!-- gallery-box -->
+									
 
 								</div>
-
-								<!-- gallery-box -->
-								
-
 							</div>
 						</div>
 						<div class="col-lg-4">
@@ -572,14 +528,14 @@
 	</div>
 	<!-- End Container -->
 	
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.migrate.js"></script>
+	<script src="{{asset('js/jquery.min.js')}}"></script>
+	<script src="{{asset('js/jquery.migrate.js')}}"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiqrIen8rWQrvJsu-7f4rOta0fmI5r2SI"></script>
-	<script src="js/triptip-plugins.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.countTo.js"></script>
-	<script src="js/script.js"></script>
+	<script src="{{asset('js/triptip-plugins.min.js')}}"></script>
+	<script src="{{asset('js/popper.js')}}"></script>
+	<script src="{{asset('js/bootstrap.min.js')}}"></script>
+	<script src="{{asset('js/jquery.countTo.js')}}"></script>
+	<script src="{{asset('js/script.js')}}"></script>
 	
 </body>
 
