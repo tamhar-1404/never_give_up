@@ -103,7 +103,7 @@
 					</h1>
 				</div>
 			</div> -->
-			<div class="add-listing__title-box">
+			<!-- <div class="add-listing__title-box"> -->
 
 			<div class="listing-detail__buttons listing-detail__buttons-icons ">
 			<div style="margin-bottom: 2%; display: flex; justify-content: space-between " >
@@ -117,13 +117,13 @@
 							</button>
 							</div>
 						</form >
-	</div>
+	<!-- </div> -->
 					</div>
 				</div>
 			<!-- form listing -->
 			<div class="user-detail__favorites-box iso-call" data-item-showen="3" style="margin-bottom: 5%; padding:3%;">
 				<div class="item">
-		@foreach ($artikel as $item)
+		@foreach ($postingan as $item)
 					<!-- place-post module  fotografi -->
 					<div class="col-0">
 						<div class="card" style="border-radius: 15px;">
@@ -143,10 +143,9 @@
 							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon>
 							<p class="card-text-judul">{{$item-> judul}}</p>
 							<center>
-							<p class="" >{!!$item -> isi!!}</p>
-							</center>
+							<p class="card-text mb-50" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">{!!$item->isi!!}</p>							</center>
 							<div style="width: 100%; display: flex; justify-content: center;  " >
-								<a class="contact-form__submit" href="/artikel-sukses" style="margin-right: 20px; margin-bottom: 10px; ">
+								<a class="contact-form__submit" href="/artikel-sukses/{{$item->id}}" style="margin-right: 20px; margin-bottom: 10px; ">
 									<i class="fa fa-caret-right" aria-hidden="true"></i>
 									Baca
 								</a>
