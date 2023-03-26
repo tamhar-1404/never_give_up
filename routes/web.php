@@ -88,6 +88,7 @@ Route::group(['middleware'=> ['auth','hakakses:Admin']], function() {
     Route::post('/hapus/{id}', [AdminController::class, 'hapus'])->name('hapus');
     Route::get('/logout', [loginController::class, 'logout']);
     Route::get('/delete/{id}', [AdminController::class, 'delete'])->name('delete');
+    Route::get('/data-blokir', [AdminController::class, 'data_blokir'])->name('data-blokir');
 });
 
 //user_login
@@ -100,6 +101,7 @@ Route::group(['middleware'=> ['auth', 'hakakses:user']], function(){
     return view('user_login.create.create');
     });
     Route::get('/user-login', [Index04b9Controller::class, 'user_login']);
+    Route::get('/pesan', [Index04b9Controller::class, 'pesan'])->name('pesan');
     // Route::get('/create_cerpen', function () {
     //     return view('user_login.create.create_cerpen');
     // Route::get('/create_cerpen', [CerpenController::class, 'create_cerpen'])->name('create-cerpen');

@@ -17,4 +17,8 @@ class postingan extends Model
     {
         return $this-> BelongsTo(kategori::class);
     }
+    public function komentar()
+    {
+        return $this-> hasMany(komentar::class);
+    }
 }

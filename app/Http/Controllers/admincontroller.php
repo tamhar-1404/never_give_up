@@ -8,6 +8,7 @@ use App\Models\Kontak;
 use App\Models\Cerpen;
 use App\Models\Postingan;
 use App\Models\Kategori;
+use App\Models\Notif;
 
 class AdminController extends Controller
 {
@@ -62,15 +63,21 @@ class AdminController extends Controller
    
     }
 
-    public function tolak($id)
+    public function tolak( Request $request, $id)
     {
          
-        
+       
         $posting = postingan::find($id);
+        $data= notif::create([
+            'user_id' => $request -> id_user,
+            'postingan_id' => $request -> id_postingan,
+            'isi' => $request -> pesan,
+        ]);
         if($posting->status == 'pandding'){
             $posting->status = 'tolak';   
             $posting->save();
         }
+
        
         return redirect('/admin');
     
