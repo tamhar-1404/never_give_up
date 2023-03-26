@@ -123,7 +123,6 @@
 									<div class="single-post">
 
 									<img class="single-post__image" src="{{asset('asset/' . $diary->foto)}}" alt="">
-									<!-- <p>{{$postingan->foto}}</p> -->
 
 									
 									</div>
@@ -143,13 +142,14 @@
 									</div>
 
 									<!-- Contact form module -->
-									<form class="contact-form inner-review" id="leave-review">
+									<form action="/komentar/{{$diary->id}}" method="POST" enctype="multipart/form-data" class="contact-form inner-review" id="leave-review">
+										@csrf
 										<div class="inner-review__form">
-											<img src="upload/avatar1.jpg" alt="">
 											<div class="inner-review__form-box">
-												<textarea class="contact-form__textarea" name="comment" id="comment" placeholder="Comment"></textarea>
-												
-												<input class="contact-form__submit" type="submit" name="submit-contact" id="submit_contact" value="komentar" />
+												<textarea class="contact-form__textarea" name="komentar" id="komentar" placeholder="Silahkan tinggalkan komentar"></textarea>
+												<!-- <a href="{{url('cerpenbaik')}}" class="contact-form__submit" type="submit" name="submit-contact" id="submit_contact" value="Kirim" > -->
+												<button  class="contact-form__submit" type="submit" id="submit" name="submit-contact" >Kirim</button>
+												</a>
 											</div>
 										</div>
 									</form>
@@ -158,38 +158,25 @@
 									<!-- tips & reviews-box -->
 									<div class="listing-detail__reviews" id="tips-reviews-box">
 										<h2 class="listing-detail__content-title">
-											komentar
+											komentar 
 										</h2>
 										<div class="listing-detail__reviews-box">
-
 											<!-- reviews list -->
 											<ul class="reviews-list">
-
+												@foreach($komen as $item)
 												<li class="reviews-list__item">
 													<div class="reviews-list__item-box">
-														<img class="reviews-list__item-image" src="upload/avatar2.jpg" alt="">
+														<img class="reviews-list__item-image" src="{{asset('foto/' .  	$item->user->foto)}}" alt="">
 														<div class="reviews-list__item-content">
 															<h3 class="reviews-list__item-title">
-																Philip W
+																{{$item->user->username}}
 															</h3>
 															<span class="reviews-list__item-location">
-																Ormskirk, United Kingdom
-															</span>
-															<p class="reviews-list__item-date">
-																Posted October 7, 2018
-																<span class="reviews-list__item-rating">8.0</span>
+																</span>
+																
+																<p class="reviews-list__item-description">
+																{{$item->komentar}}
 															</p>
-															<h3 class="reviews-list__item-title">
-																Good Service but..
-															</h3>
-															<p class="reviews-list__item-description">
-																Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
-															</p>
-															<a class="reviews-list__item-helpful" href="#">
-																<i class="la la-thumbs-o-up"></i>
-																Helpfull review
-																<span>8</span>
-															</a>
 															<a class="reviews-list__item-reply" href="#">
 																<i class="la la-mail-forward"></i>
 																Balas
@@ -197,143 +184,9 @@
 														</div>	
 													</div>
 												</li>
-
-												<li class="reviews-list__item">
-													<div class="reviews-list__item-box">
-														<img class="reviews-list__item-image" src="upload/avatar3.jpg" alt="">
-														<div class="reviews-list__item-content">
-															<h3 class="reviews-list__item-title">
-																Jury
-															</h3>
-															<span class="reviews-list__item-location">
-																Sopot, Poland
-															</span>
-															<p class="reviews-list__item-date">
-																Posted October 1, 2018
-																<span class="reviews-list__item-rating average-rat">7.0</span>
-															</p>
-															<h3 class="reviews-list__item-title">
-																Nice!
-															</h3>
-															<p class="reviews-list__item-description">
-																Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
-															</p>
-															<a class="reviews-list__item-helpful active" href="#">
-																<i class="la la-thumbs-o-up"></i>
-																Helpfull review
-																<span>2</span>
-															</a>
-															<a class="reviews-list__item-reply" href="#">
-																<i class="la la-mail-forward"></i>
-																Reply
-															</a>
-														</div>	
-													</div>
-												</li>
-
-												<li class="reviews-list__item">
-													<div class="reviews-list__item-box">
-														<img class="reviews-list__item-image" src="upload/avatar4.jpg" alt="">
-														<div class="reviews-list__item-content">
-															<h3 class="reviews-list__item-title">
-																Samantha B
-															</h3>
-															<span class="reviews-list__item-location">
-																Viena, Austria
-															</span>
-															<p class="reviews-list__item-date">
-																Posted October 1, 2018
-																<span class="reviews-list__item-rating low-rat">2.0</span>
-															</p>
-															<h3 class="reviews-list__item-title">
-																Horrible!
-															</h3>
-															<p class="reviews-list__item-description">
-																Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. 
-															</p>
-															<a class="reviews-list__item-helpful" href="#">
-																<i class="la la-thumbs-o-up"></i>
-																Helpfull review
-																<span>0</span>
-															</a>
-															<a class="reviews-list__item-reply" href="#">
-																<i class="la la-mail-forward"></i>
-																Reply
-															</a>
-														</div>	
-													</div>
-
-													<ul class="reviews-list with-depth">
-
-														<li class="reviews-list__item">
-															<div class="reviews-list__item-box">
-																<img class="reviews-list__item-image" src="upload/avatar-p.jpg" alt="">
-																<div class="reviews-list__item-content">
-																	<h3 class="reviews-list__item-title">
-																		Mr Demarest
-																	</h3>
-																	<span class="reviews-list__item-location">
-																		Austria
-																	</span>
-																	<p class="reviews-list__item-date">
-																		Posted October 1, 2018
-																	</p>
-																	<p class="reviews-list__item-description">
-																		Morbi purus libero, faucibus adipiscing, commodo quis, gravida id, est. Sed lectus. Praesent elementum hendrerit tortor. Sed semper lorem at felis. Vestibulum volutpat, lacus a ultrices sagittis, mi neque euismod dui, eu pulvinar nunc sapien ornare nisl. Phasellus pede arcu, dapibus eu, fermentum et, dapibus sed, urna.
-																	</p>
-																	<a class="reviews-list__item-helpful" href="#">
-																		<i class="la la-thumbs-o-up"></i>
-																		Helpfull review
-																		<span>0</span>
-																	</a>
-																	<a class="reviews-list__item-reply" href="#">
-																		<i class="la la-mail-forward"></i>
-																		Reply
-																	</a>
-																</div>	
-															</div>
-														</li>
-													</ul>
-												</li>
-
-												<li class="reviews-list__item">
-													<div class="reviews-list__item-box">
-														<img class="reviews-list__item-image" src="upload/avatar5.jpg" alt="">
-														<div class="reviews-list__item-content">
-															<h3 class="reviews-list__item-title">
-																Andreas
-															</h3>
-															<span class="reviews-list__item-location">
-																Paphos, Cyprus
-															</span>
-															<p class="reviews-list__item-date">
-																Posted October 1, 2018
-																<span class="reviews-list__item-rating solid-rat">6.0</span>
-															</p>
-															<h3 class="reviews-list__item-title">
-																Lunch for two!
-															</h3>
-															<p class="reviews-list__item-description">
-																Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
-															</p>
-															<a class="reviews-list__item-helpful" href="#">
-																<i class="la la-thumbs-o-up"></i>
-																Helpfull review
-																<span>1</span>
-															</a>
-															<a class="reviews-list__item-reply" href="#">
-																<i class="la la-mail-forward"></i>
-																Reply
-															</a>
-														</div>	
-													</div>
-												</li>
-
-											</ul>
+												@endforeach
 											<!-- reviews-list -->
-
 										</div>
-
 									</div>
 
 									<!-- gallery-box -->
@@ -343,7 +196,8 @@
 							</div>
 						</div>
 						<div class="col-lg-4">
-							<div class="sidebar">
+							<!-- sidebar -->
+						<div class="sidebar">
 
 								
 								<div class="sidebar__widget sidebar__widget-listing-details">
@@ -353,15 +207,15 @@
 									<ul class="sidebar__listing-list">
 										<li>
 											<i class="la la-map-marker"></i>
-											21 january 2022
+											{{$diary->user->askot}}
 										</li>
 										<li>
 											<i class="la la-mobile-phone"></i>
-											0895-3941-7724
+											0{{$diary->user->notlp}}
 										</li>
 										<li>
 											<i class="la la-link"></i>
-											momonica@gmail.com
+											{{$diary->user->email}}
 										</li>
 										<!-- <li>
 											<i class="la la-clock-o"></i>
@@ -389,11 +243,11 @@
 											<div class="row">
 												<div class="col-7">
 													<div class="author-wrapper__content">
-														<a class="author-wrapper__image" href="#"><img src="upload/avatar1.jpg" alt=""></a>
+														<a class="author-wrapper__image" href=""><img src="{{asset('foto/' . $diary->user->foto)}}" alt=""></a>
 														<h3 class="author-wrapper__title">
-															<a href="#">Monica</a>
+															<a href="">{{$diary->user->username}}</a>
 															<span class="author-wrapper__location">
-																Malang
+															{{$diary->user->medsos}}
 															</span>
 														</h3>
 													</div>
@@ -406,24 +260,7 @@
 												</div> -->
 											</div>
 										</div>
-										<ul class="author-wrapper__list">
-											<li>
-												<span>42</span>
-												Postingan
-											</li>
-											<!-- <li>
-												<span>12</span>
-												Followers
-											</li>
-											<li>
-												<span>34</span>
-												Following
-											</li> -->
-											<li>
-												<span>56</span>
-												Komentar
-											</li>
-										</ul>
+										
 									</div>
 									<!-- End Author-wrapper module-->
 								</div>
@@ -449,6 +286,7 @@
 
 								
 							</div>
+						<!-- End sidebar -->
 						</div>
 					</div>
 				</div>
@@ -468,7 +306,7 @@
 	
 								<div class="footer__widget text-widget">
 								<a class="navbar-brand" style="width:60%;" href="index.html">
-									<img src="asset/Logo 1.png" style="width:100%;" alt="">
+									<img src="{{asset('/asset/logo 1.png')}}" style="width:100%;" alt="">
 								</a>
 									<p class="footer__widget-description">
 										Menggembangkan dunia baca tulis menggunakan website menuju dunia digital. Temukan berbagai artikel, postingan, cerita, jurnal dan buat postinganmu sendiri disini	
