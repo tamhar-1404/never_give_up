@@ -5,6 +5,8 @@ use App\Models\Cerpen;
 use App\Models\Postingan;
 use App\Models\User;
 use App\Models\Kategori;
+use App\Models\komentar;
+use illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 class Index04b9Controller extends Controller
@@ -23,19 +25,23 @@ class Index04b9Controller extends Controller
     }
 
     public function puisi(){
-    return view('user_login.puisi',['puisi']);
+        $puisi = postingan::where('status', 'setuju')->where('kategori_id', '4')->get();
+        return view('user_login.puisi',['puisi'=>$puisi]);
     }
    
     public function diary(){
-    return view('user_login.diary',['diary']);
+        $diary = postingan::where('status', 'setuju')->where('kategori_id', '6')->get();
+        return view('user_login.diary',['diary'=>$diary]);
     }
    
     public function photography(){
-    return view('user_login.photography',['photography']);
+        $photography = postingan::where('status', 'setuju')->get();
+        return view('user_login.photography',['photography' => $photography]);
     }
    
     public function ilustrasi(){
-    return view('user_login.ilustrasi',['ilustrasi']);
+        $ilustrasi = postingan::where('status', 'setuju')->where('kategori_id', '8')->get();
+        return view('user_login.ilustrasi',['ilustrasi'=>$ilustrasi]);    
     }
    
     public function makalah(){
@@ -97,26 +103,34 @@ class Index04b9Controller extends Controller
     }
    
     public function cerpenbaik($id){
-        $postingan = postingan::find($id);  
+        $postingan = postingan::find($id); 
+        $komen = komentar::where('postingan_id',$postingan->id)->orderBy('created_at', 'desc')->limit(3)->get(); 
         // $postingan = postingan::where('id', $data )->get();
-    return view('user_login.cerpen-baik', compact('postingan'));
+        return view('user_login.cerpen-baik', ['postingan'=>$postingan, 'komen'=>$komen]);
     }  
    
-    public function puisipertiwi(){
-    return view('user_login.puisi-pertiwi',['puisi-pertiwi']);
+    public function puisipertiwi($id){
+        $puisi = postingan::find($id);
+        $komen = komentar::where('postingan_id',$puisi->id)->orderBy('created_at', 'desc')->limit(3)->get(); 
+        return view('user_login.puisi-pertiwi', ['puisi'=>$puisi, 'komen'=>$komen]);
     }
    
     public function diary1($id){
-        $postingan = postingan::find($id);
-    return view('user_login.diary-1', compact('postingan'));
+        $diary = postingan::find($id);
+        $komen = komentar::where('postingan_id',$diary->id)->orderBy('created_at', 'desc')->limit(3)->get(); 
+        return view('user_login.diary-1', ['diary'=>$diary, 'komen'=>$komen]);
     }
    
-    public function fotografi1(){
-    return view('user_login.fotografi-1',['fotografi-1']);
+    public function fotografi1($id){
+        $photography = postingan::find($id);
+        $komen = komentar::where('postingan_id',$photography->id)->orderBy('created_at', 'desc')->limit(3)->get(); 
+        return view('user_login.fotografi-1', ['photography'=>$photography, 'komen'=>$komen]);
     }
    
-    public function ilustrasi1(){
-    return view('user_login.ilustrasi-1',['ilustrasi-1']);
+    public function ilustrasi1($id){
+        $ilustrasi = postingan::find($id);
+        $komen = komentar::where('postingan_id',$ilustrasi->id)->orderBy('created_at', 'desc')->limit(3)->get(); 
+        return view('user_login.ilustrasi-1', ['ilustrasi'=>$ilustrasi, 'komen'=>$komen]);
     }
    
     public function makalahdetail($id){
@@ -157,6 +171,17 @@ class Index04b9Controller extends Controller
         $keyword = $request->search;
         $postingan = postingan ::where('judul', 'like', "%" . $keyword . "%")->paginate(5);
         return view('user_login.cerpen', compact('postingan'))->with('i', (request()->input('page', 1) - 1) * 5);
+    }
+
+    public function komentar(Request $request, $id){
+        $data = postingan::all();
+        $komentar = komentar::create([
+            'user_id' => Auth::user()->id,
+            'komentar' => $request->komentar,
+            'postingan_id' => $id,
+        ]);
+
+        return redirect()->back();
     }
    
 }
