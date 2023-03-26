@@ -138,22 +138,23 @@
 					<h1 class="discover__title places-tab">
 						Karya Pribadi
 					</h1>
-					<form class="discover__form discover__form-favourite">
-						<input class="discover__form-input discover__form-input-favourite" type="text" name="place-event" id="place-event" placeholder="Apa yang Ingin Anda Cari?" />
+					<form class="discover__form discover__form-favourite"  method="get" action="{{ route('src') }}">>
+						<input class="discover__form-input discover__form-input-favourite" type="text" name="query" id="search" placeholder=" Judul Apa yang Ingin Anda Cari?" />
 						
-						<select class="discover__form-input discover__form-input-favourite js-example-basic-multiple">
-							<option>Kategori: </option>
-							<option>Artikel</option>
-							<option>Cerpen</option>
-							<option>Puisi</option>
-							<option>Diary</option>
-							<option>Fotografi</option>
-							<option>Ilustrasi</option>
-							<option>Makalah</option>
-							<option>Skripsi</option>
-							<option>Pantun</option>
-							<option>Essai</option>
-							<option>Karya Ilmiah</option>
+						<select class="discover__form-input discover__form-input-favourite js-example-basic-multiple" name="kategori_id">
+							<option value="">Kategori: </option>
+							<option value="2">Artikel</option>
+							<option value="1">Cerpen</option>
+							<option value="4">Puisi</option>
+							<option value="6">Diary</option>
+							<option value="5">Fotografi</option>
+							<option value="8">Ilustrasi</option>
+							<option value="7">Makalah</option>
+							<option value="9">Skripsi</option>
+							<option value="3">Pantun</option>
+							<option value="10">Essai</option>
+							<option value="11">Karya Ilmiah</option>
+							
 						</select>
 						<button class="btn-default btn-default-red" type="submit"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
 					</form>
