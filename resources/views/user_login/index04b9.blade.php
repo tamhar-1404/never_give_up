@@ -488,7 +488,7 @@ Baca										</a>
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="" class="services-post">
+								<a href="/makalah" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
@@ -509,7 +509,7 @@ Baca										</a>
 							<div class="col-xl-2 col-md-4 col-sm-6">
 								
 								<!-- services-post module -->
-								<a href="" class="services-post">
+								<a href="/skripsi" class="services-post">
 									<div class="services-post__content">
 									<i class="la la-" aria-hidden="true">
 										<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-journal-bookmark" viewBox="0 0 16 16">
@@ -519,7 +519,7 @@ Baca										</a>
 										  </svg>
 									</i>
 									<h2 class="services-post__title">
-										pantun
+										skripsi
 									</h2>
 									</div>
 							</a>
@@ -530,7 +530,7 @@ Baca										</a>
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="" class="services-post">
+								<a href="/pantun" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
@@ -579,7 +579,7 @@ Baca										</a>
 												<path d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z"/>
 											  </svg>
 										</i>
-										<h2 class="services-post__title">
+										<h2 class="services-post__title" style="text-decoration-size:medium;">
 											karya ilmiah
 										</h2>
 										</div>
@@ -627,7 +627,6 @@ Baca										</a>
 						<p class="section-header__description">
 							Berbagai Kategori postingan dengan gambar.
 						</p>
-						<div class="semua" style="display: flex; justify-content: end;"><a href="//semua"><p class="semuat" style="text-decoration: underline;">lihat semua</p></a></div>
 						
 						
 					</div>

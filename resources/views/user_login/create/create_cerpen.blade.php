@@ -16,8 +16,8 @@
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 	<!-- Summernote css -->
     <link rel="stylesheet" href="../assets/plugins/summernote/summernote-bs4.css" />
-        <!--bootstrap-wysihtml5-->
-        <link rel="stylesheet" type="text/css" href="../assets/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.css">
+	<!--bootstrap-wysihtml5-->
+	<link rel="stylesheet" type="text/css" href="../assets/plugins/bootstrap-wysihtml5/bootstrap-wysihtml5.css">
 
 </head>
 <body>
@@ -131,7 +131,10 @@
 
 			<!-- form listing -->
 			<form action="{{('/posting')}}" class="add-listing__form" method="post" enctype="multipart/form-data">
-            @csrf 
+			
+					@csrf 
+					
+				
 				<div class="container">
 					
 					<!-- form box -->
@@ -177,7 +180,7 @@
 						</div>
 
 					</div>
-					@if ($kirim_kategori != 3)
+					@if ($kirim_kategori != 3 and $kirim_kategori != 5)
 					
 					<!-- form box -->
 					<div class="add-listing__form-box" id="gallery-box">
@@ -195,8 +198,22 @@
 						</div>
                        
 					</div>
-					
-					
+					@elseif ($kirim_kategori == 5)
+					<div class="add-listing__form-box" id="gallery-box">
+
+                        <h2 class="add-listing__form-title">
+							Gambar {{$kategori->kategori}}:
+						</h2>
+						<div class="add-listing__form-content">
+							<div class="add-listing__input-file-box">
+								<input class="add-listing__input-file @error('foto') is-invalid @enderror" type="file" name="filename[]" id="filename" value="{{old('filename[]')}}"  multiple  />
+								<div class="add-listing__input-file-wrap">
+									<i class="la la-cloud-upload"></i>  
+								</div>
+							</div>							
+						</div>
+                       
+					</div>
 					@endif
 					<!-- form box -->
 					<div class="center-button" >
@@ -300,8 +317,8 @@
 	<script src="../js/jquery.countTo.js"></script>
 	<script src="../js/script.js"></script>
 	 <!--Summernote js-->
-	 <script src="../assets/plugins/summernote/summernote-bs4.min.js"></script>
-    <script src="../assets/js/app.js"></script>
+	<script src="../assets/plugins/summernote/summernote-bs4.min.js"></script>
+   
     <script>
       $('#summernote').summernote({
         placeholder: '',
@@ -309,6 +326,8 @@
         height: 100
       });
     </script>
+	
+	
 	
 </body>
 

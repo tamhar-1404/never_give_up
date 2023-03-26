@@ -24,6 +24,10 @@ class User extends Authenticatable
     {
         return $this-> BelongsTo(kategori::class);
     }
+    public function notif()
+    {
+        return $this-> HasMany(notif::class);
+    }
     /**
      * The attributes that are mass assignable.
      *

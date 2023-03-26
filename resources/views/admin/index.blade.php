@@ -449,18 +449,21 @@
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h4 class="modal-title fs-2" id="exampleModalLabel">Modal title</h4>
+                                                        <h4 class="modal-title fs-2" id="exampleModalLabel">alasan penolakan</h4>
                                                     </div>
-                                                <div class="modal-body">
-                                                   <textarea name="" id="" cols="60" rows="5"></textarea>
-                                                </div>
+                                                <form action="{{Route('tolak', $post->id)}}" method="post">
+                                                    @csrf
+                                                    <!-- inputan id user dan postingan  -->
+                                                    <input type="hidden" name="id_user" value="{{$post->user->id}}">
+                                                    <input type="hidden" name="id_postingan" value="{{$post->id}}">
+                                                    <div class="modal-body">
+                                                        <textarea name="pesan" placeholder="masukan alasan kenapa anda menolak postingan ini" id="" cols="60" rows="5"></textarea>
+                                                    </div>
                                                     <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">batal</button>
-                                                        <form action="{{Route('tolak', $post->id)}}" method="post">
-                                                            @csrf
-                                                        <button type="button" class="btn btn-success">Save changes</button>
-                                                        </form>
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">batal</button> 
+                                                        <button type="submit" class="btn btn-primary">kirim penolakan</button>
                                                     </div>
+                                                </form>
                                                 </div>
                                             </div>
                                         </div>
