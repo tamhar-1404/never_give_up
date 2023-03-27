@@ -24,6 +24,10 @@ class User extends Authenticatable
     {
         return $this-> BelongsTo(kategori::class);
     }
+    public function komentar()
+    {
+        return $this-> hasMany(komentar::class);
+    }
     public function notif()
     {
         return $this-> HasMany(notif::class);
@@ -65,6 +69,6 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
    
-    protected $table = 'users';
+    protected $table = 'Users';
 
 }
