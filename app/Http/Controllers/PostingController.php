@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Kategori;
 use App\Models\User;
-
+use App\Models\Multi_img;
 use App\Models\Postingan;
 
 class PostingController extends Controller
@@ -18,19 +18,47 @@ class PostingController extends Controller
 
     public function simpan_postingan(Request $request){
         $request->validate([
-            // 'foto'=>'required|mimes:jpg,png' 
+            'foto'=>'mimes:jpg,png'
         ]);
+        
+        $gambar = new multi_img;
         $postingan = new postingan;
         if($request->hasFile('foto')){
-            $request->file('foto')->move('asset/',$request->file('foto')->getClientOriginalName());
-            $postingan->foto=$request->file('foto')->getClientOriginalName();
+            $type = $request->file('foto')->getClientOriginalExtension();
+            $filename = time().'.'.$type;
+            $request->file('foto')->move('asset/',$filename);
+            $postingan->foto = $filename;
+        }else{
+            $postingan->foto='default.jpg';
         }
+
         $postingan->user_id = $request->default;
         $postingan->judul = $request->judul;
         $postingan->isi = $request-> isi;
         $postingan->kategori_id = $request-> kategori;
         $postingan->save();
-        return redirect('/user-page');
+
+        
+        if($request->hasFile('filename')){
+           
+            $nomer = 1;
+            foreach ($request->file('filename') as $filename) {
+                $namafile = hash('sha256', time()) . '.' . $nomer . $filename->getClientOriginalExtension();
+                $path = $filename->store('filename');
+                $filename->move('filename/', $namafile);
+
+                $multi_img = multi_img::create([
+                    'postingan_id' => $postingan->id,
+                    'gambar' => $filename,
+                ]);
+
+                $nomer++;
+            }
+        }
+    
+       
+       
+        return redirect('/user-login');
     }
     public function search(Request $request)
     {

@@ -29,6 +29,7 @@ return new class extends Migration
             ->on('kategoris')
             ->onDelete('cascade')
             ->onUpdate('cascade');
+            $table->bigInteger('baca')->default(0);
             $table->timestamps();
         });
     }

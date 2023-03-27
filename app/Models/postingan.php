@@ -13,6 +13,10 @@ class postingan extends Model
     {
         return $this-> BelongsTo(user::class);
     }
+    public function notif()
+    {
+        return $this-> HasMany(notif::class);
+    }
     public function kategori()
     {
         return $this-> BelongsTo(kategori::class);
@@ -20,5 +24,9 @@ class postingan extends Model
     public function komentar()
     {
         return $this-> hasMany(komentar::class);
+    }
+    public function multi_img()
+    {
+        return $this-> HasMany(multi_img::class);
     }
 }
