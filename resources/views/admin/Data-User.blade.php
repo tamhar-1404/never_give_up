@@ -270,19 +270,12 @@
                                                                 <td>{{$item->username}}</td>
                                                                 <td>{{$item->email}}</td>
                                                                 <td><img src="asset/{{$item->foto}}" width="150" alt="150" srcset="" ></td>
-<<<<<<< Updated upstream
                                                                 <td><form action="{{Route('akun_blokir', $item->id)}} " method="post" class="col-5">
                                                                 @csrf
                                                                     <td><button  type="submit" class="btn btn-warning " style="border-radius: 10%; "><span style="color: white; font-weight:bold;" >Blokir </button>
                                                                 </form>
                                                                 <a href="#">
                                                                  <button class="btn btn-danger delete" data-id="{{$item-> id}}" data-nama="{{$item ->username}}" style="border-radius: 10%; "><span style="color: white; font-weight:bold; ">hapus</span></button>
-=======
-                                                                <td><button type="button" class="btn  btn-warning">Blokir</button>
-                                                                <button type="button" class="btn btn-primary waves-effect waves-light " id="sa-params" data-id="{{$item-> id}}" data-nama="{{$item ->username}}">Click me</button>
-                                                                <a href="/delete/{{ $item->id }}">
-                                                                 <button class="btn btn-danger" style="border-radius: 10%; "><span style="color: white; font-weight:bold; ">hapus</span></button>
->>>>>>> Stashed changes
                                                                 </a>
                                                               </tr>
                                                             @endforeach                                               

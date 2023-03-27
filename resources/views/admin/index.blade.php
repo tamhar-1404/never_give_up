@@ -156,15 +156,15 @@
                         <li class="has_sub">
                             <a href="javascript:void(0);" class="waves-effect"><i class="ti-layout"></i><span> Kategori </span><span class="float-right"><i class="mdi mdi-plus"></i></span></a>
                             <ul class="list-unstyled">
-                                <li><a href="layouts-artikel.html">Artikel</a></li>
+                                <li><a href="{{Route('artikel_admin')}}">Artikel</a></li>
                                 <li><a href="{{Route('cerpen_admin')}}">Cerpen</a></li>
-                                <li><a href="layouts-puisi.html">Puisi</a></li>
+                                <li><a href="{{Route('puisi_admin')}}">Puisi</a></li>
                                 <li><a href="layouts-diary.html">Diary</a></li>
                                 <li><a href="layouts-karya-fotografi.html">Karya fotografi</a></li>
                                 <li><a href="layouts-karya-ilustrasi.html">Karya ilustrasi</a></li>
                                 <li><a href="layouts-makalah.html">Makalah</a></li>
-                                <li><a href="layouts-skripsi.html">Skripsi</a></li>
-                                <li><a href="layouts-pantun.html">Pantun</a></li>
+                                <li><a href="{{Route('skripsi_admin')}}">Skripsi</a></li>
+                                <li><a href="{{Route('pantun_admin')}}">Pantun</a></li>
                                 <li><a href="layouts-esai.html">Esai</a></li>
                                 <li><a href="layouts-karya-ilmiah.html">Karya ilmiah</a></li>
                             </ul>
@@ -174,7 +174,7 @@
                             <a href="javascript:void(0);" class="waves-effect"><i class="ti-files"></i><span> Halaman </span><span class="float-right"><i class="mdi mdi-plus"></i></span></a>
                             <ul class="list-unstyled">
                                 <li><a href="{{Route('data-user')}}">Data user</a></li>
-                                <li><a href="{{Route('data-user')}}">Akun Yang Di Blokir</a></li>
+                                <li><a href="{{Route('akun_blokir')}}">Akun Yang Di Blokir</a></li>
                                 <li><a href="{{Route('pesan-user')}}">Pesan Dari User</a></li>
                             </ul>
                         </li>
@@ -281,8 +281,8 @@
                             <div class="col-xl-8">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h4 class="m-t-0 m-b-30">Jumlah Postingan</h4>
-                                        <div id="combine-chart-container" class="flot-chart" style="height: 360px"></div>
+                                        <h4 class="m-t-0 m-b-30">Jumlah User</h4>
+                                        <div id="pengguna" class="flot-chart" style="height: 360px"></div>
                                     </div>
                                 </div>
                             </div>
@@ -591,6 +591,65 @@
     <script src="assets/js/app.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--grafik-->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script>
+        Highcharts.chart('pengguna', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: ''
+                },
+                subtitle: {
+                    text: ''
+                },
+                xAxis: {
+                    categories: [
+                        'Jan',
+                        'Feb',
+                        'Mar',
+                        'Apr',
+                        'May',
+                        'Jun',
+                        'Jul',
+                        'Aug',
+                        'Sep',
+                        'Oct',
+                        'Nov',
+                        'Dec'
+                    ],
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Jumlah'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                        '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.2,
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: 'jumlah user',
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4,
+                        194.1, 95.6, 54.4]
+
+                }]
+            });
+    </script>
 
 </body>
 

@@ -301,7 +301,6 @@
 	<script src="../js/script.js"></script>
 	 <!--Summernote js-->
 	 <script src="../assets/plugins/summernote/summernote-bs4.min.js"></script>
-    <script src="../assets/js/app.js"></script>
     <script>
       $('#summernote').summernote({
         placeholder: '',

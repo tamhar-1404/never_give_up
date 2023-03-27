@@ -11,7 +11,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class User extends Authenticatable
 {
-   
+
+    protected $guarded = [];
+
     use HasApiTokens, HasFactory, Notifiable;
     
      public function postingan() 
@@ -39,17 +41,6 @@ class User extends Authenticatable
         'askot',
 
     ];
-    protected $guarded = [
-        'username',
-        'email',
-        'password',
-        'foto',
-        'namalengkap',
-        'notlp',
-        'medsos',
-        'tgllahir',
-        'askot',
-    ];
 
     /**
      * The attributes that should be hidden for serialization.
@@ -70,6 +61,6 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
    
-    protected $table = 'users';
+    protected $table = 'Users';
 
 }
