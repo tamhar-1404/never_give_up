@@ -10,11 +10,10 @@
         <meta content="ThemeDesign" name="author" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-<<<<<<< Updated upstream
     <link rel="shortcut icon" href="assets/images/users/Dzaky.jpg">
 
     <!-- DataTables -->
-    <link href="assets/plugins/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/plugins/datatables/fixedHeader.bootstrap4.min.css" rel="stylesheet" type="text/css" />
         <link href="assets/plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
@@ -28,9 +27,6 @@
 
     <!-- Sweet Alert -->
     <link href="assets/plugins/sweetalert2/sweetalert2.css" rel="stylesheet" type="text/css">
-=======
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
->>>>>>> Stashed changes
 
         <!-- DataTables -->
         <link href="assets/plugins/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
@@ -224,11 +220,7 @@
                 <!-- Start content -->
                 <div class="content">
 
-<<<<<<< Updated upstream
                 <div class="">
-=======
-                   <div class="">
->>>>>>> Stashed changes
                         <div class="page-header-title">
                             <h4 class="page-title">Data User</h4>
                         </div>
@@ -241,11 +233,7 @@
                                 <div class="col-lg-12">
                                     <div class="card">
                                         <div class="card-body">
-<<<<<<< Updated upstream
                                             <h4 class="m-b-30 m-t-0">List</h4>
-=======
-                                            <h4 class="m-b-30 m-t-0">Default Example</h4>
->>>>>>> Stashed changes
                                             <div class="row">
                                                 <div class="col-lg-12 col-sm-12 col-12">
 

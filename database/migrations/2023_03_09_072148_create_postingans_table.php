@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('postingans', function (Blueprint $table) {
             $table->id();
-            $table->string('foto');
+            $table->string('foto')->nullable();
             $table->string('judul');
             $table->text('isi');
             $table->string('status')->default('pandding');

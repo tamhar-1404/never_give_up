@@ -24,6 +24,14 @@ class User extends Authenticatable
     {
         return $this-> BelongsTo(kategori::class);
     }
+    public function komentar()
+    {
+        return $this-> hasMany(komentar::class);
+    }
+    public function notif()
+    {
+        return $this-> HasMany(notif::class);
+    }
     /**
      * The attributes that are mass assignable.
      *

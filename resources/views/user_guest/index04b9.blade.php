@@ -124,7 +124,7 @@
 							<option>Essai</option>
 							<option>Karya Ilmiah</option>
 						</select>
-						<button class="btn-default btn-default-red" type="submit"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
+						<a class="btn-default btn-default-red" href="{{Route('login')}}"><i class="fa fa-search" aria-hidden="true"></i> Search</a>
 					</form>
 	
 					<div class="discover__box-place owl-wrapper">

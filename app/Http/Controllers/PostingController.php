@@ -18,7 +18,7 @@ class PostingController extends Controller
 
     public function simpan_postingan(Request $request){
         $request->validate([
-            'foto'=>'required|mimes:jpg,png'
+            // 'foto'=>'required|mimes:jpg,png' 
         ]);
         $postingan = new postingan;
         if($request->hasFile('foto')){
@@ -30,7 +30,7 @@ class PostingController extends Controller
         $postingan->isi = $request-> isi;
         $postingan->kategori_id = $request-> kategori;
         $postingan->save();
-        return redirect('/user-login');
+        return redirect('/user-page');
     }
     public function search(Request $request)
     {

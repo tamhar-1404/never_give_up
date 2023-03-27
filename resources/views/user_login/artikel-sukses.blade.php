@@ -12,8 +12,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	
-	<link rel="stylesheet" href="css/triptip-assets.min.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="{{asset('css/triptip-assets.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
 
 </head>
 <body>
@@ -28,7 +28,7 @@
 					<div class="container">
 	
 					<a class="navbar-brand" style="width:13%;" href="index.html">
-							<img src="asset/Logo 1.png" style="width:100%;" alt="">
+							<img src="{{asset('/asset/logo 1.png')}}" style="width:100%;" alt="">
 						</a>
 	
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,7 +39,7 @@
 							<ul class="navbar-nav mr-auto">
 								<li>
 
-									<a class="active" href="/user-login">Beranda <i class="" aria-hidden="true"></i></a>
+									<a class="" href="/user-login">Beranda <i class="" aria-hidden="true"></i></a>
 								</li>
 								<li ><a  href="#">Kategori <i class="fa fa-caret-down" aria-hidden="true"></i></a>
 									<div class="megadropdown">
@@ -86,9 +86,9 @@
 
 			<div class="listing-detail__gal">
 				<picture>
-					<source media="(min-width: 991px)" srcset="asset/sukses2.jpg">
-					<source media="(min-width: 568px)" srcset="asset/sukses2.jpg">
-					<source media="(min-width: 200px)" srcset="asset/sukses2.jpg">
+					<source media="(min-width: 991px)" srcset="{{asset('asset/' .  	$kategori->foto)}}">
+					<source media="(min-width: 568px)" srcset="{{asset('asset/' .  	$kategori->foto)}}">
+					<source media="(min-width: 200px)" srcset="{{asset('asset/' .  	$kategori->foto)}}">
 					<img src="../triptip-demo/asset/sukses2.jpg" alt="">
 				</picture>
 				<div class="listing-detail__gal-box">
@@ -96,9 +96,9 @@
 						<div class="row">
 							<div class="col-md-6">
 								<!-- <p class="listing-detail__rate">9.3 <span>/ 10</span></p> -->
-								<h1 class="listing-detail__title">Beberapa Hal Yang Perlu Diterapkan Agar Sukses</h1>
+								<h1 class="listing-detail__title">{{$kategori->judul}}</h1>
 								<!-- <p class="listing-detail__address"><i class="fa fa-map-marker"></i>1149 3rd St (Wilshire), Santa Monica</p> -->
-								<p class="listing-detail__address">Monica</p>
+								<!-- <p class="listing-detail__address">Monica</p> -->
 							</div>
 							<div class="col-md-6">
 								<div class="listing-detail__buttons">
@@ -149,7 +149,7 @@
 								<div class="listing-detail__overview" id="overview-box">
 									<h2 class="listing-detail__content-title">Isi Artikel</h2>
 									<p class="listing-detail__content-description">
-										Jika diberi pertanyaan siapa sih yang ingin sukses? Mungkin semua orang yang diberi pertanyaan tersebut akan mengangkat tangan mereka tinggi-tinggi. Namun, masih banyak orang yang belum mengerti apa itu kesuksesan sebenarnya. Sukses adalah sesuatu yang berupa pencapaian target atau berhasil meraih tujuan yang telah direncanakan dari awal. Seringkali kita mendengar kata sukses, umumnya diucapkan untuk mengungkapkan keberhasilan suatu hal. Arti kata sukses juga bisa merujuk pada kebahagiaan, dimana pencapaian yang berhasil diukir akan memberikan umpan balik (FeedBack) berupaya rasa senang yang optimal. Siapapun bisa meraih kesuksesan, oleh karena itu, kandungan kata sukses menjadi sangat bervariasi. Nah, tentunya dibalik kesuksesan seseorang pasti ada usaha.
+									{!!$kategori->isi!!}
 									</p>
 								</div>
 								<!-- <nav aria-label="Page navigation example" >
@@ -363,7 +363,7 @@
 	
 								<div class="footer__widget text-widget">
 								<a class="navbar-brand" style="width:60%;" href="index.html">
-									<img src="asset/Logo 1.png" style="width:100%;" alt="">
+									<img src="{{asset('/asset/logo 1.png')}}" style="width:100%;" alt="">
 								</a>
 									<p class="footer__widget-description">
 										Menggembangkan dunia baca tulis menggunakan website menuju dunia digital. Temukan berbagai artikel, postingan, cerita, jurnal dan buat postinganmu sendiri disini	
@@ -376,7 +376,7 @@
 								<div class="footer__widget subscribe-widget">
 									<h2 class="footer__widget-title footer__widget-title-white">
 										Alamat
-									</h2>
+									</h2><br>
 									<p class="footer__widget-description">
 										Jl. Pandawa No. 66, Dusun Mawar RT 001 RW 001 Desa Pandan
 									</p>
@@ -388,8 +388,8 @@
 	
 								<div class="footer__widget text-widget">
 									<h2 class="footer__widget-title footer__widget-title-white">
-										Kontak 
-									</h2>
+										Kontak Kami
+									</h2><br>
 									<p class="footer__widget-description">
 										+62 898-1342-6657<br>
 										info@example.com <br>
@@ -428,14 +428,14 @@
 	</div>
 	<!-- End Container -->
 	
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery.migrate.js"></script>
+	<script src="{{asset('js/jquery.min.js')}}"></script>
+	<script src="{{asset('js/jquery.migrate.js')}}"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCiqrIen8rWQrvJsu-7f4rOta0fmI5r2SI"></script>
-	<script src="js/triptip-plugins.min.js"></script>
-	<script src="js/popper.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.countTo.js"></script>
-	<script src="js/script.js"></script>
+	<script src="{{asset('js/triptip-plugins.min.js')}}"></script>
+	<script src="{{asset('js/popper.js')}}"></script>
+	<script src="{{asset('js/bootstrap.min.js')}}"></script>
+	<script src="{{asset('js/jquery.countTo.js')}}"></script>
+	<script src="{{asset('js/script.js')}}"></script>
 	
 </body>
 

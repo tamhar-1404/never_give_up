@@ -138,22 +138,23 @@
 					<h1 class="discover__title places-tab">
 						Karya Pribadi
 					</h1>
-					<form class="discover__form discover__form-favourite">
-						<input class="discover__form-input discover__form-input-favourite" type="text" name="place-event" id="place-event" placeholder="Apa yang Ingin Anda Cari?" />
+					<form class="discover__form discover__form-favourite"  method="get" action="{{ route('src') }}">>
+						<input class="discover__form-input discover__form-input-favourite" type="text" name="query" id="search" placeholder=" Judul Apa yang Ingin Anda Cari?" />
 						
-						<select class="discover__form-input discover__form-input-favourite js-example-basic-multiple">
-							<option>Kategori: </option>
-							<option>Artikel</option>
-							<option>Cerpen</option>
-							<option>Puisi</option>
-							<option>Diary</option>
-							<option>Fotografi</option>
-							<option>Ilustrasi</option>
-							<option>Makalah</option>
-							<option>Skripsi</option>
-							<option>Pantun</option>
-							<option>Essai</option>
-							<option>Karya Ilmiah</option>
+						<select class="discover__form-input discover__form-input-favourite js-example-basic-multiple" name="kategori_id">
+							<option value="">Kategori: </option>
+							<option value="2">Artikel</option>
+							<option value="1">Cerpen</option>
+							<option value="4">Puisi</option>
+							<option value="6">Diary</option>
+							<option value="5">Fotografi</option>
+							<option value="8">Ilustrasi</option>
+							<option value="7">Makalah</option>
+							<option value="9">Skripsi</option>
+							<option value="3">Pantun</option>
+							<option value="10">Essai</option>
+							<option value="11">Karya Ilmiah</option>
+							
 						</select>
 						<button class="btn-default btn-default-red" type="submit"><i class="fa fa-search" aria-hidden="true"></i> Search</button>
 					</form>
@@ -488,7 +489,7 @@ Baca										</a>
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="" class="services-post">
+								<a href="/makalah" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-newspaper" viewBox="0 0 16 16">
@@ -509,7 +510,7 @@ Baca										</a>
 							<div class="col-xl-2 col-md-4 col-sm-6">
 								
 								<!-- services-post module -->
-								<a href="" class="services-post">
+								<a href="/skripsi" class="services-post">
 									<div class="services-post__content">
 									<i class="la la-" aria-hidden="true">
 										<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-journal-bookmark" viewBox="0 0 16 16">
@@ -519,7 +520,7 @@ Baca										</a>
 										  </svg>
 									</i>
 									<h2 class="services-post__title">
-										pantun
+										skripsi
 									</h2>
 									</div>
 							</a>
@@ -530,7 +531,7 @@ Baca										</a>
 							<div class="col-xl-2 col-md-4 col-sm-6">
 	
 								<!-- services-post module -->
-								<a href="" class="services-post">
+								<a href="/pantun" class="services-post">
 									<div class="services-post__content">
 										<i class="la la-" aria-hidden="true">
 											<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-card-text" viewBox="0 0 16 16">
@@ -579,7 +580,7 @@ Baca										</a>
 												<path d="M1 6v-.5a.5.5 0 0 1 1 0V6h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V9h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 2.5v.5H.5a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1H2v-.5a.5.5 0 0 0-1 0z"/>
 											  </svg>
 										</i>
-										<h2 class="services-post__title">
+										<h2 class="services-post__title" style="text-decoration-size:medium;">
 											karya ilmiah
 										</h2>
 										</div>
@@ -627,7 +628,6 @@ Baca										</a>
 						<p class="section-header__description">
 							Berbagai Kategori postingan dengan gambar.
 						</p>
-						<div class="semua" style="display: flex; justify-content: end;"><a href="//semua"><p class="semuat" style="text-decoration: underline;">lihat semua</p></a></div>
 						
 						
 					</div>
