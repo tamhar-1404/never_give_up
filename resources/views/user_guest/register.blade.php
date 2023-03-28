@@ -207,8 +207,8 @@ button{
                       
       
                         <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                          <button  type="submit" id="submit_signup" class="btn btn-danger btn-lg" style="background-color: rgb(228, 72, 98)" >Register</button>
-                        Sudah punya Akun? <a href="user_login">Login</a>
+                          <button  type="submit" id="submit_signup" class="btn btn-danger btn-lg" >Register</button>
+                        Sudah punya Akun? <a href="/sing-page">Login</a>
                         </div>
       
                       </form>

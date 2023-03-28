@@ -31,9 +31,9 @@
 				<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 					<div class="container">
 	
-						<a class="navbar-brand" href="index.html">
-							<img src="images/logo.png" alt="">
-						</a>
+					<a class="navbar-brand" style="width:13%;" href="/index04b9">
+						<img src="asset/Logo 1.png" style="width:100%;" alt="">
+					</a>
 	
 						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span class="navbar-toggler-icon"></span>
@@ -139,72 +139,74 @@
 	<!-- footer block module
 		================================================== -->
 		<footer class="footer footer-black">
-			<div class="container">
-
-				<div class="footer__up-part">
-					<div class="row">
-						<div class="col-md-4">
-
-							<div class="footer__widget text-widget">
-								<img src="images/logo.png" alt="triptip-logo">
-								<p class="footer__widget-description">
-									Menggembangkan dunia baca tulis menggunakan website menuju dunia digital. Temukan berbagai artikel, postingan, cerita, jurnal dan buat postinganmu sendiri disini	
-								</p>
+				<div class="container">
+	
+					<div class="footer__up-part">
+						<div class="row">
+							<div class="col-md-4">
+	
+								<div class="footer__widget text-widget">
+								<a class="navbar-brand" style="width:60%;" href="index.html">
+									<img src="{{asset('/asset/logo 1.png')}}" style="width:100%;" alt="">
+								</a>
+									<p class="footer__widget-description">
+										Menggembangkan dunia baca tulis menggunakan website menuju dunia digital. Temukan berbagai artikel, postingan, cerita, jurnal dan buat postinganmu sendiri disini	
+									</p>
+								</div>
+	
 							</div>
-
-						</div>
-						<div class="col-md-4">
-
-							<div class="footer__widget subscribe-widget">
-								<h2 class="footer__widget-title footer__widget-title-white">
-									Alamat
-								</h2>
-								<p class="footer__widget-description">
-									Jl. Pandawa No. 66, Dusun Mawar RT 001 RW 001 Desa Pandan
-								</p>
-								
+							<div class="col-md-4">
+	
+								<div class="footer__widget subscribe-widget">
+									<h2 class="footer__widget-title footer__widget-title-white">
+										Alamat
+									</h2>
+									<p class="footer__widget-description">
+										Jl. Pandawa No. 66, Dusun Mawar RT 001 RW 001 Desa Pandan
+									</p>
+									
+								</div>
+	
 							</div>
-
-						</div>
-						<div class="col-md-4">
-
-							<div class="footer__widget text-widget">
-								<h2 class="footer__widget-title footer__widget-title-white">
-									Kontak 
-								</h2>
-								<p class="footer__widget-description">
-									+62 898-1342-6657<br>
-									info@example.com <br>
-									YouTube: ngu_never122
-								</p>
+							<div class="col-md-4">
+	
+								<div class="footer__widget text-widget">
+									<h2 class="footer__widget-title footer__widget-title-white">
+										Kontak 
+									</h2>
+									<p class="footer__widget-description">
+										+62 898-1342-6657<br>
+										info@example.com <br>
+										YouTube: ngu_never122
+									</p>
+								</div>
+	
 							</div>
-
 						</div>
 					</div>
-				</div>
-
-				<div class="footer__down-part footer__down-part-black">
-					<div class="row">
-						<div class="col-md-7">
-							<p class="footer__copyright">
-								© Copyright 2018 - All Rights Reserved
-							</p>
-						</div>
-						<div class="col-md-5">
-							<ul class="footer__social-list">
-								<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-								<li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
-								<li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
-							</ul>
+	
+					<div class="footer__down-part footer__down-part-black">
+						<div class="row">
+							<div class="col-md-7">
+								<p class="footer__copyright">
+									© Copyright 2018 - All Rights Reserved
+								</p>
+							</div>
+							<div class="col-md-5">
+								<ul class="footer__social-list">
+									<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
+									<li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
+	
 				</div>
-
-			</div>
-
-		</footer>
+	
+			</footer>
 	<!-- End footer -->
 	<!-- End Container -->
 	

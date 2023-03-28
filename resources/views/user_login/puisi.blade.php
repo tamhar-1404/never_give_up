@@ -94,13 +94,14 @@
 				<div style="margin-bottom: 2%; display: flex; justify-content: space-between " >
 				<h1 >													
 					Puisi	</h1>
-					<form class="search-form"  >
-						<div class="search-form__input-holders" style="width: 100% ;">
-							<input class="search-form__input" type="text" name="search-event" placeholder="Cari Judul Postingan" >
-								<a class="btn-default" href="#">
-									<i class="fa fa-search" aria-hidden="true"></i>
-								</a>
-								</div>
+					<form class="search-form"   method="get" action="{{ route('searchpuisi') }}">
+					<div class="search-form__input-holders" style="width: 100% ;">
+						<input class="search-form__input" type="text" name="search" placeholder="Cari judul postingan?" >
+							<button class="contact-form__submit" type="submit">
+								<i class="fa fa-search" aria-hidden="true"></i>
+							</button>
+							</div>
+						</form >
 							</form >
 						</div>
 					</div>
@@ -161,26 +162,9 @@
 <p></p>
 				
 			<br>
-			<div style="display: flex; justify-content: center;">
-				<nav aria-label="Page navigation example" >
-					<ul class="pagination">
-						<li class="page-item">
-							<a class="page-link" style="color:rgb(236, 107, 128);" href="#" aria-label="Previous">
-								<span aria-hidden="true">&laquo;</span>
-							</a>
-					  </li>
-					  
-					  <li  class="page-item"><a class="page-link" style="color:rgb(236, 107, 128);" href="#">1</a></li>
-					  <li class="page-item"><a class="page-link" style="color:rgb(236, 107, 128);" href="#">2</a></li>
-					  <li class="page-item"><a class="page-link" style="color:rgb(236, 107, 128);" href="#">3</a></li>
-					  <li class="page-item">
-						<a class="page-link" style="color:rgb(236, 107, 128);" href="#" aria-label="Next">
-						  <span aria-hidden="true">&raquo;</span>
-						</a>
-					  </li>
-					</ul>
-				  </nav>
-				</div>
+			<div class="pagination justify-content-center">
+				{{ $puisi->links() }}
+			</div>
 			</section>
 
 			<!-- footer block module

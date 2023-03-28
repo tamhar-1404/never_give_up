@@ -17,37 +17,39 @@ class Index04b9Controller extends Controller
         return view('user_login.index04b9',['postingan' => $postingan]);
         }
     public function cerpen(){
-        $postingan = postingan::where('status', 'setuju')->where('kategori_id', '1')->get();
+$cerpen = postingan::where('kategori_id', 1)->where('status', 'setuju')->paginate(9);
         return view('user_login.cerpen',['postingan'=>$postingan]);
         }
 
-    public function artikel(){
-        $artikel = postingan::where('status', 'setuju')->where('kategori_id', '2')->get();
-        return view('user_login.artikel',['artikel'=>$artikel]);
-    }
+        public function artikel(){
+$artikel = postingan::where('kategori_id', 2)->where('status', 'setuju')->paginate(9);
+            return view('user_login.artikel',['postingan'=>$postingan]);
+            }
 
     public function puisi(){
-        $puisi = postingan::where('status', 'setuju')->where('kategori_id', '4')->get();
+
+$puisi = postingan::where('kategori_id', 4)->where('status', 'setuju')->paginate(9);
         return view('user_login.puisi',['puisi'=>$puisi]);
     }
    
     public function diary(){
-        $diary = postingan::where('status', 'setuju')->where('kategori_id', '6')->get();
+$diary = postingan::where('kategori_id', 6)->where('status', 'setuju')->paginate(9);
         return view('user_login.diary',['diary'=>$diary]);
     }
    
     public function photography(){
-        $photography = postingan::where('status', 'setuju')->where('kategori_id', '5')->get();
-        return view('user_login.photography',['photography'=>$photography]);
+
+        $photography = postingan::where('kategori_id', 5)->where('status', 'setuju')->paginate(9);
+       return view('user_login.photography',['photography' => $photography]);
     }
    
     public function ilustrasi(){
-        $ilustrasi = postingan::where('status', 'setuju')->where('kategori_id', '8')->get();
+$ilustrasi = postingan::where('kategori_id', 8 )->where('status', 'setuju')->paginate(9);     
         return view('user_login.ilustrasi',['ilustrasi'=>$ilustrasi]);    
     }
    
     public function makalah(){
-        $makalah = postingan::where('status', 'setuju')->where('kategori_id', '7')->get();
+$makalah = postingan::where('kategori_id', 4)->where('status', 'setuju')->paginate(9);
         return view('user_login.makalah',['makalah'=>$makalah]);
         }
      public function searchmakalah(Request $request)
@@ -56,25 +58,80 @@ class Index04b9Controller extends Controller
             $makalah = postingan ::where('judul', 'like', "%" . $keyword . "%")->paginate(5);
             return view('user_login.makalah', compact('makalah'))->with('i', (request()->input('page', 1) - 1) * 5);
         }
+     public function searchkartikel(Request $request)
+        {
+            $keyword = $request->search;
+            $makalah = postingan ::where('judul', 'like', "%" . $keyword . "%")->paginate(5);
+            return view('user_login.artikel', compact('makalah'))->with('i', (request()->input('page', 1) - 1) * 5);
+        }
+     public function searchpuisi(Request $request)
+        {
+            $keyword = $request->search;
+            $makalah = postingan ::where('judul', 'like', "%" . $keyword . "%")->paginate(5);
+            return view('user_login.puisi', compact('puisi'))->with('i', (request()->input('page', 1) - 1) * 5);
+        }
+     public function searchdiary(Request $request)
+        {
+            $keyword = $request->search;
+            $makalah = postingan ::where('judul', 'like', "%" . $keyword . "%")->paginate(5);
+            return view('user_login.diary', compact('puisi'))->with('i', (request()->input('page', 1) - 1) * 5);
+        }
+     public function searchfotografi(Request $request)
+        {
+            $keyword = $request->search;
+            $makalah = postingan ::where('judul', 'like', "%" . $keyword . "%")->paginate(5);
+            return view('user_login.photography', compact('puisi'))->with('i', (request()->input('page', 1) - 1) * 5);
+        }
+     public function searchilustrasi(Request $request)
+        {
+            $keyword = $request->search;
+            $makalah = postingan ::where('judul', 'like', "%" . $keyword . "%")->paginate(5);
+            return view('user_login.ilustrasi', compact('puisi'))->with('i', (request()->input('page', 1) - 1) * 5);
+        }
+     public function searchskripsi(Request $request)
+        {
+            $keyword = $request->search;
+            $makalah = postingan ::where('judul', 'like', "%" . $keyword . "%")->paginate(5);
+            return view('user_login.photography', compact('puisi'))->with('i', (request()->input('page', 1) - 1) * 5);
+        }
+     public function searchpantun(Request $request)
+        {
+            $keyword = $request->search;
+            $makalah = postingan ::where('judul', 'like', "%" . $keyword . "%")->paginate(5);
+            return view('user_login.pantun', compact('puisi'))->with('i', (request()->input('page', 1) - 1) * 5);
+        }
+     public function searchessai(Request $request)
+        {
+            $keyword = $request->search;
+            $makalah = postingan ::where('judul', 'like', "%" . $keyword . "%")->paginate(5);
+            return view('user_login.essai', compact('puisi'))->with('i', (request()->input('page', 1) - 1) * 5);
+        }
+     public function searchilmiah(Request $request)
+        {
+            $keyword = $request->search;
+            $makalah = postingan ::where('judul', 'like', "%" . $keyword . "%")->paginate(5);
+            return view('user_login.ilmiah', compact('puisi'))->with('i', (request()->input('page', 1) - 1) * 5);
+        }
+
     public function skripsi(){
-            $kategori = postingan::where('status', 'setuju')->where('kategori_id', '9')->get();
+     $kategori = postingan::where('kategori_id', 9 )->where('status', 'setuju')->paginate(9);
             return view('user_login.skripsi',['kategori'=>$kategori]);
             }
-
-    public function pantun(){
-    $kategori = postingan::where('status', 'setuju')->where('kategori_id', '3')->get();
-    return view('user_login.pantun',['kategori'=>$kategori]);
-    }
-
-    public function essai(){
-    $kategori = postingan::where('status', 'setuju')->where('kategori_id', '10')->get();
-    return view('user_login.essai',['kategori'=>$kategori]);
-    }
-
-    public function ilmiah(){
-    $kategori = postingan::where('status', 'setuju')->where('kategori_id', '11')->get();
-    return view('user_login.ilmiah',['kategori'=>$kategori]);
-    }
+   
+            public function pantun(){
+            $kategori = postingan::where('kategori_id', 3 )->where('status', 'setuju')->paginate(9);
+                return view('user_login.pantun',['kategori'=>$kategori]);
+            }
+                   
+                       public function essai(){
+                        $kategori = postingan::where('kategori_id', 10)->where('status', 'setuju')->paginate(9);
+                       return view('user_login.essai',['kategori'=>$kategori]);
+                       }
+                   
+                       public function ilmiah(){
+                    $kategori = postingan::where('kategori_id', 11)->where('status', 'setuju')->paginate(9);
+                       return view('user_login.ilmiah',['kategori'=>$kategori]);
+                       }
    
     public function semua(){
     return view('user_login.semua',['semua']);
@@ -98,18 +155,24 @@ class Index04b9Controller extends Controller
    
     public function userpage(){
         $user = auth()->user();
+        $setuju = postingan::where('status', 'setuju')->count();
+        $pandding = postingan::where('status', 'pandding')->count();
+        $pendingPosts = postingan::where('status', 'pandding')->get();
+        $approvedPosts = postingan::where('status', 'setuju')->get();
         $postingan = postingan::where('user_id', Auth()->user()->id)->get();
+    
      
-    return view('user_login.user-page',compact('user'), ['postingan'=>$postingan]);
+    return view('user_login.user-page',compact('user','pendingPosts', 'approvedPosts','setuju','pandding'), ['postingan'=>$postingan,'setuju'=>$setuju,'pandding'=>$pandding]);
     }
    
     public function artikelsukses($id){
-    $kategori = postingan::find($id);
-    $kategori-> baca++;
-    $kategori->save();  
-    // $postingan = postingan::where('id', $data )->get();
-    return view('user_login.artikel-sukses', compact('kategori'));
-    }  
+        $artikel = postingan::find($id); 
+        $kategori-> baca++;
+        $kategori->save(); 
+        $komen = komentar::where('postingan_id',$postingan->id)->orderBy('created_at', 'desc')->limit(3)->get(); 
+        // $postingan = postingan::where('id', $data )->get();
+        return view('user_login.artikel-sukses', ['artikel'=>$artikel, 'komen'=>$komen]);
+    }
    
     public function cerpenbaik($id){
         $postingan = postingan::find($id);
@@ -156,33 +219,33 @@ class Index04b9Controller extends Controller
     }
    
     public function makalahdetail($id){
+     $kategori = postingan::find($id);  
+        // $postingan = postingan::where('id', $data )->get();
+    return view('user_login.makalah-detail', compact('kategori'));
+    }
+   
+    public function skripsidetail($id){
         $kategori = postingan::find($id);  
-           // $postingan = postingan::where('id', $data )->get();
-       return view('user_login.makalah-detail', compact('kategori'));
-       }
-      
-       public function skripsidetail($id){
-           $kategori = postingan::find($id);  
-           // $postingan = postingan::where('id', $data )->get();
-       return view('user_login.skripsi-detail', compact('kategori'));
-       } 
-      
-       public function ilmiahdetail($id){
-           $kategori = postingan::find($id);  
-           // $postingan = postingan::where('id', $data )->get();
-       return view('user_login.ilmiah-detail', compact('kategori'));
-       } 
-      
-       public function pantun1($id){
-           $kategori = postingan::find($id);  
-           // $postingan = postingan::where('id', $data )->get();
-       return view('user_login.pantun-1', compact('kategori'));
-       } 
-       public function essai1($id){
-           $kategori = postingan::find($id);  
-           // $postingan = postingan::where('id', $data )->get();
-       return view('user_login.essai-1', compact('kategori'));
-       }
+        // $postingan = postingan::where('id', $data )->get();
+    return view('user_login.skripsi-detail', compact('kategori'));
+    } 
+   
+    public function ilmiahdetail($id){
+        $kategori = postingan::find($id);  
+        // $postingan = postingan::where('id', $data )->get();
+    return view('user_login.ilmiah-detail', compact('kategori'));
+    } 
+   
+    public function pantun1($id){
+        $pantun = postingan::find($id);
+        $komen = komentar::where('postingan_id',$pantun->id)->orderBy('created_at', 'desc')->limit(3)->get(); 
+        return view('user_login.pantun-1', ['pantun'=>$pantun, 'komen'=>$komen]);
+    } 
+    public function essai1($id){
+        $kategori = postingan::find($id);  
+        // $postingan = postingan::where('id', $data )->get();
+    return view('user_login.essai-1', compact('kategori'));
+    }
    
     public function prf(){
     // $user = User::find(Auth()->User()->id);
@@ -213,7 +276,19 @@ class Index04b9Controller extends Controller
 
         return redirect()->back();
     }
-   
+    public function status()
+    {
+        $pendingPosts = postingan::where('status', 'pending')->get();
+        $approvedPosts = postingan::where('status', 'approsetujuved')->get();
+    
+        return view('user_login.user-page', compact('pendingPosts', 'approvedPosts'));
+    }   
+
+    public function ppp(){
+        $artikel = postingan::where('status', 'setuju')->get();
+        return view('user_login.artikel',['artikel'=>$artikel]);
+    }
+
     public function src(Request $request)
     {
         $query = $request->input('query');

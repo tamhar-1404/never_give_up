@@ -152,7 +152,9 @@
 														</h3>
 														<span class="reviews-list__item-location">
 															</span>
-															
+															<p class="reviews-list__item-date">
+																Posting {{$item->created_at->diffForHumans()}}
+															</p>
 															<p class="reviews-list__item-description">
 															{{$item->komentar}}
 														</p>
@@ -174,6 +176,7 @@
 
 						</div>
 					</div>
+					
 					<div class="col-lg-4">
 
 						<!-- sidebar -->

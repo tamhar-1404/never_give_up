@@ -119,7 +119,7 @@
 							<h2 class="listing-detail__content-title">
 
 								<h1 class="listing-detail__title listing-detail__title-black">
-								{{$kategori->judul}}
+								{{$pantun->judul}}
 									<!-- <span cla	ss="listing-detail__rate">9.3 <span>/ 10</span></span> -->
 								</h1>
 								</div>
@@ -127,7 +127,7 @@
 								<ul class="single-post__list">
 					<li class="single-post__list-item">
 						<i class="la la-calendar-check-o"></i>
-						<span>{{$kategori->created_at}}</span>
+						<span>{{$pantun->created_at}}</span>
 					</li>
 					<li class="single-post__list-item">
 						<i class="la la-comments"></i>
@@ -148,52 +148,152 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-lg-8">
-							<div class="listing-detail__content-box">
-										<!-- overview box -->
-								<div class="listing-detail__overview" id="overview-box">
+							<div class="blog-page__box">
 
-									<div class="row">
-										<div class="col-md-6">
-											<p class="listing-detail__content-description" style="display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50vh;
-  margin: 0 auto;" >
-												
-												Sebelum berangkat belanja
-											Olahraga terlebih dahulu supaya sehat
-											Jika sudah terlalu lama bekerja
-											Badan butuh istirahat
-											Makna: Jangan terlalu memaksakan diri sendiri dalam bekerja dan harus selalu ingat kesehatan diri sendiri										</p>
-										
-																							</p>
+								<div class="listing-detail_content-box listing-detail_content-box-nopadding">
+
+									<!-- overview box -->
+									<div class="single-post">
+
+									<img class="single-post__image" src="{{asset('asset/' . $pantun->foto)}}" alt="">
+
+									</div>
+									<!-- overview box -->
+									<div class="listing-detail__overview" id="overview-box">
+										<!-- <h2 class="listing-detail__content-title">Overview</h2> -->
+										<div style="text-align: center; text-color: blck;">
+											<!-- <h2>Ibu Pertiwi</h2> -->
+											
+											<p></p>{!!$pantun->isi!!}
+											
 										</div>
 										
 									</div>
-								</div>
 
+									<!-- Contact form module -->
+									<form action="/komentar/{{$pantun->id}}" method="POST" enctype="multipart/form-data" class="contact-form inner-review" id="leave-review">
+										@csrf
+										<div class="inner-review__form">
+											<div class="inner-review__form-box">
+												<textarea class="contact-form__textarea" name="komentar" id="komentar" placeholder="Silahkan tinggalkan komentar"></textarea>
+												<!-- <a href="{{url('cerpenbaik')}}" class="contact-form__submit" type="submit" name="submit-contact" id="submit_contact" value="Kirim" > -->
+												<button  class="contact-form__submit" type="submit" id="submit" name="submit-contact" >Kirim</button>
+												</a>
+											</div>
+										</div>
+									</form>
+									<!-- End Contact form module -->
+
+									<!-- tips & reviews-box -->
+									<div class="listing-detail__reviews" id="tips-reviews-box">
+										<h2 class="listing-detail__content-title">
+											komentar 
+										</h2>
+										<div class="listing-detail__reviews-box">
+											<!-- reviews list -->
+											<ul class="reviews-list">
+												@foreach($komen as $item)
+												<li class="reviews-list__item">
+													<div class="reviews-list__item-box">
+														<img class="reviews-list__item-image" src="{{asset('foto/' .  	$item->user->foto)}}" alt="">
+														<div class="reviews-list__item-content">
+															<h3 class="reviews-list__item-title">
+																{{$item->user->username}}
+															</h3>
+															<span class="reviews-list__item-location">
+																</span>
+																<p class="reviews-list__item-date">
+																Posting {{$item->created_at->diffForHumans()}}
+																</p>
+																<p class="reviews-list__item-description">
+																{{$item->komentar}}
+															</p>
+															
+														</div>	
+													</div>
+												</li>
+												@endforeach
+											<!-- reviews-list -->
+										</div>
+									</div>
+
+									<!-- gallery-box -->
+									
+
+								</div>
 							</div>
 						</div>
 						<div class="col-lg-4">
-							<div class="sidebar">
+							<!-- sidebar -->
+						<div class="sidebar">
 
-								<div class="sidebar__widget sidebar__widget-listing-details">
+								
+								<div class="sidebar_widget sidebar_widget-listing-details">
 									<h2 class="sidebar__widget-title">
-										Detail 
+										Detail
 									</h2>
 									<ul class="sidebar__listing-list">
 										<li>
 											<i class="la la-map-marker"></i>
-											{{Auth()->user()->email}}
-											<li>
+											{{$pantun->user->askot}}
+										</li>
+										<li>
 											<i class="la la-mobile-phone"></i>
-											+44 20 7336 8898
+											0{{$pantun->user->notlp}}
 										</li>
 										<li>
 											<i class="la la-link"></i>
-											{{$kategori->created_at}}										</li>
-										</ul><p></p>
-										<div class="sidebar__widget sidebar__widget-tags">
+											{{$pantun->user->email}}
+										</li>
+										<!-- <li>
+											<i class="la la-clock-o"></i>
+											<span class="color-close">Closed until Noon</span>
+											<div>
+												<p>
+													Mon–Thu, Sun <span class="right-align">Noon–Midnight</span>
+												</p>
+												<p>
+													Fri–Sat <span class="right-align">Noon–1:00 AM</span>
+												</p>
+											</div>
+										</li> -->
+									</ul>
+								</div>
+
+								<div class="sidebar_widget sidebar_widget-author">
+									<h2 class="sidebar__widget-title">
+										Pembuat
+									</h2>
+									
+									<!-- Author-wrapper module -->
+									<div class="author-wrapper">
+										<div class="author-wrapper__profile">
+											<div class="row">
+												<div class="col-7">
+													<div class="author-wrapper__content">
+														<a class="author-wrapper__image" href=""><img src="{{asset('foto/' .  	$pantun->user->foto)}}" alt=""></a>
+														<h3 class="author-wrapper__title">
+															<a href="">{{$pantun->user->username}}</a>
+															<span class="author-wrapper__location">
+															{{$pantun->user->medsos}}
+															</span>
+														</h3>
+													</div>
+												</div>
+												<!-- <div class="col-5">
+													<a class="author-wrapper__btn follow-btn" href="#">
+														<i class="la la-eye"></i>
+														Follow
+													</a>
+												</div> -->
+											</div>
+										</div>
+								
+									</div>
+									<!-- End Author-wrapper module-->
+								</div>
+
+								<div class="sidebar_widget sidebar_widget-tags">
 									<h2 class="sidebar__widget-title">
 										Kategori
 									</h2>
@@ -211,270 +311,22 @@
 										<li><a href="/ilmiah">Karya Ilmiah</a></li>
 									</ul>
 								</div>
-			
-											<div class="sidebar__widget sidebar__widget-author">
-												<h2 class="sidebar__widget-title">
-													Pembuat
-												</h2>
-												
-												<!-- Author-wrapper module -->
-												<div class="author-wrapper">
-													<div class="author-wrapper__profile">
-														<div class="row">
-															<div class="col-7">
-																<div class="author-wrapper__content">
-																	<a class="author-wrapper__image" href="#"><img src="upload/avatar1.jpg" alt=""></a>
-																	<h3 class="author-wrapper__title">
-																		<a href="/user-page">>{{Auth()->user()->username}}</a>
-																		<span class="author-wrapper__location">
-																			New York
-																		</span>
-																	</h3>
-																</div>
-															</div>
-															</div>
-													</div>
-													<ul class="author-wrapper__list">
-														<li>
-															<span>42</span>
-															postingan
-														</li>
-														<li>
-															<span>56</span>
-															komentar
-														</li>
-													</ul>
-												</div>
-												<!-- End Author-wrapper module-->
-											</div>
-								</div>
 
+								
 							</div>
+						<!-- End sidebar -->
 						</div>
 					</div>
 				</div>
 			</div>
+
 			
 		</section>
 		<!-- End listing-detail -->
 
 		<!-- trending-places-block
 			================================================== -->
-		<section class="trending-places trending-places-listing">
-			<div class="container">
-				<h2 class="trending-places-listing__title"> Pantun Lainnya</h2>
-				<div class="trending-places__box owl-wrapper">
-					<div class="owl-carousel" data-num="5">
-					
-						<div class="item">
-
-							<!-- review item module -->
-							<div class="review-item">
-								
-								<div class="review-item__post">
-									<div class="review-item__post-content">
-										<h2 class="review-item__post-title">
-											<a href="#">Pantun Jenaka</a>
-										</h2>
-										<span class="review-item__post-reviews">
-											<i class="fa fa-comment-o"></i>
-											58 Reviews
-										</span><p></p>
-										<p class="review-item__date">
-											Posted October 7, 2018
-										</p>
-										<a class="place-post__like" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-									</div>
-								</div>
-								<div class="review-item__content">
-									<h3 class="review-item__title">
-										Pantun Kesehatan
-									</h3>
-									<p class="review-item__description">
-										Sebelum berangkat belanja
-										Olahraga terlebih dahulu supaya sehat
-										Jika sudah terlalu lama bekerja...<a href="/pantun-1/{id}">lihat</a>
-										</div>	
-							</div>
-							<!-- end review item module -->
-
-						</div>
-							<!-- end review item module -->
-		
-							<div class="item">
-
-								<!-- review item module -->
-								<div class="review-item">
-									
-									<div class="review-item__post">
-										<div class="review-item__post-content">
-											<h2 class="review-item__post-title">
-												<a href="#">Pantun Jenaka</a>
-											</h2>
-											<span class="review-item__post-reviews">
-												<i class="fa fa-comment-o"></i>
-												58 Reviews
-											</span><p></p>
-											<p class="review-item__date">
-												Posted October 7, 2018
-											</p>
-											<a class="place-post__like" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-										</div>
-									</div>
-									<div class="review-item__content">
-										<h3 class="review-item__title">
-											Pantun Kesehatan
-										</h3>
-										<p class="review-item__description">
-											Sebelum berangkat belanja
-											Olahraga terlebih dahulu supaya sehat
-											Jika sudah terlalu lama bekerja...<a href="/pantun-1/{id}">lihat</a>
-											</div>	
-								</div>
-								<!-- end review item module -->
 	
-							</div>
-					
-							<div class="item">
-
-								<!-- review item module -->
-								<div class="review-item">
-									
-									<div class="review-item__post">
-										<div class="review-item__post-content">
-											<h2 class="review-item__post-title">
-												<a href="#">Pantun Jenaka</a>
-											</h2>
-											<span class="review-item__post-reviews">
-												<i class="fa fa-comment-o"></i>
-												58 Reviews
-											</span><p></p>
-											<p class="review-item__date">
-												Posted October 7, 2018
-											</p>
-											<a class="place-post__like" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-										</div>
-									</div>
-									<div class="review-item__content">
-										<h3 class="review-item__title">
-											Pantun Kesehatan
-										</h3>
-										<p class="review-item__description">
-											Sebelum berangkat belanja
-											Olahraga terlebih dahulu supaya sehat
-											Jika sudah terlalu lama bekerja...<a href="/pantun-1/{id}">lihat</a>
-											</div>	
-								</div>
-								<!-- end review item module -->
-	
-							</div>
-					
-							<div class="item">
-
-								<!-- review item module -->
-								<div class="review-item">
-									
-									<div class="review-item__post">
-										<div class="review-item__post-content">
-											<h2 class="review-item__post-title">
-												<a href="#">Pantun Jenaka</a>
-											</h2>
-											<span class="review-item__post-reviews">
-												<i class="fa fa-comment-o"></i>
-												58 Reviews
-											</span><p></p>
-											<p class="review-item__date">
-												Posted October 7, 2018
-											</p>
-											<a class="place-post__like" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-										</div>
-									</div>
-									<div class="review-item__content">
-										<h3 class="review-item__title">
-											Pantun Kesehatan
-										</h3>
-										<p class="review-item__description">
-											Sebelum berangkat belanja
-											Olahraga terlebih dahulu supaya sehat
-											Jika sudah terlalu lama bekerja...<a href="/pantun-1/{id}">lihat</a>
-											</div>	
-								</div>
-								<!-- end review item module -->
-	
-							</div>
-					
-							<div class="item">
-
-								<!-- review item module -->
-								<div class="review-item">
-									
-									<div class="review-item__post">
-										<div class="review-item__post-content">
-											<h2 class="review-item__post-title">
-												<a href="#">Pantun Jenaka</a>
-											</h2>
-											<span class="review-item__post-reviews">
-												<i class="fa fa-comment-o"></i>
-												58 Reviews
-											</span><p></p>
-											<p class="review-item__date">
-												Posted October 7, 2018
-											</p>
-											<a class="place-post__like" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-										</div>
-									</div>
-									<div class="review-item__content">
-										<h3 class="review-item__title">
-											Pantun Kesehatan
-										</h3>
-										<p class="review-item__description">
-											Sebelum berangkat belanja
-											Olahraga terlebih dahulu supaya sehat
-											Jika sudah terlalu lama bekerja...<a href="/pantun-1/{id}">lihat</a>
-											</div>	
-								</div>
-								<!-- end review item module -->
-	
-							</div>
-					
-							<div class="item">
-
-								<!-- review item module -->
-								<div class="review-item">
-									
-									<div class="review-item__post">
-										<div class="review-item__post-content">
-											<h2 class="review-item__post-title">
-												<a href="#">Pantun Jenaka</a>
-											</h2>
-											<span class="review-item__post-reviews">
-												<i class="fa fa-comment-o"></i>
-												58 Reviews
-											</span><p></p>
-											<p class="review-item__date">
-												Posted October 7, 2018
-											</p>
-											<a class="place-post__like" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-										</div>
-									</div>
-									<div class="review-item__content">
-										<h3 class="review-item__title">
-											Pantun Kesehatan
-										</h3>
-										<p class="review-item__description">
-											Sebelum berangkat belanja
-											Olahraga terlebih dahulu supaya sehat
-											Jika sudah terlalu lama bekerja...<a href="/pantun-1/{id}">lihat</a>
-											</div>	
-								</div>
-								<!-- end review item module -->
-	
-							</div>
-						
-					</div>
-				</div>
-			</div>
-		</section>
 		<!-- End trending-places-block -->
 
 		<!-- listing-detail
@@ -487,101 +339,9 @@
 						<div class="col-lg-8">
 							<div class="listing-detail__content-box">
 
-								<!-- Contact form module -->
-								<form class="contact-form inner-review without-border" id="leave-review">
-									<div class="inner-review__form">
-										<img src="upload/avatar1.jpg" alt="">
-										<div class="inner-review__form-box">
-											<textarea class="contact-form__textarea" name="comment" id="comment" placeholder="Tulis Komentar"></textarea>
-											<input class="contact-form__submit" type="submit" name="submit-contact" id="submit_contact" value="Kirim" />
-										</div>
-									</div>
-								</form>
-								<!-- End Contact form module -->
-
+								
 								<!-- tips & reviews-box -->
-								<div class="listing-detail__reviews" id="tips-reviews-box">
-									<h2 class="listing-detail__content-title">
-										komentar
-									</h2>
-									<div class="listing-detail__reviews-box">
-
-										<!-- reviews list -->
-										<ul class="reviews-list">
-
-											<li class="reviews-list__item">
-												<div class="reviews-list__item-box">
-													<img class="reviews-list__item-image" src="upload/avatar2.jpg" alt="">
-													<div class="reviews-list__item-content">
-														<h3 class="reviews-list__item-title">
-															Philip W
-														</h3>
-														<span class="reviews-list__item-location">
-															Ormskirk, United Kingdom
-														</span>
-														<p class="reviews-list__item-date">
-															Posted October 7, 2018
-															<span class="reviews-list__item-rating">8.0</span>
-														</p>
-														<h3 class="reviews-list__item-title">
-															Good Service but..
-														</h3>
-														<p class="reviews-list__item-description">
-															Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
-														</p>
-														<a class="reviews-list__item-helpful" href="#">
-															<i class="la la-thumbs-o-up"></i>
-															Helpfull review
-															<span>8</span>
-														</a>
-														<a class="reviews-list__item-reply" href="#">
-															<i class="la la-mail-forward"></i>
-															Reply
-														</a>
-													</div>	
-												</div>
-											</li>
-													
-													<li class="reviews-list__item">
-												<div class="reviews-list__item-box">
-													<img class="reviews-list__item-image" src="upload/avatar5.jpg" alt="">
-													<div class="reviews-list__item-content">
-														<h3 class="reviews-list__item-title">
-															Andreas
-														</h3>
-														<span class="reviews-list__item-location">
-															Paphos, Cyprus
-														</span>
-														<p class="reviews-list__item-date">
-															Posted October 1, 2018
-															<span class="reviews-list__item-rating solid-rat">6.0</span>
-														</p>
-														<h3 class="reviews-list__item-title">
-															Lunch for two!
-														</h3>
-														<p class="reviews-list__item-description">
-															Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
-														</p>
-														<a class="reviews-list__item-helpful" href="#">
-															<i class="la la-thumbs-o-up"></i>
-															Helpfull review
-															<span>1</span>
-														</a>
-														<a class="reviews-list__item-reply" href="#">
-															<i class="la la-mail-forward"></i>
-															Reply
-														</a>
-													</div>	
-												</div>
-											</li>
-
-										</ul>
-										<!-- reviews-list -->
-										</div>
-
-								</div>
-
-							</div>
+								
 						</div>
 						
 					</div>

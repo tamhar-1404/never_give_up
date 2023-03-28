@@ -157,8 +157,87 @@
 		@endforeach
 
 			</div>	
-			
+			<div class="user-detail__favorites-box iso-call" data-item-showen="3" style="margin-bottom: 5%; padding:3%;">
+				<div class="item">
+		@foreach ($postingan as $item)
+					<!-- place-post module  fotografi -->
+					<div class="col-0">
+						<div class="card" style="border-radius: 15px;">
+						<div class="card-body">
+							<div style=" display: flex; justify-content:space-between;">
+								<img class="" style="border-radius: 100%; width: 30px; height: 30px; " src="foto/{{$item -> user -> foto}}" alt="">
+								<a class="place-post__like" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+
+								<p style="color:black; font-family: Georgia, 'Times New Roman', Times, serif; margin:10px;">
+								{{$item -> user -> username}}
+							   </p>
+							   <div >
+								<ion-icon style="font-size: 30px;" name="ellipsis-vertical-outline"></ion-icon>
+							   </div>
+							</div>
+							<img style="border-radius: 10px;" src="asset/{{$item -> foto}}" class="card-img-top" alt="" srcset="">
+							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon>
+							<p class="card-text-judul">{{$item-> judul}}</p>
+							<center>
+							<p class="card-text mb-50" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">{!!$item->isi!!}</p>							</center>
+							<div style="width: 100%; display: flex; justify-content: center;  " >
+								<a class="contact-form__submit" href="/artikel-sukses/{{$item->id}}" style="margin-right: 20px; margin-bottom: 10px; ">
+									<i class="fa fa-caret-right" aria-hidden="true"></i>
+									Baca
+								</a>
+							</div>
+						</div>
+						</div>
+					</div>
+					<!-- end place-post module fotografi-->
+		@endforeach
+
+			</div>	
+
+			<div class="user-detail__favorites-box iso-call" data-item-showen="3" style="margin-bottom: 5%; padding:3%;">
+				<div class="item">
+		@foreach ($postingan as $item)
+					<!-- place-post module  fotografi -->
+					<div class="col-0">
+						<div class="card" style="border-radius: 15px;">
+						<div class="card-body">
+							<div style=" display: flex; justify-content:space-between;">
+								<img class="" style="border-radius: 100%; width: 30px; height: 30px; " src="foto/{{$item -> user -> foto}}" alt="">
+								<a class="place-post__like" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+
+								<p style="color:black; font-family: Georgia, 'Times New Roman', Times, serif; margin:10px;">
+								{{$item -> user -> username}}
+							   </p>
+							   <div >
+								<ion-icon style="font-size: 30px;" name="ellipsis-vertical-outline"></ion-icon>
+							   </div>
+							</div>
+							<img style="border-radius: 10px;" src="asset/{{$item -> foto}}" class="card-img-top" alt="" srcset="">
+							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon>
+							<p class="card-text-judul">{{$item-> judul}}</p>
+							<center>
+							<p class="card-text mb-50" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">{!!$item->isi!!}</p>							</center>
+							<div style="width: 100%; display: flex; justify-content: center;  " >
+								<a class="contact-form__submit" href="/artikel-sukses/{{$item->id}}" style="margin-right: 20px; margin-bottom: 10px; ">
+									<i class="fa fa-caret-right" aria-hidden="true"></i>
+									Baca
+								</a>
+							</div>
+						</div>
+						</div>
+					</div>
+					<!-- end place-post module fotografi-->
+		@endforeach
+
+			</div>	
+
+
+
+
 		<br>
+		<div class="pagination justify-content-center">
+				{{ $puisi->links() }}
+			</div>
 		</section>
 					
 					
