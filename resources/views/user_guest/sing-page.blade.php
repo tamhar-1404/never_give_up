@@ -170,7 +170,7 @@ button{
         <input class="sign-form__input-text @error('password') is-invalid @enderror" type="password"  name="password" required id="password" placeholder="Password" />
        
         <button type="submit"  id="submit-loggin">Log In</button>
-       Belum Punya Akun?<a href="user_register" style="text-decoration-color: #23a2f6;">Register</a>
+       Belum Punya Akun?<a href="user_register" >Register</a>
     </form>
 </body>
 </html>
