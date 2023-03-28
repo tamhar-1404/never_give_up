@@ -3,12 +3,15 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use ConsoleTVs\Charts\Facades\Charts;
 use App\Models\User;
 use App\Models\Kontak;
 use App\Models\Cerpen;
 use App\Models\Postingan;
 use App\Models\Kategori;
 use App\Models\Notif;
+use Illuminate\Pagination\Paginator;
 
 class AdminController extends Controller
 {
@@ -19,10 +22,58 @@ class AdminController extends Controller
         $semua = postingan::count();
         $setuju = postingan::where('status', 'setuju')->count();
         $postingan = postingan::where('status', 'pandding')->count();
-        $posting =postingan::where('status', 'pandding')->get();
+        $posting =postingan::where('status', 'pandding') ->paginate(12);
+        $data = DB::table('postingans')->get();
+        $cerpen = postingan::where('kategori_id', '1')->count();
+        $artikel = postingan::where('kategori_id', '2')->count();
+        $pantun = postingan::where('kategori_id', '3')->count();
+        $puisi = postingan::where('kategori_id', '4')->count();
+        $photografi = postingan::where('kategori_id', '5')->count();
+        $diari = postingan::where('kategori_id', '6')->count();
+        $makalah = postingan::where('kategori_id', '7')->count();
+        $ilustrasi = postingan::where('kategori_id', '7')->count();
+        $skripsi = postingan::where('kategori_id', '7')->count();
+        $esai = postingan::where('kategori_id', '7')->count();
+        $karya_ilmiah = postingan::where('kategori_id', '7')->count();
+        $lainnya = postingan::where('kategori_id', '7')->count();
+        $setuju = DB::table('postingans')->where('status', 'setuju')->count();
+        $ditolak = DB::table('postingans')->where('status', 'tolak')->count();
+        $pandding = DB::table('postingans')->where('status', 'pandding')->count();
+        //chart
+        $date = User::selectRaw('DATE(created_at) as date, COUNT(*) as count')
+                ->groupBy('date')
+                ->orderBy('date', 'ASC')
+                ->get();  
+        
+                $tanggal = [];
+                $count = [];
+            
+                foreach($date as $data){
+                    array_push($tanggal, $data->date);
+                    array_push($count, $data->count);
+                }
+            
+                $isi = [
+                    'tanggal' => $tanggal,
+                    'count' => $count
+                ];
 
-        return view('admin.index', ['user'=>$user,'semua'=>$semua,'setuju'=>$setuju,'postingan'=>$postingan, 'posting'=>$posting] );
-
+       
+    
+        // menyiapkan data untuk ditampilkan pada chart
+        $status = [
+            ['name' => 'setuju', 'y' => $setuju],
+            ['name' => 'ditolak', 'y' => $ditolak],
+            ['name' => 'pandding', 'y' => $pandding],
+        ];
+            
+        
+        return view('admin.index', $isi, 
+        ['user'=>$user,'semua'=>$semua,'setuju'=>$setuju,'postingan'=>$postingan, 'posting'=>$posting, 'data' => $data, 'status' => $status, 'setuju' => $setuju,
+        'ditolak' => $ditolak, 'pandding' => $pandding,
+         'cerpen' => $cerpen, 'artikel' => $artikel, 'pantun' => $pantun, 'puisi' => $puisi, 'photografi' => $photografi,'ilustrasi' => $ilustrasi,
+          'diari' => $diari, 'makalah' => $makalah, 'skripsi' => $skripsi, 'esai' => $esai, 'karya_ilmiah' => $karya_ilmiah, 'lainnya' => $lainnya]);
+       
 
     }
     public function data_user()

@@ -5,14 +5,16 @@ use App\Models\Cerpen;
 use App\Models\Postingan;
 use App\Models\User;
 use App\Models\Kategori;
-use App\Models\komentar;
+use App\Models\Notif;
+use App\Models\Komentar;
 use illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
 class Index04b9Controller extends Controller
 {
     public function user_login(){
-        return view('user_login.index04b9');
+        $postingan = postingan::orderBy('baca', 'desc')->where('status', 'setuju')->get();
+        return view('user_login.index04b9',['postingan' => $postingan]);
         }
     public function cerpen(){
 $cerpen = postingan::where('kategori_id', 1)->where('status', 'setuju')->paginate(9);
@@ -165,17 +167,32 @@ $makalah = postingan::where('kategori_id', 4)->where('status', 'setuju')->pagina
    
     public function artikelsukses($id){
         $artikel = postingan::find($id); 
+        $kategori-> baca++;
+        $kategori->save(); 
         $komen = komentar::where('postingan_id',$postingan->id)->orderBy('created_at', 'desc')->limit(3)->get(); 
         // $postingan = postingan::where('id', $data )->get();
         return view('user_login.artikel-sukses', ['artikel'=>$artikel, 'komen'=>$komen]);
     }
    
     public function cerpenbaik($id){
-        $postingan = postingan::find($id); 
+        $postingan = postingan::find($id);
+        $postingan-> baca++;
+        $postingan->save();
         $komen = komentar::where('postingan_id',$postingan->id)->orderBy('created_at', 'desc')->limit(3)->get(); 
         // $postingan = postingan::where('id', $data )->get();
-        return view('user_login.cerpen-baik', ['postingan'=>$postingan, 'komen'=>$komen]);
-    }  
+    return view('user_login.cerpen-baik', ['postingan'=>$postingan, 'komen'=>$komen]);
+    }
+
+    // public function komentar(Request $request, $id){
+    //     $data = postingan::all()->count();
+    //     $komentar = komentar::create([
+    //         'user_id' => Auth()->user()->id,
+    //         'komentar' => $request->komentar,
+    //         'postingan_id' => $id,
+    //     ]);
+
+    //     return redirect()->back();
+    // }    
    
     public function puisipertiwi($id){
         $puisi = postingan::find($id);
@@ -240,7 +257,7 @@ $makalah = postingan::where('kategori_id', 4)->where('status', 'setuju')->pagina
     public function makalahpkn(){
     return view('user_login.makalah-pkn',['makalah-pkn']);
     }
-
+    
     public function search(Request $request)
     {
         $keyword = $request->search;
@@ -248,7 +265,8 @@ $makalah = postingan::where('kategori_id', 4)->where('status', 'setuju')->pagina
         return view('user_login.cerpen', compact('postingan'))->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
-    public function komentar(Request $request, $id){
+    public function komentar (Request $request, $id)
+    {
         $data = postingan::all();
         $komentar = komentar::create([
             'user_id' => Auth::user()->id,
@@ -276,84 +294,17 @@ $makalah = postingan::where('kategori_id', 4)->where('status', 'setuju')->pagina
         $query = $request->input('query');
         $kategori_id = $request->input('kategori_id');
     
-        $posts = postingan::where('judul', 'like', '%'.$query.'%');
+        
     
         if (!empty($kategori_id)) {
-            $posts = $posts->where('kategori_id', $kategori_id);
+            $posts = postingan::where('judul', 'like', '%'.$query.'%')->where('status', 'setuju')->where('kategori_id', $kategori_id)->get();
+        }else{
+            $posts = postingan::where('judul', 'like', '%'.$query.'%')->where('status', 'setuju')->get();
         }
     
-        $posts = $posts->where('status', 'setuju')->get();
+    
     
         return view('user_login.hasilsearch', compact('posts'));
     }
-
-//     public function like(postingan $postingan)
-//     {
-//         $like = $postingan->likes()->where('user_id', auth()->user()->id)->first();
-
-//         if ($like) {
-//             $like->delete();
-//         } else {
-//             $postingan->likes()->create([
-//                 'user_id' => auth()->user()->id,
-//             ]);
-//         }
-
-//         return back();
-//     }
-
-//     public function save(postingan $postingan)
-//     {
-//         $like = $postingan->likes()->where('user_id', auth()->user()->id)->first();
-
-//         if ($like) {
-//             $like->update([
-//                 'is_saved' => ! $like->is_saved,
-//             ]);
-//         }
-
-//         return back();
-//     }
-
-//     public function store(Post $post)
-// {
-//     $savedPost = new SavedPost();
-//     $savedPost->user_id = Auth::id();
-//     $savedPost->postingan_id = $postingan->id;
-//     $savedPost->save();
-
-//     return redirect()->back()->with('success', 'Postingan berhasil disimpan.');
-// }
-
-// public function destroy(SavedPost $savedPost)
-// {
-//     $savedPost->delete();
-
-//     return redirect()->back()->with('success', 'Postingan berhasil dihapus dari simpanan.');
-// }
-
-
-
-
-
-
-
-public function save(postingan $postingan)
-{
-    auth()->user()->savedPosts()->attach($postingan);
-
-    return back();
-}
-
-public function unsave(postingan $postingan)
-{
-    auth()->user()->savedPosts()->detach($postingan);
-
-    return back();
-}
-
-
-
-
 }
 ?>
