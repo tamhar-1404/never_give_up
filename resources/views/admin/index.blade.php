@@ -20,7 +20,10 @@
     <link href="assets/css/icons.css" rel="stylesheet" type="text/css">
     <link href="assets/css/style.css" rel="stylesheet" type="text/css">
 
-
+    <script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
+    <script src="{{ asset('js/highcharts.js') }}"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
 
 </head>
 
@@ -281,8 +284,8 @@
                             <div class="col-xl-8">
                                 <div class="card">
                                     <div class="card-body">
-                                        <h4 class="m-t-0 m-b-30">Jumlah User</h4>
-                                        <div id="pengguna" class="flot-chart" style="height: 360px"></div>
+                                        <h4 class="m-t-0 m-b-30">Jumlah postingan setiap kategori</h4>
+                                        <div id="chart-container" class="flot-chart" style="height: 360px"></div>
                                     </div>
                                 </div>
                             </div>
@@ -290,124 +293,19 @@
                         <div class="col-xl-4">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="m-b-30 m-t-0">Jumlah User</h4>
-                                    <div id="website-stats" style="height: 360px" class="flot-chart"></di>
-                                    </div>
+                                    <h4 class="m-b-30 m-t-0">Status postingan</h4>
+                                    <div id="grafik_status" style="height: 360px" class="flot-chart"></div>
+                                    
                                 </div>
                             </div>
                         </div>
                      </div>
 
                         <!-- end col -->
-                        <div class="row" id="pp">
-                            <div class="col-xl-3" >
-                                <div class="card" style="height: 1050px;">
-                                    <div class="card-body">
-                                        <h4 class="m-b-30 m-t-0">kategori</h4>
-
-                                        <h5>artikel <span class="text-primary float-right"><b>78%</b></span></h5>
-                                        <span class="text-primary float-right"><b></b></span></h5>
-                                        <div class="progress" style="height: 10px;">
-                                            <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="78"></div>
-                                        </div>
-                                        <br>
-
-                                        <h5>cerpen <span class="text-info float-right"><b>85%</b></span></h5>
-                                        <span class="text-info float-right"><b></b></span></h5>
-                                        <div class="progress" style="height: 10px;">
-                                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <br>
-
-                                        <h5>pantun <span class="text-primary float-right"><b>60%</b></span></h5>
-                                        <span class="text-primary float-right"><b></b></span></h5>
-                                        <div class="progress" style="height: 10px;">
-                                            <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="78"></div>
-                                        </div>
-                                        <br>
-
-                                        <h5>puisi <span class="text-info float-right"><b>85%</b></span></h5>
-                                        <span class="text-info float-right"><b></b></span></h5>
-                                        <div class="progress" style="height: 10px;">
-                                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <br>
-
-                                        <h5>fotografi <span class="text-primary float-right"><b>78%</b></span></h5>
-                                        <span class="text-primary float-right"><b></b></span></h5>
-                                        <div class="progress" style="height: 10px;">
-                                            <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="78"></div>
-                                        </div>
-                                        <br>
-
-                                        <h5>diary <span class="text-info float-right"><b>85%</b></span></h5>
-                                        <span class="text-info float-right"><b></b></span></h5>
-                                        <div class="progress" style="height: 10px;">
-                                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <br>
-
-                                        <h5>esai <span class="text-primary float-right"><b>78%</b></span></h5>
-                                        <span class="text-primary float-right"><b></b></span></h5>
-                                        <div class="progress" style="height: 10px;">
-                                            <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="78"></div>
-                                        </div>
-                                        <br>
-
-                                        <h5>karya ilmiah <span class="text-info float-right"><b>85%</b></span></h5>
-                                        <span class="text-info float-right"><b></b></span></h5>
-                                        <div class="progress" style="height: 10px;">
-                                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <br>
-                                        
-                                        <h5>ilustrasi <span class="text-primary float-right"><b>78%</b></span></h5>
-                                        <span class="text-primary float-right"><b></b></span></h5>
-                                        <div class="progress" style="height: 10px;">
-                                            <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" style="width: 78%" aria-valuenow="78" aria-valuemin="0" aria-valuemax="78"></div>
-                                        </div>
-                                        <br>
-
-                                        <h5>makalah <span class="text-info float-right"><b>85%</b></span></h5>
-                                        <span class="text-info float-right"><b></b></span></h5>
-                                        <div class="progress" style="height: 10px;">
-                                            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <br>
-
-                                        <h5>skripsi <span class="text-primary float-right"><b>90%</b></span></h5>
-                                        <span class="text-primary float-right"><b></b></span></h5>
-                                        <div class="progress" style="height: 10px;">
-                                            <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" style="width: 78%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="90"></div>
-                                        </div>
-                                        <br>
-
-                                    </div>
-    
-                                </div>
-                            </div>
-
-                        <div class="col-xl-9">
+                          <div class="col-xl-9">
                             <div class="card">
                                 <div class="card-body">
                                     <h4 class="m-b-30 m-t-0">postingan dari semua kategori</h4>
-                                    <nav aria-label="Page navigation example">
-                                        <ul class="pagination">
-                                          <li class="page-item">
-                                            <a class="page-link" href="#" aria-label="Previous">
-                                              <span aria-hidden="true">&laquo;</span>
-                                            </a>
-                                          </li>
-                                          <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                          <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                          <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                          <li class="page-item">
-                                            <a class="page-link" href="#" aria-label="Next">
-                                              <span aria-hidden="true">&raquo;</span>
-                                            </a>
-                                          </li>
-                                        </ul>
-                                      </nav>
                                     <div class="row col-lg-12 justify-content-lg-center"  >
                                    
                                   
@@ -478,66 +376,7 @@
                         </div>
                      </div>
 
-                     <div class="row">
-                        <div class="col-xl-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="m-b-30 m-t-0">Messages</h4>
-                                    <div class="inbox-widget slimscroller" style="max-height:360px;">
-
-                                        <div class="media inbox-item">
-                                            <img class="mr-3 rounded-circle" src="assets/images/users/avatar-1.jpg" alt="Generic placeholder image">
-                                            <div class="media-body">
-                                                <h5 class="mt-0">Clinton Murphy</h5>
-                                                <p class="text-muted">Nullam id tincidunt ante on auctor lacus vivamus laoreet pellentesque quam aliquam efficitur.</p>
-                                                <p class="inbox-item-time">5 mins ago</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="media inbox-item mt-3">
-                                            <img class="mr-3 rounded-circle" src="assets/images/users/avatar-2.jpg" alt="Generic placeholder image">
-                                            <div class="media-body">
-                                                <h5 class="mt-0">Frank Martinez</h5>
-                                                <p class="text-muted">Nullam id tincidunt ante on auctor lacus vivamus laoreet pellentesque quam aliquam efficitur.</p>
-                                                <p class="inbox-item-time">6 mins ago</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="media inbox-item mt-3">
-                                            <img class="mr-3 rounded-circle" src="assets/images/users/avatar-3.jpg" alt="Generic placeholder image">
-                                            <div class="media-body">
-                                                <h5 class="mt-0">Patrick Dawson</h5>
-                                                <p class="text-muted">Nullam id tincidunt ante on auctor lacus vivamus laoreet pellentesque quam aliquam efficitur.</p>
-                                                <p class="inbox-item-time">6 mins ago</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="media inbox-item mt-3">
-                                            <img class="mr-3 rounded-circle" src="assets/images/users/avatar-4.jpg" alt="Generic placeholder image">
-                                            <div class="media-body">
-                                                <h5 class="mt-0">Charles Young</h5>
-                                                <p class="text-muted">Nullam id tincidunt ante on auctor lacus vivamus laoreet pellentesque quam aliquam efficitur.</p>
-                                                <p class="inbox-item-time">8 mins ago</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="media inbox-item mt-3">
-                                            <img class="mr-3 rounded-circle" src="assets/images/users/avatar-5.jpg" alt="Generic placeholder image">
-                                            <div class="media-body">
-                                                <h5 class="mt-0">Joseph Yowell</h5>
-                                                <p class="text-muted">Nullam id tincidunt ante on auctor lacus vivamus laoreet pellentesque quam aliquam efficitur.</p>
-                                                <p class="inbox-item-time">12 mins ago</p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                       
-                    </div><!-- container-fluid -->
-
+               
             </div><!-- container-fluid -->
 
         </div> <!-- Page content Wrapper -->
@@ -596,63 +435,90 @@
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
     <!--grafik-->
-    <script src="https://code.highcharts.com/highcharts.js"></script>
-    <script>
-        Highcharts.chart('pengguna', {
+    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var categories = [];
+            var values = [
+                {{$cerpen}},
+                {{$artikel}},
+                {{$pantun}},
+                {{$puisi}},
+                {{$photografi}},
+                {{$diari}},
+                {{$makalah}},
+                {{$ilustrasi}},
+                {{$skripsi}},
+                {{$esai}},
+                {{$karya_ilmiah}},
+                {{$lainnya}}
+            ];
+            var cerpen = [];
+            $jumlah_cerpen = 0;
+
+
+            Highcharts.chart('chart-container', {
                 chart: {
                     type: 'column'
                 },
                 title: {
-                    text: ''
-                },
-                subtitle: {
-                    text: ''
+                    text: 'Grafik Jumlah postingan tiap kategori'
                 },
                 xAxis: {
                     categories: [
-                        'Jan',
-                        'Feb',
-                        'Mar',
-                        'Apr',
-                        'May',
-                        'Jun',
-                        'Jul',
-                        'Aug',
-                        'Sep',
-                        'Oct',
-                        'Nov',
-                        'Dec'
-                    ],
-                    crosshair: true
+                        'cerpen',
+                        'artikel',
+                        'pantun',
+                        'puisi',
+                        'photografi',
+                        'diary',
+                        'makalah',
+                        'ilustrasi',
+                        'skripsi',
+                        'esai',
+                        'karya ilmiah',
+                        'lainnya',
+                    ]
                 },
                 yAxis: {
-                    min: 0,
                     title: {
-                        text: 'Jumlah'
-                    }
-                },
-                tooltip: {
-                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-                    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                        '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
-                    footerFormat: '</table>',
-                    shared: true,
-                    useHTML: true
-                },
-                plotOptions: {
-                    column: {
-                        pointPadding: 0.2,
-                        borderWidth: 0
+                        text: 'Jumlah postingan'
                     }
                 },
                 series: [{
-                    name: 'jumlah user',
-                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4,
-                        194.1, 95.6, 54.4]
-
+                    name: 'jumlah postingan',
+                    data: values
                 }]
             });
+        });
     </script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var setuju = {!! $setuju !!};
+            var ditolak = {!! $ditolak !!};
+            var pending = {!! $pandding !!};
+
+        Highcharts.chart('grafik_status', {
+           
+            chart: {
+                type: 'pie'
+            },
+            title: {
+                text: ' Grafik Status postingan'
+            },
+            series: [{
+                name: 'jumlah',
+                data: [
+                    ['Setuju', setuju],
+                    ['Ditolak', ditolak],
+                    ['Pending', pending],
+                ]
+            }]
+        });
+    });
+</script>
 
 </body>
 

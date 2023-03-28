@@ -82,13 +82,17 @@ Route::group(['middleware'=> ['auth','hakakses:Admin']], function() {
     Route::get('/pesan-dari-user', [AdminController::class, 'pesan'])->name('pesan-user');
     Route::get('/data-user', [AdminController::class, 'data_user'])->name('data-user');
     Route::get('/cerpen_admin', [AdminController::class, 'cerpen_admin'])->name('cerpen_admin');
+    Route::get('/artikel_admin', [AdminController::class, 'artikel_admin'])->name('artikel_admin');
+    Route::get('/pantun_admin', [AdminController::class, 'pantun_admin'])->name('pantun_admin');
+    Route::get('/skripsi_admin', [AdminController::class, 'skripsi_admin'])->name('skripsi_admin');
+    Route::get('/puisi_admin', [AdminController::class, 'puisi_admin'])->name('puisi_admin');
     Route::post('/uprove/{id}', [AdminController::class, 'uprove'])->name('uprove');
     Route::post('/tolak/{id}', [AdminController::class, 'tolak'])->name('tolak');
-    Route::get('/akun_blokir', [CerpenController::class, 'akun_blokir'])->name('akun_blokir');
+    Route::get('/akun_blokir', [AdminController::class, 'akun_blokir'])->name('akun_blokir');
+    Route::get('/data-blokir', [AdminController::class, 'data-blokir'])->name('data-blokir');
     Route::post('/hapus/{id}', [AdminController::class, 'hapus'])->name('hapus');
     Route::get('/logout', [loginController::class, 'logout']);
     Route::get('/delete/{id}', [AdminController::class, 'delete'])->name('delete');
-    Route::get('/data-blokir', [AdminController::class, 'data_blokir'])->name('data-blokir');
 });
 
 //user_login
@@ -129,17 +133,20 @@ Route::group(['middleware'=> ['auth', 'hakakses:user']], function(){
     //kategori_user_login
     Route::get('/pilihkategori', [Index04b9Controller::class, 'pilihkategori'])->name('pilihkategori');
 
-    Route::get('/artikel-sukses', [Index04b9Controller::class, 'artikelsukses'])-> name('srtikel-sukses');
+    Route::get('/artikel-sukses/{id}', [Index04b9Controller::class, 'artikelsukses'])-> name('srtikel-sukses');
+
+    Route::get('/src', [Index04b9Controller::class, 'src'])-> name('src');
     Route::get('/cerpen-baik/{id}', [Index04b9Controller::class, 'cerpenbaik'])-> name('cerpen-baik');
-    Route::get('/puisi-pertiwi', [Index04b9Controller::class, 'puisipertiwi'])-> name('puisi-pertiwi');
+    Route::get('/puisi-pertiwi/{id}', [Index04b9Controller::class, 'puisipertiwi'])-> name('puisi-pertiwi');
     Route::get('/diary-1/{id}', [Index04b9Controller::class, 'diary1'])-> name('diary-1');
-    Route::get('/fotografi-1', [Index04b9Controller::class, 'fotografi1'])-> name('fotografi-1');
-    Route::get('/ilustrasi-1', [Index04b9Controller::class, 'ilustrasi1'])-> name('ilustrasi-1');
-    Route::get('/makalah-detail', [Index04b9Controller::class, 'makalahdetail'])-> name('makalah-detail');
-    Route::get('/skripsi-detail', [Index04b9Controller::class, 'skripsidetail'])-> name('skripsi-detail');
-    Route::get('/ilmiah-detail', [Index04b9Controller::class, 'ilmiahdetail'])-> name('ilmiah-detail');
-    Route::get('/pantun-1', [Index04b9Controller::class, 'pantun1'])-> name('pantun-1');
-    Route::get('/essai-1', [Index04b9Controller::class, 'essai1'])-> name('essai-1');
+    Route::get('/fotografi-1/{id}', [Index04b9Controller::class, 'fotografi1'])-> name('fotografi-1');
+    Route::get('/ilustrasi-1/{id}', [Index04b9Controller::class, 'ilustrasi1'])-> name('ilustrasi-1');
+    Route::get('/makalah-detail/{id}', [Index04b9Controller::class, 'makalahdetail'])-> name('makalah-detail');
+    Route::get('/skripsi-detail/{id}', [Index04b9Controller::class, 'skripsidetail'])-> name('skripsi-detail');
+    Route::get('/ilmiah-detail/{id}', [Index04b9Controller::class, 'ilmiahdetail'])-> name('ilmiah-detail');
+    Route::get('/pantun-1/{id}', [Index04b9Controller::class, 'pantun1'])-> name('pantun-1');
+    Route::get('/essai-1/{id}', [Index04b9Controller::class, 'essai1'])-> name('essai-1');
+    Route::post('/komentar/{id}', [Index04b9Controller::class, 'komentar'])-> name('komentar');
     Route::get('/makalah-pkn', [Index04b9Controller::class, 'makalahpkn'])-> name('makalah-pkn');
     Route::get('/search', [PostingController::class, 'search'])->name('search');
     Route::get('/makalahdetail/{id}', [Index04b9Controller::class, 'makalahdetail'])-> name('makalahdetail');
