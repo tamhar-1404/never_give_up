@@ -138,7 +138,7 @@
 					<h1 class="discover__title places-tab">
 						Karya Pribadi
 					</h1>
-					<form class="discover__form discover__form-favourite"  method="get" action="{{ route('src') }}">>
+					<form class="discover__form discover__form-favourite"  method="get" action="{{ route('src') }}">
 						<input class="discover__form-input discover__form-input-favourite" type="text" name="query" id="search" placeholder=" Judul Apa yang Ingin Anda Cari?" />
 						
 						<select class="discover__form-input discover__form-input-favourite js-example-basic-multiple" name="kategori_id">
@@ -162,182 +162,48 @@
 					<div class="discover__box-place owl-wrapper">
 						<div class="owl-carousel" data-num="4">
 						
-							<div class="item">
-	
-								<!-- place-gal module -->
-								<div class="place-gal">
-									<img class="place-gal__image" src="upload/top1.jpg" alt="place-image">
-									<div class="place-gal__content">
-										<h2 class="place-gal__title permanent-font">
-											<a href="/artikel">Artikel</a>
-										</h2>
-										<ul class="place-gal__list">
-											<li class="place-gal__list-item">
-												<a href="">5 Cities</a>
-											</li>
-											<li class="place-gal__list-item">
-												<a href="">255 Listing</a>
-											</li>
-										</ul>
-										<a class="btn-default" href="/artikel-sukses">
-											<!-- <i class="fa fa-caret-right" aria-hidden="true"></i> -->
-											<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
-												<path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-												<path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"/>
-											  </svg> -->
+		
+						
+					@foreach ($postingan as $item)
+					<div class="item">
 
-Baca											</a>
-									</div>
-								</div>
-								<!-- end place-gal module -->
-	
+					<!-- place-post module  fotografi -->
+					
+					<div class="col-0">
+						<div class="card" style="border-radius: 15px;">
+						<div class="card-body">
+							<div style=" display: flex; justify-content:space-between;">
+								<img class="" style="border-radius: 100%; width: 30px; height: 30px; " src="foto/{{$item->User->foto}}" alt="">
+								<a class="place-post__like" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+
+								<p style="color:black; font-family: Georgia, 'Times New Roman', Times, serif; margin:10px;">
+								{{$item->user->username}}
+							   </p>
+							   <div >
+								
+							   </div>
 							</div>
+							<img style="border-radius: 10px; max-height:200px" src="asset/{{$item->foto}}" class="card-img-top" alt="" srcset="">
+							
+							<p class="card-text-judul">{{$item->judul}}</p>
+							
+							<p class="card-" style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">{!!$item->isi!!}</p>
+							<div style="width: 100%; display: flex; justify-content: center;  " >
+								<a class="contact-form__submit" href="/cerpen-baik/{{$item->id}}" style="margin-right: 20px; margin-bottom: 10px; ">
+									<i class="fa fa-caret-right" aria-hidden="true"></i>
+									Baca
+								</a>
+							</div>
+						</div>
+						</div>
+					</div>
+					
+					<!-- end place-post module fotografi-->
+
+				</div>
+				@endforeach
+				
 						
-							<div class="item">
-	
-								<!-- place-gal module -->
-								<div class="place-gal">
-									<img class="place-gal__image" src="upload/top2.jpg" alt="place-image">
-									<div class="place-gal__content">
-										<h2 class="place-gal__title">
-											<a href="">fotografi</a>
-										</h2>
-										<ul class="place-gal__list">
-											<li class="place-gal__list-item">
-												<a href="">8 Cities</a>
-											</li>
-											<li class="place-gal__list-item">
-												<a href="">749 Listing</a>
-											</li>
-										</ul>
-										<a class="btn-default" href="/fotografi-1">
-											<i class="fa fa-caret-right" aria-hidden="true"></i>
-											<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
-												<path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-												<path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"/>
-											  </svg> -->
-Baca										</a>
-									</div>
-								</div>
-								<!-- end place-gal module -->
-	
-							</div>
-						
-							<div class="item">
-	
-								<!-- place-gal module -->
-								<div class="place-gal">
-									<img class="place-gal__image" src="upload/top3.jpg" alt="place-image">
-									<div class="place-gal__content">
-										<h2 class="place-gal__title permanent-font">
-											<a href="">makalah</a>
-										</h2>
-										<p class="isi_postingan">mkjffjkfkdkfkvmkmgkdm,vm</p>
-										<a class="btn-default" href="/makalah-detail">
-											<!-- <i class="fa fa-caret-right" aria-hidden="true"></i> -->
-											<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
-												<path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-												<path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"/>
-											  </svg> -->
-											Baca
-										</a>
-									</div>
-								</div>
-								<!-- end place-gal module -->
-	
-							</div>
-						
-							<div class="item">
-	
-								<!-- place-gal module -->
-								<div class="place-gal">
-									<img class="place-gal__image" src="upload/top4.jpg" alt="place-image">
-									<div class="place-gal__content">
-										<h2 class="place-gal__title">
-											<a href="">esai</a>
-										</h2>
-										<ul class="place-gal__list">
-											<li class="place-gal__list-item">
-												<a href="">4 Cities</a>
-											</li>
-											<li class="place-gal__list-item">
-												<a href="">409 Listing</a>
-											</li>
-										</ul>
-										<a class="btn-default" href="/essai-1">
-											<!-- <i class="fa fa-caret-right" aria-hidden="true"></i> -->
-											<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
-												<path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-												<path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"/>
-											  </svg> -->
-Baca										</a>
-									</div>
-								</div>
-								<!-- end place-gal module -->
-	
-							</div>
-						
-							<div class="item">
-	
-								<!-- place-gal module -->
-								<div class="place-gal">
-									<img class="place-gal__image" src="upload/top1.jpg" alt="place-image">
-									<div class="place-gal__content">
-										<h2 class="place-gal__title permanent-font">
-											<a href="">ilustrasi</a>
-										</h2>
-										<ul class="place-gal__list">
-											<li class="place-gal__list-item">
-												<a href="">5 Cities</a>
-											</li>
-											<li class="place-gal__list-item">
-												<a href="">255 Listing</a>
-											</li>
-										</ul>
-										<a class="btn-default" href="/ilustrasi-1">
-											<!-- <i class="fa fa-caret-right" aria-hidden="true"></i> -->
-											<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
-												<path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-												<path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"/>
-											  </svg> -->
-											Baca
-										</a>
-									</div>
-								</div>
-								<!-- end place-gal module -->
-	
-							</div>
-						
-							<div class="item">
-	
-								<!-- place-gal module -->
-								<div class="place-gal">
-									<img class="place-gal__image" src="upload/top2.jpg" alt="place-image">
-									<div class="place-gal__content">
-										<h2 class="place-gal__title">
-											<a href="">fotografi</a>
-										</h2>
-										<ul class="place-gal__list">
-											<li class="place-gal__list-item">
-												<a href="">8 Cities</a>
-											</li>
-											<li class="place-gal__list-item">
-												<a href="">749 Listing</a>
-											</li>
-										</ul>
-										<a class="btn-default" href="/fotografi-1">
-											<!-- <i class="fa fa-caret-right" aria-hidden="true"></i> -->
-											<!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
-												<path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
-												<path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"/>
-											  </svg> -->
-											Baca
-										</a>
-									</div>
-								</div>
-								<!-- end place-gal module -->
-	
-							</div>
 						</div>
 					</div>
 					

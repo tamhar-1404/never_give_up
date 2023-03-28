@@ -122,5 +122,40 @@ class AdminController extends Controller
     
    
     }
+
+    public function cerpen_admin()
+    {
+        $posting = postingan::where('kategori_id', '1')->get();
+        
+        return view('admin.cerpen',['postingan'=>$posting]);
+    }
+
+    public function artikel_admin()
+    {
+        $posting = postingan::where('kategori_id', '2')->get();
+        
+        return view('admin.artikel',['postingan'=>$posting]);
+    }
+
+    public function pantun_admin()
+    {
+        $posting = postingan::where('kategori_id', '3')->get();
+        
+        return view('admin.pantun',['postingan'=>$posting]);
+    }
+
+    public function skripsi_admin()
+    {
+        $posting = postingan::where('kategori_id', '4')->get();
+        
+        return view('admin.skripsi',['postingan'=>$posting]);
+    }
+
+    public function puisi_admin()
+    {
+        $posting = postingan::where('kategori_id', '4')->get();
+        
+        return view('admin.puisi',['postingan'=>$posting]);
+    }
 }
 ?>

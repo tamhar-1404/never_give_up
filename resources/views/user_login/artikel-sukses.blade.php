@@ -86,10 +86,10 @@
 
 			<div class="listing-detail__gal">
 				<picture>
-					<source media="(min-width: 991px)" srcset="{{asset('asset/' .  	$kategori->foto)}}">
-					<source media="(min-width: 568px)" srcset="{{asset('asset/' .  	$kategori->foto)}}">
-					<source media="(min-width: 200px)" srcset="{{asset('asset/' .  	$kategori->foto)}}">
-					<img src="../triptip-demo/asset/sukses2.jpg" alt="">
+					<source style="max-height:60%" media="(min-width: 991px)" srcset="{{asset('asset/' .  	$kategori->foto)}}">
+					<source style="max-height:40%" media="(min-width: 568px)" srcset="{{asset('asset/' .  	$kategori->foto)}}">
+					<source style="max-height:10%" media="(min-width: 200px)" srcset="{{asset('asset/' .  	$kategori->foto)}}">
+					<img src="{{asset('asset/' .  	$kategori->foto)}}" alt="">
 				</picture>
 				<div class="listing-detail__gal-box">
 					<div class="container">

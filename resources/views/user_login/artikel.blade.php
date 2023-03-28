@@ -123,7 +123,7 @@
 			<!-- form listing -->
 			<div class="user-detail__favorites-box iso-call" data-item-showen="3" style="margin-bottom: 5%; padding:3%;">
 				<div class="item">
-		@foreach ($postingan as $item)
+		@foreach ($artikel as $item)
 					<!-- place-post module  fotografi -->
 					<div class="col-0">
 						<div class="card" style="border-radius: 15px;">
@@ -139,7 +139,7 @@
 								<ion-icon style="font-size: 30px;" name="ellipsis-vertical-outline"></ion-icon>
 							   </div>
 							</div>
-							<img style="border-radius: 10px;" src="asset/{{$item -> foto}}" class="card-img-top" alt="" srcset="">
+							<img style="border-radius: 10px; max-height:200px;" src="asset/{{$item -> foto}}" class="card-img-top" alt="" srcset="">
 							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon>
 							<p class="card-text-judul">{{$item-> judul}}</p>
 							<center>

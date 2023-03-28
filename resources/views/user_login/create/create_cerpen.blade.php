@@ -317,8 +317,7 @@
 	<script src="../js/jquery.countTo.js"></script>
 	<script src="../js/script.js"></script>
 	 <!--Summernote js-->
-	<script src="../assets/plugins/summernote/summernote-bs4.min.js"></script>
-   
+	 <script src="../assets/plugins/summernote/summernote-bs4.min.js"></script>
     <script>
       $('#summernote').summernote({
         placeholder: '',
