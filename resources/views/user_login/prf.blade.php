@@ -13,7 +13,7 @@
     margin: 0;
     padding-top: 40px;
     color: #2e323c;
-    background: #f5f6fa;
+    background-image :url('upload/ban3.jpg');
     position: relative;
     height: 100%;
 	padding: 10%;
@@ -140,6 +140,10 @@
 				<div class="card h-100">
 					<div class="card-body">
 						<div class="account-settings">
+						<div class="aboutt">
+								<h5>Profil</h5>
+								<!-- <p>Saya Yuki, memiliki hobi menulis dari kecil. Saya menuangkan hobi dengan menulis cerpen pada website ini</p><br> -->
+							</div><br>
 							<div class="user-profile">
 
 								<div class="user-avatar">
@@ -152,10 +156,7 @@
 								<input type="hidden" name="foto_lama" value="{{$user->foto}}">
 							</div>
 							
-							<div class="aboutt">
-								<h5>Profil</h5>
-								<p>Saya Yuki, memiliki hobi menulis dari kecil. Saya menuangkan hobi dengan menulis cerpen pada website ini</p><br>
-							</div>
+							
 						</div>
 					</div>
 				</div>

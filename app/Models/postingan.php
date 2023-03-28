@@ -21,4 +21,10 @@ class postingan extends Model
     {
         return $this-> hasMany(komentar::class);
     }
+
+    public function likes()
+    {
+        return $this-> hasMany(like::class);
+    }
+
 }
