@@ -138,8 +138,12 @@
 						<div class="card-body">
 							<div style=" display: flex; justify-content:space-between;">
 								<img class="" style="border-radius: 100%; width: 30px; height: 30px; " src="foto/{{$item->User->foto}}" alt="">
-								<a class="place-post__like" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+							
 
+    							</div>
+								<!-- <a href="{{ route('user_login.user-page', $postingan->id) }}" class="btn-save-post @if(auth()->user()->hasSavedPost($postingan)) active @endif">
+									<a class="place-post__like"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+								</a> -->
 								<p style="color:black; font-family: Georgia, 'Times New Roman', Times, serif; margin:10px;">
 								{{$item->user->username}}
 							   </p>
@@ -172,26 +176,9 @@
 
 			
 			
-			<div style="display: flex; justify-content: center;">
-				<nav aria-label="Page navigation example" >
-					<ul class="pagination">
-						<li class="page-item">
-							<a class="page-link" style="color:rgb(236, 107, 128);" href="#" aria-label="Previous">
-								<span aria-hidden="true">&laquo;</span>
-							</a>
-					  </li>
-					  
-					  <li  class="page-item"><a class="page-link" style="color:rgb(236, 107, 128);" href="#">1</a></li>
-					  <li class="page-item"><a class="page-link" style="color:rgb(236, 107, 128);" href="#">2</a></li>
-					  <li class="page-item"><a class="page-link" style="color:rgb(236, 107, 128);" href="#">3</a></li>
-					  <li class="page-item">
-						<a class="page-link" style="color:rgb(236, 107, 128);" href="#" aria-label="Next">
-						  <span aria-hidden="true">&raquo;</span>
-						</a>
-					  </li>
-					</ul>
-				  </nav>
-				</div>
+			<div class="pagination justify-content-center">
+				{{ $cerpen->links() }}
+			</div>
 		</section>
 					
 			

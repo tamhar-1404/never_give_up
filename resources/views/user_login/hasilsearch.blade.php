@@ -120,7 +120,7 @@
 								<ion-icon style="font-size: 30px;" name="ellipsis-vertical-outline"></ion-icon>
 							   </div>
 							</div>
-							<img style="border-radius: 10px;" src="asset/{{$item->foto}}" class="card-img-top" alt="" srcset="">
+							<img style="border-radius: 10px; height:300px" src="asset/{{$item->foto}}" class="card-img-top" alt="" srcset="">
 							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon>
 							<p class="card-text-judul">{{$item->judul}}</p>
 							<p class="card-text mb-50" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">{!!$item->isi!!}</p>

@@ -86,10 +86,10 @@
 
 			<div class="listing-detail__gal">
 				<picture>
-					<source media="(min-width: 991px)" srcset="{{asset('asset/' .  	$kategori->foto)}}">
-					<source media="(min-width: 568px)" srcset="{{asset('asset/' .  	$kategori->foto)}}">
-					<source media="(min-width: 200px)" srcset="{{asset('asset/' .  	$kategori->foto)}}">
-					<img src="../triptip-demo/asset/sukses2.jpg" alt="">
+					<source style="max-height:60%" media="(min-width: 991px)" srcset="{{asset('asset/' .  	$kategori->foto)}}">
+					<source style="max-height:40%" media="(min-width: 568px)" srcset="{{asset('asset/' .  	$kategori->foto)}}">
+					<source style="max-height:10%" media="(min-width: 200px)" srcset="{{asset('asset/' .  	$kategori->foto)}}">
+					<img src="{{asset('asset/' .  	$kategori->foto)}}" alt="">
 				</picture>
 				<div class="listing-detail__gal-box">
 					<div class="container">
@@ -185,24 +185,17 @@
 								</ul>
 
 								
-								<form class="contact-form" id="leave-review">
-									<h2 class="contact-form__title">
-										KOMENTAR
-									</h2>
-									<div class="row">
-										<div class="col-md-6">
-											<p class="contact-form__rate">
-												komentarmu dapat membantu pembuat karya
-											</p>
+								<form action="/komentar/{{$artikel->id}}" method="POST" enctype="multipart/form-data" class="contact-form inner-review" id="leave-review">
+										@csrf
+										<div class="inner-review__form">
+											<div class="inner-review__form-box">
+												<textarea class="contact-form__textarea" name="komentar" id="komentar" placeholder="Silahkan tinggalkan komentar"></textarea>
+												<!-- <a href="{{url('cerpenbaik')}}" class="contact-form__submit" type="submit" name="submit-contact" id="submit_contact" value="Kirim" > -->
+												<button  class="contact-form__submit" type="submit" id="submit" name="submit-contact" >Kirim</button>
+												</a>
+											</div>
 										</div>
-										
-									</div>
-									<div class="row">
-										
-									</div>
-									<textarea class="contact-form__textarea" name="comment" id="comment" placeholder="Komentar"></textarea>
-									<input class="contact-form__submit" type="submit" name="submit-contact" id="submit_contact" value="Kirim" />
-								</form>
+									</form>
 								<!-- End Contact form module -->
 								<!-- tips & reviews-box -->
 								<div class="listing-detail__reviews" id="tips-reviews-box">
@@ -210,50 +203,38 @@
 										Komentar
 										<a href="#leave-review" class="navigate-btn"><i class="la la-pencil"></i> Berikan Komentar</a>
 									</h2>
-									<div class="listing-detail__reviews-box">
-
-										<!-- reviews list -->
-										<ul class="reviews-list">
-
-											<li class="reviews-list__item">
-												<div class="reviews-list__item-box">
-													<img class="reviews-list__item-image" src="upload/avatar2.jpg" alt="">
-													<div class="reviews-list__item-content">
-														<h3 class="reviews-list__item-title">
-															Philip W
-														</h3>
-														<span class="reviews-list__item-location">
-															philip@gmail.com
-														</span>
-														<p class="reviews-list__item-date">
-															posting October 7, 2018
-															
-														</p>
-														<h3 class="reviews-list__item-title">
-															Good Service but..
-														</h3>
-														<p class="reviews-list__item-description">
-															Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
-														</p>
-														<a class="reviews-list__item-helpful" href="#">
-															<i class="la la-thumbs-o-up"></i>
-															Helpfull review
-															<span>8</span>
-														</a>
-														<a class="reviews-list__item-reply" href="#">
-															<i class="la la-mail-forward"></i>
-															Reply
-														</a>
-													</div>	
-												</div>
-											</li>
-
-										</ul>
-										<!-- reviews-list -->
-
-										
-
-									</div>
+									<div class="listing-detail__reviews" id="tips-reviews-box">
+										<h2 class="listing-detail__content-title">
+											komentar 
+										</h2>
+										<div class="listing-detail__reviews-box">
+											<!-- reviews list -->
+											<ul class="reviews-list">
+												@foreach($komen as $item)
+												<li class="reviews-list__item">
+													<div class="reviews-list__item-box">
+														<img class="reviews-list__item-image" src="{{asset('foto/' .  	$item->user->foto)}}" alt="">
+														<div class="reviews-list__item-content">
+															<h3 class="reviews-list__item-title">
+																{{$item->user->username}}
+															</h3>
+															<span class="reviews-list__item-location">
+																</span>
+																
+																<p class="reviews-list__item-description">
+																{{$item->komentar}}
+															</p>
+															<a class="reviews-list__item-reply" href="#">
+																<i class="la la-mail-forward"></i>
+																Balas
+															</a>
+														</div>	
+													</div>
+												</li>
+												@endforeach
+											<!-- reviews-list -->
+										</div>
+								</div>
 
 								</div>
 

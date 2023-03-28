@@ -69,6 +69,6 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
    
-    protected $table = 'users';
+    protected $table = 'Users';
 
 }

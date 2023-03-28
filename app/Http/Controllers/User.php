@@ -82,4 +82,14 @@ class User extends Controller
         return redirect('login')->with('alert-success','Kamu berhasil Register');
     }
 
+
+    public function likePost(Post $post)
+{
+    $post->likes()->create([
+        'user_id' => auth()->user()->id,
+    ]);
+
+    return back();
+}
+
 }

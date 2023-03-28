@@ -167,15 +167,11 @@
 															</h3>
 															<span class="reviews-list__item-location">
 																</span>
-																
+																Posting {{$item->created_at->diffForHumans()}}
 																<p class="reviews-list__item-description">
 																{{$item->komentar}}
 															</p>
-															<a class="reviews-list__item-reply" href="#">
-																<i class="la la-mail-forward"></i>
-																Balas
-															</a>
-														</div>	
+															</div>	
 													</div>
 												</li>
 												@endforeach
