@@ -172,10 +172,7 @@
 				@endforeach
 				
 			</div>	
-			
 
-			
-			
 			<div class="pagination justify-content-center">
 				{{ $cerpen->links() }}
 			</div>

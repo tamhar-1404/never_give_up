@@ -46,20 +46,18 @@ class PostingController extends Controller
                 $namafile = hash('sha256', time()) . '.' . $nomer . $filename->getClientOriginalExtension();
                 $path = $filename->store('filename');
                 $filename->move('filename/', $namafile);
-
                 $multi_img = multi_img::create([
                     'postingan_id' => $postingan->id,
                     'gambar' => $filename,
                 ]);
-
                 $nomer++;
             }
+            $postingan->foto = 'default.jpg';
+            $postingan->save();
         }
-    
-       
-       
         return redirect('/user-login');
     }
+
     public function search(Request $request)
     {
         $keyword = $request->search;

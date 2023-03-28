@@ -26,6 +26,9 @@
 			text-align: center;
 			color: black;
 		}
+		.card{
+			margin-bottom: 20px;
+		}
     </style>
 
 </head>
@@ -121,14 +124,15 @@
 
 			
 			<!-- form listing -->
-			<div class="user-detail__favorites-box iso-call" data-item-showen="3">
-			@foreach ($puisi as $item)
-				<div class="item">
+			<div data-item-showen="3" style="margin: 5%;">
+				<div class="user-detail__favorites-box iso-call" >
+				@foreach ($puisi as $item)
+				<div class="item" style="">
 
 					<!-- place-post module  fotografi -->
 					<div class="col-0">
 						<div class="card" style="border-radius: 15px;">
-						<div class="card-body">
+						<div class="card-body" >
 							<div style=" display: flex; justify-content:space-between;">
 								<img class="" style="border-radius: 100%; width: 30px; height: 30px; " src="foto/{{$item->User->foto}}" alt="">
 								<a class="place-post__like" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
@@ -155,10 +159,14 @@
 						</div>
 					</div>
 					<!-- end place-post module fotografi-->
-
+					
 				</div>
 				@endforeach
 			</div>	
+			
+			</div>
+			<br>
+
 <p></p>
 				
 			<br>

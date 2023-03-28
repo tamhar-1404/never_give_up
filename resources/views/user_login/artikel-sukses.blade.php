@@ -195,15 +195,10 @@
 												</a>
 											</div>
 										</div>
-									</form>
+								</form>
 								<!-- End Contact form module -->
 								<!-- tips & reviews-box -->
 								<div class="listing-detail__reviews" id="tips-reviews-box">
-									<h2 class="listing-detail__content-title">
-										Komentar
-										<a href="#leave-review" class="navigate-btn"><i class="la la-pencil"></i> Berikan Komentar</a>
-									</h2>
-									<div class="listing-detail__reviews" id="tips-reviews-box">
 										<h2 class="listing-detail__content-title">
 											komentar 
 										</h2>
@@ -237,37 +232,47 @@
 								</div>
 
 								</div>
-
 							</div>
 						</div>
 						<div class="col-lg-4">
 							<div class="sidebar">
 
 								
-								<div class="sidebar_widget sidebar_widget-listing-details">
+								<div class="sidebar__widget sidebar__widget-listing-details">
 									<h2 class="sidebar__widget-title">
-										Details
+										Detail
 									</h2>
 									<ul class="sidebar__listing-list">
 										<li>
 											<i class="la la-map-marker"></i>
-											305 Franklin Ave (at Lafayette Ave), Brooklyn
+											{{$artikel->user->askot}}
 										</li>
 										<li>
 											<i class="la la-mobile-phone"></i>
-											+44 20 7336 8898
+											0{{$artikel->user->notlp}}
 										</li>
 										<li>
 											<i class="la la-link"></i>
-											momonica@gmail.com
+											{{$artikel->user->email}}
 										</li>
-										
+										<!-- <li>
+											<i class="la la-clock-o"></i>
+											<span class="color-close">Closed until Noon</span>
+											<div>
+												<p>
+													Mon–Thu, Sun <span class="right-align">Noon–Midnight</span>
+												</p>
+												<p>
+													Fri–Sat <span class="right-align">Noon–1:00 AM</span>
+												</p>
+											</div>
+										</li> -->
 									</ul>
 								</div>
 
-								<div class="sidebar_widget sidebar_widget-author">
+								<div class="sidebar__widget sidebar__widget-author">
 									<h2 class="sidebar__widget-title">
-										Author
+										Pembuat
 									</h2>
 									
 									<!-- Author-wrapper module -->
@@ -276,34 +281,29 @@
 											<div class="row">
 												<div class="col-7">
 													<div class="author-wrapper__content">
-														<a class="author-wrapper__image" href="#"><img src="upload/avatar1.jpg" alt=""></a>
+														<a class="author-wrapper__image" href=""><img src="{{asset('foto/' . $artikel->user->foto)}}" alt=""></a>
 														<h3 class="author-wrapper__title">
-															<a href="#">Monica</a>
+															<a href="">{{$artikel->user->username}}</a>
 															<span class="author-wrapper__location">
-																Malang
+															{{$artikel->user->medsos}}
 															</span>
 														</h3>
 													</div>
 												</div>
-												
+												<!-- <div class="col-5">
+													<a class="author-wrapper__btn follow-btn" href="#">
+														<i class="la la-eye"></i>
+														Follow
+													</a>
+												</div> -->
 											</div>
 										</div>
-										<ul class="author-wrapper__list">
-											<li>
-												<span>42</span>
-												Postingan
-											</li>
-											
-											<li>
-												<span>56</span>
-												Komentar
-											</li>
-										</ul>
+										
 									</div>
 									<!-- End Author-wrapper module-->
 								</div>
 
-								<div class="sidebar_widget sidebar_widget-tags">
+								<div class="sidebar__widget sidebar__widget-tags">
 									<h2 class="sidebar__widget-title">
 										Kategori
 									</h2>
@@ -321,7 +321,11 @@
 										<li><a href="/ilmiah">Karya Ilmiah</a></li>
 									</ul>
 								</div>
+
+								
 							</div>
+						<!-- End sidebar -->
+						</div>
 						</div>
 					</div>
 				</div>

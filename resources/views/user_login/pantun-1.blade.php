@@ -223,6 +223,7 @@
 								</div>
 							</div>
 						</div>
+
 						<div class="col-lg-4">
 							<!-- sidebar -->
 						<div class="sidebar">
