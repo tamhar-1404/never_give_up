@@ -10,7 +10,8 @@ class like extends Model
     use HasFactory;
     protected $guarded = [];
     protected $table='like';
-    protected $fillable = ['user_id', 'postingan_id', 'is_saved'];
+    protected $fillable = ['user_id', 'postingan_id'];
+    public $timestamps = false;
 
     public function postingan()
     {

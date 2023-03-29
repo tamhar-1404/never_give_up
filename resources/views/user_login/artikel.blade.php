@@ -112,7 +112,7 @@
 			<div style="margin-bottom: 2%; display: flex; justify-content: space-between " >
 			<h1 >													
 				Artikel	</h1>
-				<form class="search-form" method="GET"action="{{route('search')}}"  >
+				<form class="search-form" method="GET"action="{{route('searchartikel')}}"  >
 					<div class="search-form__input-holders" style="width: 100% ;">
 						<input class="search-form__input" type="text" name="search" placeholder="Cari Judul Postingan" >
 						<button class="btn-default" type="submit">
@@ -132,21 +132,21 @@
 						<div class="col-0">
 							<div class="card" style="border-radius: 15px;">
 							<div class="card-body">
-								<div style=" display: flex; justify-content:space-between;">
-									<img class="" style="border-radius: 100%; width: 30px; height: 30px; " src="foto/{{$item -> user -> foto}}" alt="">
+								<div style=" display: flex; justify-content:center;">
+								<!-- <img class="" style="border-radius: 100%; width: 30px; height: 30px; " src="foto/{{$item->User->foto}}" alt=""> -->
 									<a class="place-post__like" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
 
 									<p style="color:black; font-family: Georgia, 'Times New Roman', Times, serif; margin:10px;">
 									{{$item -> user -> username}}
 									</p>
-									<ion-icon style="font-size: 30px;" name="ellipsis-vertical-outline"></ion-icon>
+									<!-- <img style="border-radius: 10px; width: 60%;" src="asset/{{$item->foto}}" class="card-img-top" alt="" srcset=""> -->
 								</div>
 								<img style="border-radius: 10px; object-fit: cover; height: 150px;" src="asset/{{$item -> foto}}" class="card-img-top" alt="" srcset="">
 								<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon><br>
 								<br>
 								<p class="card-text-judul">{{$item-> judul}}</p>
 								<center>
-								<p class="card-text mb-50" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">{{strip_tags($item->isi)}}</p>							</center>
+								<p class="card-text mb-50" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">{{$item->isi}}</p>							</center>
 								<div style="width: 100%; display: flex; justify-content: center;  " >
 									<a class="contact-form__submit" href="/artikel-sukses/{{$item->id}}" style="margin-right: 20px; margin-bottom: 10px; ">
 										<i class="fa fa-caret-right" aria-hidden="true"></i>
@@ -160,10 +160,13 @@
 					</div>	
 					@endforeach
 				</div>
-			</div>
+			</div>	
 
-			<br>
-			<div class="pagination justify-content-center">
+
+
+
+		<br>
+		<div class="pagination justify-content-center">
 				{{ $artikel->links() }}
 			</div>
 		</section>
