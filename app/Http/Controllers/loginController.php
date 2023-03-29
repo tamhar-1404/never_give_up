@@ -20,7 +20,8 @@ class loginController extends Controller
 
     public function index()
     {
-       return view('user_guest.index04b9');
+       $postingan = postingan::orderBy('baca', 'desc')->where('status', 'setuju')->get();
+       return view('user_guest.index04b9', ['postingan' => $postingan]);
     }
   
     public function lihat_register()
