@@ -86,17 +86,17 @@
 
 			<div class="listing-detail__gal">
 				<picture>
-					<source style="max-height:60%" media="(min-width: 991px)" srcset="{{asset('asset/' .  	$kategori->foto)}}">
-					<source style="max-height:40%" media="(min-width: 568px)" srcset="{{asset('asset/' .  	$kategori->foto)}}">
-					<source style="max-height:10%" media="(min-width: 200px)" srcset="{{asset('asset/' .  	$kategori->foto)}}">
-					<img src="{{asset('asset/' .  	$kategori->foto)}}" alt="">
+					<source style="max-height:60%" media="(min-width: 991px)" srcset="{{asset('asset/' .  	$artikel->foto)}}">
+					<source style="max-height:40%" media="(min-width: 568px)" srcset="{{asset('asset/' .  	$artikel->foto)}}">
+					<source style="max-height:10%" media="(min-width: 200px)" srcset="{{asset('asset/' .  	$artikel->foto)}}">
+					<img src="{{asset('asset/' .  	$artikel->foto)}}" alt="">
 				</picture>
 				<div class="listing-detail__gal-box">
 					<div class="container">
 						<div class="row">
 							<div class="col-md-6">
 								<!-- <p class="listing-detail__rate">9.3 <span>/ 10</span></p> -->
-								<h1 class="listing-detail__title">{{$kategori->judul}}</h1>
+								<h1 class="listing-detail__title">{{$artikel->judul}}</h1>
 								<!-- <p class="listing-detail__address"><i class="fa fa-map-marker"></i>1149 3rd St (Wilshire), Santa Monica</p> -->
 								<!-- <p class="listing-detail__address">Monica</p> -->
 							</div>
@@ -149,41 +149,11 @@
 								<div class="listing-detail__overview" id="overview-box">
 									<h2 class="listing-detail__content-title">Isi Artikel</h2>
 									<p class="listing-detail__content-description">
-									{!!$kategori->isi!!}
+									{!!$artikel->isi!!}
 									</p>
 								</div>
-								<!-- <nav aria-label="Page navigation example" >
-									<ul class="pagination justify-content-center">
-									  <li class="page-item disabled">
-										<a class="page-link">Previous</a>
-									  </li>
-									  <li class="page-item"><a class="page-link" href="#tips-reviews-box">1</a></li>
-									  <li class="page-item"><a class="page-link" href="#">2</a></li>
-									  <li class="page-item"><a class="page-link" href="#">3</a></li>
-									  <li class="page-item">
-										<a class="page-link" href="#">Next</a>
-									  </li>
-									</ul>
-								  </nav> -->
-
-								  <ul class="pagination m-t-20 m-b-5 justify-content-center">
-									<li class="page-item">
-										<a class="page-link" style="color:rgb(236, 107, 128);" href="#"  aria-label="Previous">
-											<i class="fa fa-angle-left"></i>
-										</a>
-									</li>
-									<li class="page-item"><a class="page-link" style="color:rgb(236, 107, 128);" href="#">1</a></li>
-									<li class="page-item "><a class="page-link" style="color:rgb(236, 107, 128);" href="#">2</a></li>
-									<li class="page-item"><a class="page-link" style="color:rgb(236, 107, 128);" href="#">3</a></li>
-									<li class="page-item "><a class="page-link" style="color:rgb(236, 107, 128);" href="#">4</a></li>
-									<li class="page-item"><a class="page-link" style="color:rgb(236, 107, 128);" href="#">5</a></li>
-									<li class="page-item">
-										<a class="page-link" style="color:rgb(236, 107, 128);" href="#" aria-label="Next">
-											<i class="fa fa-angle-right"></i>
-										</a>
-									</li>
-								</ul>
-
+								
+								  
 								
 								<form action="/komentar/{{$artikel->id}}" method="POST" enctype="multipart/form-data" class="contact-form inner-review" id="leave-review">
 										@csrf
@@ -214,26 +184,29 @@
 																{{$item->user->username}}
 															</h3>
 															<span class="reviews-list__item-location">
-																</span>
-																
-																<p class="reviews-list__item-description">
+															</span>
+															<p class="reviews-list__item-date">
+																Posting {{$item->created_at->diffForHumans()}}
+															</p>	
+															<p class="reviews-list__item-description">
 																{{$item->komentar}}
 															</p>
-															<a class="reviews-list__item-reply" href="#">
+															<!-- <a class="reviews-list__item-reply" href="#">
 																<i class="la la-mail-forward"></i>
 																Balas
-															</a>
+															</a> -->
 														</div>	
 													</div>
 												</li>
 												@endforeach
+											</ul>
 											<!-- reviews-list -->
 										</div>
 								</div>
 
-								</div>
 							</div>
 						</div>
+
 						<div class="col-lg-4">
 							<div class="sidebar">
 
@@ -324,6 +297,7 @@
 
 								
 							</div>
+						</div>
 						<!-- End sidebar -->
 						</div>
 						</div>

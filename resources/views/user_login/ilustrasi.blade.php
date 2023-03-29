@@ -26,8 +26,8 @@
 			text-align: center;
 			color: black;
 		}
-		.card-img-top{
-			justify-content: center;
+		.card-body{
+			margin-bottom: 20px;
 		}
     </style>
 
@@ -146,11 +146,9 @@
 			</div> -->
 
 			<!-- form listing -->
-	
 
-
-
-			<div class="user-detail__favorites-box iso-call" data-item-showen="3" style="margin-bottom: 5%;">
+			<div  data-item-showen="3">
+			<div class="user-detail__favorites-box iso-call">
 			@foreach($ilustrasi as $item)
 				<div class="item">
 
@@ -170,11 +168,11 @@
 							</div>
 							<!-- <img style="border-radius: 10px;" src="asset/ilus.png" class="card-img-top" alt="" srcset=""> -->
 							<div style="display: flex; justify-content: center;">
-							<img style="border-radius: 10px; max-width: 750px; max-height: 150px;" src="asset/{{$item->foto}}" class="card-img-top" alt="" srcset="">							</div>
+							<img style="border-radius: 10px; object-fit: cover; height: 150px;" src="asset/{{$item->foto}}" class="card-img-top" alt="" srcset="">						</div>
 							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon>
 							<p class="card-text-judul">{{$item->judul}}</p>
 							
-							<p class="card-text mb-50" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">{!!$item->isi!!}</p>
+							<p class="card-text mb-50" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">{{strip_tags($item->isi)}}</p>
 							<div style="width: 100%; display: flex; justify-content: center;  " >
 								<a class="contact-form__submit" href="/ilustrasi-1/{{$item->id}}" style="margin-right: 20px; margin-bottom: 10px; ">
 									<i class="fa fa-caret-right" aria-hidden="true"></i>
@@ -187,12 +185,14 @@
 					<!-- end place-post module fotografi-->
 
 				</div>
-			@endforeach
+				@endforeach
 				</div>
+				</div>
+
 				<div class="pagination justify-content-center">
-				{{ $ilustrasi->links() }}
-			</div>
-					</section>
+					{{ $ilustrasi->links() }}
+				</div>
+			</section>
 					
 		<!-- End add-listing -->
 

@@ -126,36 +126,28 @@
 
 			
 			<!-- form listing -->
-			<div class="user-detail__favorites-box iso-call" data-item-showen="3">
-				
-				@foreach ($postingan as $item)
+			<div  data-item-showen="3" >
+				<div class="user-detail__favorites-box iso-call">
+					@foreach ($postingan as $item)
 					<div class="item">
-
 					<!-- place-post module  fotografi -->
-					
 					<div class="col-0">
 						<div class="card" style="border-radius: 15px;">
 						<div class="card-body">
 							<div style=" display: flex; justify-content:space-between;">
 								<img class="" style="border-radius: 100%; width: 30px; height: 30px; " src="foto/{{$item->User->foto}}" alt="">
-							
-
-    							</div>
-								<!-- <a href="{{ route('user_login.user-page', $postingan->id) }}" class="btn-save-post @if(auth()->user()->hasSavedPost($postingan)) active @endif">
-									<a class="place-post__like"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-								</a> -->
+								<a class="place-post__like"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
 								<p style="color:black; font-family: Georgia, 'Times New Roman', Times, serif; margin:10px;">
 								{{$item->user->username}}
-							   </p>
-							   <div >
+							    </p>
 								<ion-icon style="font-size: 30px;" name="ellipsis-vertical-outline"></ion-icon>
-							   </div>
 							</div>
-							<img style="border-radius: 10px;" src="asset/{{$item->foto}}" class="card-img-top" alt="" srcset="">
+
+							<img style="border-radius: 10px; object-fit: cover; height: 150px;" src="asset/{{$item->foto}}" class="card-img-top" alt="" srcset="">
 							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon>
 							<p class="card-text-judul">{{$item->judul}}</p>
 							
-							<p class="card-" style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">{!!$item->isi!!}</p>
+							<p class="card-text mb-50" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">{{strip_tags($item->isi)}}</p>							</center>
 							<div style="width: 100%; display: flex; justify-content: center;  " >
 								<a class="contact-form__submit" href="/cerpen-baik/{{$item->id}}" style="margin-right: 20px; margin-bottom: 10px; ">
 									<i class="fa fa-caret-right" aria-hidden="true"></i>
@@ -165,16 +157,13 @@
 						</div>
 						</div>
 					</div>
-					
 					<!-- end place-post module fotografi-->
-
-				</div>
-				@endforeach
-				
-			</div>	
-
+					</div>
+					@endforeach
+				</div>			
+			</div>
 			<div class="pagination justify-content-center">
-				{{ $cerpen->links() }}
+				{{ $postingan->links() }}
 			</div>
 		</section>
 					

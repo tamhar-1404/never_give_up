@@ -151,6 +151,11 @@ Route::group(['middleware'=> ['auth', 'hakakses:user']], function(){
     Route::get('/search', [PostingController::class, 'search'])->name('search');
     Route::get('/makalahdetail/{id}', [Index04b9Controller::class, 'makalahdetail'])-> name('makalahdetail');
     Route::get('/searchmakalah', [Index04b9Controller::class, 'searchmakalah'])->name('searchmakalah');
+    Route::get('/searchdiary', [Index04b9Controller::class, 'searchdiary'])->name('searchdiary');
+    Route::get('/searchpuisi', [Index04b9Controller::class, 'searchpuisi'])->name('searchpuisi');
+    Route::get('/searchfotografi', [Index04b9Controller::class, 'searchfotografi'])->name('searchfotografi');
+    Route::get('/searchilustrasi', [Index04b9Controller::class, 'searchilustrasi'])->name('searchilustrasi');
+    Route::get('/arpaginate(id)', [Index04b9Controller::class, 'arpaginate'])->name('arpaginate');
 });
 });
 

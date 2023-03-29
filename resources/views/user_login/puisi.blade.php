@@ -141,11 +141,12 @@
 								{{$item->user->username}}
 							   </p>
 							   <div >
-								<ion-icon style="font-size: 30px;" name="ellipsis-vertical-outline"></ion-icon>
+								<ion-icon style="font-size: 30px; object-fit: cover; height: 150px;" name="ellipsis-vertical-outline"></ion-icon>
 							   </div>
 							</div>
 							<img style="border-radius: 10px; max-width: 750px; max-height: 200px;" src="asset/{{$item->foto}}" class="card-img-top" alt="" srcset="">
-							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon>
+							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon><br>
+							<br>
 							<p class="card-text-judul">{{$item->judul}}</p>
 							
 							<p class="card-text"></p>

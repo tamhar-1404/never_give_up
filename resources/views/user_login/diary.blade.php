@@ -26,6 +26,9 @@
 			text-align: center;
 			color: black;
 		}
+		.card-body{
+			margin-bottmo: 20px;
+		}
     </style>
 
 </head>
@@ -122,7 +125,8 @@
 
 			
 			<!-- form listing -->
-			<div class="user-detail__favorites-box iso-call" data-item-showen="3">
+			<div data-item-showen="3">
+			<div class="user-detail__favorites-box iso-call">
 			@foreach ($diary as $item)
 
 				<div class="item">
@@ -142,11 +146,12 @@
 								<ion-icon style="font-size: 30px;" name="ellipsis-vertical-outline"></ion-icon>
 							   </div>
 							</div>
-							<img style="border-radius: 10px; max-width: 750px; max-height: 150px;" src="asset/{{$item->foto}}" class="card-img-top" alt="" srcset="">
-							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon>
+							<img style="border-radius: 10px; object-fit: cover; height: 150px;" src="asset/{{$item->foto}}" class="card-img-top" alt="" srcset="">
+							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon><br>
+							<br>
 							<p class="card-text-judul">{{$item->judul}}</p>
 							
-							<p class="card-text mb-50" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">{!!$item->isi!!}</p>
+							<p class="card-text mb-50" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">{{strip_tags($item->isi)}}</p>
 							<div style="width: 100%; display: flex; justify-content: center;  " >
 								<a class="contact-form__submit" href="/diary-1/{{$item->id}}" style="margin-right: 20px; margin-bottom: 10px; ">
 									<i class="fa fa-caret-right" aria-hidden="true"></i>
@@ -159,8 +164,8 @@
 					<!-- end place-post module fotografi-->
 
 				</div>
-				@endforeach
-				
+			@endforeach
+			</div>
 			</div>	
 <p></p>
 				

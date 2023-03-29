@@ -134,9 +134,10 @@
 							   </div>
 							</div>
 							<div style="display: flex; justify-content: center;">
-							<img style="border-radius: 10px; width: 60%;" src="asset/{{$item->foto}}" class="card-img-top" alt="" srcset="">
-							</div>
-							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon>
+							<img style="border-radius: 10px; object-fit: cover; height: 150px;" src="asset/{{$item->foto}}" class="card-img-top" alt="" srcset="">
+							</div><br>
+							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon><br>
+							<br>
 							<p class="card-text-judul">{{$item->judul}}</p>
 							
 							<p class="card-text mb-50" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">{!!$item->isi!!}</p>

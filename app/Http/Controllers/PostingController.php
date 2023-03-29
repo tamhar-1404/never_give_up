@@ -55,7 +55,7 @@ class PostingController extends Controller
             $postingan->foto = 'default.jpg';
             $postingan->save();
         }
-        return redirect('/user-login');
+        return redirect('/user-page');
     }
 
     public function search(Request $request)

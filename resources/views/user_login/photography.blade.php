@@ -26,6 +26,9 @@
 			text-align: center;
 			color: black;
 		}
+		.card-body{
+			margin-bottom: 20px;
+		}
     </style>
 
 </head>
@@ -124,8 +127,8 @@
 			
 
 			<!-- form listing -->
-	
-			<div class="user-detail__favorites-box iso-call" data-item-showen="3" style="margin-bottom: 5%;">
+			<div data-item-showen="3">
+			<div class="user-detail__favorites-box iso-call">
 			@foreach ($photography as $item)
 				<div class="item">
 
@@ -143,10 +146,12 @@
 							   <div >
 							   </div>
 							</div>
-							<img style="border-radius: 10px; max-width: 750px; max-height: 150px;" src="asset/{{$item->foto}}" class="card-img-top" alt="" srcset="">							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon>
+							<img style="border-radius: 10px; object-fit: cover; height: 150px;" src="asset/{{$item->foto}}" class="card-img-top" alt="" srcset="">
+							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon><br>
+							<br>
 							<p class="card-text-judul">{{$item->judul}}</p>
 							
-							<p class="card-text" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">{!!$item->isi!!}</p>
+							<p class="card-text" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">{{strip_tags($item->isi)}}</p>
 							<div style="width: 100%; display: flex; justify-content: center;  " >
 								<a class="contact-form__submit" href="/fotografi-1/{{$item->id}}" style="margin-right: 20px; margin-bottom: 10px; ">
 									<i class="fa fa-caret-right" aria-hidden="true"></i>
@@ -160,6 +165,7 @@
 
 				</div>
 			@endforeach
+			</div>
 			</div>
 
 			

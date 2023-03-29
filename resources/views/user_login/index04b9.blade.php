@@ -137,8 +137,8 @@
 	
 					<h1 class="discover__title places-tab">
 						Karya Pribadi
-					</h1>
-					<form class="discover__form discover__form-favourite"  method="get" action="{{ route('src') }}">
+					</h1><br>
+					<form class="discover__form discover__form-favourite"  method="get" action="{{ route('src') }}"><br>
 						<input class="discover__form-input discover__form-input-favourite" type="text" name="query" id="search" placeholder=" Judul Apa yang Ingin Anda Cari?" />
 						
 						<select class="discover__form-input discover__form-input-favourite js-example-basic-multiple" name="kategori_id">
@@ -183,11 +183,12 @@
 								
 							   </div>
 							</div>
-							<img style="border-radius: 10px; max-height:200px" src="asset/{{$item->foto}}" class="card-img-top" alt="" srcset="">
+							<img style="border-radius: 10px; object-fit: cover; height: 150px;" src="asset/{{$item->foto}}" class="card-img-top" alt="" srcset="">
 							
 							<p class="card-text-judul">{{$item->judul}}</p>
 							
-							<p class="card-" style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">{!!$item->isi!!}</p>
+							<!-- <p class="card-" style="overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">{!!$item->isi!!}</p> -->
+							<p class="card-text mb-50" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">{{strip_tags($item->isi)}}</p>							</center>
 							<div style="width: 100%; display: flex; justify-content: center;  " >
 								<a class="contact-form__submit" href="/cerpen-baik/{{$item->id}}" style="margin-right: 20px; margin-bottom: 10px; ">
 									<i class="fa fa-caret-right" aria-hidden="true"></i>
@@ -777,72 +778,74 @@
 		<!-- footer block module
 			================================================== -->
 			<footer class="footer footer-black">
-			<div class="container">
-
-				<div class="footer__up-part">
-					<div class="row">
-						<div class="col-md-4">
-
-							<div class="footer__widget text-widget">
-								<img src="images/logo.png" alt="triptip-logo">
-								<p class="footer__widget-description">
-									Menggembangkan dunia baca tulis menggunakan website menuju dunia digital. Temukan berbagai artikel, postingan, cerita, jurnal dan buat postinganmu sendiri disini	
-								</p>
+				<div class="container">
+	
+					<div class="footer__up-part">
+						<div class="row">
+							<div class="col-md-4">
+	
+								<div class="footer__widget text-widget">
+								<a class="navbar-brand" style="width:60%;" href="index.html">
+									<img src="asset/Logo 1.png" style="width:100%;" alt="">
+								</a>
+									<p class="footer__widget-description">
+										Menggembangkan dunia baca tulis menggunakan website menuju dunia digital. Temukan berbagai artikel, postingan, cerita, jurnal dan buat postinganmu sendiri disini	
+									</p>
+								</div>
+	
 							</div>
-
-						</div>
-						<div class="col-md-4">
-
-							<div class="footer__widget subscribe-widget">
-								<h2 class="footer__widget-title footer__widget-title-white">
-									Alamat
-								</h2>
-								<p class="footer__widget-description">
-									Jl. Pandawa No. 66, Dusun Mawar RT 001 RW 001 Desa Pandan
-								</p>
-								
+							<div class="col-md-4">
+	
+								<div class="footer__widget subscribe-widget">
+									<h2 class="footer__widget-title footer__widget-title-white">
+										Alamat
+									</h2>
+									<p class="footer__widget-description">
+										Jl. Pandawa No. 66, Dusun Mawar RT 001 RW 001 Desa Pandan
+									</p>
+									
+								</div>
+	
 							</div>
-
-						</div>
-						<div class="col-md-4">
-
-							<div class="footer__widget text-widget">
-								<h2 class="footer__widget-title footer__widget-title-white">
-									Kontak 
-								</h2>
-								<p class="footer__widget-description">
-									+62 898-1342-6657<br>
-									info@example.com <br>
-									YouTube: ngu_never122
-								</p>
+							<div class="col-md-4">
+	
+								<div class="footer__widget text-widget">
+									<h2 class="footer__widget-title footer__widget-title-white">
+										Kontak 
+									</h2>
+									<p class="footer__widget-description">
+										+62 898-1342-6657<br>
+										info@example.com <br>
+										YouTube: ngu_never122
+									</p>
+								</div>
+	
 							</div>
-
 						</div>
 					</div>
-				</div>
-
-				<div class="footer__down-part footer__down-part-black">
-					<div class="row">
-						<div class="col-md-7">
-							<p class="footer__copyright">
-								© Copyright 2018 - All Rights Reserved
-							</p>
-						</div>
-						<div class="col-md-5">
-							<ul class="footer__social-list">
-								<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-								<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-								<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
-								<li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
-								<li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
-							</ul>
+	
+					<div class="footer__down-part footer__down-part-black">
+						<div class="row">
+							<div class="col-md-7">
+								<p class="footer__copyright">
+									© Copyright 2018 - All Rights Reserved
+								</p>
+							</div>
+							<div class="col-md-5">
+								<ul class="footer__social-list">
+									<li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+									<li><a class="google" href="#"><i class="fa fa-google-plus"></i></a></li>
+									<li><a class="instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
+	
 				</div>
-
-			</div>
-
-		</footer>
+	
+			</footer>
 
 		<!-- End footer -->
 
