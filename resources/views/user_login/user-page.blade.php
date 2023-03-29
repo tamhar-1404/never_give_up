@@ -207,7 +207,8 @@
 										<p class="" >{{$item -> kategori -> kategori}} | {{$item->status}}</p>
 
 										<center><p class=""></p>{{$item->judul}}</center>
-										<p class="card-text mb-50" style="overflow: hidden; text-overflow: ellipsis; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; ">{{$item->isi}}</p>										<div style="width: 100%; display: flex; justify-content: center;  " >
+										<p class="card-text mb-50" style="overflow: hidden; text-overflow: ellipsis; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; ">{{strip_tags($item->
+											)}}</p>										<div style="width: 100%; display: flex; justify-content: center;  " >
 										<div style="width: 100%; display: flex; justify-content: center;  " >
 								<a class="contact-form__submit" href="" style="margin-right: 20px; margin-bottom: 10px; ">
 									<i class="fa fa-caret-right" aria-hidden="true"></i>
