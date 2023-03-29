@@ -49,7 +49,7 @@ class Index04b9Controller extends Controller
     }
    
     public function makalah(){
-        $makalah = postingan::where('kategori_id', 4)->where('status', 'setuju')->paginate(9);
+        $makalah = postingan::where('kategori_id', 7)->where('status', 'setuju')->paginate(9);
         return view('user_login.makalah',['makalah'=>$makalah]);
     }
 
@@ -234,9 +234,9 @@ class Index04b9Controller extends Controller
     }
    
     public function makalahdetail($id){
-        $kategori = postingan::find($id);  
+        $makalah = postingan::find($id);  
         $komen = komentar::where('postingan_id',$kategori->id)->orderBy('created_at', 'desc')->limit(3)->get(); 
-    return view('user_login.makalah-detail', ['kategori'=>$kategori, 'komen'=>$komen]);
+    return view('user_login.makalah-detail', ['makalah'=>$makalah, 'komen'=>$komen]);
     }
    
     public function skripsidetail($id){

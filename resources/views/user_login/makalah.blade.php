@@ -132,7 +132,7 @@
 								<br>
 								<p class="card-text-judul">{{$item-> judul}}</p>
 								<center>
-								<p class="card-text mb-50" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">{{$item->isi}}</p>							</center>
+								<p class="card-text mb-50" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">{{strip_tags($item->isi)}}</p>							</center>
 								<div style="width: 100%; display: flex; justify-content: center;  " >
 									<a class="contact-form__submit" href="/artikel-sukses/{{$item->id}}" style="margin-right: 20px; margin-bottom: 10px; ">
 										<i class="fa fa-caret-right" aria-hidden="true"></i>
