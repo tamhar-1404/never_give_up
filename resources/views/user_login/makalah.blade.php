@@ -22,6 +22,9 @@
 			text-align: center;
 			color: black;
 		}
+		.card{
+			margin-bottom:5%;
+		}
     </style>
 
 </head>
@@ -107,72 +110,48 @@
 
 			
 			<!-- form listing -->
-			<div class="user-detail__favorites-box iso-call" data-item-showen="3">
-				
-				@foreach ($makalah as $item)
+			<div data-item-showen="3">
+				<div class="user-detail__favorites-box iso-call">
+					@foreach ($makalah as $item)
 					<div class="item">
+						<!-- place-post module  fotografi -->
+						<div class="col-0">
+							<div class="card" style="border-radius: 15px;">
+							<div class="card-body">
+								<div style=" display: flex; justify-content:center;">
+								<!-- <img class="" style="border-radius: 100%; width: 30px; height: 30px; " src="foto/{{$item->User->foto}}" alt=""> -->
+									<a class="place-post__like" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
 
-					<!-- place-post module  fotografi -->
-					
-					<div class="col-0">
-						<div class="card" style="border-radius: 15px;">
-						<div class="card-body">
-							<div style=" display: flex; justify-content:space-between;">
-								<img class="" style="border-radius: 100%; width: 30px; height: 30px; " src="foto/{{$item->User->foto}}" alt="">
-								<a class="place-post__like" href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-
-								<p style="color:black; font-family: Georgia, 'Times New Roman', Times, serif; margin:10px;">
-								{{$item->user->username}}
-							   </p>
-							   <div >
-								<ion-icon style="font-size: 30px;" name="ellipsis-vertical-outline"></ion-icon>
-							   </div>
+									<p style="color:black; font-family: Georgia, 'Times New Roman', Times, serif; margin:10px;">
+									{{$item -> user -> username}}
+									</p>
+									<!-- <img style="border-radius: 10px; width: 60%;" src="asset/{{$item->foto}}" class="card-img-top" alt="" srcset=""> -->
+								</div>
+								<img style="border-radius: 10px; object-fit: cover; height: 250px;" src="asset/{{$item -> foto}}" class="card-img-top" alt="" srcset="">
+								<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon><br>
+								<br>
+								<p class="card-text-judul">{{$item-> judul}}</p>
+								<center>
+								<p class="card-text mb-50" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">{{$item->isi}}</p>							</center>
+								<div style="width: 100%; display: flex; justify-content: center;  " >
+									<a class="contact-form__submit" href="/artikel-sukses/{{$item->id}}" style="margin-right: 20px; margin-bottom: 10px; ">
+										<i class="fa fa-caret-right" aria-hidden="true"></i>
+										Baca
+									</a>
+								</div>
 							</div>
-							<div style="display: flex; justify-content: center;">
-							<img style="border-radius: 10px; width: 60%;" src="asset/{{$item->foto}}" class="card-img-top" alt="" srcset="">
-							</div>
-							<ion-icon style="color: pink; font-size: 30px;" name="heart-outline"></ion-icon>
-							<p class="card-text-judul">{{$item->judul}}</p>
-							
-							<p class="card-text mb-50" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">{!!$item->isi!!}</p>
-							<div style="width: 100%; display: flex; justify-content: center;  " >
-								<a class="contact-form__submit" href="/makalah-detail/{{$item->id}}" style="margin-right: 20px; margin-bottom: 10px; ">
-									<i class="fa fa-caret-right" aria-hidden="true"></i>
-									Baca
-								</a>
 							</div>
 						</div>
-						</div>
-					</div>
-					
-					<!-- end place-post module fotografi-->
-
+						<!-- end place-post module fotografi-->
+					</div>	
+					@endforeach
 				</div>
-				@endforeach
-				
-			</div>	
-			<br>
-			<div style="display: flex; justify-content: center;">
-				<nav aria-label="Page navigation example" >
-					<ul class="pagination">
-						<li class="page-item">
-							<a class="page-link" style="color:rgb(236, 107, 128);" href="#" aria-label="Previous">
-								<span aria-hidden="true">&laquo;</span>
-							</a>
-					  </li>
-					  
-					  <li  class="page-item"><a class="page-link" style="color:rgb(236, 107, 128);" href="#">1</a></li>
-					  <li class="page-item"><a class="page-link" style="color:rgb(236, 107, 128);" href="#">2</a></li>
-					  <li class="page-item"><a class="page-link" style="color:rgb(236, 107, 128);" href="#">3</a></li>
-					  <li class="page-item">
-						<a class="page-link" style="color:rgb(236, 107, 128);" href="#" aria-label="Next">
-						  <span aria-hidden="true">&raquo;</span>
-						</a>
-					  </li>
-					</ul>
-				  </nav>
 			</div>
-		</section>
+			<br>
+			<div class="pagination justify-content-center">
+				{{ $makalah->links() }}
+			</div>
+								</section>
 				
 
 		<!-- footer block module

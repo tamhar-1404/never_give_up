@@ -63,65 +63,66 @@ class Index04b9Controller extends Controller
     public function searchkartikel(Request $request)
     {
         $keyword = $request->search;
-        $makalah = postingan ::where('judul', 'like', "%" . $keyword . "%")->paginate(5);
-        return view('user_login.artikel', compact('makalah'))->with('i', (request()->input('page', 1) - 1) * 5);
+        $artikel = postingan ::where('judul', 'like', "%" . $keyword . "%")->paginate(5);
+        return view('user_login.artikel', compact('artikel'))->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
     public function searchpuisi(Request $request)
     {
         $keyword = $request->search;
-        $makalah = postingan ::where('judul', 'like', "%" . $keyword . "%")->paginate(5);
+        $puisi = postingan ::where('judul', 'like', "%" . $keyword . "%")->paginate(5);
         return view('user_login.puisi', compact('puisi'))->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
     public function searchdiary(Request $request)
     {
         $keyword = $request->search;
-        $makalah = postingan ::where('judul', 'like', "%" . $keyword . "%")->paginate(5);
-        return view('user_login.diary', compact('puisi'))->with('i', (request()->input('page', 1) - 1) * 5);
+        $diary = postingan ::where('judul', 'like', "%" . $keyword . "%")->paginate(5);
+        return view('user_login.diary', compact('diary'))->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
     public function searchfotografi(Request $request)
     {
         $keyword = $request->search;
-        $makalah = postingan ::where('judul', 'like', "%" . $keyword . "%")->paginate(5);
-        return view('user_login.photography', compact('puisi'))->with('i', (request()->input('page', 1) - 1) * 5);
+        $photography = postingan ::where('judul', 'like', "%" . $keyword . "%")->paginate(5);
+        return view('user_login.photography', compact('photography'))->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
     public function searchilustrasi(Request $request)
     {
         $keyword = $request->search;
-        $makalah = postingan ::where('judul', 'like', "%" . $keyword . "%")->paginate(5);
-        return view('user_login.ilustrasi', compact('puisi'))->with('i', (request()->input('page', 1) - 1) * 5);
+        $ilustrasi = postingan ::where('judul', 'like', "%" . $keyword . "%")->paginate(5);
+        return view('user_login.ilustrasi', compact('ilustrasi'))->with('i', (request()->input('page', 1) - 1) * 5);
     }
 
     public function searchskripsi(Request $request)
-        {
+    {
             $keyword = $request->search;
-            $makalah = postingan ::where('judul', 'like', "%" . $keyword . "%")->paginate(5);
-            return view('user_login.photography', compact('puisi'))->with('i', (request()->input('page', 1) - 1) * 5);
-        }
+            $kategori = postingan ::where('judul', 'like', "%" . $keyword . "%")->paginate(5);
+            return view('user_login.skripsi', compact('kategori'))->with('i', (request()->input('page', 1) - 1) * 5);
+    }
      public function searchpantun(Request $request)
-        {
+    {
             $keyword = $request->search;
-            $makalah = postingan ::where('judul', 'like', "%" . $keyword . "%")->paginate(5);
-            return view('user_login.pantun', compact('puisi'))->with('i', (request()->input('page', 1) - 1) * 5);
-        }
+            $kategori = postingan ::where('judul', 'like', "%" . $keyword . "%")->paginate(5);
+            return view('user_login.pantun', compact('kategori'))->with('i', (request()->input('page', 1) - 1) * 5);
+    }
      public function searchessai(Request $request)
         {
             $keyword = $request->search;
-            $makalah = postingan ::where('judul', 'like', "%" . $keyword . "%")->paginate(5);
-            return view('user_login.essai', compact('puisi'))->with('i', (request()->input('page', 1) - 1) * 5);
+            $kategori = postingan ::where('judul', 'like', "%" . $keyword . "%")->paginate(5);
+            return view('user_login.essai', compact('kategori'))->with('i', (request()->input('page', 1) - 1) * 5);
         }
-     public function searchilmiah(Request $request)
+              public function searchilmiah(Request $request)
         {
             $keyword = $request->search;
-            $makalah = postingan ::where('judul', 'like', "%" . $keyword . "%")->paginate(5);
-            return view('user_login.ilmiah', compact('puisi'))->with('i', (request()->input('page', 1) - 1) * 5);
+            $kategori = postingan ::where('judul', 'like', "%" . $keyword . "%")->paginate(5);
+            return view('user_login.ilmiah', compact('kategori'))->with('i', (request()->input('page', 1) - 1) * 5);
         }
 
-    public function skripsi(){
-     $kategori = postingan::where('kategori_id', 9 )->where('status', 'setuju')->paginate(9);
+    
+        public function skripsi(){
+              $kategori = postingan::where('kategori_id', 9 )->where('status', 'setuju')->paginate(9);
             return view('user_login.skripsi',['kategori'=>$kategori]);
             }
    
@@ -233,16 +234,16 @@ class Index04b9Controller extends Controller
     }
    
     public function makalahdetail($id){
-     $kategori = postingan::find($id);  
-        // $postingan = postingan::where('id', $data )->get();
-    return view('user_login.makalah-detail', compact('kategori'));
+        $kategori = postingan::find($id);  
+        $komen = komentar::where('postingan_id',$kategori->id)->orderBy('created_at', 'desc')->limit(3)->get(); 
+    return view('user_login.makalah-detail', ['kategori'=>$kategori, 'komen'=>$komen]);
     }
    
     public function skripsidetail($id){
         $kategori = postingan::find($id);  
-        // $postingan = postingan::where('id', $data )->get();
-    return view('user_login.skripsi-detail', compact('kategori'));
-    } 
+        $komen = komentar::where('postingan_id',$kategori->id)->orderBy('created_at', 'desc')->limit(3)->get(); 
+    return view('user_login.ilmiah-detail', ['k ategori'=>$kategori, 'komen'=>$komen]);
+    }
    
     public function ilmiahdetail($id){
         $kategori = postingan::find($id);  
