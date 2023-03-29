@@ -242,14 +242,14 @@ class Index04b9Controller extends Controller
     public function skripsidetail($id){
         $kategori = postingan::find($id);  
         $komen = komentar::where('postingan_id',$kategori->id)->orderBy('created_at', 'desc')->limit(3)->get(); 
-    return view('user_login.ilmiah-detail', ['k ategori'=>$kategori, 'komen'=>$komen]);
+    return view('user_login.skripsi-detail', ['k ategori'=>$kategori, 'komen'=>$komen]);
     }
    
     public function ilmiahdetail($id){
         $kategori = postingan::find($id);  
-        // $postingan = postingan::where('id', $data )->get();
-    return view('user_login.ilmiah-detail', compact('kategori'));
-    } 
+        $komen = komentar::where('postingan_id',$kategori->id)->orderBy('created_at', 'desc')->limit(3)->get(); 
+    return view('user_login.ilmiah-detail', ['kategori'=>$kategori, 'komen'=>$komen]);
+    }
    
     public function pantun1($id){
         $pantun = postingan::find($id);
@@ -258,8 +258,8 @@ class Index04b9Controller extends Controller
     } 
     public function essai1($id){
         $kategori = postingan::find($id);  
-        // $postingan = postingan::where('id', $data )->get();
-    return view('user_login.essai-1', compact('kategori'));
+        $komen = komentar::where('postingan_id',$kategori->id)->orderBy('created_at', 'desc')->limit(3)->get(); 
+    return view('user_login.essai-1', ['kategori'=>$kategori, 'komen'=>$komen]);
     }
    
     public function prf(){
