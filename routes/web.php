@@ -83,7 +83,13 @@ Route::group(['middleware'=> ['auth','hakakses:Admin']], function() {
     Route::get('/data-user', [AdminController::class, 'data_user'])->name('data-user');
     Route::get('/cerpen_admin', [AdminController::class, 'cerpen_admin'])->name('cerpen_admin');
     Route::get('/artikel_admin', [AdminController::class, 'artikel_admin'])->name('artikel_admin');
+    Route::get('/diary_admin', [AdminController::class, 'diary_admin'])->name('diary_admin');
+    Route::get('/esai_admin', [AdminController::class, 'esai_admin'])->name('esai_admin');
+    Route::get('/fotografi_admin', [AdminController::class, 'fotografi_admin'])->name('fotografi_admin');
+    Route::get('/ilmiah_admin', [AdminController::class, 'ilmiah_admin'])->name('ilmiah_admin');
     Route::get('/pantun_admin', [AdminController::class, 'pantun_admin'])->name('pantun_admin');
+    Route::get('/ilustrasi_admin', [AdminController::class, 'ilustrasi_admin'])->name('ilustrasi_admin');
+    Route::get('/makalah_admin', [AdminController::class, 'makalah_admin'])->name('makalah_admin');
     Route::get('/skripsi_admin', [AdminController::class, 'skripsi_admin'])->name('skripsi_admin');
     Route::get('/puisi_admin', [AdminController::class, 'puisi_admin'])->name('puisi_admin');
     Route::post('/uprove/{id}', [AdminController::class, 'uprove'])->name('uprove');
@@ -147,7 +153,7 @@ Route::group(['middleware'=> ['auth', 'hakakses:user']], function(){
     Route::get('/pantun-1/{id}', [Index04b9Controller::class, 'pantun1'])-> name('pantun-1');
     Route::get('/essai-1/{id}', [Index04b9Controller::class, 'essai1'])-> name('essai-1');
     Route::post('/komentar/{id}', [Index04b9Controller::class, 'komentar'])-> name('komentar');
-    Route::get('/makalah-pkn', [Index04b9Controller::class, 'makalahpkn'])-> name('makalah-pkn');
+    Route::get('/makalah-pkn{id}', [Index04b9Controller::class, 'makalahpkn'])-> name('makalah-pkn');
     Route::get('/search', [PostingController::class, 'search'])->name('search');
     Route::get('/makalahdetail/{id}', [Index04b9Controller::class, 'makalahdetail'])-> name('makalahdetail');
     Route::get('/searchmakalah', [Index04b9Controller::class, 'searchmakalah'])->name('searchmakalah');
@@ -156,6 +162,12 @@ Route::group(['middleware'=> ['auth', 'hakakses:user']], function(){
     Route::get('/searchfotografi', [Index04b9Controller::class, 'searchfotografi'])->name('searchfotografi');
     Route::get('/searchilustrasi', [Index04b9Controller::class, 'searchilustrasi'])->name('searchilustrasi');
     Route::get('/arpaginate(id)', [Index04b9Controller::class, 'arpaginate'])->name('arpaginate');
+    Route::get('/searchskripsi', [Index04b9Controller::class, 'searchskripsi'])->name('searchskripsi');
+    Route::get('/searchilmiah', [Index04b9Controller::class, 'searchilmiah'])->name('searchilmiah');
+    Route::get('/searchessai', [Index04b9Controller::class, 'searchessai'])->name('searchessai');
+    Route::get('/searchpuisi', [Index04b9Controller::class, 'searchpuisi'])->name('searchpuisi');    
+
+    Route::get('/searchfotografi', [Index04b9Controller::class, 'searchfotografi'])->name('searchfotografi');    
 });
 });
 

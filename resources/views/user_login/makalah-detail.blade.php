@@ -96,7 +96,7 @@
 								<ul class="single-post__list">
 					<li class="single-post__list-item">
 						<i class="la la-calendar-check-o"></i>
-						<span>{{$kategori->created_at}}</span>
+						<span>{{$kategori->created_at->diffForHumans()}}</span>
 					</li>
 					<li class="single-post__list-item">
 						<i class="la la-comments"></i>
@@ -138,12 +138,10 @@
 
 							<div class="user-detail__review-box owl-wrapper">
 									<div class="owl-carousel" data-num="3" >
-										<img style="width:103%;" src="{{asset('asset/' .  	$kategori->foto)}}" alt="" srcset="">
-										<img style="width:103%;" src="{{asset('asset/' .  	$kategori->foto)}}" alt="" srcset="">
-										<img style="width:103%;" src="{{asset('asset/' .  	$kategori->foto)}}" alt="" srcset="">
-										<img style="width:103%;" src="{{asset('asset/' .  	$kategori->foto)}}" alt="" srcset="">
-										<img style="width:103%;" src="{{asset('asset/' .  	$kategori->foto)}}" alt="" srcset="">
-										<img style="width:103%;" src="{{asset('asset/' .  	$kategori->foto)}}" alt="" srcset="">
+										@foreach ($gambar as $item)
+										<img style="max-width:200px;" src="{{asset('filename/' .  	$item->gambar)}}" alt="" srcset="">
+										@endforeach
+										
 									</div>
 								</div>
 								
@@ -241,6 +239,13 @@
 											<i class="la la-link"></i>
 											{{$kategori->user->email}}
 										</li>
+										<div style="width:70%; display: flex; justify-content: end; margin-left: 45%; margin-top: 20px;" >
+											<a class="contact-form__submit" href="/makalah-pkn{{$kategori -> id}}" style="margin-right: 20px; margin-bottom: 10px;">
+												<i class="fa fa-caret-right" aria-hidden="true"></i>
+												
+											lihat
+												</a>
+										</div>
 										<!-- <li>
 											<i class="la la-clock-o"></i>
 											<span class="color-close">Closed until Noon</span>

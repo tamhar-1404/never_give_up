@@ -171,13 +171,17 @@
 						</div>
 
 					</div>
-					@if ($kirim_kategori != 3 and $kirim_kategori != 5)
+					@if (!in_array($kirim_kategori,[3]))
 					
 					<!-- form box -->
 					<div class="add-listing__form-box" id="gallery-box">
 
                         <h2 class="add-listing__form-title">
-							Gambar 	{{$kategori->kategori}}:
+							Gambar @if(in_array($kirim_kategori, [5,7,9,10,11,12]))
+							sampul postingan
+							@else
+							{{$kategori -> kategori}}:
+							@endif
 						</h2>
 						<div class="add-listing__form-content">
 							<div class="add-listing__input-file-box">
@@ -189,15 +193,40 @@
 						</div>
                        
 					</div>
-					@elseif ($kirim_kategori == 5)
-					<div class="add-listing__form-box" id="gallery-box">
+					@endif
+					@if (in_array($kirim_kategori, [5,7,9,10,11]))
+					<div class="add-listing__form-box" >
 
                         <h2 class="add-listing__form-title">
-							Gambar {{$kategori->kategori}}:
+							Gambar
+							 @if (in_array($kirim_kategori, [7,9,10,11]))
+								foto lainya
+							 @else
+							 {{$kategori -> kategori}}
+							@endif
+							:	
 						</h2>
 						<div class="add-listing__form-content">
 							<div class="add-listing__input-file-box">
 								<input class="add-listing__input-file @error('foto') is-invalid @enderror" type="file" name="filename[]" id="filename" value="{{old('filename[]')}}"  multiple  />
+								<div class="add-listing__input-file-wrap">
+									<i class="la la-cloud-upload"></i>  
+								</div>
+							</div>							
+						</div>
+                       
+					</div>
+					
+					@endif
+					@if (in_array($kirim_kategori, [7,9,10,11]))
+					<div class="add-listing__form-box" >
+
+                        <h2 class="add-listing__form-title">
+							File {{$kategori -> kategori}}:
+						</h2>
+						<div class="add-listing__form-content">
+							<div class="add-listing__input-file-box">
+								<input class="add-listing__input-file @error('foto') is-invalid @enderror" type="file" name="pdf" id="file" multiple  />
 								<div class="add-listing__input-file-wrap">
 									<i class="la la-cloud-upload"></i>  
 								</div>

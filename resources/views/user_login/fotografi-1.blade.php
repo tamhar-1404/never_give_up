@@ -91,7 +91,7 @@
 									<ul class="single-post__list">
 										<li class="single-post__list-item">
 											<i class="la la-calendar-check-o"></i>
-											<span>{{$photography->created_at}}</span>
+											<span>{{$photography->created_at->diffForHumans()}}</span>
 										</li>
 									</ul>
 							</div>
@@ -148,40 +148,13 @@
 									<div class="listing-detail__photos" id="photos-box">
 										<h2 class="listing-detail__content-title">Galeri</h2>
 										<div class="listing-detail__photos-inner iso-call" data-item-showen="6">
+											@foreach ($gambar as $item)
 											<div class="item">
-												<img src="upload/g1.jpg" alt="">
+												<img src="{{asset('filename/'. $item -> gambar)}}" alt="">
 											</div>
-											<div class="item">
-												<img src="upload/g2.jpg" alt="">
-											</div>
-											<div class="item">
-												<img src="upload/g3.jpg" alt="">
-											</div>
-											<div class="item">
-												<img src="upload/g4.jpg" alt="">
-											</div>
-											<div class="item">
-												<img src="upload/g5.jpg" alt="">
-											</div>
-											<div class="item">
-												<img src="upload/g6.jpg" alt="">
-											</div>
-											<div class="item">
-												<img src="upload/g1.jpg" alt="">
-											</div>
-											<div class="item">
-												<img src="upload/g2.jpg" alt="">
-											</div>
-											<div class="item">
-												<img src="upload/g3.jpg" alt="">
-											</div>
-											<div class="item">
-												<img src="upload/g4.jpg" alt="">
-											</div>
-											<div class="item">
-												<img src="upload/g5.jpg" alt="">
-											</div>
+											@endforeach
 										</div>
+										
 										<a href="#" 
 											class="load-others" 
 											data-less-text="View Less Photos"

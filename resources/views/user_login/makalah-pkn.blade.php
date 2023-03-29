@@ -77,7 +77,9 @@
     </div>
     
             <div style="margin-top: 4%;">
-                <iframe src="doc/Makalah PKN.pdf" width="100%" height="1000px"></iframe>
+			@foreach ($pdf as $item)
+                <iframe src="doc/{{$item->dokumen}}" width="100%" height="1000px"></iframe>
+			@endforeach
             </div>
             <div style="width: 100%; border: 1px solid red;">
 

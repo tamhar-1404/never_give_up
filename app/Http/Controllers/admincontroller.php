@@ -31,11 +31,11 @@ class AdminController extends Controller
         $photografi = postingan::where('kategori_id', '5')->count();
         $diari = postingan::where('kategori_id', '6')->count();
         $makalah = postingan::where('kategori_id', '7')->count();
-        $ilustrasi = postingan::where('kategori_id', '7')->count();
-        $skripsi = postingan::where('kategori_id', '7')->count();
-        $esai = postingan::where('kategori_id', '7')->count();
-        $karya_ilmiah = postingan::where('kategori_id', '7')->count();
-        $lainnya = postingan::where('kategori_id', '7')->count();
+        $ilustrasi = postingan::where('kategori_id', '8')->count();
+        $skripsi = postingan::where('kategori_id', '9')->count();
+        $esai = postingan::where('kategori_id', '10')->count();
+        $karya_ilmiah = postingan::where('kategori_id', '11')->count();
+        $lainnya = postingan::where('kategori_id', '12')->count();
         $setuju = DB::table('postingans')->where('status', 'setuju')->count();
         $ditolak = DB::table('postingans')->where('status', 'tolak')->count();
         $pandding = DB::table('postingans')->where('status', 'pandding')->count();
@@ -204,9 +204,51 @@ class AdminController extends Controller
 
     public function puisi_admin()
     {
-        $posting = postingan::where('kategori_id', '4')->get();
+        $posting = postingan::where('kategori_id', '5')->get();
         
         return view('admin.puisi',['postingan'=>$posting]);
+    }
+
+    public function diary_admin()
+    {
+        $posting = postingan::where('kategori_id', '6')->get();
+        
+        return view('admin.diary',['postingan'=>$posting]);
+    }
+
+    public function esai_admin()
+    {
+        $posting = postingan::where('kategori_id', '5')->get();
+        
+        return view('admin.esai',['postingan'=>$posting]);
+    }
+
+    public function fotografi_admin()
+    {
+        $posting = postingan::where('kategori_id', '5')->get();
+        
+        return view('admin.fotografi',['postingan'=>$posting]);
+    }
+
+    public function ilmiah_admin()
+    {
+        $posting = postingan::where('kategori_id', '6')->get();
+        
+        return view('admin.ilmiah',['postingan'=>$posting]);
+    }
+
+    public function ilustrasi_admin()
+    {
+        $posting = postingan::where('kategori_id', '6')->get();
+        
+        return view('admin.ilustrasi',['postingan'=>$posting]);
+    }
+
+    public function makalah_admin()
+    {
+        $posting = postingan::where('kategori_id', '5')->get();
+        
+        return view('admin.makalah',['postingan'=>$posting]);
     }
 }
 ?>
