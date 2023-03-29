@@ -302,7 +302,7 @@
                      </div>
 
                         <!-- end col -->
-                          <div class="col-xl-9">
+                          <div class="col-xl-12">
                             <div class="card">
                                 <div class="card-body">
                                     <h4 class="m-b-30 m-t-0">postingan dari semua kategori</h4>
@@ -310,11 +310,11 @@
                                    
                                   
                                     @foreach ($posting as $post)
-                                        <div class="col-5">
+                                        <div class="col-4">
                                             <div class="card" style="border-radius: 15px;">
                                             <div class="card-body">
                                                 <div style=" display: flex; justify-content:space-between;">
-                                                    <img class="" style="border-radius: 100%; width: 30px; height: 30px; " src="asset/{{$post -> user -> foto}}" alt="">
+                                                    <img class="" style="border-radius: 100%; width: 30px; height: 30px; " src="foto/{{$post -> user -> foto}}" alt="">
                                                    <p style="color:black; font-family: Georgia, 'Times New Roman', Times, serif; margin:10px;">
                                                     {{$post -> user -> username}}
                                                    </p>
@@ -330,11 +330,11 @@
                                                 <p class="">{{$post -> judul}}</p>
                                                 {!!$post -> isi!!}
                                                 <div style="display: flex; gap: 10px; " class="row justify-content-between ">
-                                                    <a href="tampilan_user/cerpen-baik.html" class="btn btn-primary col-5" style="font-size: 11px;">Lihat</a>
+                                                    <button href="tampilan_user/cerpen-baik.html" class="btn btn-primary col-3" style="font-size: 11px;">Lihat</button>
                                                   
-                                                    <button type="button" data-bs-target="#exampleModal" data-bs-toggle="modal" class="btn btn-danger " style="font-size: 11px;" >tolak </button>
+                                                    <button type="button" data-bs-target="#exampleModal" data-bs-toggle="modal" class="btn btn-danger col-" style="font-size: 11px;" >tolak </button>
                                                    
-                                                    <form action="{{Route('uprove', $post->id)}} " method="post" class="col-5">
+                                                    <form action="{{Route('uprove', $post->id)}} " method="post" class="col-3">
                                                     @csrf
                                                     <button  type="submit" class="btn btn-success " style="font-size: 11px;" >setuju </button>
                                                     </form>
@@ -368,6 +368,7 @@
                                         <!-- end modals -->
                                      @endforeach   
                                         <!-- modals -->
+                                        {{ $posting->links() }}
                                        
                                         </div>
                                 </div>

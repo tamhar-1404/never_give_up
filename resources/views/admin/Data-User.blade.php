@@ -10,7 +10,7 @@
         <meta content="ThemeDesign" name="author" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <link rel="shortcut icon" href="assets/images/users/Dzaky.jpg">
+        <link rel="shortcut icon" href="assets/images/users/Dzaky.jpg">
 
     <!-- DataTables -->
         <link href="assets/plugins/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />
@@ -25,8 +25,8 @@
         <link href="assets/css/style.css" rel="stylesheet" type="text/css">
 
 
-    <!-- Sweet Alert -->
-    <link href="assets/plugins/sweetalert2/sweetalert2.css" rel="stylesheet" type="text/css">
+        <!-- Sweet Alert -->
+        <link href="assets/plugins/sweetalert2/sweetalert2.css" rel="stylesheet" type="text/css">
 
         <!-- DataTables -->
         <link href="assets/plugins/datatables/jquery.dataTables.min.css" rel="stylesheet" type="text/css" />

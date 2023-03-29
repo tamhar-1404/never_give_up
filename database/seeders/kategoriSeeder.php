@@ -58,5 +58,9 @@ class kategoriSeeder extends Seeder
         'kategori' => 'Karya ilmiah',
         'icon' => 'book.jpg'
       ]);
+      Kategori::create([
+        'kategori' => 'lainnya',
+        'icon' => 'book.jpg'
+      ]);
     }
 }

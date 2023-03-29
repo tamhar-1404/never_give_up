@@ -7,6 +7,8 @@ use App\Models\User;
 use App\Models\Kategori;
 use App\Models\Notif;
 use App\Models\Komentar;
+use App\Models\Multi_img;
+use App\Models\Dokumen;
 use illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 
@@ -40,6 +42,7 @@ class Index04b9Controller extends Controller
     public function photography(){
 
         $photography = postingan::where('kategori_id', 5)->where('status', 'setuju')->paginate(9);
+       
        return view('user_login.photography',['photography' => $photography]);
     }
    
@@ -49,7 +52,7 @@ class Index04b9Controller extends Controller
     }
    
     public function makalah(){
-        $makalah = postingan::where('kategori_id', 4)->where('status', 'setuju')->paginate(9);
+        $makalah = postingan::where('kategori_id', '7')->where('status', 'setuju')->paginate(9);
         return view('user_login.makalah',['makalah'=>$makalah]);
     }
 
@@ -222,8 +225,10 @@ class Index04b9Controller extends Controller
    
     public function fotografi1($id){
         $photography = postingan::find($id);
+        $gambar = multi_img::where('postingan_id', $photography->id)->get();
+       
         $komen = komentar::where('postingan_id',$photography->id)->orderBy('created_at', 'desc')->limit(3)->get(); 
-        return view('user_login.fotografi-1', ['photography'=>$photography, 'komen'=>$komen]);
+        return view('user_login.fotografi-1', ['photography'=>$photography, 'komen'=>$komen, 'gambar'=>$gambar]);
     }
    
     public function ilustrasi1($id){
@@ -234,8 +239,9 @@ class Index04b9Controller extends Controller
    
     public function makalahdetail($id){
      $kategori = postingan::find($id);  
+     $gambar = multi_img::where('postingan_id', $kategori->id)->get();
         // $postingan = postingan::where('id', $data )->get();
-    return view('user_login.makalah-detail', compact('kategori'));
+    return view('user_login.makalah-detail', compact('kategori'),['gambar'=> $gambar]);
     }
    
     public function skripsidetail($id){
@@ -268,8 +274,10 @@ class Index04b9Controller extends Controller
     // return view('user_login.prf',['user'=>$user]);
     }
    
-    public function makalahpkn(){
-    return view('user_login.makalah-pkn',['makalah-pkn']);
+    public function makalahpkn($id){
+        $postingan = postingan::find($id);
+        $pdf = dokumen::where('postingan_id', $postingan->id)->get();
+    return view('user_login.makalah-pkn',['pdf'=>$pdf]);
     }
     
     public function search(Request $request)

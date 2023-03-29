@@ -7,6 +7,7 @@ use App\Models\Kategori;
 use App\Models\User;
 use App\Models\Multi_img;
 use App\Models\Postingan;
+use App\Models\Dokumen;
 
 class PostingController extends Controller
 {
@@ -48,14 +49,27 @@ class PostingController extends Controller
                 $filename->move('filename/', $namafile);
                 $multi_img = multi_img::create([
                     'postingan_id' => $postingan->id,
-                    'gambar' => $filename,
+                    'gambar' => $namafile,
                 ]);
                 $nomer++;
             }
             $postingan->foto = 'default.jpg';
             $postingan->save();
         }
-        return redirect('/user-page');
+        
+        if($request->hasFile('pdf')){
+            $type = $request->file('pdf')->getClientOriginalExtension();
+            $filename = time().'.'.$type;
+            $request->file('pdf')->move('doc/',$filename);
+            $dokumen = dokumen::create([
+                'postingan_id' => $postingan -> id,
+                'dokumen' => $filename,
+            ]);
+        }
+    
+       
+       
+        return redirect('/user-login');
     }
 
     public function search(Request $request)

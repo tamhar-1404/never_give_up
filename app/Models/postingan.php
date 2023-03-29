@@ -29,4 +29,8 @@ class postingan extends Model
     {
         return $this-> HasMany(multi_img::class);
     }
+    public function dokumen()
+    {
+        return $this-> BelongsTo(dokumen::class);
+    }
 }

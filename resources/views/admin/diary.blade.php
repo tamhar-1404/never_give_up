@@ -5,7 +5,7 @@
 <!-- Mirrored from themesdesign.in/hexzy/vertical/blue/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 22:31:51 GMT -->
 <head>
     <meta charset="utf-8" />
-    <title>Artikel</title>
+    <title>Diary</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta content="Admin Dashboard" name="description" />
     <meta content="ThemeDesign" name="author" />
@@ -199,7 +199,7 @@
                     <div class="">
                         <div class="page-header-title" style="height:40px; align-items: start;">
                             <div style="display: flex; align-items: end; margin-top: 40px;">
-                            <h4  class="page-title" >Artikel</h4>
+                            <h4  class="page-title" >Diary</h4>
                             <div class="container-fluid" style="margin: 0;">
                                 <ul class="list-inline menu-left mb-0">
                                    

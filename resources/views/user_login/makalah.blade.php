@@ -125,7 +125,6 @@
 								{{$item->user->username}}
 							   </p>
 							   <div >
-								<ion-icon style="font-size: 30px;" name="ellipsis-vertical-outline"></ion-icon>
 							   </div>
 							</div>
 							<div style="display: flex; justify-content: center;">
