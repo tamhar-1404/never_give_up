@@ -5,7 +5,7 @@
 <!-- Mirrored from themesdesign.in/hexzy/vertical/blue/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 22:31:51 GMT -->
 <head>
     <meta charset="utf-8" />
-    <title>Dashboard</title>
+    <title>Cerpen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta content="Admin Dashboard" name="description" />
     <meta content="ThemeDesign" name="author" />
@@ -14,6 +14,8 @@
     <link rel="shortcut icon" href="assets/images/users/Dzaky.jpg">
 
     <!--Morris Chart CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
     <link rel="stylesheet" href="assets/plugins/morris/morris.css">
 
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
@@ -219,32 +221,62 @@
                     </div>
                    
                         <div class="row col-lg-12 justify-content-lg-center"  >
-                            @foreach ($postingan as $item)
-                            <div class="col-3">
-                                <div class="card" style="border-radius: 15px;">
-                                <div class="card-body">
-                                    <div style=" display: flex; justify-content:space-between;">
-                                        <img class="" style="border-radius: 100%; width: 30px; height: 30px; " src="asset/{{$item->User->foto}}" alt="">
-                                       <p style="color:black; font-family: Georgia, 'Times New Roman', Times, serif; margin:10px;">
-                                       {{$item->User->username}}
-                                       </p>
-                                       <div >
-                                       
-                                       </div>
-                                    </div>
-                                    <img style="border-radius: 10px;" src="asset/{{$item->foto}}" class="card-img-top" alt="" srcset="">
-                                    <div >
-                                        <p style="margin: 10px;">tanggal posting : 12-03-2022</p>
-                                    </div>
-                                    <p class="">{{$item->judul}}</p>
-                                    <p class="card-text">{{$item->isi}}</p>
-                                    <div style="display: flex; gap: 10px; " class="row justify-content-between ">
-                                        <a href="tampilan_user/cerpen-baik.html" class="btn btn-primary col-3" style="font-size: 11px;">Lihat</a>
-                                        <button type="button" data-bs-target="#exampleModal" data-bs-toggle="modal" class="btn btn-danger " style="font-size: 11px;" >tolak </button>
-                                        <form action="{{Route('uprove', $item->id)}} " method="post" class="col-3">
-                                           @csrf
-                                        <button  type="submit" class="btn btn-success " style="font-size: 11px;" >setuju </button>
-                                        </form>
+                        @foreach ($postingan as $post)
+                                        <div class="col-3">
+                                            <div class="card" style="border-radius: 15px;">
+                                            <div class="card-body">
+                                                <div style=" display: flex; justify-content:space-between;">
+                                                    <img class="" style="border-radius: 100%; width: 30px; height: 30px; " src="asset/{{$post -> user -> foto}}" alt="">
+                                                   <p style="color:black; font-family: Georgia, 'Times New Roman', Times, serif; margin:10px;">
+                                                    {{$post -> user -> username}}
+                                                   </p>
+                                                   <div >
+                                                   
+                                                   </div>
+                                                </div>
+                                                <img style="max-width: 300px; border-radius: 10px;" src="asset/{{$post-> foto}}" class="card-img-top" alt="" srcset="">
+                                                <div >
+                                                    <p style="margin: 10px;">{{$post -> created_at}}</p>
+                                                </div>
+                                                <p class="">Kategori : {{$post -> kategori -> kategori}}</p>
+                                                <p class="">{{$post -> judul}}</p>
+                                                {!!$post -> isi!!}
+                                                <div style="display: flex; gap: 10px; " class="row justify-content-between ">
+                                                    <a href="/cerpen-baik/{{$post->id}}" class="btn btn-primary col-3" style="font-size: 11px;">Lihat</a>
+                                                  
+                                                    <button type="button" data-bs-target="#exampleModal" data-bs-toggle="modal" class="btn btn-danger col-3 " style="font-size: 11px;" >tolak </button>
+                                                   
+                                                    <form action="{{Route('uprove', $post->id)}} " method="post" class="col-5">
+                                                    @csrf
+                                                    <button type="submit" class="btn btn-success  " style="font-size: 11px;" >setuju </button>
+                                                    </form>
+                                                </div>
+                                               
+                                            </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title fs-2" id="exampleModalLabel">alasan penolakan</h4>
+                                                    </div>
+                                                <form action="{{Route('tolak', $post->id)}}" method="post">
+                                                    @csrf
+
+                                                    <input type="hidden" name="id_user" value="{{$post->user->id}}">
+                                                    <input type="hidden" name="id_postingan" value="{{$post->id}}">
+                                                    <div class="modal-body">
+                                                        <textarea name="pesan" placeholder="masukan alasan kenapa anda menolak postingan ini" id="" cols="60" rows="5"></textarea>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">batal</button> 
+                                                        <button type="submit" class="btn btn-primary">kirim penolakan</button>
+                                                    </div>
+                                                </form>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                    
                                 </div>
@@ -269,24 +301,13 @@
                                         </a>
                                       </li>
                                     </ul>
-                                  </nav>
-        
-                                  
-                                   
+                                  </nav> 
                                 </form>
                             </div>
                                 
                             </div>
-                                
-                                           
-                                            
-                                            
-                                          </div>
-
-   
-
-                                            
-                                        </div>
+                                 </div>
+                                     </div>
                                     </div>
                                     
                                 </div>
@@ -307,6 +328,7 @@
         </div>
         <!-- END wrapper -->
 
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
         <!-- jQuery  -->
         <script src="assets/js/jquery.min.js"></script>
@@ -326,4 +348,4 @@
     </body>
 
 <!-- Mirrored from themesdesign.in/hexzy/vertical/blue/layouts-collapse.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 08 Feb 2023 22:32:31 GMT -->
-</html> 
+</html>

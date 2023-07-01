@@ -101,6 +101,13 @@ Route::group(['middleware'=> ['auth','hakakses:Admin']], function() {
     Route::get('/delete/{id}', [AdminController::class, 'delete'])->name('delete');
 });
 
+
+Route::group(['middleware'=> ['auth', 'hakakses:user,Admin']], function(){
+    Route::get('/cerpen-baik/{id}', [Index04b9Controller::class, 'cerpenbaik'])-> name('cerpen-baik');
+
+});
+
+
 //user_login
 Route::group(['middleware'=> ['auth', 'hakakses:user']], function(){
     // Route::get('/cerpen', [CerpenController::class, 'cerpen'])->name('cerpen');
@@ -142,7 +149,6 @@ Route::group(['middleware'=> ['auth', 'hakakses:user']], function(){
     Route::get('/artikel-sukses/{id}', [Index04b9Controller::class, 'artikelsukses'])-> name('srtikel-sukses');
 
     Route::get('/src', [Index04b9Controller::class, 'src'])-> name('src');
-    Route::get('/cerpen-baik/{id}', [Index04b9Controller::class, 'cerpenbaik'])-> name('cerpen-baik');
     Route::get('/puisi-pertiwi/{id}', [Index04b9Controller::class, 'puisipertiwi'])-> name('puisi-pertiwi');
     Route::get('/diary-1/{id}', [Index04b9Controller::class, 'diary1'])-> name('diary-1');
     Route::get('/fotografi-1/{id}', [Index04b9Controller::class, 'fotografi1'])-> name('fotografi-1');

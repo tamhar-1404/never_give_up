@@ -294,8 +294,31 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h4 class="m-b-30 m-t-0">Status postingan</h4>
-                                    <div id="grafik_status" style="height: 360px" class="flot-chart"></div>
-                                    
+                                    <script type="text/javascript">
+        $(document).ready(function() {
+            var setuju = {!! $setuju !!};
+            var ditolak = {!! $ditolak !!};
+            var pending = {!! $pandding !!};
+
+        Highcharts.chart('grafik_status', {
+           
+            chart: {
+                type: 'pie'
+            },
+            title: {
+                text: ' Grafik Status postingan'
+            },
+            series: [{
+                name: 'jumlah',
+                data: [
+                    ['Setuju', setuju],
+                    ['Ditolak', ditolak],
+                    ['Pending', pending],
+                ]
+            }]
+        });
+    });
+</script>                                    
                                 </div>
                             </div>
                         </div>

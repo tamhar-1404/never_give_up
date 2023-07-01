@@ -24,6 +24,7 @@ class PostingController extends Controller
         
         $gambar = new multi_img;
         $postingan = new postingan;
+        
         if($request->hasFile('foto')){
             $type = $request->file('foto')->getClientOriginalExtension();
             $filename = time().'.'.$type;

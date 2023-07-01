@@ -196,9 +196,14 @@ class Index04b9Controller extends Controller
         $postingan = postingan::find($id);
         $postingan-> baca++;
         $postingan->save();
+        $role = 'user';
+        if ( Auth() -> user() -> role == 'Admin'){
+            $role = 'Admin';
+        }
+       
         $komen = komentar::where('postingan_id',$postingan->id)->orderBy('created_at', 'desc')->limit(3)->get(); 
         // $postingan = postingan::where('id', $data )->get();
-    return view('user_login.cerpen-baik', ['postingan'=>$postingan, 'komen'=>$komen]);
+    return view('user_login.cerpen-baik', ['postingan'=>$postingan, 'komen'=>$komen], compact('role'));
     }
 
     // public function komentar(Request $request, $id){
